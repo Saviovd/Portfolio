@@ -1,0 +1,84 @@
+.Heading {
+    text-align: center;
+    
+}
+.Content { 
+    overflow-y: scroll;
+    height: 2500px;
+}
+
+.ScrollButton {
+    position: fixed; 
+    width: 100%;
+    left: 95%;
+    bottom: 70px;
+    height: 20px;
+    font-size: 5rem;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--primary-medium);
+    opacity: 0.1;
+    transition: 0.8s;
+    animation-name: seta;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  
+}
+.ScrollButton:hover{
+    opacity: 1;
+    font-size: 5.5rem;
+}
+
+
+@keyframes seta {
+    0%   {height: 70px;}
+    25%   {height: 73px;}
+    50%  {height: 75px;}
+    75%   {height: 73px;}
+    100% {height: 70px;}
+}
+
+@media screen and (max-width: 1680px) {.ScrollButton {left: 95%;}}
+
+@media screen and (max-width: 1440px) {
+    .ScrollButton {
+        left: 94%;
+        font-size: 3.5rem;
+    }
+    @keyframes seta {
+        0%   {height: 7px;}
+        25%   {height: 8px;}
+        50%  {height: 9px;}
+        75%   {height: 8px;}
+        100% {height: 7px;}
+    }
+
+    .ScrollButton:hover{
+        font-size: 4.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .ScrollButton {
+        left: 90%;
+        font-size: 3.5rem;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .ScrollButton {
+        opacity: 0.1;
+        left: 90.5%;
+        font-size: 2.5rem;
+        height: 5px;
+    }
+
+
+    .ScrollButton:hover{
+        font-size: 3.4rem;
+    }
+
+}

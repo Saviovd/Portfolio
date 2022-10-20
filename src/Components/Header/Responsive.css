@@ -1,0 +1,55 @@
+@media screen and (max-width: 1440px) {
+    .logo {
+        margin: 15px 0;
+    }
+
+    .logo .logotipo{
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header{
+        padding: 0 2%;
+    }
+    
+    .logo{
+        width: 40vw;
+    }
+    
+    .logo .logotipo{
+        height: 7rem;
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header_content {
+        max-height: 185px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header_content {
+        max-height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .logo .logotipo{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .header_content {
+        max-height: 125px;
+    }
+
+}

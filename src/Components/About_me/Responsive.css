@@ -1,0 +1,145 @@
+@media screen and (max-width: 1680px) {
+    .about-text {
+        padding-top: 20px;
+    }
+    
+    .about-text .text-about {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    
+    .foto .fotografy {
+        width: 69.5%;
+    }
+
+    .about-text {
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .about-text .text-about {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .foto{
+        margin-bottom: 20px;
+    }
+
+    .foto .fotografy {
+        width: 51vw;
+    }
+    
+    .about-text .text-about {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .about { 
+        height: auto;
+    }
+
+    .about-content {
+        margin: 0 auto;
+        width: 98vw;
+    }
+
+    .foto_about {
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .foto .fotografy {
+        width: 75vw;
+    }
+    
+    .about-text {
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .about-text .text-about {
+        font-size: 1.5rem;
+    }
+
+    .text-about:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .icons_about h4 {
+        font-size: 1.6rem;
+    }
+
+    .formacao h3 {
+        text-align: center;
+    }
+
+    .graduate_idioms {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .about-text .text-about {
+        font-size: 1.2rem;
+    }
+
+    .formacao h3 {
+        margin: 0 0 20px 0;
+        font-size: 4rem;
+    }
+
+    .certificates_box {
+        justify-content: center;
+        overflow-y: auto;
+        height: 50vh;
+        width: 37vh;
+        margin: 0 auto;
+    }
+
+
+    .certificates_box::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    .certificates_box::-webkit-scrollbar-track {
+        background: white;
+    }
+    
+    .certificates_box::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .about-text .text-about {
+        font-size: 0.95rem;
+    }
+
+    .certificates_box {
+        justify-content: center;
+        overflow-y: auto;
+        height: 45vh;
+        width: 33vh;
+        margin: 0 auto;
+    }
+}

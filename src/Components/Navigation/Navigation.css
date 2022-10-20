@@ -1,0 +1,17 @@
+.navigation-desktop{
+    width: 50vw;
+}
+
+.navigation-desktop .navigation-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.Hamburger, .navigation-mobile {
+    display: none;
+}
+
+.navigation-mobile .navigation-list {
+    list-style-type: none;
+}
