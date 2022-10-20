@@ -2,13 +2,12 @@ import './Project-single.css'
 import './Responsive.css'
 
 
-const Project_single = (props) => {
+const ProjectSingle = (props) => {
 
-    const url = document.querySelector('.about-project')
 
     return (
         <div className="projects-itens">
-            <img className="project-preview" src={props.img}/>
+            <img className="project-preview" src={props.img} alt="Project_Image"/>
 
             <div className='info'>
                     <h3 className='about-project'>
@@ -22,4 +21,4 @@ const Project_single = (props) => {
     )
 }
 
-export default Project_single;
+export default ProjectSingle;

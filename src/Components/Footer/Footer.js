@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='container-footer'>
                 <div className='contact-footer'>
                     <p className='email'><FaEnvelope /> savio.pinheiroal@gmail.com</p>
-                    <a className='whatsapp' target="_blank" rel="noopener noreferrer" href='https://web.whatsapp.com/send?phone=5592982827650'><FaWhatsapp />  +55 92 98282-7650</a>
+                    <a className='whatsapp' target="_blank" rel="noopener noreferrer" href='https://api.whatsapp.com/send?phone=5592982827650'><FaWhatsapp />  +55 92 98282-7650</a>
                 </div>
                 <div className="social-media_footer">
                     <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/saviovd" className="icons-footer"><FaLinkedinIn /></a>

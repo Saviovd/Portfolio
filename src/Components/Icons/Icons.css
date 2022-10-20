@@ -40,12 +40,9 @@
     padding: 3px;
     border: var(--principal-acai) 3px solid;
     border-radius: 10px;
+    list-style-type: none;
 }
 
-.scroll-element .icons-about::marker {
-    content: '';
-    font: 0;
-}
 
 .primary {
     animation: primary 30s linear infinite;

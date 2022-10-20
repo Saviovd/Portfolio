@@ -36,7 +36,7 @@ const Nav = () => {
                 <NavItem item="Sobre Mim" />
                 <NavItem item="Projetos"/>
                 <NavItem 
-                    item="Contato"
+                    item="Contatos"
                     style={{borderBottomWidth: 0}}
                 />
             </ul>
