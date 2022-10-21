@@ -16,7 +16,7 @@ const About = () => {
                         <img src="IMG/savio_photograph.png  " alt="Fotografia de Sávio" className="fotografy" />
                     </div>
                     <div className="about-text">
-                        <p className='text-about'>Olá, me chamo Sávio, tenho 20 anos e sou estudante de ADS. Sou fascinado tecnologia desde criança,
+                        <p className='text-about'>Olá, me chamo Sávio, tenho 20 anos e sou estudante de ADS. Sou fascinado por tecnologia desde criança,
                         quando me apaixonei por vídeo games e em algum momento tive curiosidade de saber como eles eram feitos. E assim fui sabendo
                         aos poucos oque era desenvolvimento de software, foi um caminho longo e desde então, a cada dia tento aprender um pouco mais, sempre me 
                         mantendo atualizado. O mundo está em constante mudança, e eu não quero ficar para trás.
