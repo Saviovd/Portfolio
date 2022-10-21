@@ -12,6 +12,7 @@
         justify-content: center;
         align-items: center;
         height: auto;
+        padding-right: 10px;
     }
     
     .projects .container {
