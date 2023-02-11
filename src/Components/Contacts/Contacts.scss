@@ -1,0 +1,201 @@
+@import '../../styles/global.scss';
+
+.contacts {
+    padding-top: 110px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 770px;
+    min-height: 750px;
+    justify-content: space-evenly;
+    @media screen {
+        @media (max-width: 850px){
+            height: auto;
+            max-height: none;
+            justify-content: space-around;
+        }
+    }
+
+    .contacts_container {
+        width: 95%;
+        max-width: 1550px;
+        margin: 10px auto;
+        display: flex;
+        gap: 30px;
+
+        @media screen {
+            @media (max-width: 850px){
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        .form {
+            border: 3px solid $primary-medium;
+            border-radius: 15px;
+            padding: 20px;
+
+            height: 90%;
+            max-height: 570px;
+            width: 50%;
+            margin: 0 auto;
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            background-color: $neutral-soft;
+
+            @media screen {
+                @media (max-width: 930px){
+                    width: 55%;
+                }
+                @media (max-width: 730px){
+                    width: 75%;
+                }
+            }
+
+            .form_title {
+                color: $primary-white;
+                font-size: 4rem;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .form_div {
+                width: 100%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                .form_label {
+                    color: $primary-medium;
+                    font-size: 2.3rem;
+                    margin: 0 0 5px 10px;
+                }
+
+                .form_input,
+                .message_box {
+                    min-height: 35px;
+                    border-radius: 10px;
+                    border: 2px solid $primary-medium;
+                    padding-left: 10px;
+                    font-size: 1.7rem;
+                    color: $neutral-dark;
+                }
+
+                .input_name {
+                    text-transform: capitalize;
+                }
+
+                .message_box {
+                    resize: none;
+                    min-height: 80px;
+                }
+
+            }
+
+            .button {
+                width: 60%;
+                max-width: 400px;
+                height: 50px;
+                margin: 15px auto 0 auto;
+                border-radius: 10px;
+                border: 1px solid $primary-medium;
+
+
+                font-weight: 700;
+                font-size: 3rem;
+                cursor: pointer;
+                background-color: $primary-soft;
+                color: $neutral-soft;
+
+                &:hover {
+                    color: $primary-medium;
+                    box-shadow: 0 0 6px 6px rgba(0, 255, 247, 0.2);
+                }
+
+                &:active {
+                    transform: translateY(2px);
+                }
+            }
+        }
+
+        .whatsapp {
+            width: 50%;
+            min-width: 400px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media screen {
+                @media (max-width: 930px){
+                    width: 45%;
+                    min-width: 0;
+                }
+                @media (max-width: 850px){
+                    width: 100%;
+                    min-height: 340px;
+                }
+            }
+
+            .whatsapp_title, .whatsapp_title-neon {
+                font-size: 3.5rem;
+                color: $primary-white;
+                align-self: flex-start;
+                @media screen {
+                    @media (max-width: 930px){
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 768px){
+                        font-size: 3.2rem;
+                    }
+                }
+                .whatsapp_title-neon {
+                    text-decoration: underline;
+                    color: $primary-medium;
+                    text-shadow: 
+                        0 0 10px $primary-medium,
+                        0 0 2px $primary-white,
+                    ;
+                }
+            }
+            .whatsapp_link {
+                transition: 0.4s;
+                transition-delay: 0.1s;
+                border-radius: 50%;
+                transform: translateY(30px);
+                display: flex;
+                align-items: center;
+
+                .Whatsapp_icon {
+                    font-size: 12rem;
+                    color: $primary-medium;
+                    cursor: pointer;
+                    position: relative;
+                    transition: 0.5s;
+                    @media screen {
+                        @media (max-width: 930px){
+                            font-size: 10rem;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    scale: 1.1;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0px 0px $primary-white, 0 0 15px 1px $primary-medium;
+                    color: $primary-white;
+                }
+                &:active {
+                    transform: translateY(41px);
+                }
+            }
+
+        }
+    }
+}

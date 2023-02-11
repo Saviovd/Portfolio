@@ -1,0 +1,51 @@
+[
+    {
+        "level": "POO",
+        "course":"JavaScript: programando a Orientação a Objetos",
+        "instituition":"Alura",
+        "period":"",
+        "hours":"10h",
+        "key": "1"
+    },
+    {
+        "level": "JavaScript",
+        "course":"JavaScript: tipos, variáveis e funções",
+        "instituition":"Alura",
+        "period":"",
+        "hours":"12h",
+        "key": "2"
+    },
+    {
+        "level": "ReactJs/TypeScript",
+        "course":"React: Lidando com arquivos estáticos",
+        "instituition":"Alura",
+        "period":"",
+        "hours":"10h",
+        "key": "3"
+    },
+    {
+        "level": "Front-End",
+        "course":"WebMaster Front-End Completo",
+        "instituition":"Danki.Code",
+        "period":"",
+        "hours":"81h",
+        "key": "4"
+    },
+    {
+        "level": "API",
+        "course":"JavaScript: criando requisições",
+        "instituition":"Alura",
+        "period":"",
+        "hours":"8h",
+        "key": "5"
+    },
+    {
+        "level": "clique aqui",
+        "course":"Mais alguns cursos",
+        "instituition":"Digital Innovation One",
+        "period":"",
+        "hours":"+10h",
+        "link": "https://web.dio.me/users/savio_pinheiroal?tab=skills",
+        "key": "6"
+    }
+]

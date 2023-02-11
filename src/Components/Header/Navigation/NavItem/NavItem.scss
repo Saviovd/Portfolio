@@ -1,0 +1,45 @@
+@import '../../../../styles/global.scss';
+
+.navigation_item {
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+    .menu_button {
+        font-size: 3.2rem;
+        color: $primary-soft;
+        font-weight: 600;
+        z-index: 200;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: $neutral-dark;
+            border-radius: 4px;
+            scale: 0 1;
+            transform-origin: left;
+            transition: scale 0.35s;
+        }
+        &:hover {
+            color: $neutral-dark;
+        }
+        &:hover::before{
+            scale: 1;
+        }
+
+        @media screen {
+            @media (max-width: 1024px) {
+                font-size: 2.8rem;
+            }
+            @media (max-width: 768px) {
+                font-size: 8rem;
+                color: $neutral-dark;
+            }
+        }
+    }
+}
+

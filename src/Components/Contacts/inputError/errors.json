@@ -1,0 +1,15 @@
+{
+    "name": {
+        "required": "*Nome é um campo obrigatório"
+    },
+    "email" : {
+        "required": "*E-mail é um campo obrigatório",
+        "email": "*E-mail inválido"
+    },
+    "linkedin" : {
+        "url": "*Endereço inválido"
+    },
+    "message": {
+        "required": "*Mensagem é um campo obrigatório"
+    }
+}
