@@ -1,0 +1,44 @@
+[
+    {
+        "image": "/assets/project_previews/form.jpg",
+        "url": "https://github.com/Saviovd/Interactive_form",
+        "title": "Interactive Form",
+        "description": "Projeto do site Fron-End Mentor, possui uma validação de formulário intuitivo e interátivo, além de guardar as informações coletadas no localStorage",
+        "key": "1"
+    },
+    {
+        "image": "/assets/project_previews/moniBank.jpg",
+        "url": "https://github.com/Saviovd/MoniBank",
+        "title": "Monibank",
+        "description": "Desensenvolvido no curso JavaScript: validando formulários da Alura, projeto possui funções para validação de idade, CPF e outras informações do usuário. Projeto também possui função de captura de imagem para cadastro através da Webcam.",
+        "key": "2"
+    },
+    {
+        "image": "/assets/project_previews/Aluroni.jpg",
+        "url": "https://github.com/Saviovd/Aluroni",
+        "title": "Aluroni",
+        "description": "Projeto feito no Curso de React: lidando com arquivos estáticos da Alura, é uma sessão de compra que lista e filtra produtos.",
+        "key": "3"
+    },
+    {
+        "image": "/assets/project_previews/strangerThings.jpg",
+        "url": "https://github.com/Saviovd/stranger_things",
+        "title": "Stranger Things",
+        "description": "Landing Page baseada na 4° temporada da série, feito com HTML, CSS.",
+        "key": "4"
+    },
+    {
+        "image": "/assets/project_previews/portSavio.jpg",
+        "url": "https://github.com/Saviovd/Portifolio",
+        "title": "Este Portifólio",
+        "description": "Desenvolvido com TypeScript e Sass, além de um outras bibliotecas pra deixar ele bem diferente.",
+        "key": "5"
+    },
+    {
+        "image": "/assets/project_previews/github.jpg",
+        "url": "https://github.com/Saviovd",
+        "title": "Outros projetos em meu GitHub!",
+        "description": "Clique aqui!",
+        "key": "6"
+    }
+]
