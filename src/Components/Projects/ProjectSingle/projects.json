@@ -29,8 +29,8 @@
     },
     {
         "image": "/assets/project_previews/portSavio.jpg",
-        "url": "https://github.com/Saviovd/Portifolio",
-        "title": "Este Portifólio",
+        "url": "https://github.com/Saviovd/Portfolio",
+        "title": "Este Portfólio",
         "description": "Desenvolvido com TypeScript e Sass, além de um outras bibliotecas pra deixar ele bem diferente.",
         "key": "5"
     },
