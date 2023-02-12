@@ -4,7 +4,7 @@ import { FaAngular, FaBootstrap, FaCss3, FaFigma, FaGitAlt, FaHtml5, FaJsSquare,
 import { SiJquery,  SiTypescript, SiWebpack } from "react-icons/si"
 
 const Skills = () => {
-    return (<div>
+    return (<div className='skills'>
         <h4 className="skills_title">Algumas das ferramentas que possuo conhecimento</h4>
         <div className='rolling' >
             <ul className="skill_list primary">

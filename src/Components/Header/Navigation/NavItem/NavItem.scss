@@ -39,6 +39,12 @@
                 font-size: 8rem;
                 color: $neutral-dark;
             }
+            @media (max-width: 600px) {
+                font-size: 6rem;
+            }
+            @media (max-width: 500px) {
+                font-size: 5rem;
+            }
         }
     }
 }
