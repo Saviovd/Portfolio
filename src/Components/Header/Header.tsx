@@ -1,7 +1,5 @@
-// import './Header.css';
-// import './Responsive.css';
-import Nav from './Navigation/Navigation';
 import './Header.scss'
+import Nav from './Navigation/Navigation';
 import { useState } from 'react';
 import NavItem from './Navigation/NavItem/NavItem';
 

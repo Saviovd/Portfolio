@@ -1,7 +1,7 @@
 @import '../../styles/global.scss';
 
 .contacts {
-    padding-top: 90px;
+    padding-top: 10px;
     height: 100vh;
     position: relative;
     display: flex;
@@ -61,6 +61,12 @@
                 font-size: 4rem;
                 text-align: center;
                 margin: 10px 0;
+                
+                @media screen {
+                    @media (max-width: 740px) {
+                        font-size: 3.5rem;
+                    }
+                }
             }
 
             .form_div {
@@ -74,6 +80,11 @@
                     color: $primary-medium;
                     font-size: 2.3rem;
                     margin: 0 0 5px 10px;
+                    @media screen {
+                        @media (max-width: 740px) {
+                            font-size: 2rem;
+                        }
+                    }
                 }
 
                 .form_input,

@@ -9,14 +9,12 @@ const About = () => {
             <div className="about_container">
                     <img src="assets/savio_photograph.png  " alt="Fotografia de Sávio" className="photograph" />
                     <div className="about_text">
-                        <p className='about_text-paragraph'>Muito prazer!
-                            <br/> me chamo Sávio, tenho 21 anos e me tornei desenvolvedor a cerca de 2 anos. Com esse
-                            tempo pude desenvolver habilidades sólidas em HTML, CSS, JavaScript e ReactJS. Tenho familiaridade com 
-                            ferramentas de desenvolvimento, como NPM e Webpack e também possuo experiência na criação de aplicativos escaláveis 
-                            e performáticos. Além disso, tenho conhecimento em outras bibliotecas e tecnologias relacionadas ao front-end,
-                            como Angular e SASS.
+                        <p className='about_text-paragraph'>Muito Prazer!
+                            <br/> Sou um desenvolvedor full stack com 2 anos de experiência em ferramentas como React, JavaScript e Python. 
+                            Tenho habilidades sólidas em desenvolvimento front-end e back-end, incluindo o uso de bibliotecas 
+                            populares e frameworks. Sou comprometido com a qualidade do código e estou sempre disposto a aprender novas tecnologias.
                         </p>
-                        <span className='about_text-span'>🔱Faciam quodlibet quod necesse est🔱</span>
+                        {/* <span className='about_text-span'>🔱Faciam quodlibet quod necesse est🔱</span> */}
                     </div>
             </div>
         </section>
