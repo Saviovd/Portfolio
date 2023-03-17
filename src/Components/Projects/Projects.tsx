@@ -39,8 +39,6 @@ const Projects = () => {
                 slidesPerView={1}
                 navigation
                 loop={true}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
             {projects.map ((project: PropsProject) => (    
                 <SwiperSlide className='swiper_box'>

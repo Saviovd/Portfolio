@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import './Contacts.scss'
 import emailjs from '@emailjs/browser'
 import Title from '../Title/Title';
@@ -23,36 +24,46 @@ const validationSchema = yup.object({
 const Contacts = ({name, email, linkedin, message}: UserFormData) => {
     
     const  initialValues = {name, email, linkedin, message}
+
     const { register, handleSubmit, formState: {errors} } = useForm({
         defaultValues: initialValues,
         resolver: yupResolver(validationSchema),
     });
-    function onSubmit(data: UserFormData) {
-        console.log(data)
-    }
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
 
-        const dados = e.currentTarget 
+
+    function onSubmit(data: UserFormData) {   
+        console.log(data)
+    }    
+    function onError(error: object) {
+        console.log(`erro:`,error)
+    }
+
+
+    function sendEmail(e: React.FormEvent<HTMLFormElement>){
+        
+        const data = e.currentTarget
+            console.log('passou')
 
         emailjs
-            .sendForm("service_f3s7evr", "template_15k4g2i", dados, "8hEOfTx-PZ6GsJF1u")
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
+        .sendForm("service_f3s7evr", "template_15k4g2i", data, "8hEOfTx-PZ6GsJF1u")
+        .then(
+            (result) => {
+                console.log(result.text);
+            },
+            (error) => {
+                console.log(error.text);
+            }
             );
-        e.currentTarget.reset()
-    }
+            e.currentTarget.reset()
+        }
     return (
+        // 
         <section className="contacts" id="Contatos">
             <Title title='Contatos' />
             <div className='contacts_container'>
-                <form className='form' id="form" onSubmit={sendEmail} onBlur={handleSubmit(onSubmit)}>
+                <form className='form' id="form" onSubmitCapture={sendEmail} onSubmit={handleSubmit(onSubmit, onError)}>
                     <h3 className='form_title'>Entre em contato</h3>
+
                     <div className='form_div' >
                         <label htmlFor='name' className='form_label'>Nome*</label>
                         <input

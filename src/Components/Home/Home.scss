@@ -126,12 +126,12 @@
                 @media (max-width: 730px){
                     margin: 0 auto;
                     letter-spacing: 0.08em;
-                    font-size: 3.8rem;
+                    font-size: 3.4rem;
                 }
             }
         }
         .line_1 {
-            width: 310px;
+            width: 280px;
             border-right: 4px solid $primary-white;
             animation: typing_1 2.5s steps(25, end) 0.5s 1 normal both, blink_1 0.75s steps(25, end) 4;
             @keyframes typing_1 {
@@ -152,7 +152,7 @@
             }
         }
         .line_2 {
-            width: 400px;
+            width: 360px;
             border-right: 4px solid $primary-white;
             animation: typing_2 3s steps(25, end) 0.5s 1 normal both, blink_2 0.75s steps(25, end) 4;
             -webkit-animation-delay: 3s;
@@ -254,7 +254,12 @@
                 text-decoration: none;
                 color: $primary-medium;
                 
-                
+                @media (max-width: 700px){
+                    font-size: 7rem;
+                }
+                @media (max-width: 350px){
+                    font-size: 5rem;
+                }
             }
             &:nth-child(1):hover {
                 background-color: #0077b7;

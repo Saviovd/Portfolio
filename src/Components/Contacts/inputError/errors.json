@@ -7,7 +7,7 @@
         "email": "*E-mail inválido"
     },
     "linkedin" : {
-        "url": "*Endereço inválido"
+        "url": "*Este endereço não é válido :("
     },
     "message": {
         "required": "*Mensagem é um campo obrigatório"
