@@ -1,0 +1,207 @@
+{ 
+    "Lenguages":[
+        {
+            "key": "1",
+            "name":"HTML5",
+            "logo":"https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
+            "about":" Linguagem de marcação usada para estruturar e exibir conteúdo na web."
+        },
+        {
+            "key": "2",
+            "name":"CSS3",
+            "logo":"https://brandeps.com/logo-download/C/CSS-3-logo-vector-01.svg",
+            "about":"Linguagem de estilo usada para estilizar o conteúdo HTML."
+        },
+        {
+            "key": "3",
+            "name":"JavaScript",
+            "logo":"https://abrudz.github.io/logos/JS.svg",
+            "about":"Linguagem de programação utilizada para criar interações dinâmicas na web."
+        },
+        {
+            "key": "4",
+            "name":"TypeScript",
+            "logo":"https://abrudz.github.io/logos/TypeScript.svg",
+            "about":"Superset do JavaScript que adiciona recursos de tipagem estática à linguagem."
+        },
+        {
+            "key": "5",
+            "name":"Python",
+            "logo":"https://abrudz.github.io/logos/Python.svg",
+            "about":" Linguagem de programação interpretada de alto nível, utilizada para desenvolvimento web, científico, entre outros."
+        },
+        {
+            "key": ".6",
+            "name":"ReactJS",
+            "logo":"https://brandeps.com/logo-download/R/React-logo-vector-01.svg",
+            "about":" Biblioteca JavaScript para construção de interfaces de usuário (UI) declarativas e componentizadas."
+        },
+        {
+            "key": "7",
+            "name":"Angular",
+            "logo":"https://brandeps.com/icon-download/A/Angular-icon-vector-04.svg",
+            "about":"Framework JavaScript completo para desenvolvimento web de alto desempenho."
+        },
+        {
+            "key": "8",
+            "name":"NextJs",
+            "logo":"https://brandeps.com/icon-download/N/Nextjs-icon-vector-01.svg",
+            "about":"Framework React com funcionalidades adicionais como renderização do lado do servidor (SSR) e geração estática de sites (SSG)."
+        },
+        {
+            "key": "9",
+            "name":"Django",
+            "logo":"https://brandeps.com/logo-download/D/Django-logo-vector-01.svg",
+            "about":"Framework web em Python para construir aplicativos web escaláveis e seguros rapidamente."
+        },
+        {
+            "key": "10",
+            "name":"SASS",
+            "logo":"https://brandeps.com/logo-download/S/Sass-logo-vector-01.svg",
+            "about":" Pré-processador CSS que adiciona recursos como variáveis, aninhamento e mixins à linguagem."
+        },
+        {
+            "key": "11",
+            "name":"NodeJs",
+            "logo":"https://brandeps.com/icon-download/N/Nodejs-icon-vector-02.svg",
+            "about":" Ambiente de tempo de execução JavaScript que permite a execução de código JavaScript no servidor."
+        },
+        {
+            "key": "12",
+            "name":"Express",
+            "logo":"https://brandeps.com/icon-download/E/Express-icon-vector-01.svg",
+            "about":" Framework para Node.js que simplifica a criação de aplicativos web e APIs."
+        },
+        {
+            "key": "13",
+            "name":"Git",
+            "logo":"https://brandeps.com/icon-download/G/Git-icon-vector-06.svg",
+            "about":"Sistema de controle de versão distribuído usado para rastrear e gerenciar alterações no código-fonte."
+        },
+        {
+            "key": "14",
+            "name":"MongoDB",
+            "logo":"https://brandeps.com/logo-download/M/MongoDB-logo-vector-01.svg",
+            "about":"Banco de dados NoSQL orientado a documentos, escalável e flexível."
+        }
+        ,
+        {
+            "key": "15",
+            "name":"PostgreSQL",
+            "logo":"https://brandeps.com/logo-download/P/PostgreSQL-logo-vector-01.svg",
+            "about":"Banco de dados relacional open source de alta performance."
+        },
+        {
+            "key": "16",
+            "name":"Docker",
+            "logo":"https://brandeps.com/logo-download/D/Docker-logo-vector-01.svg",
+            "about":"Plataforma de contêineres que permite empacotar, enviar e executar aplicativos em qualquer lugar com facilidade."
+        },
+        {
+            "key": "17",
+            "name":"Postman",
+            "logo":"https://brandeps.com/icon-download/P/Postman-icon-vector-02.svg",
+            "about":"Ferramenta de colaboração e desenvolvimento de API que permite testar, depurar e documentar APIs."
+        },
+        {
+            "key": "18",
+            "name":"Flutter",
+            "logo":"https://brandeps.com/icon-download/F/Flutter-icon-vector-02.svg",
+            "about":"Framework open source da Google para desenvolvimento de aplicativos móveis nativos para Android e iOS usando a linguagem de programação Dart."
+        }
+    ],
+    "ProjectList": [
+        {
+            "image": "./assets/project_previews/space-tourism.png",
+            "url": "https://space-tourism-eta-coral.vercel.app/",
+            "title": "Space tourism website",
+            "description": "Desenvolvido com TypeScript e Sass, usando React Router Dom para navegação no site.",
+            "key": 1
+        },
+        {
+            "image": "./assets/project_previews/moniBank.jpg",
+            "url": "https://moni-bank-gamma.vercel.app/pages/abrir-conta-form.html",
+            "title": "Monibank",
+            "description": "Desensenvolvido no curso JavaScript: validando formulários da Alura, projeto possui funções para validação de idade, CPF e outras informações do usuário.",
+            "key": 2
+        },
+        {
+            "image": "./assets/project_previews/countries.png",
+            "url": "https://countries-omega-wheat.vercel.app/",
+            "title": "API Countries",
+            "description": "Projeto desenvolvido com ReactJs, TypeScript e React Router Dom consumindo a API Rest countries",
+            "key": 3
+        },
+        {
+            "image": "./assets/project_previews/strangerThings.jpg",
+            "url": "https://stranger-things4.vercel.app/",
+            "title": "Stranger Things",
+            "description": "Landing Page baseada na 4° temporada da série Stranger Things da da Netflix, desenvolvido com HTML, CSS.",
+            "key": 4
+        },
+        {
+            "image": "./assets/project_previews/e-commerce.png",
+            "url": "https://buypage-ecommerce.vercel.app/",
+            "title": "e-commerce page",
+            "description": "Página de compras desenvolvida com ReactJs, typeScript com funcionalidade de carrinho",
+            "key": 5
+        },
+        {
+            "image": "./assets/project_previews/github.jpg",
+            "url": "https://github.com/Saviovd",
+            "title": "Outros projetos em meu GitHub!",
+            "description": "Clique aqui!",
+            "key": 6
+        }
+    ],
+    "Courses": [
+        {
+            "level": "Back-End",
+            "course":"JavaScript com foco no back-end",
+            "instituition":"Alura",
+            "period":"",
+            "hours":"74h",
+            "key": "1"
+        },
+        {
+            "level": "JavaScript",
+            "course":"JavaScript: tipos, variáveis e funções",
+            "instituition":"Alura",
+            "period":"",
+            "hours":"12h",
+            "key": "2"
+        },
+        {
+            "level": "Python",
+            "course":"Python com Orientação a Objetos",
+            "instituition":"Alura",
+            "period":"",
+            "hours":"93h",
+            "key": "3"
+        },
+        {
+            "level": "Front-End",
+            "course":"WebMaster Front-End Completo",
+            "instituition":"Danki.Code",
+            "period":"",
+            "hours":"81h",
+            "key": "4"
+        },
+        {
+            "level": "API REST",
+            "course":"APIs com Node.js e Express",
+            "instituition":"Alura",
+            "period":"",
+            "hours":"70h",
+            "key": "5"
+        },
+        {
+            "level": "Front-End",
+            "course":"Gerencie aplicações React com Typescript",
+            "instituition":"Alura",
+            "period":"",
+            "hours":"83h",
+            "key": "6"
+        }
+    ]
+}
