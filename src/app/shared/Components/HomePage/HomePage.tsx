@@ -17,7 +17,7 @@ export const HomePage = () => {
                         .deleteChars(6)
                         .typeString("Full-stack! .<br /><br />")
                         .pauseFor(100)
-                        .typeString("Se tiver alguma dúvida ou quiser trocar uma ideia, é só me mandar uma mensagem. <br />Bora desenvolver coisas incríveis juntos!")
+                        .typeString("Bora desenvolver coisas incríveis juntos!")
                     }}
                 />
             </div>

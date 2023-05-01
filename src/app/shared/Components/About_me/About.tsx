@@ -7,7 +7,7 @@ export const About = () => {
         <AboutStyle id='Sobre Mim'>
             <Title title='Sobre Mim' />
             <div className="about_container">
-                <img src="./src/assets/savio_photograph.png  " alt="Fotografia de Sávio" className="photograph" />
+                <img src="./assets/savio_photograph.png  " alt="Fotografia de Sávio" className="photograph" />
                 <p className='about_text'>
                 Eu sou um desenvolvedor altamente qualificado com mais de 2 anos de experiência em ReactJS, 
                 tenho habilidades em tecnologias voltadas para o front-end, back-end e mobile, como NextJS, 
