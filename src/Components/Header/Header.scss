@@ -62,8 +62,12 @@
                     display: block;
                 }
                 @media (max-width: 580px) {
-                    height: 4.5rem;
-                    transform: translateX(15px);
+                    height: 4rem;
+                    transform: translateX(25px);
+                }
+                @media (max-width: 340px) {
+                    width: 12rem;
+                    height: 3.3rem;
                 }
             }
             .hamburger_icon {
@@ -87,8 +91,12 @@
 
                     @media screen {
                         @media (max-width: 580px) {
-                            width: 7rem;
-                            height: 0.7rem;
+                            width: 6rem;
+                            height: 0.6rem;
+                        }
+                        @media (max-width: 340px) {
+                            width: 5rem;
+                            height: .5rem;
                         }
                     }
                 }
@@ -114,6 +122,11 @@
                     min-width: 0;
                     gap: 50px;
                     text-align: center;
+                
+                    @media (max-width: 340px) {
+                        font-size: 3rem;
+                        gap: 30px;
+                    }
                 }
             }
         }
@@ -127,16 +140,15 @@
             transition: 2s;
         }
         
-        /* ------------- sliding menu ------------------ */
-        
-        /* ----- animations--------- */
-        /* clicked */
         .burger-bar.clicked:nth-child(1){
             transform: rotate(45deg) translate(3.5em, 2.25em);
             transition: ease-out 0.5s;
             @media screen {
                 @media (max-width: 580px) {
-                    transform: rotate(45deg) translate(3em, 1.25em);
+                    transform: rotate(45deg) translate(2.5em, 0.7em);
+                }
+                @media (max-width: 340px) {
+                    transform: rotate(45deg) translate(1.5em, -.7em);
                 }
             }
         }
@@ -144,6 +156,7 @@
         .burger-bar.clicked:nth-child(2){
             transform: scale(0.1);
             transition: ease-out 0.5s;
+            display: none;
         }
         
         .burger-bar.clicked:nth-child(3){
@@ -151,7 +164,10 @@
             transition: ease-out 0.5s;
             @media screen {
                 @media (max-width: 580px) {
-                    transform: rotate(135deg) translate(-1.5em, -.25em);
+                    transform: rotate(135deg) translate(-1.5em, 0em);
+                }
+                @media (max-width: 340px) {
+                    transform: rotate(135deg) translate(-2.5em, 0.7em);
                 }
             }
         }

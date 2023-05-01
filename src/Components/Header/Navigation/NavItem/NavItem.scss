@@ -7,7 +7,7 @@
     cursor: pointer;
     
     .menu_button {
-        font-size: 3.2rem;
+        font-size: 3rem;
         color: $primary-soft;
         font-weight: 600;
         z-index: 200;
@@ -33,11 +33,20 @@
 
         @media screen {
             @media (max-width: 1024px) {
-                font-size: 2.8rem;
+                font-size: 2.6rem;
             }
             @media (max-width: 768px) {
-                font-size: 8rem;
+                font-size: 6.5rem;
                 color: $neutral-dark;
+            }
+            @media (max-width: 600px) {
+                font-size: 5.5rem;
+            }
+            @media (max-width: 500px) {
+                font-size: 4.5rem;
+            }
+            @media (max-width: 340px) {
+                font-size: 3rem;
             }
         }
     }

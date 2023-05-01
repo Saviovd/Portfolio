@@ -1,4 +1,4 @@
-// import './Nav-item.css'
+
 import './NavItem.scss'
 
 interface PropsNavItem {
