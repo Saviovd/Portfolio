@@ -2,6 +2,8 @@ import Head from 'next/head'
 import GlobalStyle from '@/styles/globals'
 import Header from '@/components/Header/Header'
 import Intro from '@/components/Home/Home'
+import About from '@/components/About/About'
+import Habilities from '@/components/Habilities/Habilities'
 
 export default function Home() {
 
@@ -17,8 +19,8 @@ export default function Home() {
       <Header />
       <main>
          <Intro />
-
-
+         <About />
+         <Habilities />
       </main>
    </>)
 }

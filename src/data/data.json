@@ -1,0 +1,22 @@
+{
+   "habilities": [
+      {
+         "type": "Front-End",
+         "languages": [
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            }
+         ]
+      },
+      {
+         "type": "Back-End",
+         "languages": [
+            {
+               "language_name": "Ruby",
+               "logo": "https://brandeps.com/icon-download/R/Ruby-icon-vector-03.svg"
+            }
+         ]
+      }
+   ]
+}

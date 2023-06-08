@@ -16,13 +16,13 @@ const GlobalStyle = createGlobalStyle`
    }
 
 
-   scroll-behavior: smooth;
    html {
 
       font-size: 10px;
       min-height: 100vh;
 
       body {
+         scroll-behavior: smooth;
          margin: 0;
          padding: 0;
          box-sizing: border-box;

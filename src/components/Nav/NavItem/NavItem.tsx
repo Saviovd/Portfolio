@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { NavItemStyle } from './navItemStyles';
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 interface INavItemProps {
    name: string;
@@ -18,7 +18,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
       const element = document.getElementById(name);
       if (element) {
          const { top, bottom } = element.getBoundingClientRect();
-         const isVisible = top <= pagePosition && bottom >= 0 ;
+         const isVisible = top - 80 <= pagePosition && bottom - 80 >= 0 ;
          setIsInView(isVisible);
       }
    };
@@ -32,9 +32,16 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
 
    return (
       <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? 'selected' : ''}`}>
-         <Link onClick={setIsSelected} className={isInView || isSelected  ? 'selected' : ''} href={`#${name}`}>
-            {name}
-         </Link>
+            <ScrollLink
+               onClick={setIsSelected}
+               className={isInView || isSelected  ? 'selected' : ''}
+               to={`${name}`}
+               smooth={true}
+               spy={true}
+               duration={500}
+               offset={50}>
+               {name}
+            </ScrollLink>
       </NavItemStyle>
    );
 };

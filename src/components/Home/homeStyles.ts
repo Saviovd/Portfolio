@@ -9,6 +9,7 @@ export const HomeStyle = styled.section`
    position: relative;
 
    display: flex;
+   transform: translate(10rem, 0rem);
 
    .apresentation {
       width: 40%;
@@ -152,6 +153,8 @@ export const HomeStyle = styled.section`
          height: 24px;
          align-self: center;
          justify-self: center;
+         margin: 0 auto;
+         cursor: pointer;
          .chevron {
             position: absolute;
             width: 8rem;
@@ -201,7 +204,7 @@ export const HomeStyle = styled.section`
 
       /* transform: translateX(25rem); */
 
-      z-index: 2;
+      z-index: -2;
    }
 
    @keyframes move {

@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React from 'react';
 import { HomeStyle } from './homeStyles';
 import Loader from './loader';
-import GlobeComponent from './Globe';
+import { Link as ScrollLink } from 'react-scroll';
+// import GlobeComponent from './Globe';
+
 
 const Intro = () => {
    return (<>
@@ -14,19 +14,18 @@ const Intro = () => {
             <h3 className='my_name'>Sávio Almeida {'< />'}</h3>
             <h4 className='office'>desenvolvedor |</h4>
 
-            <Loader/>
+            <Loader />
 
             <a href='#contatos' className='intro_button left'>Entrar em Contato</a>
             <a href='#' className='intro_button right'>Download CV</a>
             {/* dont forget to put the download */}
-            <a href='#sobre mim' className='dripping_down'>
+            <ScrollLink to='sobre mim' smooth={true} spy={true} duration={700} delay={100} offset={50}  className='dripping_down'>
                <div className='chevron'></div>
                <div className='chevron'></div>
                <div className='chevron'></div>
-            </a>
+            </ScrollLink>
          </div>
          <div className='element_3d'>
-            <GlobeComponent />
          </div>
       </HomeStyle>
    </>)
@@ -34,7 +33,4 @@ const Intro = () => {
 
 
 export default Intro;
-function randomWordLoop() {
-   throw new Error('Function not implemented.');
-}
 
