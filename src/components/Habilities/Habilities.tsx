@@ -44,7 +44,7 @@ const Habilities = () => {
                   renderItens?.map((lang: IRenderProps, i: number) => (
                      <div className='stack_box' key={i}>
                      <Image src={lang.logo} alt={lang.language_name} width={64} height={64}/>
-                     <h2>{lang.language_name}</h2>
+                     <h2 className='stack_name'>{lang.language_name}</h2>
                      </div>
                   ))
                }
@@ -55,7 +55,7 @@ const Habilities = () => {
                   renderItens?.map((lang: IRenderProps, i: number) => (
                      <div className='stack_box' key={i}>
                      <Image src={lang.logo} alt={lang.language_name} width={64} height={64}/>
-                     <h2>{lang.language_name}</h2>
+                     <h2 className='stack_name'>{lang.language_name}</h2>
                      </div>
                   ))
                }
@@ -66,7 +66,7 @@ const Habilities = () => {
                   renderItens?.map((lang: IRenderProps, i: number) => (
                      <div className='stack_box' key={i}>
                      <Image src={lang.logo} alt={lang.language_name} width={64} height={64}/>
-                     <h2>{lang.language_name}</h2>
+                     <h2 className='stack_name'>{lang.language_name}</h2>
                      </div>
                   ))
                }
@@ -77,7 +77,7 @@ const Habilities = () => {
                   renderItens?.map((lang: IRenderProps, i: number) => (
                      <div className='stack_box' key={i}>
                      <Image src={lang.logo} alt={lang.language_name} width={64} height={64}/>
-                     <h2>{lang.language_name}</h2>
+                     <h2 className='stack_name'>{lang.language_name}</h2>
                      </div>
                   ))
                }

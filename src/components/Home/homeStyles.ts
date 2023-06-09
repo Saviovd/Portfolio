@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '@/assets/bg-animation.gif';
+import bg from '../../../public/assets/bg-animation.gif';
 
 export const HomeStyle = styled.section`
    height: 100vh;
@@ -79,66 +79,6 @@ export const HomeStyle = styled.section`
          font-weight: 700;
          transform: translate(2.5rem, -2rem);
       }
-      .intro_button {
-         align-self: center;
-         justify-self: center;
-
-         display: block;
-         position: relative;
-         background: none;
-         border: none;
-         outline: none;
-         cursor: pointer;
-         padding: 8px 30px;
-         font-size: 1.6rem;
-         letter-spacing: 0.3rem;
-         text-align: center;
-         text-transform: uppercase;
-         border: 1px solid rgb(var(--first-primary-color));
-         transition: all 0.2s ease;
-         margin: 0 auto;
-
-         &:before,
-         &:after {
-            content: 'GET OUT!';
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 8px 0;
-            width: 100%;
-            -webkit-clip: rect(0px, 0px, 0px, 0px);
-            clip: rect(0px, 0px, 0px, 0px);
-            background: rgb(var(--first-primary-color));
-            color: #000;
-         }
-
-         &:before {
-            left: -3px;
-            top: -2px;
-            text-shadow: 2px 0 rgb(var(--first-primary-color));
-            box-shadow: 2px 0 rgb(var(--first-primary-color));
-         }
-
-         &:after {
-            left: 2px;
-            bottom: -2px;
-            text-shadow: -1px 0 rgb(var(--first-primary-color));
-            box-shadow: -1px 0 rgb(var(--first-primary-color));
-         }
-
-         &:hover {
-            background: rgba(var(--second-primary-color), 0.3);
-            color: rgb(var(--first-primary-color));
-         }
-
-         &:hover:before {
-            animation: glitch-button 1.5s forwards linear alternate-reverse;
-         }
-
-         &:hover:after {
-            animation: glitch-button 2s forwards linear alternate;
-         }
-      }
 
       .left {
          grid-area: left;
@@ -193,7 +133,7 @@ export const HomeStyle = styled.section`
       }
    }
 
-   .element_3d {
+   .animated_bg {
       width: 60%;
       height: 100vh;
 

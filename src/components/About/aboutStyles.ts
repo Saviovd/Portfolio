@@ -4,10 +4,11 @@ export const AboutStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
 
-   height: calc( 85vh + 15rem);
+   height: calc( 90vh - 15rem);
 
    display: flex;
-   align-items: center;
+   align-items: flex-end;
+   justify-content: flex-end;
 
    .about_content {
       max-width: 120rem;

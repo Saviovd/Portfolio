@@ -5,7 +5,7 @@ export const HabilitiesStyle = styled.section`
    margin: 0 auto;
    padding: 0 2rem;
 
-   height: calc(100vh - 150px);
+   height: calc(100vh + 15rem);
    text-align: center;
 
    display: flex;
@@ -14,7 +14,7 @@ export const HabilitiesStyle = styled.section`
    align-items: center;
 
    .habilities_container {
-      height: 80%;
+      height: 60%;
       width: 90%;
       justify-self: flex-end;
 
@@ -30,46 +30,44 @@ export const HabilitiesStyle = styled.section`
          border: 2px solid rgb(var(--first-primary-color));
          width: 45rem;
          height: 7rem;
-         box-shadow: 0 0 2px rgb(var(--white-unification)),
+         box-shadow: 0 0 1px rgb(var(--white-unification)),
             0 0 4px rgb(var(--white-unification)),
+            0 0 8px rgb(var(--first-primary-color)),
             0 0 12px rgb(var(--first-primary-color)),
             0 0 18px rgb(var(--first-primary-color)),
-            0 0 24px rgb(var(--first-primary-color)),
-            0 0 30px rgb(var(--first-primary-color));
+            0 0 20px rgb(var(--first-primary-color));
          --webkit-animation: blink 7s infinite alternate;
 
          border-radius: 5px;
 
          display: flex;
+         justify-content: space-evenly;
+         align-items: center;
          flex-wrap: wrap;
 
          padding: 0 1rem;
+
          .habilities_title {
-            font-size: 2rem;
+            font-size: 3rem;
             letter-spacing: 3px;
             width: 100%;
-            height: 2rem;
+            margin: 0;
          }
 
-         .icon {
-            width: 64px;
-            height: 64px;
-            cursor: pointer;
-            background: none;
-            color: white;
-            fill: white;
-            stroke: white;
-            animation: icon3d 200ms 10;
 
-            &:hover {
-               animation: icon3d 200ms forwards;
+         .stack_box {
+            width: 20%;
+
+            .stack_name {
+               font-size: 2rem;
+               font-weight: 100;
+               font-weight: 600;
             }
          }
       }
 
       .is_Open {
          grid-area: is_Open;
-
          align-self: center;
          justify-self: center;
          text-align: center;
@@ -86,6 +84,7 @@ export const HabilitiesStyle = styled.section`
          'is_Open .'
          'is_Open .'
          'is_Open .';
+
    }
 
    /* @keyframes icon3d {

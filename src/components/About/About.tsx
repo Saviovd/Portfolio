@@ -50,7 +50,7 @@ const About = () => {
                   firstColor='#2B206A'
                   secondColor='#FFFFFF'
                   firstWord='Sobre'
-                  secondWord='Min'
+                  secondWord='Mim'
                />
                <p className='about_me'>
                   Sou um desenvolvedor Full Stack com 2 anos e meio de experiência em programação,

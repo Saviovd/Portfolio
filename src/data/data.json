@@ -6,6 +6,42 @@
             {
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             }
          ]
       },
@@ -15,7 +51,86 @@
             {
                "language_name": "Ruby",
                "logo": "https://brandeps.com/icon-download/R/Ruby-icon-vector-03.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            },
+            {
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             }
+         ]
+      }
+   ],
+   "projects": [
+      {
+         "image": "/assets/Projects/dsf_bank.png",
+         "url": "https://github.com/Saviovd",
+         "repository": "",
+         "name": "Outros projetos em meu GitHub!",
+         "description": "Clique aqui!",
+         "stacks": [
+            "icone",
+            "icone2"
+         ]
+      },
+      {
+         "image": "/assets/Projects/space_tourism.png",
+         "url": "https://space-tourism-eta-coral.vercel.app/",
+         "repository": "",
+         "name": "Space tourism website",
+         "description": "Desenvolvido com TypeScript e Sass, usando React Router Dom para navegação no site.",
+         "stacks": [
+            "icone"
+         ]
+      },
+      {
+         "image": "/assets/Projects/sneaker_company.png",
+         "url": "https://moni-bank-gamma.vercel.app/pages/abrir-conta-form.html",
+         "repository": "",
+         "name": "Monibank",
+         "description": "Desensenvolvido no curso JavaScript: validando formulários da Alura, projeto possui funções para validação de idade, CPF e outras informações do usuário.",
+         "stacks": [
+            "icone"
+         ]
+      },
+      {
+         "image": "/assets/Projects/Rest-countries.png",
+         "url": "https://countries-omega-wheat.vercel.app/",
+         "repository": "",
+         "name": "API Countries",
+         "description": "Projeto desenvolvido com ReactJs, TypeScript e React Router Dom consumindo a API Rest countries",
+         "stacks": [
+            "icone"
+         ]
+      },
+      {
+         "image": "/assets/Projects/strangerThings.png",
+         "url": "https://stranger-things4.vercel.app/",
+         "repository": "",
+         "name": "Stranger Things",
+         "description": "Landing Page baseada na 4° temporada da série Stranger Things da da Netflix, desenvolvido com HTML, CSS.",
+         "stacks": [
+            "icone"
+         ]
+      },
+      {
+         "image": "/assets/Projects/toDoLIst.png",
+         "url": "https://buypage-ecommerce.vercel.app/",
+         "repository": "",
+         "name": "e-commerce page",
+         "description": "Página de compras desenvolvida com ReactJs, typeScript com funcionalidade de carrinho",
+         "stacks": [
+            "icone"
          ]
       }
    ]
