@@ -133,5 +133,22 @@
             "icone"
          ]
       }
+   ],
+   "testimonials": [
+      {
+         "name": "Sávio Almeida",
+         "office": "Desenvolvedor | Freela",
+         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
+      },
+      {
+         "name": "Jamilly Frota",
+         "office": "Designer | Freela",
+         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
+      },
+      {
+         "name": "Daniel Arruda",
+         "office": "Quality Assurance | BMG",
+         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
+      }
    ]
 }

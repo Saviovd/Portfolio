@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 interface ITitleProps {
    firstColor: string;
-   secondColor: string;
+   secondColor?: string;
    firstWord: string;
-   secondWord: string
+   secondWord?: string
 }
 const TitleStyle = styled.div`
    display: inline-flex;

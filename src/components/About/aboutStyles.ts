@@ -130,8 +130,8 @@ export const AboutStyle = styled.section`
 
    @keyframes blink {
       100% {
-         box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff,
-            0 0 40px #0ba9ca, 0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+         box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff,
+            0 0 10px #0ba9ca, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
       }
    }
 
