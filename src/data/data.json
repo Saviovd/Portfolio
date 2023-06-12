@@ -4,42 +4,12 @@
          "type": "Front-End",
          "languages": [
             {
+               "id": "1",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             },
             {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
-               "language_name": "HTML",
-               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
-            },
-            {
+               "id": "2",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             }
@@ -49,22 +19,42 @@
          "type": "Back-End",
          "languages": [
             {
-               "language_name": "Ruby",
-               "logo": "https://brandeps.com/icon-download/R/Ruby-icon-vector-03.svg"
-            },
-            {
+               "id": "1",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             },
             {
+               "id": "2",
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            }
+         ]
+      },
+      {
+         "type": "QA",
+         "languages": [
+            {
+               "id": "1",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             },
             {
+               "id": "2",
+               "language_name": "HTML",
+               "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
+            }
+         ]
+      },
+      {
+         "type": "Banco de dados",
+         "languages": [
+            {
+               "id": "1",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             },
             {
+               "id": "2",
                "language_name": "HTML",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             }
@@ -136,19 +126,42 @@
    ],
    "testimonials": [
       {
+         "id": "1",
          "name": "Sávio Almeida",
          "office": "Desenvolvedor | Freela",
          "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
       },
       {
+         "id": "2",
          "name": "Jamilly Frota",
          "office": "Designer | Freela",
          "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
       },
       {
+         "id": "3",
          "name": "Daniel Arruda",
          "office": "Quality Assurance | BMG",
          "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras."
+      }
+   ],
+   "contacts": [
+      {
+         "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
+         "type": "Linkedin",
+         "name": "Sávio Almeida",
+         "url": "https://www.linkedin.com/in/saviovd/"
+      },
+      {
+         "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
+         "type": "Telefone",
+         "name": "+55 (41) 99179-1628",
+         "url": "https://api.whatsapp.com/send?phone=5541991791628"
+      },
+      {
+         "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
+         "type": "E-mail",
+         "name": "savio.pinheiroal@gmail.com",
+         "url": "mailto:email@provedor.com.br"
       }
    ]
 }

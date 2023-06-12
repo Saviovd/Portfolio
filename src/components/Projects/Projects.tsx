@@ -9,7 +9,6 @@ const { projects } = data
 
 const Projects = () => {
 
-   // eslint-disable-next-line @typescript-eslint/no-unused-vars
    const [active, setActive] = React.useState(0)
 
    return (<>
@@ -58,7 +57,7 @@ const Projects = () => {
             </div>
 
          </div>
-         <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+         <div style={{ width: '100%', maxWidth: '1700px' , display: 'flex', justifyContent: 'flex-end', marginRight: '20rem' }}>
             <Button
                title='Veja Mais!'
                url='/projects'

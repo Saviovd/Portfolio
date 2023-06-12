@@ -2,15 +2,18 @@ import styled from 'styled-components';
 
 export const TestimonialsStyle = styled.section`
    max-width: 1700px;
-   height: calc(80vh - 15rem);
-   margin: 0 auto;
-   padding-top: 3rem;
+   margin: 0 auto 5rem auto;
+   padding-top: 18rem;
+
+   display: flex;
+   flex-direction: column;
    text-align: center;
+   align-items: center;
 
    .testimonials_container {
-      height: 80%;
       display: flex;
       align-items: center;
+      width: 100%;
 
       .swiper {
          display: flex;
@@ -19,7 +22,6 @@ export const TestimonialsStyle = styled.section`
          .testimony_box {
             border: 1px solid rgb(var(--second-primary-color));
             width: 40rem;
-            height: 25rem;
             padding: 1rem;
             display: grid;
             grid-template-areas:
@@ -29,7 +31,7 @@ export const TestimonialsStyle = styled.section`
             grid-template-rows: 20% 25% auto;
             grid-template-columns: 27% auto;
             border-radius: 2px;
-            margin: 10rem auto;
+            margin: 5rem auto 10rem;
             box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff,
                0 0 10px #0ba9ca, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
 
@@ -70,6 +72,12 @@ export const TestimonialsStyle = styled.section`
                background-color: rgb(var(--second-primary-color));
             }
          }
+      }
+   }
+
+   @media screen {
+      @media (max-width: 1600px) {
+         padding-top: 16rem;
       }
    }
 `;

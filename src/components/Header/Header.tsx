@@ -4,7 +4,7 @@ import { HeaderStyle } from './headerStyles';
 const Header = () => {
    return (<>
    <HeaderStyle>
-      <h1>logo aqui!</h1>
+      <h1 className='logo'>logo aqui!</h1>
       <Nav />
    </HeaderStyle>
    </>)

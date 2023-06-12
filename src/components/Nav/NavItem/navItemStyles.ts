@@ -21,7 +21,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    &:before,
    &:after {
       display: block;
-      content: '${props => props.glitchText}';
+      content: '${(props) => props.glitchText}';
       text-transform: uppercase;
       position: absolute;
       top: 0;
@@ -43,7 +43,8 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
       }
       &:after {
-         animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
+         animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+            both 5;
       }
    }
    .selected {
@@ -65,9 +66,23 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          justify-content: center;
          align-items: center;
          text-align: center;
+
+         @media screen {
+            @media (max-width: 1600px) {
+               transform: translateY(2.7rem);
+            }
+         }
       }
    }
 
+   @media screen {
+      @media (max-width: 1600px) {
+         font-size: 1.7rem;
+      }
+      @media (max-width: 1100px) {
+         font-size: 1.6rem;
+      }
+   }
    @keyframes glow {
       to {
          width: 100%;

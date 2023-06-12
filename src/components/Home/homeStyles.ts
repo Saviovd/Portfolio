@@ -3,16 +3,17 @@ import bg from '../../../public/assets/bg-animation.gif';
 
 export const HomeStyle = styled.section`
    height: 100vh;
-   max-width: 1700px;
+   min-height: 545px;
+   max-width: 1900px;
    margin: 0 auto;
-   padding: 0 1rem;
    position: relative;
 
    display: flex;
-   transform: translate(10rem, 0rem);
+   padding: 0 0 0 5rem;
+   justify-content: space-between;
 
    .apresentation {
-      width: 40%;
+      width: 35%;
       height: calc(100vh - 15rem);
       min-height: 48rem;
       align-self: flex-end;
@@ -31,7 +32,6 @@ export const HomeStyle = styled.section`
       align-items: center;
 
       margin: 0;
-      /* position: absolute; */
       .hello_world {
          grid-area: hello;
          font-size: 5.2rem;
@@ -39,6 +39,15 @@ export const HomeStyle = styled.section`
          letter-spacing: 0.6rem;
          white-space: nowrap;
          justify-self: center;
+
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 4rem;
+            }
+            @media (max-width: 1100px) {
+               font-size: 3rem;
+            }
+         }
       }
       .calls_me {
          grid-area: calls_me;
@@ -46,6 +55,11 @@ export const HomeStyle = styled.section`
          font-weight: 600;
          letter-spacing: 2px;
          font-size: 2rem;
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 1.8rem;
+            }
+         }
       }
       .my_name {
          grid-area: name;
@@ -58,6 +72,14 @@ export const HomeStyle = styled.section`
          align-self: center;
          justify-self: center;
          margin: 0;
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 3.3rem;
+            }
+            @media (max-width: 1600px) {
+               font-size: 3rem;
+            }
+         }
       }
       .office {
          grid-area: office;
@@ -70,6 +92,14 @@ export const HomeStyle = styled.section`
          justify-self: center;
          margin: 0;
          transform: translate(2.5rem, -2rem);
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 1.7rem;
+            }
+            @media (max-width: 1600px) {
+               font-size: 1.5rem;
+            }
+         }
       }
       .loader {
          grid-area: loader;
@@ -78,6 +108,14 @@ export const HomeStyle = styled.section`
          text-transform: uppercase;
          font-weight: 700;
          transform: translate(2.5rem, -2rem);
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 2.4rem;
+            }
+            @media (max-width: 1600px) {
+               font-size: 2rem;
+            }
+         }
       }
 
       .left {
@@ -93,7 +131,7 @@ export const HomeStyle = styled.section`
          height: 24px;
          align-self: center;
          justify-self: center;
-         margin: 0 auto;
+         margin: 8rem auto 0 auto;
          cursor: pointer;
          .chevron {
             position: absolute;
@@ -130,22 +168,32 @@ export const HomeStyle = styled.section`
                transform: skew(0deg, -30deg);
             }
          }
+         @media screen {
+            @media (max-width: 1600px) {
+               margin: 4rem 25rem 0 auto;
+            }
+            @media (max-width: 1600px) {
+               margin: 2rem 24rem 0 auto;
+            }
+         }
       }
    }
 
    .animated_bg {
       width: 60%;
       height: 100vh;
+      scale: 1;
+
+      align-self: flex-end;
 
       background-image: url(${bg.src});
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
 
-      /* transform: translateX(25rem); */
-
       z-index: -2;
    }
+   position: relative;
 
    @keyframes move {
       25% {
@@ -162,63 +210,6 @@ export const HomeStyle = styled.section`
       100% {
          opacity: 0;
          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-      }
-   }
-
-   @keyframes glitch-button {
-      0% {
-         clip: rect(-3px, 600px, 0px, 0px);
-      }
-      5.88235% {
-         clip: rect(0px, 600px, 0px, 0px);
-      }
-      11.76471% {
-         clip: rect(-3px, 600px, 0px, 0px);
-      }
-      17.64706% {
-         clip: rect(-3px, 600px, 0px, 0px);
-      }
-      23.52941% {
-         clip: rect(100px, 600px, 100px, 0px);
-      }
-      29.41176% {
-         clip: rect(0px, 600px, 600px, 0px);
-      }
-      35.29412% {
-         clip: rect(100px, 600px, 0px, 0px);
-      }
-      41.17647% {
-         clip: rect(0px, 600px, 600px, 0px);
-      }
-      47.05882% {
-         clip: rect(100px, 600px, 0px, 0px);
-      }
-      52.94118% {
-         clip: rect(-3px, 600px, 0px, 0px);
-      }
-      58.82353% {
-         clip: rect(100px, 450px, 100px, 0px);
-      }
-      64.70588% {
-         clip: rect(0px, 450px, 0px, 0px);
-      }
-      70.58824% {
-         clip: rect(100px, 450px, 100px, 0px);
-      }
-      76.47059% {
-         clip: rect(0px, 450px, 0px, 0px);
-      }
-      82.35294% {
-         clip: rect(0px, 450px, 0px, 0px);
-      }
-      88.23529% {
-         clip: rect(0px, 450px, 0px, 0px);
-      }
-      94.11765% {
-         clip: rect(0px, 450px, 0px, 0px);
-      }
-      100% {
-         clip: rect(0px, 450px, 0px, 0px);
       }
    }
 `;

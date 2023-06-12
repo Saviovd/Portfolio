@@ -3,110 +3,84 @@ import styled from 'styled-components';
 export const HabilitiesStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
+   min-height: 640px;
    padding: 0 2rem;
 
-   height: calc(100vh + 15rem);
+   height: 72vh;
    text-align: center;
 
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
 
-   .habilities_container {
-      height: 60%;
-      width: 90%;
-      justify-self: flex-end;
+   .stacks {
+      width: 60%;
+      min-width: 75rem;
 
-      display: grid;
+      display: flex;
       align-items: center;
-      justify-content: space-around;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
 
-      .habilities_box {
-         align-self: center;
-         justify-self: center;
-         border: 2px solid rgb(var(--first-primary-color));
-         width: 45rem;
-         height: 7rem;
-         box-shadow: 0 0 1px rgb(var(--white-unification)),
-            0 0 4px rgb(var(--white-unification)),
-            0 0 8px rgb(var(--first-primary-color)),
-            0 0 12px rgb(var(--first-primary-color)),
-            0 0 18px rgb(var(--first-primary-color)),
-            0 0 20px rgb(var(--first-primary-color));
-         --webkit-animation: blink 7s infinite alternate;
+      .habilities_title {
+         font-size: 2.2rem;
+         letter-spacing: 3px;
+         width: 25%;
+         margin: 0;
+         border-radius: 2px 2px 0 0;
+         padding: 1.5rem 0.5rem;
+         white-space: nowrap;
+         background-color: rgb(var(--first-primary-color));
+         border-right: 1px solid rgb(var(--white-unification));
+         transition: 1s;
 
-         border-radius: 5px;
-
-         display: flex;
-         justify-content: space-evenly;
-         align-items: center;
-         flex-wrap: wrap;
-
-         padding: 0 1rem;
-
-         .habilities_title {
-            font-size: 3rem;
-            letter-spacing: 3px;
-            width: 100%;
-            margin: 0;
-         }
-
-
-         .stack_box {
-            width: 20%;
-
-            .stack_name {
+         @media screen {
+            @media (max-width: 1600px) {
                font-size: 2rem;
-               font-weight: 100;
-               font-weight: 600;
             }
          }
       }
 
       .is_Open {
-         grid-area: is_Open;
-         align-self: center;
-         justify-self: center;
-         text-align: center;
-         margin: auto;
-         width: 95%;
-         height: 80%;
+         border-bottom: 0;
+         background-color: rgb(var(--second-primary-color));
+         box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 4px #fff,
+            0 0 10px rgb(var(--second-primary-color)),
+            0 0 20px rgb(var(--second-primary-color)),
+            0 0 30px rgb(var(--second-primary-color));
+         z-index: 2;
+      }
+   }
+
+   .stack_container {
+      min-width: 75rem;
+      border: 1px solid rgba(var(--second-primary-color), 0.3);
+      width: 60%;
+      height: 30%;
+      min-height: 22rem;
+      background-color: rgba(var(--second-primary-color), 0.2);
+
+      display: flex;
+      justify-content: flex-start;
+      padding: 1.5rem 0;
+      flex-wrap: wrap;
+
+      border-top: 0;
+
+      .stack {
+         margin: 0 1.5rem;
       }
    }
 
    .grid_IsOpen {
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: 75% auto;
+      grid-template-rows: 20% auto;
       grid-template-areas:
-         'is_Open .'
-         'is_Open .'
-         'is_Open .';
-
+         '. . . .'
+         'is_Open is_Open is_Open is_Open';
    }
 
-   /* @keyframes icon3d {
-      0% {
-         box-shadow: inset 5px 4px rgba(244, 67, 54, 1),
-            -5px -6px rgba(33, 150, 243, 1);
+   @media screen {
+      @media (max-width: 1600px) {
+         height: 80vh;
       }
-      25% {
-         box-shadow: inset -5px -6px rgba(244, 67, 54, 1),
-            5px 4px rgba(33, 150, 243, 1);
-      }
-      50% {
-         box-shadow: inset 5px -4px rgba(244, 67, 54, 1),
-            -8px 4px rgba(33, 150, 243, 1);
-      }
-      75% {
-         box-shadow: inset -8px -4px rgba(244, 67, 54, 1),
-            -5px -4px rgba(33, 150, 243, 1);
-      }
-      100% {
-         box-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
-         box-shadow: none;
-      }
-   } */
+   }
 `;

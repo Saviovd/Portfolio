@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ProjectsStyle = styled.section`
    max-width: 1700px;
-   height: calc(100vh - 15rem);
+   height: 95vh;
+   min-height: 670px;
    margin: 0 auto;
    text-align: center;
    padding: 1rem;
@@ -15,7 +16,7 @@ export const ProjectsStyle = styled.section`
       display: flex;
       position: relative;
       padding-left: 15rem;
-      margin: auto;
+      margin: 5rem auto;
       align-items: center;
 
       .pagination {
@@ -38,12 +39,30 @@ export const ProjectsStyle = styled.section`
             height: 5rem;
             transition: 1s;
             border-radius: 2px;
+
+            @media screen {
+               @media (max-width: 1600px) {
+                  height: 4rem;
+                  font-size: 3.5rem;
+               }
+            }
          }
 
          .isActive {
             transition: 1s;
             background-color: rgba(var(--first-primary-color), 0.6);
             width: 20rem;
+            @media screen {
+               @media (max-width: 1600px) {
+                  width: 15rem;
+               }
+            }
+         }
+
+         @media screen {
+            @media (max-width: 1600px) {
+               width: 10rem;
+            }
          }
       }
 
@@ -51,10 +70,28 @@ export const ProjectsStyle = styled.section`
          object-fit: cover;
          border-radius: 2px;
          border: 1px solid rgba(var(--first-primary-color), 0.4);
+
+         @media screen {
+            @media (max-width: 1600px) {
+               object-fit: contain;
+               width: 70rem;
+               height: auto;
+            }
+
+            @media (max-width: 1440px) {
+               object-fit: contain;
+               width: 60rem;
+            }
+
+            @media (max-width: 1200px) {
+               object-fit: contain;
+               width: 50rem;
+            }
+         }
       }
 
       .about_project {
-         min-width: 600px;
+         min-width: 60rem;
          margin-left: 4rem;
          padding-right: 1rem;
          text-align: left;
@@ -71,10 +108,15 @@ export const ProjectsStyle = styled.section`
          }
 
          .project_description {
-            margin-top: 0;
+            margin: 2rem 0;
             font-size: 1.7rem;
             line-height: 130%;
             letter-spacing: 0.1rem;
+            @media screen {
+               @media (max-width: 1600px) {
+                  /* font-size: 1.6rem; */
+               }
+            }
          }
          .links_to_project {
             display: flex;
@@ -82,6 +124,12 @@ export const ProjectsStyle = styled.section`
 
          .dev_by {
             font-size: 2.3rem;
+            margin-top: 2.5rem;
+            @media screen {
+               @media (max-width: 1600px) {
+                  /* font-size: 2rem; */
+               }
+            }
          }
 
          .stack_list {
@@ -89,12 +137,37 @@ export const ProjectsStyle = styled.section`
             padding: 0;
 
             .stack {
-               margin-right: .7rem;
+               margin-right: 0.7rem;
                padding: 1rem;
                border: 1px solid rgba(var(--second-primary-color), 0.8);
                border-radius: 2px;
             }
          }
+
+         @media screen {
+            @media (max-width: 1600px) {
+               margin-left: 6rem;
+               min-width: 40rem;
+            }
+            @media (max-width: 1440px) {
+               margin-left: 4rem;
+               min-width: 35rem;
+            }
+         }
+      }
+
+      @media screen {
+         @media (max-width: 1600px) {
+            margin: 2rem auto 4rem 0;
+            padding-left: 10rem;
+         }
+      }
+   }
+
+   @media screen {
+      @media (max-width: 1600px) {
+         height: 86vh;
+         padding: 0 1rem 0 0;
       }
    }
 `;

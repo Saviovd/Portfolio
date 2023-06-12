@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const AboutStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
+   min-height: 595px;
 
-   height: calc( 90vh - 15rem);
+   height: calc(80vh);
 
    display: flex;
    align-items: flex-end;
@@ -31,6 +32,7 @@ export const AboutStyle = styled.section`
       -webkit-animation: blink 7s infinite alternate;
       animation: blink 7s infinite alternate;
 
+      z-index: 1;
       .img_box {
          height: 100%;
          min-width: 520px;
@@ -95,6 +97,19 @@ export const AboutStyle = styled.section`
                }
             }
          }
+
+         @media screen {
+            @media (max-width: 1600px) {
+               min-width: 37rem;
+            }
+         }
+      }
+
+      @media screen {
+         @media (max-width: 1600px) {
+            max-width: 90rem;
+            height: 35rem;
+         }
       }
    }
 
@@ -108,7 +123,13 @@ export const AboutStyle = styled.section`
          font-size: 2.1rem;
          line-height: 3rem;
          letter-spacing: 2px;
-         margin: 5rem 0 2rem 0;
+         margin: 2.5rem 0 3rem 0;
+
+         @media screen {
+            @media (max-width: 1600px) {
+               font-size: 1.8rem;
+            }
+         }
       }
 
       .social_medias {
@@ -117,6 +138,12 @@ export const AboutStyle = styled.section`
          justify-content: space-around;
          .media_icon {
             font-size: 5rem;
+
+            @media screen {
+               @media (max-width: 1600px) {
+                  font-size: 4.4rem;
+               }
+            }
          }
       }
    }
@@ -130,8 +157,8 @@ export const AboutStyle = styled.section`
 
    @keyframes blink {
       100% {
-         box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 10px #0ba9ca, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+         box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #0ba9ca,
+            0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
       }
    }
 

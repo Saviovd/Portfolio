@@ -18,7 +18,7 @@ const Intro = () => {
 
             <Button
                className='left'
-               title='Entrar em Contato'
+               title='Meu GitHub'
                url='#contatos'
                bgColor='rgba(var(--second-primary-color), 0.4)'
                _blank={false}

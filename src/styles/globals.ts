@@ -5,7 +5,7 @@ const firstPrimaryColor = '43, 157, 222';
 const secondPrimaryColor = '43, 32, 106';
 const whiteUnification = '255, 255, 255';
 const blackBG = '0, 0, 0';
-
+// rgb(241, 4 ,143)
 const GlobalStyle = createGlobalStyle`
    :root {
       --outfit: ${outfit};
