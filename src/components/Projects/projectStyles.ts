@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectsStyle = styled.section`
    max-width: 1700px;
    height: 95vh;
-   min-height: 670px;
+   min-height: 690px;
    margin: 0 auto;
    text-align: center;
    padding: 1rem;
@@ -45,6 +45,16 @@ export const ProjectsStyle = styled.section`
                   height: 4rem;
                   font-size: 3.5rem;
                }
+               @media (max-width: 1024px) {
+                  text-align: center;
+                  width: 25%;
+                  padding: 1.5rem;
+                  text-align: right;
+               }
+               @media (max-width: 780px) {
+                  height: 2rem;
+                  font-size: 2rem;
+               }
             }
          }
 
@@ -56,12 +66,27 @@ export const ProjectsStyle = styled.section`
                @media (max-width: 1600px) {
                   width: 15rem;
                }
+               @media (max-width: 1024px) {
+                  width: 10rem;
+                  width: 50%;
+                  text-align: center;
+               }
             }
          }
 
          @media screen {
             @media (max-width: 1600px) {
                width: 10rem;
+            }
+            @media (max-width: 1024px) {
+               position: initial;
+               flex-direction: row;
+               width: 25rem;
+               align-self: flex-start;
+               transform: translate(0);
+            }
+            @media (max-width: 780px) {
+               width: 20rem;
             }
          }
       }
@@ -86,6 +111,14 @@ export const ProjectsStyle = styled.section`
             @media (max-width: 1200px) {
                object-fit: contain;
                width: 50rem;
+            }
+
+            @media (max-width: 1024px) {
+               width: 90%;
+               margin: 1rem;
+            }
+            @media (max-width: 768px) {
+               width: 100%;
             }
          }
       }
@@ -113,8 +146,8 @@ export const ProjectsStyle = styled.section`
             line-height: 130%;
             letter-spacing: 0.1rem;
             @media screen {
-               @media (max-width: 1600px) {
-                  /* font-size: 1.6rem; */
+               @media (max-width: 1024px) {
+                  margin: 2rem 0 3rem 0;
                }
             }
          }
@@ -152,6 +185,7 @@ export const ProjectsStyle = styled.section`
             @media (max-width: 1440px) {
                margin-left: 4rem;
                min-width: 35rem;
+               width: 96%;
             }
          }
       }
@@ -161,6 +195,26 @@ export const ProjectsStyle = styled.section`
             margin: 2rem auto 4rem 0;
             padding-left: 10rem;
          }
+         @media (max-width: 1024px) {
+            flex-direction: column;
+            padding: 0;
+            width: 90%;
+            margin: 0 auto 2rem auto;
+         }
+      }
+   }
+
+   .more_projects {
+      width: 100%;
+      max-width: 1700px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20rem;
+
+      @media screen {
+         @media (max-width: 1024px) {
+            margin-right: 2rem;
+         }
       }
    }
 
@@ -168,6 +222,19 @@ export const ProjectsStyle = styled.section`
       @media (max-width: 1600px) {
          height: 86vh;
          padding: 0 1rem 0 0;
+         min-height: 800px;
       }
+      @media (max-width: 1024px) {
+         height: 98vh;
+         padding: 0;
+      }
+      @media (max-width: 850px) {
+         height: 95vh;
+      }
+
+      @media (max-width: 768px) {
+         min-height: 800px;
+      }
+
    }
-`;
+   `;

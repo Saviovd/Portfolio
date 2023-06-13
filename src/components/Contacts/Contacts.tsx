@@ -40,6 +40,11 @@ const ContactStyle = styled.section`
                @media (max-width: 1440px) {
                   width: 8rem;
                }
+
+               @media (max-width: 1024px) {
+                  width: 11rem;
+                  height: 12rem;
+               }
             }
          }
 
@@ -52,6 +57,10 @@ const ContactStyle = styled.section`
             @media screen {
                @media (max-width: 1440px) {
                   padding-left: 1rem;
+               }
+               @media (max-width: 1024px) {
+                  font-size: 1.6rem;
+                  padding-left: 2rem;
                }
             }
          }
@@ -67,6 +76,10 @@ const ContactStyle = styled.section`
                   font-size: 1.5rem;
                   padding: 1rem;
                }
+               @media (max-width: 1024px) {
+                  padding-left: 2rem;
+                  font-size: 1.8rem;
+               }
             }
          }
 
@@ -75,7 +88,37 @@ const ContactStyle = styled.section`
                width: 30rem;
                grid-template-columns: 30% auto;
             }
+            @media (max-width: 1024px) {
+               width: 55%;
+               min-width: 36rem;
+               height: 13rem;
+            }
          }
+      }
+      @media screen {
+         @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .left {
+               align-self: flex-start;
+            }
+            .right {
+               align-self: flex-end;
+            }
+         }
+         @media (max-width: 460px) {
+            .left, .right {
+               align-self: center;
+            }
+         }
+      }
+   }
+
+   @media screen {
+      @media (max-width: 1024px) {
+         width: 80%;
       }
    }
 `;
@@ -90,8 +133,8 @@ const Contacts = () => {
                firstWord='Meus'
             />
             <div className='contact_container'>
-               {contacts.map(({ icon, name, type, url }, i: number) => (
-                  <div className='contact_card' key={i}>
+               {contacts.map(({ icon, name, type, url, side }, i: number) => (
+                  <div className={`contact_card ${side}`} key={i}>
                      <Image
                         className='icon'
                         src={icon}

@@ -41,7 +41,27 @@ const GlobalStyle = createGlobalStyle`
             color: inherit;
             text-decoration: none;
          }
+
+         &::-webkit-scrollbar {
+            width: .5rem;
+         }
+         &::-webkit-scrollbar-track {
+            background-color: transparent;
+         }
+         &::-webkit-scrollbar-thumb {
+            background: linear-gradient(rgba(var(--first-primary-color), .5), rgba(var(--second-primary-color), .5));
+            animation: gradient 5s ease alternate;
+            border-radius: 2px;
+            outline: 1px solid rgba(var(--second-primary-color));
+
+               @keyframes gradient {
+               to {
+                  background: linear-gradient(rgba(var(--second-primary-color), .5), rgba(var(--first-primary-color), .5));
+               }
+            }
+         }
       }
+
    }
 `;
 export default GlobalStyle;

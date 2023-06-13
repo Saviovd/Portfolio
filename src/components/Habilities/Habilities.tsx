@@ -12,6 +12,7 @@ interface IRenderProps {
 }
 
 const { habilities } = data;
+
 const Habilities = () => {
    const [renderHabilities, setRenderHabilities] = React.useState<
       string | undefined

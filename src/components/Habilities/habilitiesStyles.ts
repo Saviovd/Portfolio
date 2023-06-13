@@ -20,6 +20,7 @@ export const HabilitiesStyle = styled.section`
 
       display: flex;
       align-items: center;
+      justify-content: center;
 
       .habilities_title {
          font-size: 2.2rem;
@@ -30,24 +31,45 @@ export const HabilitiesStyle = styled.section`
          padding: 1.5rem 0.5rem;
          white-space: nowrap;
          background-color: rgb(var(--first-primary-color));
-         border-right: 1px solid rgb(var(--white-unification));
+         border-right: 1px solid #000000;
          transition: 1s;
 
          @media screen {
             @media (max-width: 1600px) {
                font-size: 2rem;
             }
+            @media (max-width: 850px) {
+               font-size: 1.6rem;
+            }
+            @media (max-width: 730px) {
+               font-size: 1.2rem;
+            }
+            @media (max-width: 570px) {
+               height: 3rem;
+               white-space: normal;
+               padding: .5rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
          }
       }
 
       .is_Open {
-         border-bottom: 0;
+         border: 0;
          background-color: rgb(var(--second-primary-color));
          box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 4px #fff,
             0 0 10px rgb(var(--second-primary-color)),
             0 0 20px rgb(var(--second-primary-color)),
             0 0 30px rgb(var(--second-primary-color));
          z-index: 2;
+      }
+
+      @media screen {
+         @media (max-width: 850px) {
+            min-width: 0;
+            width: 90%;
+         }
       }
    }
 
@@ -68,6 +90,25 @@ export const HabilitiesStyle = styled.section`
 
       .stack {
          margin: 0 1.5rem;
+         @media screen {
+            @media (max-width: 850px) {
+               img {
+                  width: 50px;
+                  height: 50px;
+               }
+
+               .stack_name {
+                  font-size: 1.4rem;
+               }
+            }
+         }
+      }
+
+      @media screen {
+         @media (max-width: 850px) {
+            min-width: 0;
+            width: 90%;
+         }
       }
    }
 
@@ -81,6 +122,12 @@ export const HabilitiesStyle = styled.section`
    @media screen {
       @media (max-width: 1600px) {
          height: 80vh;
+      }
+      @media (max-width: 1024px) {
+         height: 60vh;
+      }
+      @media (max-width: 850px) {
+         padding: 0;
       }
    }
 `;

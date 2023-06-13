@@ -57,7 +57,7 @@ const Projects = () => {
             </div>
 
          </div>
-         <div style={{ width: '100%', maxWidth: '1700px' , display: 'flex', justifyContent: 'flex-end', marginRight: '20rem' }}>
+         <div className='more_projects'>
             <Button
                title='Veja Mais!'
                url='/projects'

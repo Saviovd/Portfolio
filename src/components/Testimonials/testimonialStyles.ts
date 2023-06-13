@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const TestimonialsStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto 5rem auto;
-   padding-top: 18rem;
+   height: 80vh;
 
    display: flex;
    flex-direction: column;
    text-align: center;
    align-items: center;
+   justify-content: flex-end;
+
 
    .testimonials_container {
       display: flex;
@@ -76,8 +78,9 @@ export const TestimonialsStyle = styled.section`
    }
 
    @media screen {
-      @media (max-width: 1600px) {
-         padding-top: 16rem;
+      @media (max-width: 1024px) {
+         height: 70vh;
+         justify-content: center;
       }
    }
 `;

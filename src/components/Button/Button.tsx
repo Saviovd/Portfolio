@@ -28,6 +28,8 @@ const ButtonStyle = styled.a`
    margin: 0 3rem 0 0;
    white-space: nowrap;
 
+   z-index: 1;
+
    &:before,
    &:after {
       content: '☠ GET OUT! ☠';

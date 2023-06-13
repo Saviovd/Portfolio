@@ -40,7 +40,7 @@
             },
             {
                "id": "2",
-               "language_name": "HTML",
+               "language_name": "Rolando",
                "logo": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
             }
          ]
@@ -149,19 +149,22 @@
          "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
          "type": "Linkedin",
          "name": "Sávio Almeida",
-         "url": "https://www.linkedin.com/in/saviovd/"
+         "url": "https://www.linkedin.com/in/saviovd/",
+         "side": "left"
       },
       {
          "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
          "type": "Telefone",
          "name": "+55 (41) 99179-1628",
-         "url": "https://api.whatsapp.com/send?phone=5541991791628"
+         "url": "https://api.whatsapp.com/send?phone=5541991791628",
+         "side": "right"
       },
       {
          "icon": "https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg",
          "type": "E-mail",
          "name": "savio.pinheiroal@gmail.com",
-         "url": "mailto:email@provedor.com.br"
+         "url": "mailto:email@provedor.com.br",
+         "side": "left"
       }
    ]
 }

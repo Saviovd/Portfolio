@@ -96,11 +96,26 @@ export const AboutStyle = styled.section`
                   animation-iteration-count: infinite;
                }
             }
+
+            @media screen {
+               @media (max-width: 1600px) {
+                  width: 100%;
+               }
+            }
          }
 
          @media screen {
             @media (max-width: 1600px) {
                min-width: 37rem;
+            }
+            @media (max-width: 850px) {
+               min-width: 27rem;
+            }
+            @media (max-width: 700px) {
+               min-width: 4rem;
+               width: 100%;
+               height: 30rem;
+               margin-bottom: 2rem;
             }
          }
       }
@@ -109,6 +124,19 @@ export const AboutStyle = styled.section`
          @media (max-width: 1600px) {
             max-width: 90rem;
             height: 35rem;
+         }
+         @media (max-width: 1024px) {
+            width: 85%;
+         }
+         @media (max-width: 850px) {
+            width: 92%;
+         }
+         @media (max-width: 700px) {
+            width: 75%;
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+            padding: 1rem;
          }
       }
    }
@@ -129,6 +157,15 @@ export const AboutStyle = styled.section`
             @media (max-width: 1600px) {
                font-size: 1.8rem;
             }
+            @media (max-width: 1024px) {
+               font-size: 1.6rem;
+               line-height: normal;
+               margin: 0 0 3rem 0;
+            }
+            @media (max-width: 850px) {
+               margin: 0 0 3rem 0;
+               font-size: 1.5rem;
+            }
          }
       }
 
@@ -143,7 +180,23 @@ export const AboutStyle = styled.section`
                @media (max-width: 1600px) {
                   font-size: 4.4rem;
                }
+               @media (max-width: 1024px) {
+                  font-size: 4rem;
+               }
             }
+         }
+         @media screen {
+            @media (max-width: 1024px) {
+               width: 20rem;
+            }
+         }
+      }
+      @media screen {
+         @media (max-width: 1024px) {
+            justify-content: space-evenly;
+         }
+         @media (max-width: 700px) {
+            align-items: center;
          }
       }
    }
@@ -177,6 +230,20 @@ export const AboutStyle = styled.section`
          clip-path: path(
             'M400.21,112.61v-15.31H234.82v-9.04h52.51v-6.59h112.67V32.54h-33.6V6.06h-95.3V0H69.47V2.36H29.34V13.55h40.13v7.51H32.34v20.87h-12.38v10.18H0v36.15H19.96v49.37h18.2v23.05H13.82v11.8H.23v6.81H13.82v37.96h18.52v22.74H13.14v13.3h19.2v8.96h106.23v4.44H.23v26.8H61.69v30.62h-29.35v14.67H114.47v11.23H17.55v30.62h18.3v17.63h51.68v-17.63h26.94v11.98h143.72v5.65h141.81v-25.45h-114.47v-5.21h101.25v-.75h13.22v-8.29h-13.22v-29.24h-17.58v-10.32h30.72v-10.85h-30.72v-5.11h30.72v-31.26h-16.99v-29.1h17.08v-24.74h-60.14v-6.74h-24.11v-8.11h70.6v-61.25h-20.92v-29.24h34.78Zm-164.97,180.87v-8.94h88.66v12.37h-108.46v-3.43h19.79Zm-50.53-151.63v18.82h-30.76v-23.05h71.6v4.23h-40.84Z'
          );
+      }
+   }
+
+   @media screen {
+      @media (max-width: 1024px) {
+         height: 50vh;
+      }
+
+      @media (max-width: 700px) {
+         height: 100vh;
+         justify-content: center;
+         align-items: flex-end;
+         margin: 0;
+         min-height: 730px;
       }
    }
 `;

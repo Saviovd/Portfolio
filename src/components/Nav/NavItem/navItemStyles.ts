@@ -71,6 +71,13 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
             @media (max-width: 1600px) {
                transform: translateY(2.7rem);
             }
+            @media (max-width: 1024px) {
+               transform: translateY(2.2rem);
+            }
+            @media (max-width: 768px) {
+               transform: translateY(.2rem);
+               height: 0.2rem;
+            }
          }
       }
    }
@@ -81,6 +88,13 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
       }
       @media (max-width: 1100px) {
          font-size: 1.6rem;
+      }
+      @media (max-width: 1024px) {
+         font-size: 1.4rem;
+      }
+      @media (max-width: 850px) {
+         font-size: 1.3em;
+         margin: 0 1rem;
       }
    }
    @keyframes glow {
@@ -134,4 +148,5 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          transform: translate(0);
       }
    }
+
 `;

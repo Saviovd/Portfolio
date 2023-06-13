@@ -47,6 +47,12 @@ export const HomeStyle = styled.section`
             @media (max-width: 1100px) {
                font-size: 3rem;
             }
+            @media (max-width: 1024px) {
+               font-size: 4.5rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 3.5rem;
+            }
          }
       }
       .calls_me {
@@ -57,6 +63,12 @@ export const HomeStyle = styled.section`
          font-size: 2rem;
          @media screen {
             @media (max-width: 1600px) {
+               font-size: 1.8rem;
+            }
+            @media (max-width: 1024px) {
+               font-size: 2rem;
+            }
+            @media (max-width: 550px) {
                font-size: 1.8rem;
             }
          }
@@ -79,6 +91,12 @@ export const HomeStyle = styled.section`
             @media (max-width: 1600px) {
                font-size: 3rem;
             }
+            @media (max-width: 1024px) {
+               font-size: 3.5rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 3rem;
+            }
          }
       }
       .office {
@@ -99,6 +117,12 @@ export const HomeStyle = styled.section`
             @media (max-width: 1600px) {
                font-size: 1.5rem;
             }
+            @media (max-width: 1024px) {
+               font-size: 2rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 1.6rem;
+            }
          }
       }
       .loader {
@@ -115,9 +139,14 @@ export const HomeStyle = styled.section`
             @media (max-width: 1600px) {
                font-size: 2rem;
             }
+            @media (max-width: 1024px) {
+               font-size: 2.6rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 2.2rem;
+            }
          }
       }
-
       .left {
          grid-area: left;
       }
@@ -133,6 +162,8 @@ export const HomeStyle = styled.section`
          justify-self: center;
          margin: 8rem auto 0 auto;
          cursor: pointer;
+         transform: translateX(-100%);
+
          .chevron {
             position: absolute;
             width: 8rem;
@@ -170,11 +201,17 @@ export const HomeStyle = styled.section`
          }
          @media screen {
             @media (max-width: 1600px) {
-               margin: 4rem 25rem 0 auto;
+               margin: 4rem auto 0 auto;
             }
-            @media (max-width: 1600px) {
-               margin: 2rem 24rem 0 auto;
-            }
+         }
+      }
+
+      @media screen {
+         @media (max-width: 1024px) {
+            width: 75%;
+         }
+         @media (max-width: 700px) {
+            width: 90%;
          }
       }
    }
@@ -192,6 +229,15 @@ export const HomeStyle = styled.section`
       background-size: cover;
 
       z-index: -2;
+
+      @media screen {
+         @media (max-width: 1024px) {
+            width: 25%;
+         }
+         @media (max-width: 700px) {
+            display: none;
+         }
+      }
    }
    position: relative;
 
@@ -210,6 +256,13 @@ export const HomeStyle = styled.section`
       100% {
          opacity: 0;
          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+   }
+
+   @media screen {
+      @media (max-width: 700px) {
+         padding: 0;
+         justify-content: center;
       }
    }
 `;

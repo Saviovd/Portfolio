@@ -17,6 +17,9 @@ const TitleStyle = styled.div`
          @media (max-width: 1600px) {
             font-size: 4rem;
          }
+         @media (max-width: 1024px) {
+            font-size: 3.8rem;
+         }
       }
    }
 `

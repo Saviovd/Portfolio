@@ -2,7 +2,11 @@ import React from 'react';
 import NavItem from './NavItem/NavItem';
 import { NavStyle } from './navStyles';
 
-const Nav = () => {
+interface INavProps {
+   isVisible: boolean
+}
+
+const Nav = ({isVisible}: INavProps) => {
    const [selectedNavItem, setSelectedNavItem] = React.useState('');
    const [pagePosition] = React.useState(0);
    const scrollRef = React.useRef<HTMLDivElement>(null);
@@ -15,8 +19,8 @@ const Nav = () => {
    };
 
    return (
-      <NavStyle>
-         <ul className='nav_list'>
+      <NavStyle style={{animation: `${isVisible ? 'enterMenu 0.5s forwards' : ''}`}}>
+         <ul className={`nav_list ${isVisible ? 'isVisible' : ''}`}>
             <NavItem
                isSelected={selectedNavItem === 'home'}
                setIsSelected={() => handleNavItemSelect('home')}
