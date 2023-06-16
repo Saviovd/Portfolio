@@ -55,9 +55,9 @@ export const NavStyle = styled.nav`
       @media (max-width: 1024px) {
          width: 75%;
          height: 7rem;
-         margin: 0;
+         margin: 3rem 0 0 0;
       }
-      @media (max-width: 850px) {
+      @media (max-width: 880px) {
          padding-left: 0.5rem;
          width: 80%;
       }
@@ -69,6 +69,7 @@ export const NavStyle = styled.nav`
          background-color: rgba(var(--white-unification), 0.3);
          left: -100%;
          position: relative;
+         margin: 0;
          z-index: 3;
       }
    }

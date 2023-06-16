@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import Title from '../Title/Title';
 import data from '@/data/data.json';
@@ -8,10 +9,10 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const { testimonials } = data
+const { testimonials } = data;
 
 const Testimonials = () => {
-   return (<>
+   return (
       <TestimonialsStyle id='depoimentos'>
          <Title firstColor='rgb(var(--first-primary-color))' firstWord='Depoimentos' />
 
@@ -30,11 +31,10 @@ const Testimonials = () => {
                pagination={{ clickable: true }}
                modules={[Pagination, Autoplay]}
             >
-               {testimonials.map(({name, office, testimony, id}) => {
-                  return (
+               {testimonials.map(({ name, office, testimony, id }) => (
                   <SwiperSlide key={id}>
                      <div className='testimony_box'>
-                        <Image className='photograph' src={'/assets/savio.jpg'} alt='ok' width={90} height={90} />
+                        <Image className='photograph' src={'/assets/savio.jpg'} alt='ok' width={80} height={80} />
                         <h4 className='name'>{name}</h4>
                         <h5 className='office'>{office}</h5>
                         <p className='testimony'>
@@ -42,12 +42,11 @@ const Testimonials = () => {
                         </p>
                      </div>
                   </SwiperSlide>
-                  )
-               })}
+               ))}
             </Swiper>
          </div>
-      </TestimonialsStyle >
-   </>)
-}
+      </TestimonialsStyle>
+   );
+};
 
 export default Testimonials;

@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import { AboutStyle } from './aboutStyles';
 import Title from '../Title/Title';
-import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
 
-
 const About = () => {
-   return (<>
+   return (
       <AboutStyle id='sobre mim'>
          <div className='about_content'>
             <div className='img_box'>
@@ -25,33 +24,13 @@ const About = () => {
                   </filter>
                </svg>
                <div className='imgWrap'>
-                  <Image className='red photograph'
-                     src='/assets/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={700}
-                     height={600}
-                  />
-                  <Image className='green photograph'
-                     src='/assets/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={500}
-                     height={600}
-                  />
-                  <Image className='blue photograph'
-                     src='/assets/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={500}
-                     height={600}
-                  />
+                  <Image className='red photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={700} height={600} />
+                  <Image className='green photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
+                  <Image className='blue photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
                </div>
             </div>
             <div className='content'>
-               <Title
-                  firstColor='#2B206A'
-                  secondColor='#FFFFFF'
-                  firstWord='Sobre'
-                  secondWord='Mim'
-               />
+               <Title firstColor='#2B206A' secondColor='#FFFFFF' firstWord='Sobre' secondWord='Mim' />
                <p className='about_me'>
                   Sou um desenvolvedor Full Stack com 2 anos e meio de experiência em programação,
                   especializado em Next.js e TypeScript. Minha paixão é criar interfaces de usuário
@@ -70,8 +49,8 @@ const About = () => {
                </div>
             </div>
          </div>
-      </AboutStyle >
-   </>)
-}
+      </AboutStyle>
+   );
+};
 
 export default About;

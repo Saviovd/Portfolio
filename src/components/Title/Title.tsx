@@ -9,6 +9,7 @@ interface ITitleProps {
 const TitleStyle = styled.div`
    display: inline-flex;
    text-align: center;
+   grid-area: title;
    .title {
       margin: 0 0 3rem 0;
       font-size: 4.5rem;
@@ -19,6 +20,12 @@ const TitleStyle = styled.div`
          }
          @media (max-width: 1024px) {
             font-size: 3.8rem;
+         }
+         @media (max-width: 500px) {
+            font-size: 3rem;
+         }
+         @media (max-width: 415px) {
+            font-size: 2.7rem;
          }
       }
    }

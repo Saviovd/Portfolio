@@ -18,7 +18,7 @@ export const AboutStyle = styled.section`
       justify-content: center;
       align-items: center;
       margin: 10rem auto 0 auto;
-      padding: 2rem 0;
+      padding: 1rem;
       height: 45rem;
       border: 2px solid #2b206a;
       border-radius: 2px;
@@ -108,14 +108,20 @@ export const AboutStyle = styled.section`
             @media (max-width: 1600px) {
                min-width: 37rem;
             }
+            /* @media (max-width: 1500px) {
+               min-width: 21rem;
+            } */
             @media (max-width: 850px) {
                min-width: 27rem;
             }
             @media (max-width: 700px) {
                min-width: 4rem;
                width: 100%;
-               height: 30rem;
+               height: 35rem;
                margin-bottom: 2rem;
+            }
+            @media (max-width: 500px) {
+               height: 32rem;
             }
          }
       }
@@ -132,11 +138,14 @@ export const AboutStyle = styled.section`
             width: 92%;
          }
          @media (max-width: 700px) {
-            width: 75%;
+            width: 65%;
             flex-direction: column;
             height: auto;
             text-align: center;
             padding: 1rem;
+         }
+         @media (max-width: 620px) {
+            width: 75%;
          }
       }
    }
@@ -166,6 +175,13 @@ export const AboutStyle = styled.section`
                margin: 0 0 3rem 0;
                font-size: 1.5rem;
             }
+            @media (max-width: 560px) {
+               font-size: 1.4rem;
+            }
+            @media (max-width: 375px) {
+               margin: 0 0 2rem 0;
+               font-size: 1.3rem;
+            }
          }
       }
 
@@ -192,6 +208,9 @@ export const AboutStyle = styled.section`
          }
       }
       @media screen {
+         @media (max-width: 1600px) {
+            margin: 0 1rem;
+         }
          @media (max-width: 1024px) {
             justify-content: space-evenly;
          }
@@ -243,6 +262,18 @@ export const AboutStyle = styled.section`
          justify-content: center;
          align-items: flex-end;
          margin: 0;
+         min-height: 730px;
+      }
+
+      @media (max-width: 700px) {
+         height: 100vh;
+         justify-content: center;
+         align-items: flex-end;
+         margin: 0;
+         min-height: 730px;
+      }
+      @media (max-width: 440px) {
+         height: 90vh;
          min-height: 730px;
       }
    }

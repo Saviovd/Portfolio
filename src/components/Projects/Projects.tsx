@@ -1,17 +1,16 @@
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Title from '../Title/Title';
 import { ProjectsStyle } from './projectStyles';
 import data from '@/data/data.json';
-import React from 'react';
 import Button from '../Button/Button';
 
-const { projects } = data
+const { projects } = data;
 
 const Projects = () => {
+   const [active, setActive] = useState(0);
 
-   const [active, setActive] = React.useState(0)
-
-   return (<>
+   return (
       <ProjectsStyle id='projetos'>
          <Title
             firstColor='rgb(var(--white))'
@@ -53,9 +52,7 @@ const Projects = () => {
                      </li>
                   ))}
                </ul>
-
             </div>
-
          </div>
          <div className='more_projects'>
             <Button
@@ -66,7 +63,7 @@ const Projects = () => {
             />
          </div>
       </ProjectsStyle>
-   </>)
-}
+   );
+};
 
 export default Projects;

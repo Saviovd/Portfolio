@@ -50,8 +50,14 @@ export const HomeStyle = styled.section`
             @media (max-width: 1024px) {
                font-size: 4.5rem;
             }
-            @media (max-width: 550px) {
+            @media (max-width: 580px) {
                font-size: 3.5rem;
+            }
+            @media (max-width: 460px) {
+               font-size: 3rem;
+            }
+            @media (max-width: 395px) {
+               font-size: 2.3rem;
             }
          }
       }
@@ -70,6 +76,13 @@ export const HomeStyle = styled.section`
             }
             @media (max-width: 550px) {
                font-size: 1.8rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 1.6rem;
+            }
+            @media (max-width: 375px) {
+               font-size: 1.3rem;
+               margin-left: 2rem;
             }
          }
       }
@@ -97,6 +110,12 @@ export const HomeStyle = styled.section`
             @media (max-width: 550px) {
                font-size: 3rem;
             }
+            @media (max-width: 550px) {
+               font-size: 2.7rem;
+            }
+            @media (max-width: 340px) {
+               font-size: 2.2rem;
+            }
          }
       }
       .office {
@@ -123,6 +142,15 @@ export const HomeStyle = styled.section`
             @media (max-width: 550px) {
                font-size: 1.6rem;
             }
+            @media (max-width: 550px) {
+               font-size: 1.3rem;
+            }
+            @media (max-width: 400px) {
+               font-size: 1rem;
+            }
+            @media (max-width: 340px) {
+               font-size: 0.8rem;
+            }
          }
       }
       .loader {
@@ -144,6 +172,12 @@ export const HomeStyle = styled.section`
             }
             @media (max-width: 550px) {
                font-size: 2.2rem;
+            }
+            @media (max-width: 550px) {
+               font-size: 2rem;
+            }
+            @media (max-width: 375px) {
+               font-size: 1.6rem;
             }
          }
       }
@@ -203,6 +237,9 @@ export const HomeStyle = styled.section`
             @media (max-width: 1600px) {
                margin: 4rem auto 0 auto;
             }
+            @media (max-width: 1600px) {
+               margin: 0 auto;
+            }
          }
       }
 
@@ -212,6 +249,9 @@ export const HomeStyle = styled.section`
          }
          @media (max-width: 700px) {
             width: 90%;
+         }
+         @media (max-width: 375px) {
+            width: 100%;
          }
       }
    }

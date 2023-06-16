@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectsStyle = styled.section`
    max-width: 1700px;
    height: 95vh;
-   min-height: 690px;
+   min-height: 69rem;
    margin: 0 auto;
    text-align: center;
    padding: 1rem;
@@ -24,6 +24,7 @@ export const ProjectsStyle = styled.section`
          display: flex;
          flex-direction: column;
          width: 15rem;
+         z-index: 2;
 
          transform: translateX(-100%);
 
@@ -50,8 +51,6 @@ export const ProjectsStyle = styled.section`
                   width: 25%;
                   padding: 1.5rem;
                   text-align: right;
-               }
-               @media (max-width: 780px) {
                   height: 2rem;
                   font-size: 2rem;
                }
@@ -95,7 +94,6 @@ export const ProjectsStyle = styled.section`
          object-fit: cover;
          border-radius: 2px;
          border: 1px solid rgba(var(--first-primary-color), 0.4);
-
          @media screen {
             @media (max-width: 1600px) {
                object-fit: contain;
@@ -104,18 +102,17 @@ export const ProjectsStyle = styled.section`
             }
 
             @media (max-width: 1440px) {
-               object-fit: contain;
                width: 60rem;
             }
 
             @media (max-width: 1200px) {
-               object-fit: contain;
                width: 50rem;
             }
 
             @media (max-width: 1024px) {
-               width: 90%;
-               margin: 1rem;
+               width: 85%;
+               margin: 1rem 0 0 0;
+               align-self: flex-start;
             }
             @media (max-width: 768px) {
                width: 100%;
@@ -138,6 +135,15 @@ export const ProjectsStyle = styled.section`
             font-size: 3rem;
             font-weight: 500;
             margin-bottom: 0;
+
+            @media screen {
+               @media (max-width: 520px) {
+                  font-size: 2.5rem;
+               }
+               @media (max-width: 440px) {
+                  font-size: 2.2rem;
+               }
+            }
          }
 
          .project_description {
@@ -149,18 +155,23 @@ export const ProjectsStyle = styled.section`
                @media (max-width: 1024px) {
                   margin: 2rem 0 3rem 0;
                }
+               @media (max-width: 440px) {
+                  font-size: 1.5rem;
+               }
             }
          }
          .links_to_project {
             display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
          }
 
          .dev_by {
             font-size: 2.3rem;
             margin-top: 2.5rem;
             @media screen {
-               @media (max-width: 1600px) {
-                  /* font-size: 2rem; */
+               @media (max-width: 440px) {
+                  font-size: 1.9rem;
                }
             }
          }
@@ -186,6 +197,10 @@ export const ProjectsStyle = styled.section`
                margin-left: 4rem;
                min-width: 35rem;
                width: 96%;
+            }
+            @media (max-width: 768px) {
+               margin-left: 0;
+               min-width: 32rem;
             }
          }
       }
@@ -213,28 +228,39 @@ export const ProjectsStyle = styled.section`
 
       @media screen {
          @media (max-width: 1024px) {
-            margin-right: 2rem;
+            margin-right: 7rem;
+         }
+         @media (max-width: 475px) {
+            margin-right: 3rem;
          }
       }
    }
 
    @media screen {
       @media (max-width: 1600px) {
-         height: 86vh;
+         height: 80vh;
          padding: 0 1rem 0 0;
-         min-height: 800px;
+         min-height: 70rem;
       }
       @media (max-width: 1024px) {
-         height: 98vh;
+         height: 85vh;
          padding: 0;
       }
       @media (max-width: 850px) {
-         height: 95vh;
+         height: 90vh;
+         justify-content: space-evenly;
+         padding-top: 15rem;
       }
 
       @media (max-width: 768px) {
-         min-height: 800px;
+         padding-top: 10rem;
       }
-
+      @media (max-width: 475px) {
+         height: 90vh;
+         padding-top: 15rem;
+      }
+      @media (max-width: 400px) {
+         padding-top: 9rem;
+      }
    }
-   `;
+`;

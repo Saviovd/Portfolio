@@ -10,7 +10,7 @@ const Header = () => {
    return (
       <>
          <HeaderStyle
-            style={{height: `${isActive ? 'auto' : '0'}`}}
+            style={{height: `${isActive ? 'auto' : `${typeof window !== 'undefined' &&  window.innerWidth < 768 ? '0' : ''}`}`}}
             onClick={() => isActive ? setIsActive(false) : isActive}
          >
             <h1 className='logo'>logo aqui!</h1>

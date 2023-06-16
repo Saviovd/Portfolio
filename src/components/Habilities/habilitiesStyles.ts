@@ -47,10 +47,17 @@ export const HabilitiesStyle = styled.section`
             @media (max-width: 570px) {
                height: 3rem;
                white-space: normal;
-               padding: .5rem;
+               padding: 0.5rem;
                display: flex;
                align-items: center;
                justify-content: center;
+            }
+            @media (max-width: 475px) {
+               width: 100%;
+               font-size: 1rem;
+            }
+            @media (max-width: 440px) {
+               font-size: .7rem;
             }
          }
       }
@@ -70,6 +77,10 @@ export const HabilitiesStyle = styled.section`
             min-width: 0;
             width: 90%;
          }
+         @media (max-width: 475px) {
+            width: 100%;
+            z-index: 1;
+         }
       }
    }
 
@@ -87,18 +98,28 @@ export const HabilitiesStyle = styled.section`
       flex-wrap: wrap;
 
       border-top: 0;
-
       .stack {
          margin: 0 1.5rem;
-         @media screen {
-            @media (max-width: 850px) {
-               img {
+
+         img {
+            @media screen {
+               @media (max-width: 850px) {
                   width: 50px;
                   height: 50px;
                }
-
-               .stack_name {
+               @media (max-width: 475px) {
+                  width: 3.5rem;
+                  height: 3.5rem;
+               }
+            }
+         }
+         .stack_name {
+            @media screen {
+               @media (max-width: 850px) {
                   font-size: 1.4rem;
+               }
+               @media (max-width: 475px) {
+                  font-size: 1.2rem;
                }
             }
          }
@@ -109,14 +130,18 @@ export const HabilitiesStyle = styled.section`
             min-width: 0;
             width: 90%;
          }
+         @media (max-width: 475px) {
+            grid-area: container;
+            width: 100%;
+         }
       }
    }
 
-   .grid_IsOpen {
-      grid-template-rows: 20% auto;
-      grid-template-areas:
-         '. . . .'
-         'is_Open is_Open is_Open is_Open';
+   .more_habilities {
+      display: flex;
+      justify-content: center;
+      margin: 4rem 0 0 4rem;
+      grid-area: button;
    }
 
    @media screen {
@@ -128,6 +153,23 @@ export const HabilitiesStyle = styled.section`
       }
       @media (max-width: 850px) {
          padding: 0;
+      }
+      @media (max-width: 475px) {
+         /* display: grid;
+         grid-template-areas:
+            '. .'
+            'title title'
+            'stacks container'
+            'button button';
+         grid-template-columns: 22% 72%;
+         grid-template-rows: 20% 20% 50% 10%;
+         justify-items: center;
+         justify-content: center;
+         align-content: center; */
+         height: 70vh;
+         min-height: 50rem;
+         width: 92%;
+         margin: 0 auto;
       }
    }
 `;

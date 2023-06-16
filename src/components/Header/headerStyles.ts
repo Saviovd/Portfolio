@@ -21,27 +21,39 @@ export const HeaderStyle = styled.header`
    .logo {
       position: absolute;
       left: 2rem;
-      top: 2rem;
+
+      @media screen {
+         @media (max-width: 768px) {
+            top: 2rem;
+         }
+      }
    }
 
    .burger_icon {
+      cursor: pointer;
       position: absolute;
       right: 2rem;
       top: 3rem;
       font-size: 3rem;
-      color: #FFF;
+      color: #fff;
       z-index: 9;
+      display: none;
+
+      @media screen {
+         @media (max-width: 768px) {
+            display: initial;
+         }
+      }
    }
 
    @media screen {
       @media (max-width: 1024px) {
          justify-content: flex-end;
+         top: 0;
       }
       @media (max-width: 768px) {
-         top: 0;
          padding: 0;
-         height: 15rem;
+         height: 11rem;
       }
    }
-
 `;
