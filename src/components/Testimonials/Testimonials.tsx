@@ -31,10 +31,10 @@ const Testimonials = () => {
                pagination={{ clickable: true }}
                modules={[Pagination, Autoplay]}
             >
-               {testimonials.map(({ name, office, testimony, id }) => (
+               {testimonials.map(({ name, office, testimony, id, photo }) => (
                   <SwiperSlide key={id}>
                      <div className='testimony_box'>
-                        <Image className='photograph' src={'/assets/savio.jpg'} alt='ok' width={80} height={80} />
+                        <Image className='photograph' src={photo} alt='ok' width={80} height={80} />
                         <h4 className='name'>{name}</h4>
                         <h5 className='office'>{office}</h5>
                         <p className='testimony'>

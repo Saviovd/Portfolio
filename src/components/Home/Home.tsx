@@ -19,9 +19,9 @@ const Intro = () => {
                <Button
                   className='left'
                   title='Meu GitHub'
-                  url='#contatos'
+                  url='https://github.com/Saviovd'
                   bgColor='rgba(var(--second-primary-color), 0.4)'
-                  _blank={false}
+                  _blank={true}
                />
                <Button
                   className='right'

@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
       min-height: 100vh;
 
       body {
+         animation: cursorAnimation 10s infinite ;
          scroll-behavior: smooth;
          margin: 0;
          padding: 0;
@@ -40,6 +41,10 @@ const GlobalStyle = createGlobalStyle`
          a {
             color: inherit;
             text-decoration: none;
+         }
+         svg {
+            fill: white;
+            stroke: white;
          }
 
          &::-webkit-scrollbar {
@@ -60,8 +65,10 @@ const GlobalStyle = createGlobalStyle`
                }
             }
          }
-      }
 
+      }
    }
+
+
 `;
 export default GlobalStyle;

@@ -24,9 +24,9 @@ const About = () => {
                   </filter>
                </svg>
                <div className='imgWrap'>
-                  <Image className='red photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={700} height={600} />
-                  <Image className='green photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
-                  <Image className='blue photograph' src='/assets/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
+                  <Image className='red photograph' src='/assets/Photo/savio.jpg' alt={'Photography of Sávio Almeida'} width={700} height={600} />
+                  <Image className='green photograph' src='/assets/Photo/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
+                  <Image className='blue photograph' src='/assets/Photo/savio.jpg' alt={'Photography of Sávio Almeida'} width={500} height={600} />
                </div>
             </div>
             <div className='content'>

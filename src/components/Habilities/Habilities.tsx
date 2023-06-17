@@ -9,6 +9,7 @@ interface IRenderProps {
    id: string;
    language_name: string;
    logo: string;
+   fill?: string
 }
 
 const Habilities = () => {
@@ -62,10 +63,12 @@ const Habilities = () => {
                   {renderItens?.map((lang: IRenderProps) => (
                      <div className='stack' key={lang.id}>
                         <Image
+                           style={{fill: lang.fill}}
                            src={lang.logo}
                            alt={lang.language_name}
                            width={64}
                            height={64}
+                           className='stack_icon'
                         />
                         <h2 className='stack_name'>{lang.language_name}</h2>
                      </div>

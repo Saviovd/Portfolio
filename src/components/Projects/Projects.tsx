@@ -40,7 +40,7 @@ const Projects = () => {
                   />
                   <Button
                      title='Repositório'
-                     url={'#'}
+                     url={projects[active].repository}
                      _blank={true}
                   />
                </div>
@@ -48,7 +48,12 @@ const Projects = () => {
                <ul className='stack_list'>
                   {projects[active].stacks.map((stack: string, i: number) => (
                      <li className='stack' key={i}>
-                        {stack}
+                        <Image
+                           src={stack}
+                           alt='stack logo'
+                           width={32}
+                           height={32}
+                        />
                      </li>
                   ))}
                </ul>

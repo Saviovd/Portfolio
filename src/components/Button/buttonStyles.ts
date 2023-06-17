@@ -9,7 +9,6 @@ export const ButtonStyle = styled.a`
    background: none;
    border: none;
    outline: none;
-   cursor: pointer;
    padding: 1rem 3rem;
    font-size: 1.5rem;
    letter-spacing: 0.3rem;
@@ -18,7 +17,7 @@ export const ButtonStyle = styled.a`
    border: 1px solid rgb(var(--first-primary-color));
    transition: all 0.2s ease;
    white-space: nowrap;
-
+   cursor: default;
    z-index: 1;
 
    &:before,
@@ -50,8 +49,7 @@ export const ButtonStyle = styled.a`
    }
 
    &:hover {
-      background: rgba(var(--second-primary-color), 0.3);
-      color: rgb(var(--first-primary-color));
+      cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png), pointer;
    }
 
    &:hover:before {

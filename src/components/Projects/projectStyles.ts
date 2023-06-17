@@ -152,8 +152,12 @@ export const ProjectsStyle = styled.section`
             line-height: 130%;
             letter-spacing: 0.1rem;
             @media screen {
+               @media (max-width: 1440px) {
+                  min-height: 7rem;
+               }
                @media (max-width: 1024px) {
                   margin: 2rem 0 3rem 0;
+                  min-height: 0;
                }
                @media (max-width: 440px) {
                   font-size: 1.5rem;
@@ -200,7 +204,7 @@ export const ProjectsStyle = styled.section`
             }
             @media (max-width: 768px) {
                margin-left: 0;
-               min-width: 32rem;
+               min-width: 30rem;
             }
          }
       }
@@ -261,6 +265,9 @@ export const ProjectsStyle = styled.section`
       }
       @media (max-width: 400px) {
          padding-top: 9rem;
+      }
+      @media (max-width: 400px) {
+         padding-top: 12rem;
       }
    }
 `;

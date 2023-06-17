@@ -110,6 +110,10 @@ export const TestimonialsStyle = styled.section`
                   padding: 1.5rem 2rem 2rem;
                   grid-template-columns: 25% auto;
                }
+               @media (max-width: 425px) {
+                  grid-template-columns: 28% auto;
+                  grid-template-rows: 20% 20% auto;
+               }
             }
          }
          .swiper-pagination-bullet {
@@ -131,6 +135,11 @@ export const TestimonialsStyle = styled.section`
       }
       @media (max-width: 440px) {
          height: 70vh;
+         justify-content: flex-end;
+      }
+      @media (max-width: 360px) {
+         height: 60vh;
+         min-height: 55rem;
          justify-content: flex-end;
       }
    }

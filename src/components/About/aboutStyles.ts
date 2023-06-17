@@ -45,6 +45,7 @@ export const AboutStyle = styled.section`
             display: none;
          }
          .imgWrap {
+            cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png) , default !important;
             width: 80%;
             height: 100%;
             max-width: 450px;

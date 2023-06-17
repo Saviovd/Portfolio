@@ -11,6 +11,8 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    text-transform: uppercase;
    text-decoration: none;
    text-transform: uppercase;
+   cursor: pointer;
+   z-index: 2;
 
    position: relative;
 
@@ -40,11 +42,11 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    }
    &:hover {
       &:before {
-         animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+         animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 1;
       }
       &:after {
-         animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
-            both 5;
+         animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+            both 1;
       }
    }
    .selected {
@@ -77,6 +79,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
             @media (max-width: 768px) {
                transform: translateY(.2rem);
                height: 0.2rem;
+               background-color: rgba(var(--second-primary-color), 0.9);
             }
          }
       }

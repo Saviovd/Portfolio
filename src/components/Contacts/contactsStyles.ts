@@ -38,8 +38,8 @@ export const ContactStyle = styled.section`
             }
 
             @media screen and (max-width: 1024px) {
-               width: 11rem;
-               height: 12rem;
+               width: 10rem;
+               height: 10rem;
             }
 
             @media screen and (max-width: 455px) {
@@ -100,12 +100,12 @@ export const ContactStyle = styled.section`
          @media screen and (max-width: 1024px) {
             width: 55%;
             min-width: 36rem;
-            height: 13rem;
+            height: 11rem;
          }
 
          @media screen and (max-width: 455px) {
             width: 100%;
-            min-width: 320px;
+            min-width: 310px;
             height: 11rem;
          }
       }

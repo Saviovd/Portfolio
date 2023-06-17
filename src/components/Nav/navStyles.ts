@@ -4,7 +4,7 @@ export const NavStyle = styled.nav`
    max-width: 1200px;
    width: 60%;
    margin: 0 auto;
-   background-color: rgba(var(--second-primary-color), 0.3);
+   background-color: rgba(var(--second-primary-color), 0.95);
 
    display: flex;
    align-items: center;
@@ -28,7 +28,7 @@ export const NavStyle = styled.nav`
             height: 100vh;
             overflow: hidden;
             z-index: 5;
-            background-color: rgba(var(--second-primary-color));
+            background-color: rgba(var(--first-primary-color), 0.9);
             margin: 0;
 
             position: absolute;
@@ -66,7 +66,8 @@ export const NavStyle = styled.nav`
          height: 100vh;
          overflow: hidden;
          z-index: 3;
-         background-color: rgba(var(--white-unification), 0.3);
+         background-color: rgba(var(--first-primary-color), 0.1);
+         backdrop-filter: blur(2px);
          left: -100%;
          position: relative;
          margin: 0;
