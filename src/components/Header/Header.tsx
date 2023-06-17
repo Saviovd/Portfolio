@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import { HeaderStyle } from './headerStyles';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
+import Image from 'next/image';
 
 const Header = () => {
    const [isActive, setIsActive] = React.useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
             style={{height: `${isActive ? 'auto' : `${typeof window !== 'undefined' &&  window.innerWidth < 768 ? '0' : ''}`}`}}
             onClick={() => isActive ? setIsActive(false) : isActive}
          >
-            <h1 className='logo'>logo aqui!</h1>
+            <Image className='logo' src={'/assets/logo.png'} alt={'Logo de Sávio Almeida'} width={70} height={70} />
             <Nav isVisible={isActive} />
             {!isActive ? (
                <RxHamburgerMenu

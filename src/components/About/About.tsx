@@ -3,11 +3,25 @@ import { AboutStyle } from './aboutStyles';
 import Title from '../Title/Title';
 import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const About = () => {
+
+   const motionProps = (initialY: number, finalY: number) => ({
+      initial: { opacity: 0, y: initialY },
+      whileInView: { opacity: 1, y: finalY },
+      viewport: { once: true },
+      transition: {
+         type: 'spring',
+         bounce: 0.4,
+         duration: 0.8,
+         delay: 0.2
+      },
+   });
+
    return (
       <AboutStyle id='sobre mim'>
-         <div className='about_content'>
+         <motion.div {...motionProps(100, 0)} className='about_content'>
             <div className='img_box'>
                <svg className='filter'>
                   <filter id='alphaRed'>
@@ -48,7 +62,7 @@ const About = () => {
                   </Link>
                </div>
             </div>
-         </div>
+         </motion.div>
       </AboutStyle>
    );
 };

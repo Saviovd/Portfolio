@@ -3,12 +3,27 @@ import { HomeStyle } from './homeStyles';
 import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
+
+   const motionProps = (initialX: number, finalX: number) => ({
+      initial: { opacity: 0, x: initialX },
+      whileInView: { opacity: 1, x: finalX },
+      viewport: { once: true },
+      transition: {
+         type: 'spring',
+         bounce: 0.4,
+         duration: 1,
+         delay: 0.2
+      },
+   });
+
+
    return (
       <>
          <HomeStyle id='home'>
-            <div className='apresentation'>
+            <motion.div {...motionProps(-100, 0)} className='apresentation'>
                <h2 className='hello_world'>{'<HELLO WORLD />'}</h2>
                <span className='calls_me'>_olá, me chamo</span>
                <h3 className='my_name'>Sávio Almeida {'< />'}</h3>
@@ -43,7 +58,7 @@ const Intro = () => {
                   <div className='chevron'></div>
                   <div className='chevron'></div>
                </ScrollLink>
-            </div>
+            </motion.div>
             <div className='animated_bg'></div>
          </HomeStyle>
       </>
