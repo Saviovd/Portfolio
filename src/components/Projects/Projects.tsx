@@ -33,11 +33,11 @@ const Projects = () => {
          />
 
          <div className='project_container'>
-            <motion.div {...motionProps(-300, -150)} className='pagination'>
+            <div className='pagination'>
                <span className={`one ${active === 0 ? 'isActive' : ''}`} onClick={() => setActive(0)}>1</span>
                <span className={`two ${active === 1 ? 'isActive' : ''}`} onClick={() => setActive(1)}>2</span>
                <span className={`three ${active === 2 ? 'isActive' : ''}`} onClick={() => setActive(2)}>3</span>
-            </motion.div>
+            </div>
             <Image className='project_photo' src={projects[active].image} alt='ok' width={900} height={442} />
 
             <motion.div {...motionProps(300, 0)} className='about_project'>

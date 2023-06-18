@@ -62,9 +62,6 @@ export const ProjectsStyle = styled.section`
             background-color: rgba(var(--primary-blue), 0.8);
             width: 20rem;
             @media screen {
-               @media (max-width: 1600px) {
-                  width: 15rem;
-               }
                @media (max-width: 1024px) {
                   width: 10rem;
                   width: 50%;
@@ -74,15 +71,12 @@ export const ProjectsStyle = styled.section`
          }
 
          @media screen {
-            @media (max-width: 1600px) {
-               width: 10rem;
-            }
             @media (max-width: 1024px) {
                position: initial;
                flex-direction: row;
                width: 25rem;
                align-self: flex-start;
-               transform: translate(0);
+               transform: translateX(0rem);
             }
             @media (max-width: 780px) {
                width: 20rem;
