@@ -21,7 +21,7 @@ export const TestimonialsStyle = styled.section`
          align-items: center;
 
          .testimony_box {
-            border: 1px solid rgb(var(--second-primary-color));
+            border: 1px solid rgb(var(--primary-pink));
             width: 65rem;
             padding: 2rem 3rem 3rem;
             display: grid;
@@ -33,10 +33,10 @@ export const TestimonialsStyle = styled.section`
             grid-template-columns: 15% auto;
             border-radius: 2px;
             margin: 5rem auto 10rem;
-            box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff,
-               0 0 10px rgba(var(--second-primary-color)),
-               0 0 20px rgba(var(--second-primary-color)),
-               0 0 30px rgba(var(--second-primary-color));
+            box-shadow: 0 0 3px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)),
+               0 0 5px rgba(var(--primary-pink)),
+               0 0 10px rgba(var(--primary-pink)),
+               0 0 15px rgba(var(--primary-pink));
 
             .photograph {
                grid-area: photo;
@@ -70,7 +70,7 @@ export const TestimonialsStyle = styled.section`
                font-size: 1.8rem;
                font-weight: 200;
                justify-self: flex-start;
-               color: rgb(var(--first-primary-color));
+               color: rgb(var(--primary-blue));
                @media screen {
                   @media (max-width: 510px) {
                      font-size: 1.5rem;
@@ -117,12 +117,12 @@ export const TestimonialsStyle = styled.section`
             }
          }
          .swiper-pagination-bullet {
-            background-color: rgb(var(--first-primary-color));
+            background-color: rgb(var(--primary-blue));
             width: 1.8rem;
             height: 1.8rem;
 
             &:hover {
-               background-color: rgb(var(--second-primary-color));
+               background-color: rgb(var(--primary-pink));
             }
          }
       }

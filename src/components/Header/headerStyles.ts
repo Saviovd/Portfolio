@@ -20,11 +20,25 @@ export const HeaderStyle = styled.header`
 
    .logo {
       position: absolute;
-      left: 2rem;
-
+      left: 3rem;
       @media screen {
-         @media (max-width: 768px) {
-            top: 2rem;
+         @media (max-width: 1440px) {
+            height: 3rem;
+            width: 6rem;
+            height: 6rem;
+         }
+         @media (max-width: 1024px) {
+            height: 3rem;
+            width: 5.5rem;
+            height: 5.5rem;
+         }
+         @media screen {
+            @media (max-width: 768px) {
+               top: 2rem;
+               left: 1.5rem;
+               width: 5rem;
+               height: 5rem;
+            }
          }
       }
    }
@@ -33,9 +47,9 @@ export const HeaderStyle = styled.header`
       cursor: pointer;
       position: absolute;
       right: 2rem;
-      top: 3rem;
-      font-size: 3rem;
-      color: #fff;
+      top: 2.5rem;
+      font-size: 4rem;
+      color: rgb(var(--secondary-white));
       z-index: 9;
       display: none;
 
@@ -49,11 +63,12 @@ export const HeaderStyle = styled.header`
    @media screen {
       @media (max-width: 1024px) {
          justify-content: flex-end;
-         top: 0;
+         top: 2rem;
       }
       @media (max-width: 768px) {
          padding: 0;
-         height: 11rem;
+         height: 7rem;
+         top: 0;
       }
    }
 `;

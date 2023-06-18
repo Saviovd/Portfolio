@@ -23,12 +23,9 @@ export const AboutStyle = styled.section`
       border: 2px solid #2b206a;
       border-radius: 2px;
 
-      box-shadow: 0 0 2px rgb(var(--white-unification)),
-         0 0 8px rgb(var(--white-unification)),
-         0 0 15px rgb(var(--first-primary-color)),
-         0 0 25px rgb(var(--first-primary-color)),
-         0 0 34px rgb(var(--first-primary-color)),
-         0 0 42px rgb(var(--first-primary-color));
+      box-shadow: 0 0 2px rgb(var(--secondary-white)),
+         0 0 5px rgb(var(--secondary-white)), 0 0 8px rgb(var(--primary-blue)),
+         0 0 13px rgb(var(--primary-blue));
       -webkit-animation: blink 7s infinite alternate;
       animation: blink 7s infinite alternate;
 
@@ -45,7 +42,8 @@ export const AboutStyle = styled.section`
             display: none;
          }
          .imgWrap {
-            cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png) , default !important;
+            cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+               default !important;
             width: 80%;
             height: 100%;
             max-width: 450px;
@@ -223,14 +221,14 @@ export const AboutStyle = styled.section`
 
    @-webkit-keyframes blink {
       100% {
-         box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff,
-            0 0 40px #0ba9ca, 0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+         box-shadow: 0 0 3px rgb(var(--secondary-white)), 0 0 4px rgb(var(--secondary-white)), 0 0 12px rgb(var(--secondary-white)),
+            0 0 5px #0ba9ca, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca;
       }
    }
 
    @keyframes blink {
       100% {
-         box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #0ba9ca,
+         box-shadow: 0 0 3px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)), 0 0 10px #0ba9ca,
             0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
       }
    }

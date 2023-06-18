@@ -4,7 +4,7 @@ export const NavStyle = styled.nav`
    max-width: 1200px;
    width: 60%;
    margin: 0 auto;
-   background-color: rgba(var(--second-primary-color), 0.95);
+   background-color: rgba(var(--primary-pink), 0.95);
 
    display: flex;
    align-items: center;
@@ -28,7 +28,7 @@ export const NavStyle = styled.nav`
             height: 100vh;
             overflow: hidden;
             z-index: 5;
-            background-color: rgba(var(--first-primary-color), 0.9);
+            background-color: rgba(var(--primary-blue), 0.9);
             margin: 0;
 
             position: absolute;
@@ -36,14 +36,14 @@ export const NavStyle = styled.nav`
             align-items: center;
             justify-content: center;
             gap: 2rem;
-            transition: .5s;
+            transition: 0.5s;
          }
       }
    }
    .isVisible {
+      margin: 0;
       animation: enterList 0.5s 0.5s forwards;
    }
-
 
    @media screen {
       @media (max-width: 1600px) {
@@ -55,7 +55,7 @@ export const NavStyle = styled.nav`
       @media (max-width: 1024px) {
          width: 75%;
          height: 7rem;
-         margin: 3rem 0 0 0;
+         margin: 0;
       }
       @media (max-width: 880px) {
          padding-left: 0.5rem;
@@ -66,7 +66,7 @@ export const NavStyle = styled.nav`
          height: 100vh;
          overflow: hidden;
          z-index: 3;
-         background-color: rgba(var(--first-primary-color), 0.1);
+         background-color: rgba(var(--primary-blue), 0.1);
          backdrop-filter: blur(2px);
          left: -100%;
          position: relative;
@@ -78,6 +78,8 @@ export const NavStyle = styled.nav`
    @keyframes enterMenu {
       to {
          left: 0;
+         bottom: 0;
+         top: 0;
       }
    }
 

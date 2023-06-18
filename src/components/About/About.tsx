@@ -44,7 +44,7 @@ const About = () => {
                </div>
             </div>
             <div className='content'>
-               <Title firstColor='#2B206A' secondColor='#FFFFFF' firstWord='Sobre' secondWord='Mim' />
+               <Title firstColor='rgb(var(--primary-pink))' secondColor='#FFFFFF' firstWord='Sobre' secondWord='Mim' />
                <p className='about_me'>
                   Sou um desenvolvedor Full Stack com 2 anos e meio de experiência em programação,
                   especializado em Next.js e TypeScript. Minha paixão é criar interfaces de usuário

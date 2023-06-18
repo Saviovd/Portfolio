@@ -35,7 +35,7 @@ const Intro = () => {
                   className='left'
                   title='Meu GitHub'
                   url='https://github.com/Saviovd'
-                  bgColor='rgba(var(--second-primary-color), 0.4)'
+                  bgColor='rgba(var(--primary-pink), 0.4)'
                   _blank={true}
                />
                <Button

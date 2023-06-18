@@ -8,15 +8,29 @@ import { Pagination, Autoplay } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { motion } from 'framer-motion';
 
 const { testimonials } = data;
 
 const Testimonials = () => {
+
+   const motionProps = (initialY: number, finalY: number) => ({
+      initial: { opacity: 0, y: initialY },
+      whileInView: { opacity: 1, y: finalY },
+      viewport: { once: true },
+      transition: {
+         type: 'spring',
+         bounce: 0.4,
+         duration: 0.8,
+         delay: 0.2
+      },
+   });
+
    return (
       <TestimonialsStyle id='depoimentos'>
          <Title firstColor='rgb(var(--first-primary-color))' firstWord='Depoimentos' />
 
-         <div className='testimonials_container'>
+         <motion.div {...motionProps(100, 0)} className='testimonials_container'>
             <Swiper
                className='swiper'
                spaceBetween={0}
@@ -44,7 +58,7 @@ const Testimonials = () => {
                   </SwiperSlide>
                ))}
             </Swiper>
-         </div>
+         </motion.div>
       </TestimonialsStyle>
    );
 };

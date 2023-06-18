@@ -25,26 +25,28 @@ export const ContactStyle = styled.section`
             'icon name';
          grid-template-rows: 40% auto;
          grid-template-columns: 33% auto;
-         background-color: rgba(var(--second-primary-color), 0.5);
+         border: 1px solid rgba(var(--primary-pink), 0.5);
+         cursor: pointer;
 
-         .icon {
+         .icon_box {
             grid-area: icon;
-            background-color: rgba(var(--first-primary-color), 0.8);
-            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             width: 10rem;
+            color: white;
 
-            @media screen and (max-width: 1440px) {
-               width: 8rem;
-            }
-
-            @media screen and (max-width: 1024px) {
-               width: 10rem;
-               height: 10rem;
-            }
-
-            @media screen and (max-width: 455px) {
-               height: 10rem;
-               width: 9rem;
+            @media screen {
+               @media screen and (max-width: 1130px) {
+                  width: 7rem;
+               }
+               @media screen and (max-width: 1024px) {
+                  width: 10rem;
+               }
+               @media screen and (max-width: 400px) {
+                  width: 9rem;
+               }
             }
          }
 
@@ -52,21 +54,7 @@ export const ContactStyle = styled.section`
             grid-area: type;
             font-size: 1.4rem;
             padding-top: 1rem;
-            color: rgba(var(--first-primary-color), 0.6);
-
-            @media screen and (max-width: 1440px) {
-               padding-left: 1rem;
-            }
-
-            @media screen and (max-width: 1024px) {
-               font-size: 1.6rem;
-               padding-left: 2rem;
-            }
-
-            @media screen and (max-width: 395px) {
-               font-size: 1.5rem;
-               padding-left: 1.7rem;
-            }
+            color: rgba(var(--primary-blue));
          }
 
          .name {
@@ -75,38 +63,28 @@ export const ContactStyle = styled.section`
             margin: 0;
             padding: 0.5rem;
 
-            @media screen and (max-width: 1440px) {
-               font-size: 1.5rem;
-               padding: 1rem;
+            @media screen {
+               @media screen and (max-width: 400px) {
+                  font-size: 1.5rem;
+               }
             }
+         }
 
+         @media screen {
+            @media screen and (max-width: 1130px) {
+               width: 30rem;
+               grid-template-columns: 25% auto;
+            }
             @media screen and (max-width: 1024px) {
-               padding-left: 2rem;
-               font-size: 1.8rem;
+               grid-template-columns: 31% auto;
+               width: 35rem;
             }
-
-            @media screen and (max-width: 395px) {
-               font-size: 1.6rem;
-               padding-left: 1.7rem;
-               z-index: 1;
+            @media screen and (max-width: 400px) {
+               width: 100%;
+               min-width: 290px;
+               height: 9rem;
+               grid-template-columns: 32% auto;
             }
-         }
-
-         @media screen and (max-width: 1440px) {
-            width: 30rem;
-            grid-template-columns: 30% auto;
-         }
-
-         @media screen and (max-width: 1024px) {
-            width: 55%;
-            min-width: 36rem;
-            height: 11rem;
-         }
-
-         @media screen and (max-width: 455px) {
-            width: 100%;
-            min-width: 310px;
-            height: 11rem;
          }
       }
 

@@ -32,7 +32,7 @@ export const ProjectsStyle = styled.section`
          .two,
          .three {
             cursor: pointer;
-            background-color: rgba(var(--second-primary-color), 0.6);
+            background-color: rgba(var(--primary-pink), 0.6);
             text-align: right;
             font-size: 4rem;
             font-weight: 600;
@@ -59,7 +59,7 @@ export const ProjectsStyle = styled.section`
 
          .isActive {
             transition: 1s;
-            background-color: rgba(var(--first-primary-color), 0.6);
+            background-color: rgba(var(--primary-blue), 0.8);
             width: 20rem;
             @media screen {
                @media (max-width: 1600px) {
@@ -93,7 +93,7 @@ export const ProjectsStyle = styled.section`
       .project_photo {
          object-fit: cover;
          border-radius: 2px;
-         border: 1px solid rgba(var(--first-primary-color), 0.4);
+         border: 1px solid rgba(var(--primary-blue), 0.4);
          @media screen {
             @media (max-width: 1600px) {
                object-fit: contain;
@@ -187,7 +187,7 @@ export const ProjectsStyle = styled.section`
             .stack {
                margin-right: 0.7rem;
                padding: 1rem;
-               border: 1px solid rgba(var(--second-primary-color), 0.8);
+               border: 1px solid rgba(var(--primary-pink), 0.8);
                border-radius: 2px;
             }
          }

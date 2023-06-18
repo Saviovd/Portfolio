@@ -1,17 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 const outfit = 'outfit';
-const firstPrimaryColor = '43, 157, 222';
-const secondPrimaryColor = '43, 32, 106';
+const firstPrimaryColor = '49, 156, 234';
+const secondPrimaryColor = '173, 22, 184';
 const whiteUnification = '255, 255, 255';
 const blackBG = '0, 0, 0';
 // rgb(241, 4 ,143)
 const GlobalStyle = createGlobalStyle`
    :root {
       --outfit: ${outfit};
-      --first-primary-color: ${firstPrimaryColor};
-      --second-primary-color: ${secondPrimaryColor};
-      --white-unification: ${whiteUnification};
+      --primary-blue: ${firstPrimaryColor};
+      --primary-pink: ${secondPrimaryColor};
+      --secondary-white: ${whiteUnification};
       --bg-black: ${blackBG};
    }
 
@@ -54,14 +54,14 @@ const GlobalStyle = createGlobalStyle`
             background-color: transparent;
          }
          &::-webkit-scrollbar-thumb {
-            background: linear-gradient(rgba(var(--first-primary-color), .5), rgba(var(--second-primary-color), .5));
+            background: linear-gradient(rgba(var(--primary-blue), .5), rgba(var(--primary-pink), .5));
             animation: gradient 5s ease alternate;
             border-radius: 2px;
-            outline: 1px solid rgba(var(--second-primary-color));
+            outline: 1px solid rgba(var(--primary-pink));
 
                @keyframes gradient {
                to {
-                  background: linear-gradient(rgba(var(--second-primary-color), .5), rgba(var(--first-primary-color), .5));
+                  background: linear-gradient(rgba(var(--primary-pink), .5), rgba(var(--primary-blue), .5));
                }
             }
          }

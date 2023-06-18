@@ -50,14 +50,14 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
       }
    }
    .selected {
-      text-shadow: -8px -1px 1px rgba(var(--first-primary-color));
+      text-shadow: -8px -1px 1px rgba(var(--primary-blue));
       animation: bug 0.5s forwards;
 
       position: relative;
       height: 100%;
       &::after {
          content: '';
-         background-color: rgb(var(--first-primary-color));
+         background-color: rgb(var(--primary-blue));
          height: 0.5rem;
          width: 0%;
 
@@ -79,7 +79,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
             @media (max-width: 768px) {
                transform: translateY(.2rem);
                height: 0.2rem;
-               background-color: rgba(var(--second-primary-color), 0.9);
+               background-color: rgba(var(--primary-pink), 0.9);
             }
          }
       }
@@ -107,25 +107,25 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    }
    @keyframes bug {
       0% {
-         text-shadow: -7px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: -7px -1px 1px rgba(var(--primary-blue));
       }
       15% {
-         text-shadow: 2px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: 2px -1px 1px rgba(var(--primary-blue));
       }
       25% {
-         text-shadow: -3px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: -3px -1px 1px rgba(var(--primary-blue));
       }
       40% {
-         text-shadow: -7px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: -7px -1px 1px rgba(var(--primary-blue));
       }
       50% {
-         text-shadow: -4px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: -4px -1px 1px rgba(var(--primary-blue));
       }
       75% {
-         text-shadow: -3px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: -3px -1px 1px rgba(var(--primary-blue));
       }
       95% {
-         text-shadow: 8px -1px 1px rgba(var(--first-primary-color));
+         text-shadow: 8px -1px 1px rgba(var(--primary-blue));
       }
       100% {
          text-shadow: none;

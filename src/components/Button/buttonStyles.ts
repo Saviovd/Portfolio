@@ -14,7 +14,7 @@ export const ButtonStyle = styled.a`
    letter-spacing: 0.3rem;
    text-align: center;
    text-transform: uppercase;
-   border: 1px solid rgb(var(--first-primary-color));
+   border: 1px solid rgb(var(--primary-blue));
    transition: all 0.2s ease;
    white-space: nowrap;
    cursor: default;
@@ -30,22 +30,22 @@ export const ButtonStyle = styled.a`
       width: 100%;
       -webkit-clip: rect(0px, 0px, 0px, 0px);
       clip: rect(0px, 0px, 0px, 0px);
-      background: rgb(var(--first-primary-color));
-      color: #fff;
+      background: rgb(var(--primary-blue));
+      color: rgb(var(--secundary-white));
    }
 
    &:before {
       left: -3px;
       top: -2px;
-      text-shadow: 2px 0 rgb(var(--first-primary-color));
-      box-shadow: 2px 0 rgb(var(--first-primary-color));
+      text-shadow: 2px 0 rgb(var(--primary-blue));
+      box-shadow: 2px 0 rgb(var(--primary-blue));
    }
 
    &:after {
       left: 2px;
       bottom: -2px;
-      text-shadow: -1px 0 rgb(var(--first-primary-color));
-      box-shadow: -1px 0 rgb(var(--first-primary-color));
+      text-shadow: -1px 0 rgb(var(--primary-blue));
+      box-shadow: -1px 0 rgb(var(--primary-blue));
    }
 
    &:hover {

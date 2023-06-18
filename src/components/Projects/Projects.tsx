@@ -26,8 +26,8 @@ const Projects = () => {
    return (
       <ProjectsStyle id='projetos'>
          <Title
-            firstColor='rgb(var(--white))'
-            secondColor='rgb(var(--second-primary-color))'
+            firstColor='rgb(var(--secondary-white))'
+            secondColor='rgb(var(--primary-pink))'
             firstWord='Projetos'
             secondWord='Recentes'
          />
@@ -76,7 +76,7 @@ const Projects = () => {
             <Button
                title='Veja Mais!'
                url='/projects'
-               bgColor='rgb(var(--second-primary-color))'
+               bgColor='rgb(var(--primary-pink))'
                _blank={false}
             />
          </div>

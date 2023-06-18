@@ -6,7 +6,7 @@ export const HabilitiesStyle = styled.section`
    min-height: 640px;
    padding: 0 2rem;
 
-   height: 72vh;
+   height: 75vh;
    text-align: center;
 
    display: flex;
@@ -30,9 +30,10 @@ export const HabilitiesStyle = styled.section`
          border-radius: 2px 2px 0 0;
          padding: 1.5rem 0.5rem;
          white-space: nowrap;
-         background-color: rgb(var(--first-primary-color));
+         background-color: rgb(var(--primary-blue));
          border-right: 1px solid #000000;
          transition: 1s;
+         cursor: pointer;
 
          @media screen {
             @media (max-width: 1600px) {
@@ -67,11 +68,11 @@ export const HabilitiesStyle = styled.section`
 
       .is_Open {
          border: 0;
-         background-color: rgb(var(--second-primary-color));
+         background-color: rgb(var(--primary-pink));
          box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 4px #fff,
-            0 0 10px rgb(var(--second-primary-color)),
-            0 0 20px rgb(var(--second-primary-color)),
-            0 0 30px rgb(var(--second-primary-color));
+            0 0 5px rgb(var(--primary-pink)),
+            0 0 8px rgb(var(--primary-pink)),
+            0 0 10px rgb(var(--primary-pink));
          z-index: 2;
       }
 
@@ -89,14 +90,14 @@ export const HabilitiesStyle = styled.section`
 
    .stack_container {
       min-width: 75rem;
-      border: 1px solid rgba(var(--second-primary-color), 0.3);
+      border: 1px solid rgba(var(--primary-pink), 0.3);
       width: 60%;
-      height: 30%;
+      height: auto;
       min-height: 22rem;
-      background-color: rgba(var(--second-primary-color), 0.2);
 
       display: flex;
       justify-content: space-around;
+      align-items: center;
       padding: 1.5rem 0;
       flex-wrap: wrap;
 
@@ -123,7 +124,7 @@ export const HabilitiesStyle = styled.section`
             }
          }
          .stack_name {
-            color: rgba(var(--first-primary-color), 0.9);
+            color: rgba(var(--primary-blue), 0.9);
             margin: 0.1rem 0 0 0;
             @media screen {
                @media (max-width: 850px) {
@@ -148,7 +149,6 @@ export const HabilitiesStyle = styled.section`
             width: 90%;
          }
          @media (max-width: 475px) {
-            grid-area: container;
             width: 100%;
          }
       }
@@ -156,8 +156,8 @@ export const HabilitiesStyle = styled.section`
 
    .more_habilities {
       display: flex;
-      margin: 4rem 0 0 0;
-      grid-area: button;
+      margin: 6rem 8rem 0 0;
+      align-self: flex-end;
    }
 
    @media screen {

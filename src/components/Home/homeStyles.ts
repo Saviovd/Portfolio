@@ -88,7 +88,7 @@ export const HomeStyle = styled.section`
       }
       .my_name {
          grid-area: name;
-         color: rgb(var(--first-primary-color));
+         color: rgb(var(--primary-blue));
          font-size: 4rem;
          text-transform: uppercase;
          letter-spacing: 3px;
@@ -155,7 +155,7 @@ export const HomeStyle = styled.section`
       }
       .loader {
          grid-area: loader;
-         color: rgb(var(--second-primary-color));
+         color: rgb(var(--primary-pink));
          font-size: 3rem;
          text-transform: uppercase;
          font-weight: 700;
@@ -219,7 +219,7 @@ export const HomeStyle = styled.section`
                top: 0;
                height: 100%;
                width: 51%;
-               background: rgb(var(--second-primary-color));
+               background: rgb(var(--primary-pink));
             }
 
             &:before {
