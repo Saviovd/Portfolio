@@ -48,7 +48,6 @@
                "language_name": "Angular",
                "logo": "/assets/icons/front-end/angular.svg"
             }
-
          ]
       },
       {
@@ -246,6 +245,109 @@
          "name": "savio.pinheiroal@gmail.com",
          "url": "mailto:email@provedor.com.br",
          "side": "left"
+      }
+   ],
+   "courses": [
+      {
+         "icon": "/assets/icons/education/code.svg",
+         "category": "Back-End",
+         "course": "Como criar CRUDs com Qualidade",
+         "instituition": "DevSoutinho",
+         "hours": "10h",
+         "stacks": [
+            "/assets/icons/icons/ts.svg",
+            "/assets/icons/front-end/styled-components.svg",
+            "/assets/icons/front-end/nextjs.svg",
+            "/assets/icons/back-end/node-js.svg"
+
+         ],
+         "certificate": "https://crudcomqualidade.club.hotmart.com/public/user-certificate/190c359e-13c6-429b-b27f-ba222a81874b/_"
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Back-End",
+         "course": "JavaScript com foco no back-end",
+         "instituition": "Alura",
+         "hours": "74h",
+         "stacks": [
+            "/assets/icons/front-end/js.svg",
+            "/assets/icons/back-end/node-js.svg"
+         ],
+         "certificate": "#"
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "JavaScript",
+         "course": "JavaScript: tipos, variáveis e funções",
+         "instituition": "Alura",
+         "hours": "12h",
+         "stacks": "",
+         "certificate": ""
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Python",
+         "course": "Python com Orientação a Objetos",
+         "instituition": "Alura",
+         "hours": "93h",
+         "stacks": [
+            "/assets/icons/back-end/python.svg"
+         ],
+         "certificate": ""
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Front-End",
+         "course": "WebMaster Front-End Completo",
+         "instituition": "Danki.Code",
+         "hours": "81h",
+         "stacks": [
+            "/assets/icons/front-end/html5.svg",
+            "/assets/icons/front-end/css3.svg",
+            "/assets/icons/front-end/js.svg",
+            "/assets/icons/front-end/react.svg"
+         ],
+         "certificate": "https://cursos.dankicode.com/api/certificados/c4c8b9a3-dc5b-4a4c-b6a9-b29c1881ab57"
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Front-End",
+         "course": "CURSO FRONT-END COMPLETO 2.0",
+         "instituition": "Danki.Code",
+         "hours": "10h",
+         "stacks": [
+            "/assets/icons/front-end/html5.svg",
+            "/assets/icons/front-end/css3.svg",
+            "/assets/icons/front-end/js.svg",
+            "/assets/icons/front-end/react.svg"
+         ],
+         "certificate": "https://cursos.dankicode.com/api/certificados/e8498ebd-733a-464a-8773-3a2d0e7223b3"
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "API REST",
+         "course": "APIs com Node.js e Express",
+         "instituition": "Alura",
+         "hours": "70h",
+         "stacks": [
+            "/assets/icons/back-end/node-js.svg",
+            "/assets/icons/back-end/express.svg",
+            "/assets/icons/front-end/ts.svg"
+         ],
+         "certificate": ""
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Front-End",
+         "course": "Gerencie aplicações React com Typescript",
+         "instituition": "Alura",
+         "hours": "83h",
+         "stacks": "",
+         "certificate": ""
+      },
+      {"icon": "/assets/icons/education/code.svg",
+         "category": "Back-End",
+         "course": "Lógica de Programação Essencial",
+         "instituition": "Digital Innovation One",
+         "hours": "4h",
+         "stacks": [
+            "/assets/icons/back-end/node-js.svg",
+            "/assets/icons/front-end/js.svg"
+         ],
+         "certificate": "https://www.dio.me/certificate/3A22FCA6/share"
       }
    ]
 }
