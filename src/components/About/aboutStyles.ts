@@ -188,8 +188,24 @@ export const AboutStyle = styled.section`
          width: 40%;
          display: flex;
          justify-content: space-around;
+         height: 5rem;
          .media_icon {
             font-size: 5rem;
+            transition: 0.4s;
+
+            border: 1px solid rgb(var(--secondary-white));
+            padding: 1rem;
+            border-radius: 2px;
+            &:hover {
+               transform: scale(1.1);
+               fill: rgba(var(--primary-pink));
+               box-shadow: 0 0 3px rgb(var(--secondary-white)),
+                  0 0 2px rgb(var(--secondary-white)),
+                  0 0 4px rgb(var(--secondary-white)),
+                  0 0 5px rgba(var(--primary-pink)),
+                  0 0 7px rgba(var(--primary-pink)),
+                  0 0 10px rgba(var(--primary-pink));
+            }
 
             @media screen {
                @media (max-width: 1600px) {
@@ -204,6 +220,9 @@ export const AboutStyle = styled.section`
             @media (max-width: 1024px) {
                width: 20rem;
             }
+            @media (max-width: 500px) {
+               width: 80%;
+            }
          }
       }
       @media screen {
@@ -212,23 +231,29 @@ export const AboutStyle = styled.section`
          }
          @media (max-width: 1024px) {
             justify-content: space-evenly;
+            padding-bottom: 1rem;
          }
          @media (max-width: 700px) {
             align-items: center;
+
          }
       }
    }
 
    @-webkit-keyframes blink {
       100% {
-         box-shadow: 0 0 3px rgb(var(--secondary-white)), 0 0 4px rgb(var(--secondary-white)), 0 0 12px rgb(var(--secondary-white)),
-            0 0 5px #0ba9ca, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca;
+         box-shadow: 0 0 3px rgb(var(--secondary-white)),
+            0 0 4px rgb(var(--secondary-white)),
+            0 0 12px rgb(var(--secondary-white)), 0 0 5px #0ba9ca,
+            0 0 10px #0ba9ca, 0 0 15px #0ba9ca;
       }
    }
 
    @keyframes blink {
       100% {
-         box-shadow: 0 0 3px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)), 0 0 5px rgb(var(--secondary-white)), 0 0 10px #0ba9ca,
+         box-shadow: 0 0 3px rgb(var(--secondary-white)),
+            0 0 5px rgb(var(--secondary-white)),
+            0 0 5px rgb(var(--secondary-white)), 0 0 10px #0ba9ca,
             0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
       }
    }

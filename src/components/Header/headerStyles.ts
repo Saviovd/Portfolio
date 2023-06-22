@@ -67,8 +67,10 @@ export const HeaderStyle = styled.header`
       }
       @media (max-width: 768px) {
          padding: 0;
-         height: 7rem;
+         height: 8rem;
          top: 0;
+         backdrop-filter: blur(5px);
+         border-bottom: 1px solid rgb(var(--primary-pink));
       }
    }
 `;

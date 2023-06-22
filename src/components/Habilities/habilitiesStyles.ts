@@ -108,6 +108,10 @@ export const HabilitiesStyle = styled.section`
          .stack_icon {
             width: 60px;
             height: 60px;
+            transition: 1s;
+            &:hover {
+               transform: scale(1.2);
+            }
             @media screen {
                @media (max-width: 850px) {
                   width: 50px;

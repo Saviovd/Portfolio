@@ -41,10 +41,10 @@ const Intro = () => {
                <Button
                   className='right'
                   title='Download CV'
-                  url='#'
+                  download={true}
                   _blank={false}
+                  url='/documents/curriculum.pdf'
                />
-               {/* dont forget to put the download */}
                <ScrollLink
                   to='sobre mim'
                   smooth={true}

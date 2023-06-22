@@ -25,7 +25,7 @@ const Contacts = () => {
          <ContactStyle id='contatos'>
             <Title
                secondWord='Contatos'
-               firstColor='rgb(var(--second-primary-color))'
+               firstColor='rgb(var(--primary-blue))'
                firstWord='Meus'
             />
             <motion.div
@@ -39,7 +39,7 @@ const Contacts = () => {
 
                className='contact_container'>
                {contacts.map(({ icon, name, type, url, side }, i) => (
-                  <div className={`contact_card ${side}`} key={i} >
+                  <div  content={type} className={`contact_card ${side}`} key={i} >
                      <div className='icon_box'>
                         <Image
                            className='icon'
@@ -50,7 +50,7 @@ const Contacts = () => {
                         />
                      </div>
                      <span className='type'>{type}</span>
-                     <a href={url} className='name' target='_blank'>
+                     <a data-name={name} href={url} className='name' target='_blank'>
                         {name}
                      </a>
                   </div>

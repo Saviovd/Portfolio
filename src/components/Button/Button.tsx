@@ -6,9 +6,10 @@ interface IButtonProps {
    className?: string;
    bgColor?: string;
    _blank: boolean;
+   download?: boolean
 }
 
-const Button = ({ url, title, className, bgColor, _blank }: IButtonProps) => {
+const Button = ({ url, title, className, bgColor, _blank, download }: IButtonProps) => {
    return (
       <>
          <ButtonStyle
@@ -16,6 +17,7 @@ const Button = ({ url, title, className, bgColor, _blank }: IButtonProps) => {
             style={{ backgroundColor: `${bgColor}` }}
             target={_blank ? '_blank' : ''}
             className={`${className}`}
+            download={download}
          >
             {title}
          </ButtonStyle>

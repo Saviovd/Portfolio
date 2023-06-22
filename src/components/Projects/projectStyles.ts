@@ -183,6 +183,16 @@ export const ProjectsStyle = styled.section`
                padding: 1rem;
                border: 1px solid rgba(var(--primary-pink), 0.8);
                border-radius: 2px;
+               transition: .5s;
+
+               &:hover {
+                  box-shadow: 0 0 3px rgb(var(--secondary-white)),
+                     0 0 5px rgb(var(--secondary-white)),
+                     0 0 5px rgb(var(--secondary-white)),
+                     0 0 5px rgba(var(--primary-pink)),
+                     0 0 10px rgba(var(--primary-pink)),
+                     0 0 15px rgba(var(--primary-pink));
+               }
             }
          }
 

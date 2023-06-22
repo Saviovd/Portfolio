@@ -45,12 +45,12 @@ const Nav = ({isVisible}: INavProps) => {
                pagePosition={pagePosition}
                name='projetos'
             />
-            <NavItem
+            {/* <NavItem
                isSelected={selectedNavItem === 'depoimentos'}
                setIsSelected={() => handleNavItemSelect('depoimentos')}
                pagePosition={pagePosition}
                name='depoimentos'
-            />
+            /> */}
             <NavItem
                isSelected={selectedNavItem === 'contatos'}
                setIsSelected={() => handleNavItemSelect('contatos')}

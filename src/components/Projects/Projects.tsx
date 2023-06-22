@@ -40,7 +40,7 @@ const Projects = () => {
             </div>
             <Image className='project_photo' src={projects[active].image} alt='ok' width={900} height={442} />
 
-            <motion.div {...motionProps(300, 0)} className='about_project'>
+            <motion.div  {...motionProps(300, 0)} className='about_project'>
                <h3 className='project_name'>{projects[active].name}</h3>
                <p className='project_description'>
                   {projects[active].description}

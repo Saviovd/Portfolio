@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactStyle = styled.section`
+export const ContactStyle = styled.section.attrs({content: 'text'})`
    max-width: 1700px;
    padding-bottom: 6rem;
    margin: 0 auto;
@@ -25,8 +25,9 @@ export const ContactStyle = styled.section`
             'icon name';
          grid-template-rows: 40% auto;
          grid-template-columns: 33% auto;
-         border: 1px solid rgba(var(--primary-pink), 0.5);
+         border: 2px solid rgba(var(--primary-blue), 0.5);
          cursor: pointer;
+         transition: 0.5s;
 
          .icon_box {
             grid-area: icon;
@@ -69,6 +70,8 @@ export const ContactStyle = styled.section`
                }
             }
          }
+         position: relative;
+         z-index: 1;
 
          @media screen {
             @media screen and (max-width: 1130px) {
@@ -86,27 +89,36 @@ export const ContactStyle = styled.section`
                grid-template-columns: 32% auto;
             }
          }
+
+         &:hover {
+            border: 2px solid rgba(var(--primary-pink), 0.5);
+            transform: scale(1.1);
+            &::after {
+               transition: 0.3s;
+               content: attr(content);
+               font-size: 2rem;
+               color: rgba(var(--primary-pink));
+               font-weight: 700;
+               letter-spacing: 3px;
+
+               background-color: rgba(0, 0, 0, 0.7);
+               backdrop-filter: blur(6px);
+
+               width: 100%;
+               height: 100%;
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: absolute;
+            }
+         }
       }
 
       @media screen and (max-width: 1024px) {
          flex-direction: column;
          align-items: center;
          gap: 2rem;
-
-         .left {
-            align-self: flex-start;
-         }
-
-         .right {
-            align-self: flex-end;
-         }
-      }
-
-      @media screen and (max-width: 460px) {
-         .left,
-         .right {
-            align-self: center;
-         }
       }
    }
 

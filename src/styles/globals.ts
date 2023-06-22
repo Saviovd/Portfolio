@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
          box-sizing: border-box;
          overflow-x: hidden;
          max-width: 100vw;
+         overflow-x: hidden;
 
          font-family: var(--outfit);
          background-color: rgb(var(--bg-black));
@@ -65,7 +66,6 @@ const GlobalStyle = createGlobalStyle`
                }
             }
          }
-
       }
    }
 
