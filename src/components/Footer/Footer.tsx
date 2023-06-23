@@ -8,7 +8,7 @@ const Footer = () => {
             <p className='name'>
                Sávio Almeida <span className='copy'>&copy; 2023, All Rights Reserved.</span>
             </p>
-            <Image src='/assets/logo.png' alt='Logo of Savio Almeida' width={32} height={32} />
+            <Image src='/assets/logo.png' alt='Logo of Savio Almeida' width={24} height={24} />
          </FooterStyle>
       </>
    );

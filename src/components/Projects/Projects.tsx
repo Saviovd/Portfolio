@@ -19,7 +19,7 @@ const Projects = () => {
          type: 'spring',
          bounce: 0.4,
          duration: 1,
-         delay: 0.2
+         delay: 0.2,
       },
    });
 
@@ -32,15 +32,46 @@ const Projects = () => {
             secondWord='Recentes'
          />
 
-         <div className='project_container'>
+         <motion.div
+            {...(typeof window !== 'undefined' && window.innerWidth > 768
+               ? { ...motionProps(0, 0) }
+               : { ...motionProps(-150, 0) })}
+            className='project_container'
+         >
             <div className='pagination'>
-               <span className={`one ${active === 0 ? 'isActive' : ''}`} onClick={() => setActive(0)}>1</span>
-               <span className={`two ${active === 1 ? 'isActive' : ''}`} onClick={() => setActive(1)}>2</span>
-               <span className={`three ${active === 2 ? 'isActive' : ''}`} onClick={() => setActive(2)}>3</span>
+               <span
+                  className={`one ${active === 0 ? 'isActive' : ''}`}
+                  onClick={() => setActive(0)}
+               >
+                  1
+               </span>
+               <span
+                  className={`two ${active === 1 ? 'isActive' : ''}`}
+                  onClick={() => setActive(1)}
+               >
+                  2
+               </span>
+               <span
+                  className={`three ${active === 2 ? 'isActive' : ''}`}
+                  onClick={() => setActive(2)}
+               >
+                  3
+               </span>
             </div>
-            <Image className='project_photo' src={projects[active].image} alt='ok' width={900} height={442} />
+            <Image
+               className='project_photo'
+               src={projects[active].image}
+               alt='ok'
+               width={800}
+               height={400}
+            />
 
-            <motion.div  {...motionProps(300, 0)} className='about_project'>
+            <motion.div
+               {...(typeof window !== 'undefined' && window.innerWidth > 768
+                  ? { ...motionProps(300, 0) }
+                  : { ...motionProps(-300, 0) })}
+               className='about_project'
+            >
                <h3 className='project_name'>{projects[active].name}</h3>
                <p className='project_description'>
                   {projects[active].description}
@@ -66,12 +97,13 @@ const Projects = () => {
                            alt='stack logo'
                            width={32}
                            height={32}
+                           className='stack_logo'
                         />
                      </li>
                   ))}
                </ul>
             </motion.div>
-         </div>
+         </motion.div>
          <div className='more_projects'>
             <Button
                title='Veja Mais!'

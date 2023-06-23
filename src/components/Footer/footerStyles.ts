@@ -5,20 +5,20 @@ export const FooterStyle = styled.section`
    margin: 0 auto;
    padding: 0 3rem;
    border-top: 1px solid rgba(var(--secondary-white), 0.2);
-   height: 7rem;
+   height: 6rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
 
    .name {
-      font-size: 2.1rem;
+      font-size: 1.9rem;
       color: rgb(var(--primary-blue));
 
       @media screen and (max-width: 500px) {
-         font-size: 1.7rem;
+         font-size: 1.6rem;
       }
       @media screen and (max-width: 400px) {
-         font-size: 1.5rem;
+         font-size: 1.3rem;
       }
    }
 
@@ -28,6 +28,9 @@ export const FooterStyle = styled.section`
 
       @media screen and (max-width: 500px) {
          font-size: 1rem;
+      }
+      @media screen and (max-width: 500px) {
+         font-size: .8rem;
       }
    }
 

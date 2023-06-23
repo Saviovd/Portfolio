@@ -24,7 +24,6 @@ const Intro = () => {
       <>
          <HomeStyle id='home'>
             <motion.div {...motionProps(-100, 0)} className='apresentation'>
-               <h2 className='hello_world'>{'<HELLO WORLD />'}</h2>
                <span className='calls_me'>_olá, me chamo</span>
                <h3 className='my_name'>Sávio Almeida {'< />'}</h3>
                <h4 className='office'>desenvolvedor |</h4>
@@ -51,7 +50,7 @@ const Intro = () => {
                   spy={true}
                   duration={700}
                   delay={100}
-                  offset={50}
+                  offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -90 : -150}
                   className='dripping_down'
                >
                   <div className='chevron'></div>

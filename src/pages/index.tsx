@@ -28,7 +28,7 @@ export default function Home() {
             <About />
             <Habilities />
             <Projects />
-            {/* <Testimonials /> */}
+            {/*  <Testimonials />*/}
             <Contacts />
          </main>
          <Footer />

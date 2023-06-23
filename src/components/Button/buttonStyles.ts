@@ -18,7 +18,7 @@ export const ButtonStyle = styled.a`
    transition: all 0.2s ease;
    white-space: nowrap;
    cursor: default;
-   z-index: 1;
+   z-index: 0;
 
    &:before,
    &:after {

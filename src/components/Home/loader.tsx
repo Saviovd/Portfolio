@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect'
 
 const LoaderStyle = styled.div`
    color: rgb(var(--white));
-   width: 20rem;
+   min-width: 12rem;
 `
 const Loader = () => {
 

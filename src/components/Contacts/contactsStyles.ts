@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const ContactStyle = styled.section.attrs({content: 'text'})`
+export const ContactStyle = styled.section.attrs({ content: 'text' })`
    max-width: 1700px;
    padding-bottom: 6rem;
    margin: 0 auto;
-   margin-top: 6rem;
+   margin-top: 15rem;
 
    display: flex;
    justify-content: space-evenly;
@@ -72,24 +72,6 @@ export const ContactStyle = styled.section.attrs({content: 'text'})`
          }
          position: relative;
          z-index: 1;
-
-         @media screen {
-            @media screen and (max-width: 1130px) {
-               width: 30rem;
-               grid-template-columns: 25% auto;
-            }
-            @media screen and (max-width: 1024px) {
-               grid-template-columns: 31% auto;
-               width: 35rem;
-            }
-            @media screen and (max-width: 400px) {
-               width: 100%;
-               min-width: 290px;
-               height: 9rem;
-               grid-template-columns: 32% auto;
-            }
-         }
-
          &:hover {
             border: 2px solid rgba(var(--primary-pink), 0.5);
             transform: scale(1.1);
@@ -113,6 +95,28 @@ export const ContactStyle = styled.section.attrs({content: 'text'})`
                position: absolute;
             }
          }
+         @media screen {
+            @media screen and (max-width: 1130px) {
+               width: 30rem;
+               grid-template-columns: 25% auto;
+            }
+            @media screen and (max-width: 1024px) {
+               grid-template-columns: 31% auto;
+               width: 40rem;
+            }
+            @media screen and (max-width: 768px) {
+               width: 80%;
+            }
+            @media screen and (max-width: 530px) {
+               width: 90%;
+            }
+            @media screen and (max-width: 420px) {
+               width: 100%;
+               min-width: 290px;
+               height: 9rem;
+               grid-template-columns: 32% auto;
+            }
+         }
       }
 
       @media screen and (max-width: 1024px) {
@@ -125,7 +129,9 @@ export const ContactStyle = styled.section.attrs({content: 'text'})`
    @media screen and (max-width: 1024px) {
       width: 80%;
    }
-
+   @media screen and (max-width: 768px) {
+      margin-top: 6rem;
+   }
    @media screen and (max-width: 455px) {
       width: 85%;
    }

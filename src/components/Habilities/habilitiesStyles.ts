@@ -2,21 +2,18 @@ import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
    max-width: 1700px;
-   margin: 0 auto;
-   min-height: 640px;
-   padding: 0 2rem;
+   margin: 15rem auto 0;
 
-   height: 75vh;
    text-align: center;
 
    display: flex;
    flex-direction: column;
-   justify-content: flex-end;
    align-items: center;
 
    .stacks {
-      width: 60%;
+      width: 70%;
       min-width: 75rem;
+      margin-top: 5rem;
 
       display: flex;
       align-items: center;
@@ -70,20 +67,23 @@ export const HabilitiesStyle = styled.section`
          border: 0;
          background-color: rgb(var(--primary-pink));
          box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 4px #fff,
-            0 0 5px rgb(var(--primary-pink)),
-            0 0 8px rgb(var(--primary-pink)),
+            0 0 5px rgb(var(--primary-pink)), 0 0 8px rgb(var(--primary-pink)),
             0 0 10px rgb(var(--primary-pink));
          z-index: 2;
       }
 
       @media screen {
+         @media (max-width: 1440px) {
+            width: 80%;
+         }
          @media (max-width: 850px) {
             min-width: 0;
             width: 90%;
          }
-         @media (max-width: 475px) {
+         @media (max-width: 500px) {
             width: 100%;
             z-index: 1;
+            margin-top: 1rem;
          }
       }
    }
@@ -91,7 +91,7 @@ export const HabilitiesStyle = styled.section`
    .stack_container {
       min-width: 75rem;
       border: 1px solid rgba(var(--primary-pink), 0.3);
-      width: 60%;
+      width: 70%;
       height: auto;
       min-height: 22rem;
 
@@ -103,7 +103,7 @@ export const HabilitiesStyle = styled.section`
 
       border-top: 0;
       .stack {
-         margin: .5rem 2rem;
+         margin: 0.5rem 2rem;
 
          .stack_icon {
             width: 60px;
@@ -148,11 +148,14 @@ export const HabilitiesStyle = styled.section`
       }
 
       @media screen {
+         @media (max-width: 1440px) {
+            width: 80%;
+         }
          @media (max-width: 850px) {
             min-width: 0;
             width: 90%;
          }
-         @media (max-width: 475px) {
+         @media (max-width: 500px) {
             width: 100%;
          }
       }
@@ -162,23 +165,23 @@ export const HabilitiesStyle = styled.section`
       display: flex;
       margin: 6rem 8rem 0 0;
       align-self: flex-end;
+      @media screen {
+         @media (max-width: 1440px) {
+            margin: 4rem 4rem 0 0;
+         }
+         @media (max-width: 500px) {
+            margin: 3rem auto 0 auto;
+         }
+      }
    }
 
    @media screen {
-      @media (max-width: 1600px) {
-         height: 80vh;
-      }
-      @media (max-width: 1024px) {
-         height: 60vh;
-      }
       @media (max-width: 850px) {
          padding: 0;
+         margin: 14rem auto 0 auto;
       }
-      @media (max-width: 475px) {
-         height: 70vh;
-         min-height: 50rem;
+      @media (max-width: 500px) {
          width: 92%;
-         margin: 0 auto;
       }
    }
 `;

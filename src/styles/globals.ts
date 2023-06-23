@@ -17,7 +17,6 @@ const GlobalStyle = createGlobalStyle`
 
 
    html {
-
       font-size: 10px;
       min-height: 100vh;
 
