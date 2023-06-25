@@ -14,10 +14,10 @@ const Loader = () => {
          options={{
             loop: true,
             cursor: '_',
-            strings: ['Front-End', 'BA☠k-#', 'Back-End','Mobile','Fu!!-S', 'Full-stack'],
+            strings: ['Front-End', 'B☠ck', 'Back-End','Mobile','Fu!L $', 'Full Stack'],
             autoStart: true,
             delay: 50,
-            deleteSpeed: 50,
+            deleteSpeed: 30,
          }}
       />
    </LoaderStyle>;

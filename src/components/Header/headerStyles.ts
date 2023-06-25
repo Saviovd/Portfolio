@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
    z-index: 3;
-   max-width: 1700px;
-   width: 100%;
+   max-width: 1200px;
+   width: 80%;
    margin: 0 auto;
    padding: 0 2rem;
 
@@ -16,7 +16,12 @@ export const HeaderStyle = styled.header`
    right: 0%;
    left: 0%;
 
-   background-color: transparent;
+   backdrop-filter: blur(5px);
+
+   background-color: rgb(var(--primary-pink));
+   border-radius: 2px;
+
+
 
    .logo {
       position: absolute;
@@ -29,15 +34,15 @@ export const HeaderStyle = styled.header`
          }
          @media (max-width: 1024px) {
             height: 3rem;
-            width: 5.5rem;
-            height: 5.5rem;
+            width: 5rem;
+            height: 5rem;
          }
          @media screen {
             @media (max-width: 768px) {
                top: 2rem;
                left: 1.5rem;
-               width: 5rem;
-               height: 5rem;
+               width: 4rem;
+               height: 4rem;
             }
          }
       }
@@ -64,13 +69,18 @@ export const HeaderStyle = styled.header`
       @media (max-width: 1024px) {
          justify-content: flex-end;
          top: 2rem;
+         width: 100%;
+         top: 0;
+         justify-content: flex-end;
+         background-color: rgba(var(--primary-pink), 0.5);
       }
       @media (max-width: 768px) {
          padding: 0;
          height: 8rem;
          top: 0;
-         backdrop-filter: blur(5px);
+         width: 100%;
          border-bottom: 1px solid rgb(var(--primary-pink));
+         background-color: transparent;
       }
    }
 `;

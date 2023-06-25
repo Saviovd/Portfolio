@@ -52,12 +52,6 @@ const Nav = ({isVisible}: INavProps) => {
                name='depoimentos'
             /> */}
             <NavItem
-               isSelected={selectedNavItem === 'contatos'}
-               setIsSelected={() => handleNavItemSelect('contatos')}
-               pagePosition={pagePosition}
-               name='contatos'
-            />
-            <NavItem
                isSelected={selectedNavItem === ''}
                setIsSelected={() => handleNavItemSelect('')}
                pagePosition={pagePosition}

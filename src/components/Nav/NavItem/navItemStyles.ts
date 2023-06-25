@@ -11,7 +11,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    text-transform: uppercase;
    text-decoration: none;
    text-transform: uppercase;
-   cursor: pointer;
+   cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png), pointer;
    z-index: 2;
 
    position: relative;
@@ -34,7 +34,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    }
    &:after {
       color: #f0f;
-      z-index: -2;
+      z-index: -1;
    }
    &:before {
       color: #0ff;
@@ -42,11 +42,13 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    }
    &:hover {
       &:before {
-         animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 1;
+         animation: glitch 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 3;
+         transform: translateX(-5px);
       }
       &:after {
-         animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
-            both 1;
+         animation: glitch 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+            both 3;
+         transform: translateX(5px);
       }
    }
    .selected {
@@ -105,6 +107,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          width: 100%;
       }
    }
+
    @keyframes bug {
       0% {
          text-shadow: -7px -1px 1px rgba(var(--primary-blue));

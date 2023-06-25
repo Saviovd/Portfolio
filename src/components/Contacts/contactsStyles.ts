@@ -27,7 +27,7 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
          grid-template-columns: 33% auto;
          border: 2px solid rgba(var(--primary-blue), 0.5);
          cursor: pointer;
-         transition: 0.5s;
+         transition: 0.3s;
 
          .icon_box {
             grid-area: icon;
@@ -76,7 +76,7 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             border: 2px solid rgba(var(--primary-pink), 0.5);
             transform: scale(1.1);
             &::after {
-               transition: 0.3s;
+               transition: 0.4s;
                content: attr(content);
                font-size: 2rem;
                color: rgba(var(--primary-pink));

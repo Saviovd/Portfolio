@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Title from '../Title/Title';
 import { HabilitiesStyle } from './habilitiesStyles';
@@ -10,43 +10,23 @@ interface IRenderProps {
    id: string;
    language_name: string;
    logo: string;
-   fill?: string
+   fill?: string;
 }
 
 const Habilities = () => {
    const { habilities } = data;
-   const [renderHabilities, setRenderHabilities] = useState<string | undefined>('Front-End');
-   const [renderItens, setRenderItens] = useState<IRenderProps[]>(habilities[0].languages);
-   const [isOpen, setIsOpen] = useState('is_Open');
 
-   function findHabilities(value: string) {
-      const type = habilities.find((hab) => hab.type === value);
-      setRenderHabilities(type?.type);
-      if (type && type.languages !== renderItens) {
-         setRenderItens(type.languages);
-         setIsOpen('is_Open');
-         return;
-      } else {
-         setIsOpen('habilities_box');
-      }
-   }
-
-   const filteredHabilities = habilities.filter(
-      ({ type }) => type === renderHabilities || renderHabilities === ''
-   );
-
-   const motionProps = (initialY: number, finalY: number) => ({
+   const motionProps = (initialY: number, finalY: number, duration: number) => ({
       initial: { opacity: 0, y: initialY },
       whileInView: { opacity: 1, y: finalY },
       viewport: { once: true },
       transition: {
          type: 'spring',
          bounce: 0.4,
-         duration: 0.8,
-         delay: 0.2
+         duration: duration,
+         delay: 0.2,
       },
    });
-
 
    return (
       <HabilitiesStyle id='habilidades'>
@@ -56,39 +36,26 @@ const Habilities = () => {
             firstColor='#FFF'
             secondColor='rgb(var(--primary-blue))'
          />
-         <motion.div  {...motionProps(100, 0)}
-            className={`stacks ${
-               renderHabilities === 'Front-End' || isOpen === 'is_Open' ? 'grid_IsOpen' : ''
-            }`}
-         >
-            {habilities.map(({ type }, i: number) => (
-               <h3
-                  key={i}
-                  className={`habilities_title ${isOpen && renderHabilities === type ? 'is_Open' : ''}`}
-                  onClick={(e) => findHabilities(e.currentTarget.innerText)}
-               >
-                  {type}
-               </h3>
-            ))}
-         </motion.div>
-         <motion.div  {...motionProps(100, 0)} className='stack_container'>
-            {filteredHabilities && (
+         <motion.div {...motionProps(100, 0,  0.5)} className='stacks'>
+            {habilities.map(({ type, languages }, i: number) => (
                <>
-                  {renderItens?.map((lang: IRenderProps) => (
-                     <div className='stack' key={lang.id}>
-                        <Image
-                           style={{fill: lang.fill}}
-                           src={lang.logo}
-                           alt={lang.language_name}
-                           width={64}
-                           height={64}
-                           className='stack_icon'
-                        />
-                        <h2 className='stack_name'>{lang.language_name}</h2>
-                     </div>
-                  ))}
+                  <motion.div {...motionProps(100, 0, 1)} className='stack_box'>
+                     <div key={i} className='stack_type'><h3>{type}</h3></div>
+                     {languages?.map((lang: IRenderProps) => (
+                        <div className='stack' key={lang.id}>
+                           <Image
+                              src={lang.logo}
+                              alt={lang.language_name}
+                              width={64}
+                              height={64}
+                              className='stack_icon'
+                           />
+                           <h2 className='stack_name'>{lang.language_name}</h2>
+                        </div>
+                     ))}
+                  </motion.div>
                </>
-            )}
+            ))}
          </motion.div>
          <div className='more_habilities'>
             <Button
@@ -96,6 +63,7 @@ const Habilities = () => {
                url='/certifications'
                bgColor='rgb(var(--primary-pink))'
                _blank={false}
+               className='button'
             />
          </div>
       </HabilitiesStyle>

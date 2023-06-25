@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const NavStyle = styled.nav`
-   max-width: 1200px;
+   max-width: 90rem;
    width: 60%;
    margin: 0 auto;
-   background-color: rgba(var(--primary-pink), 0.95);
 
    display: flex;
    align-items: center;
@@ -20,15 +19,16 @@ export const NavStyle = styled.nav`
       justify-content: space-evenly;
 
       @media screen {
-         @media (max-width: 768px) {
-            flex-direction: column;
+         @media (max-width: 1024px) {
+            margin-right: 2rem;
          }
          @media (max-width: 768px) {
+            flex-direction: column;
             width: 70%;
             height: 100vh;
             overflow: hidden;
             z-index: 5;
-            background-color: rgba(var(--primary-blue), 0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             margin: 0;
 
             position: absolute;
@@ -66,7 +66,7 @@ export const NavStyle = styled.nav`
          height: 100vh;
          overflow: hidden;
          z-index: 3;
-         background-color: rgba(var(--primary-blue), 0.1);
+         background-color: rgba(var(--primary-pink), 0.1);
          backdrop-filter: blur(2px);
          left: -100%;
          position: relative;

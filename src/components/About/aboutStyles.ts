@@ -14,7 +14,7 @@ export const AboutStyle = styled.section`
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin: 3rem auto 0 auto;
+      margin: 0 auto ;
       height: 45rem;
       z-index: 1;
       .img_box {
@@ -92,7 +92,7 @@ export const AboutStyle = styled.section`
 
          @media screen {
             @media (max-width: 1600px) {
-               min-width: 37rem;
+               min-width: 45rem;
             }
             @media (max-width: 850px) {
                min-width: 30rem;

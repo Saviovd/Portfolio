@@ -14,7 +14,7 @@ const Header = () => {
             style={{height: `${isActive ? 'auto' : `${typeof window !== 'undefined' &&  window.innerWidth < 768 ? '8rem' : ''}`}`}}
             onClick={() => isActive ? setIsActive(false) : isActive}
          >
-            <Image className='logo' src={'/assets/logo.png'} alt={'Logo de Sávio Almeida'} width={70} height={70} />
+            <Image className='logo' src={'/assets/logo.png'} alt={'Logo de Sávio Almeida'} width={60} height={60} />
             <Nav isVisible={isActive} />
             {!isActive ? (
                <RxHamburgerMenu

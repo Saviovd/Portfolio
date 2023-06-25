@@ -35,12 +35,12 @@
             },
             {
                "id": "7",
-               "language_name": "Saas",
+               "language_name": "Sass",
                "logo": "/assets/icons/front-end/sass.svg"
             },
             {
                "id": "8",
-               "language_name": "Styled-components",
+               "language_name": "CSS-in-JS",
                "logo": "/assets/icons/front-end/styled-components.svg"
             },
             {
@@ -81,7 +81,27 @@
          ]
       },
       {
-         "type": "QA",
+         "type": "Mobile",
+         "languages": [
+            {
+               "id": "1",
+               "language_name": "Flutter",
+               "logo": "/assets/icons/mobile/flutter.svg"
+            },
+            {
+               "id": "2",
+               "language_name": "React Native",
+               "logo": "/assets/icons/mobile/react-native.svg"
+            },
+            {
+               "id": "3",
+               "language_name": "Kotlin",
+               "logo": "/assets/icons/mobile/kotlin.svg"
+            }
+         ]
+      },
+      {
+         "type": "Quality Assurance",
          "languages": [
             {
                "id": "1",
@@ -96,7 +116,7 @@
          ]
       },
       {
-         "type": "Banco de dados",
+         "type": "Banco de dados & Cloud",
          "languages": [
             {
                "id": "1",
