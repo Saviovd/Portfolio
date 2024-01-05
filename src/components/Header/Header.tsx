@@ -1,15 +1,26 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
-import { HeaderStyle } from './headerStyles';
+import { HeaderStyle, Languages } from './headerStyles';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
+import { useRouter } from 'next/router';
+import i18n from 'i18next';
 
 const Header = () => {
+   const { t } = useTranslation();
+	const router = useRouter();
+
+	const handleLanguageChange = (newLocale: string) => {
+		router.push('/', '/', { locale: newLocale });
+      i18n.changeLanguage(newLocale);
+	};
    const [isActive, setIsActive] = React.useState(false);
 
    return (
       <>
+      <p>{t('Header.hello')}</p>
          <HeaderStyle
             style={{height: `${isActive ? 'auto' : `${typeof window !== 'undefined' &&  window.innerWidth < 768 ? '8rem' : ''}`}`}}
             onClick={() => isActive ? setIsActive(false) : isActive}
@@ -28,6 +39,28 @@ const Header = () => {
                />
             )}
          </HeaderStyle>
+            <Languages>
+				<span
+					className='language'
+					onClick={() => handleLanguageChange('pt')}
+				>
+					BR
+				</span>
+				|
+				<span
+					className='language'
+					onClick={() => handleLanguageChange('en')}
+				>
+					EN
+				</span>
+            |
+            <span
+					className='language'
+					onClick={() => handleLanguageChange('es')}
+				>
+					ES
+				</span>
+			</Languages>
       </>
    );
 };

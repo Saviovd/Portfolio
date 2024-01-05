@@ -83,4 +83,18 @@ export const HeaderStyle = styled.header`
          background-color: transparent;
       }
    }
+`
+export const Languages = styled.div`
+	display: flex;
+	margin-left: 2rem;
+	.language {
+		cursor: pointer;
+		margin: 0 5px;
+		font-weight: 900;
+	}
+	@media screen {
+		@media (max-width: 1160px) {
+			margin-left: 0rem;
+		}
+	}
 `;
