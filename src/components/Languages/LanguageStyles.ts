@@ -1,0 +1,33 @@
+import styled from 'styled-components';
+
+interface LanguageStylesProps {
+   currentLang?: string;
+}
+
+export const LanguageStyles = styled.div<LanguageStylesProps>`
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 2rem;
+   font-size: 1.5rem;
+   color: black;
+   background-color: rgba(var(--primary-blue), 0.13);
+
+   .language {
+      cursor: pointer;
+      margin: 0 5px;
+      font-weight: 900;
+      color: rgba(var(--primary-pink));
+   }
+
+   .currentLang {
+      color: rgba(var(--primary-blue));
+   }
+
+   @media screen {
+      @media (max-width: 1160px) {
+         margin-left: 0rem;
+      }
+   }
+`;
