@@ -1,6 +1,10 @@
 const translations = {
    Header: {
-		hello: 'Hello',
-   }
-}
+      logoAlt: 'Logo by Sávio Almeida',
+      home: 'home',
+      aboutme: 'about me',
+      habilities: 'skills',
+      projects: 'projects',
+   },
+};
 export default translations;

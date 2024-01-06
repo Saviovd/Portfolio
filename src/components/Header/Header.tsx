@@ -10,26 +10,41 @@ import { HeaderStyle } from './headerStyles';
 const Header = () => {
    const { t } = useTranslation();
    const [isActive, setIsActive] = useState(false);
+   const [isRotating, setIsRotating] = useState(false);
+
+   const handleRotationClick = () => {
+      setIsRotating(true);
+
+      setTimeout(() => {
+         setIsRotating(false);
+      }, 600);
+   };
 
    return (
       <>
-         <p>{t('Header.hello')}</p>
          <HeaderStyle
             style={{
-               height: `${
-                  isActive
-                     ? 'auto'
-                     : `${typeof window !== 'undefined' && window.innerWidth < 768 ? '8rem' : ''}`
-               }`,
+               // height: `${
+               //    isActive
+               //       ? 'auto'
+               //       : `${typeof window !== 'undefined' && window.innerWidth < 768 ? '8rem' : ''}`
+               // }`,
             }}
             onClick={() => (isActive ? setIsActive(false) : setIsActive)}
          >
-            <Image className='logo' src={'/assets/logo.png'} alt={'Logo de Sávio Almeida'} width={60} height={60} />
+            <Image className='logo' src={'/assets/logo.svg'} alt={t('Header.logoAlt')} width={90} height={90} />
             <Nav isVisible={isActive} />
+            moon
             {!isActive ? (
-               <RxHamburgerMenu onClick={() => setIsActive(!isActive)} className='burger_icon' />
+               <RxHamburgerMenu onClick={() => {
+                  handleRotationClick()
+                  setIsActive(!isActive)
+               }} className={`burger_icon ${isRotating ? 'rotate' : ''}`} />
             ) : (
-               <AiOutlineClose onClick={() => setIsActive(!isActive)} className='burger_icon' />
+               <AiOutlineClose onClick={() => {
+                  handleRotationClick()
+                  setIsActive(!isActive)
+               }} className={`burger_icon ${isRotating ? 'rotate' : ''}`} />
             )}
          </HeaderStyle>
       </>

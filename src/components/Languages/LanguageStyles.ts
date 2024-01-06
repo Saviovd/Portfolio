@@ -5,6 +5,7 @@ interface LanguageStylesProps {
 }
 
 export const LanguageStyles = styled.div<LanguageStylesProps>`
+z-index: 10000;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -18,7 +19,7 @@ export const LanguageStyles = styled.div<LanguageStylesProps>`
       cursor: pointer;
       margin: 0 5px;
       font-weight: 900;
-      color: rgba(var(--primary-pink));
+      color: rgba(var(--primary-pink), .4);
    }
 
    .currentLang {

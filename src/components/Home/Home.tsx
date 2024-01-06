@@ -4,8 +4,11 @@ import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 
 const Intro = () => {
+   const { t } = useTranslation();
 
    const motionProps = (initialX: number, finalX: number) => ({
       initial: { opacity: 0, x: initialX },
@@ -22,7 +25,7 @@ const Intro = () => {
 
    return (
       <>
-         <HomeStyle id='home'>
+         <HomeStyle id={t('Header.home')}>
             <motion.div {...motionProps(-100, 0)} className='apresentation'>
                <span className='calls_me'>_olá, me chamo</span>
                <h3 className='my_name'>Sávio Almeida {'< />'}</h3>

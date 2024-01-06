@@ -18,7 +18,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
       const element = document.getElementById(name);
       if (element) {
          const { top, bottom } = element.getBoundingClientRect();
-         const isVisible = top - 220 <= pagePosition && bottom - 220 >= 0 ;
+         const isVisible = top - 190 <= pagePosition && bottom - 190 >= 0 ;
          setIsInView(isVisible);
       }
    };
@@ -31,15 +31,15 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
    }, [name, pagePosition, isSelected, handleScroll]);
 
    return (
-      <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? 'selected' : ''}`}>
+      <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? '' : ''}`}>
             <ScrollLink
                onClick={setIsSelected}
-               className={isInView || isSelected  ? 'selected' : ''}
+               className={isInView || isSelected  ? 'selected-item' : ''}
                to={`${name}`}
                smooth={true}
                spy={true}
                duration={500}
-               offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -80 : -150}>
+               offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -80 : -120}>
                {name}
             </ScrollLink>
       </NavItemStyle>
