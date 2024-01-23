@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
 
-const { contacts } = data;
+const { socials } = data;
 
 const Contacts = () => {
 
@@ -38,7 +38,7 @@ const Contacts = () => {
                }}
 
                className='contact_container'>
-               {contacts.map(({ icon, name, type, url, side }, i) => (
+               {socials.map(({ icon, name, type, url, side }, i) => (
                   <div  content={type} className={`contact_card ${side}`} key={i} >
                      <div className='icon_box'>
                         <Image

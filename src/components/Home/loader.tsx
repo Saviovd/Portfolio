@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect'
 
 const LoaderStyle = styled.div`
    color: rgb(var(--white));
-   min-width: 12rem;
+   min-width: 10rem;
 `
 const Loader = () => {
 
@@ -14,7 +14,7 @@ const Loader = () => {
          options={{
             loop: true,
             cursor: '_',
-            strings: ['Front-End', 'B☠ck', 'Back-End','Mobile','Fu!L $', 'Full Stack'],
+            strings: ['Desenvolvedor Front-End', 'Desenvolvedor Mobile', 'UX/UI Designer'],
             autoStart: true,
             delay: 50,
             deleteSpeed: 30,

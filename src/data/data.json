@@ -244,20 +244,27 @@
          "photo": "/assets/Photo/dsa.jpg"
       }
    ],
-   "contacts": [
+   "socials": [
       {
-         "icon": "/assets/icons/media/linkedin.svg",
+         "icon": "/assets/icons/social/linkedin.svg",
          "type": "Linkedin",
          "name": "Sávio Almeida",
          "url": "https://www.linkedin.com/in/saviovd/",
          "side": "left"
       },
       {
-         "icon": "/assets/icons/media/whatsapp.svg",
-         "type": "Whatsapp",
-         "name": "+55 (41) 99179-1628",
-         "url": "https://api.whatsapp.com/send?phone=5541991791628",
-         "side": "right"
+         "icon": "/assets/icons/social/instagram.svg",
+         "type": "Instagram",
+         "name": "saviovd",
+         "url": "https://www.instagram.com/saviovd/",
+         "side": "left"
+      },
+      {
+         "icon": "/assets/icons/social/github.svg",
+         "type": "GitHub",
+         "name": "saviovd",
+         "url": "https://github.com/Saviovd",
+         "side": "left"
       },
       {
          "icon": "/assets/icons/media/email.svg",
