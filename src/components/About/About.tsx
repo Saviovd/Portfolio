@@ -4,8 +4,12 @@ import Title from '../Title/Title';
 import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 
 const About = () => {
+   const { t } = useTranslation();
+
    const motionProps = (initialY: number, finalY: number) => ({
       initial: { opacity: 0, y: initialY },
       whileInView: { opacity: 1, y: finalY },
@@ -19,7 +23,7 @@ const About = () => {
    });
 
    return (
-      <AboutStyle id='sobre mim'>
+      <AboutStyle id={t('Header.aboutme')}>
          <Title
             firstColor='rgb(var(--primary-pink))'
             secondColor='#FFFFFF'

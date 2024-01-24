@@ -27,13 +27,13 @@ const Intro = () => {
       <>
          <HomeStyle id={t('Header.home')}>
             <motion.div {...motionProps(-100, 0)} className='apresentation'>
-               <span className='calls_me'>_olá, me chamo</span>
+               <span className='calls_me'>{t('Home.call')}</span>
                <h3 className='my_name'>Sávio Almeida {'< />'}</h3>
                <Loader />
                <Buttons>
                   <Button
                      className='left'
-                     title='Meu GitHub'
+                     title={t('Home.github')}
                      url='https://github.com/Saviovd'
                      bgColor='rgba(var(--primary-pink), 0.6)'
                      _blank={true}
@@ -49,7 +49,7 @@ const Intro = () => {
             </motion.div>
             <DrippingDown>
                <ScrollLink
-                  to='sobre mim'
+                  to={`${t('Home.toAboutMe')}`}
                   smooth={true}
                   spy={true}
                   duration={700}

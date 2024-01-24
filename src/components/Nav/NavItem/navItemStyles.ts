@@ -46,22 +46,22 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    }
    &:after {
       color: #f0f;
-      z-index: -1;
+      z-index: -2;
    }
    &:before {
       color: #0ff;
-      z-index: -1;
+      z-index: -2;
    }
    &:hover {
       &:before {
          display: block;
-         animation: glitch 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 3;
+         animation: glitch 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 1;
          transform: translateX(-5px);
       }
       &:after {
          display: block;
-         animation: glitch 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
-            3;
+         animation: glitch 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+            1;
          transform: translateX(5px);
       }
    }
