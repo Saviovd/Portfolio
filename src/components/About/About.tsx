@@ -1,11 +1,9 @@
 import Image from 'next/image';
 import { AboutStyle } from './aboutStyles';
 import Title from '../Title/Title';
-import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-
+import React from 'react';
 
 const About = () => {
    const { t } = useTranslation();
@@ -22,90 +20,70 @@ const About = () => {
       },
    });
 
+   const [isHovering, setIsHovering] = React.useState(false);
+
+   const handleMouseEnter = () => {
+      setIsHovering(true);
+      setTimeout(() => {
+         setIsHovering(false);
+      }, 1000);
+   };
    return (
       <AboutStyle id={t('Header.aboutme')}>
          <Title
             firstColor='rgb(var(--primary-pink))'
             secondColor='#FFFFFF'
-            firstWord='Sobre'
-            secondWord='Mim'
+            firstWord={t('AboutMe.about')}
+            secondWord={t('AboutMe.me')}
          />
 
          <motion.div {...motionProps(100, 0)} className='about_content'>
-            <div className='img_box'>
-               <svg className='filter'>
-                  <filter id='alphaRed'>
-                     <feColorMatrix
-                        mode='matrix'
-                        values='1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'
-                        result='joint'
-                     />
-                  </filter>
-                  <filter id='alphaGreen'>
-                     <feColorMatrix
-                        mode='matrix'
-                        values='0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0'
-                        result='joint'
-                     />
-                  </filter>
-                  <filter id='alphaBlue'>
-                     <feColorMatrix
-                        mode='matrix'
-                        values='0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0'
-                        result='joint'
-                     />
-                  </filter>
-                  <filter id='alpha'>
-                     <feColorMatrix type='saturate' values='0' />
-                  </filter>
-               </svg>
-               <div className='imgWrap'>
-                  <Image
-                     className='red photograph'
-                     src='/assets/Photo/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={700}
-                     height={600}
-                  />
-                  <Image
-                     className='green photograph'
-                     src='/assets/Photo/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={500}
-                     height={600}
-                  />
-                  <Image
-                     className='blue photograph'
-                     src='/assets/Photo/savio.jpg'
-                     alt={'Photography of Sávio Almeida'}
-                     width={500}
-                     height={600}
-                  />
-               </div>
-            </div>
+            {isHovering ? (
+               <Image
+                  src={'/assets/photo.gif'}
+                  alt='Savio´s Photograph'
+                  width={450}
+                  height={580}
+                  onMouseLeave={() => setIsHovering(false)}
+                  className='photograph'
+               />
+            ) : (
+               <Image
+                  src={'/assets/Photo/savio.jpg'}
+                  alt='Savio´s Photograph'
+                  width={450}
+                  height={580}
+                  onMouseEnter={handleMouseEnter}
+                  className='photograph'
+               />
+            )}
             <div className='content'>
                <p className='about_me'>
-                  Olá, Me chamo <span className='name'>Sávio Almeida</span>, sou
-                  desenvolvedor a cerca 2 anos e meio, mas amo tecnologia desde
-                  muito novo. Nesse processo já tive contato com diversas
-                  tecnologias voltadas a Front-End, Back-End, Mobile e testes de
-                  software, estou sempre em busca de novos aprendizados e
-                  desafios!
+               {t('AboutMe.apresentation')}
                </p>
-               <div className='social_medias'>
-                  <Link
-                     href='https://api.whatsapp.com/send?phone=5541991791628'
-                     target='_blank'
-                  >
-                     <FaWhatsapp className='media_icon' />
-                  </Link>
-                  <Link href='https://github.com/Saviovd' target='_blank'>
-                     <FaGithub className='media_icon' />
-                  </Link>
-                  <Link href='https://linkedin.com/in/saviovd' target='_blank'>
-                     <FaLinkedin className='media_icon' />
-                  </Link>
-               </div>
+               <p className='qualities'>
+                  <p className='qualities_title' >
+                  {t('AboutMe.obs')}
+                  </p>
+                  <ul>
+                     <li>
+                        <span className='emphasis'>
+                        {t('AboutMe.emphasis1')}
+                        </span>
+                        {t('AboutMe.text1')}
+                     </li>
+                     <li>
+                        <span className='emphasis'>
+                        {t('AboutMe.emphasis2')}
+                        </span>
+                        {t('AboutMe.text2')}
+                     </li>
+                     <li>
+                        <span className='emphasis'>{t('AboutMe.emphasis3')}</span>
+                        {t('AboutMe.text3')}
+                     </li>
+                  </ul>
+               </p>
             </div>
          </motion.div>
       </AboutStyle>

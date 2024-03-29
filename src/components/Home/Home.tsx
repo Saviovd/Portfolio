@@ -54,7 +54,7 @@ const Intro = () => {
                   spy={true}
                   duration={700}
                   delay={100}
-                  offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -90 : -150}
+                  offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -90 : -120}
                   className='dripping_down'
                >
                   <div className='chevron'></div>
