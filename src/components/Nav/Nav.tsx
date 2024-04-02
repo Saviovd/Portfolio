@@ -2,6 +2,7 @@ import React from 'react';
 import NavItem from './NavItem/NavItem';
 import { NavStyle } from './navStyles';
 import { useTranslation } from 'react-i18next';
+import LanguageBar from '../Languages/Languages';
 
 interface INavProps {
    isVisible: boolean
@@ -60,6 +61,8 @@ const Nav = ({isVisible}: INavProps) => {
                pagePosition={pagePosition}
                name=''
             />
+         <LanguageBar />
+            moon
          </ul>
          <div ref={scrollRef}></div>
       </NavStyle>

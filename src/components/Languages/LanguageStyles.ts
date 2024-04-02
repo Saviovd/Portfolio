@@ -9,11 +9,12 @@ z-index: 10000;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 100vw;
+   width: auto;
    height: 2rem;
    font-size: 1.5rem;
    color: black;
    background-color: rgba(var(--primary-blue), 0.13);
+   transform: translateX(-4rem);
 
    .language {
       cursor: pointer;

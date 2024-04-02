@@ -34,7 +34,7 @@ const Header = () => {
          >
             <Image className='logo' src={'/assets/logo.svg'} alt={t('Header.logoAlt')} width={90} height={90} />
             <Nav isVisible={isActive} />
-            moon
+            {/* moon */}
             {!isActive ? (
                <RxHamburgerMenu onClick={() => {
                   handleRotationClick()
