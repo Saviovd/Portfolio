@@ -25,6 +25,11 @@ const translations = {
       text1: 'Crio interfaces que se adaptam a qualquer dispositivo, proporcionando uma experiência de usuário impecável.',
       text2: 'Me preocupo com a qualidade do código, utilizando boas práticas e técnicas de otimização para garantir o melhor desempenho.',
       text3: 'Acredito que a melhor interface é aquela que é fácil de usar e entender, sempre colocando o usuário no centro do processo de desenvolvimento.',
+   },
+   Habilities: {
+      my: 'Minhas',
+      habilities: 'Habilidades',
+      certifications: 'certificações'
    }
 }
 export default translations;

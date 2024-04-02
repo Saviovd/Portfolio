@@ -7,7 +7,6 @@ import Habilities from '@/components/Habilities/Habilities';
 import Projects from '@/components/Projects/Projects';
 import Contacts from '@/components/Contacts/Contacts';
 import Footer from '@/components/Footer/Footer';
-import LanguageBar from '@/components/Languages/Languages';
 
 export default function Home() {
    return (
@@ -22,15 +21,14 @@ export default function Home() {
             />
             <link rel='icon' href='/favicon.ico' />
          </Head>
-         <LanguageBar />
          <Header />
          <main>
             <Intro />
             <About />
-            {/* <Habilities />
-            <Projects /> */}
+            <Habilities />
+            <Projects />
             {/*  <Testimonials />*/}
-            {/* <Contacts /> */}
+            <Contacts />
          </main>
          <Footer />
       </>

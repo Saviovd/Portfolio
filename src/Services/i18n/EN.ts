@@ -26,5 +26,10 @@ const translations = {
       text2: 'I care about the quality of the code, using good practices and optimization techniques to ensure the best performance.',
       text3: 'I believe that the best interface is the one that is easy to use and understand, always putting the user at the center of the development process.',
    },
+   Habilities: {
+      my: 'My',
+      habilities: 'Habilities',
+      certifications: 'certifications'
+   },
 };
 export default translations;

@@ -5,6 +5,7 @@ import { HabilitiesStyle } from './habilitiesStyles';
 import data from '@/data/data.json';
 import Button from '../Button/Button';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface IRenderProps {
    id: string;
@@ -15,6 +16,8 @@ interface IRenderProps {
 
 const Habilities = () => {
    const { habilities } = data;
+   const { t } = useTranslation();
+
 
    const motionProps = (initialY: number, finalY: number, duration: number) => ({
       initial: { opacity: 0, y: initialY },
@@ -31,23 +34,22 @@ const Habilities = () => {
    return (
       <HabilitiesStyle id='habilidades'>
          <Title
-            firstWord='Minhas'
-            secondWord='Habilidades'
+            firstWord={t('Habilities.my')}
+            secondWord={t('Habilities.habilities')}
             firstColor='#FFF'
             secondColor='rgb(var(--primary-blue))'
          />
          <motion.div {...motionProps(100, 0,  0.5)} className='stacks'>
-            {habilities.map(({ type, languages }, i: number) => (
+            {habilities.map(({ languages }, i: number) => (
                <>
-                  <motion.div {...motionProps(100, 0, 1)} className='stack_box'>
-                     <div key={i} className='stack_type'><h3>{type}</h3></div>
+                  <motion.div {...motionProps(100, 0, 1)} className='stack_box' key={i}>
                      {languages?.map((lang: IRenderProps) => (
                         <div className='stack' key={lang.id}>
                            <Image
                               src={lang.logo}
                               alt={lang.language_name}
-                              width={64}
-                              height={64}
+                              width={44}
+                              height={44}
                               className='stack_icon'
                            />
                            <h2 className='stack_name'>{lang.language_name}</h2>
@@ -59,7 +61,7 @@ const Habilities = () => {
          </motion.div>
          <div className='more_habilities'>
             <Button
-               title='Minhas Certificações'
+               title={t('Habilities.certifications')}
                url='/certifications'
                bgColor='rgb(var(--primary-pink))'
                _blank={false}

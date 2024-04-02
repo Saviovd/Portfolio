@@ -61,7 +61,7 @@ const About = () => {
                <p className='about_me'>
                {t('AboutMe.apresentation')}
                </p>
-               <p className='qualities'>
+               <div className='qualities'>
                   <p className='qualities_title' >
                   {t('AboutMe.obs')}
                   </p>
@@ -83,7 +83,7 @@ const About = () => {
                         {t('AboutMe.text3')}
                      </li>
                   </ul>
-               </p>
+               </div>
             </div>
          </motion.div>
       </AboutStyle>
