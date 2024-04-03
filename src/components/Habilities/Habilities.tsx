@@ -32,7 +32,7 @@ const Habilities = () => {
    });
 
    return (
-      <HabilitiesStyle id='habilidades'>
+      <HabilitiesStyle id={t('Habilities.habilities')}>
          <Title
             firstWord={t('Habilities.my')}
             secondWord={t('Habilities.habilities')}

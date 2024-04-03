@@ -147,6 +147,7 @@
          "url": "https://dsf-bank-nine.vercel.app/",
          "repository": "https://github.com/Saviovd/DSF-Bank",
          "name": "DSF Bank",
+         "code": "dsfBank",
          "description": "Uma interface de banco moderna com elementos de 3D utilizando a biblioteca ThreeJs, e animações com Framer Motion.",
          "stacks": [
             "/assets/icons/front-end/nextjs.svg",
@@ -161,6 +162,7 @@
          "url": "https://space-tourism-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/space_tourism",
          "name": "Space Tourism",
+         "code": "spaceTourism",
          "description": "Um website de apresentação de uma agência de turismo espacial, com apresentação de alguns destinos e equipe.",
          "stacks": [
             "/assets/icons/front-end/react.svg",
@@ -174,6 +176,7 @@
          "url": "https://buypage-ecommerce.vercel.app/",
          "repository": "https://github.com/Saviovd/buypage-ecommerce",
          "name": "Sneakers e-commerce",
+         "code": "SneakersECommerce",
          "description": "Página de selação de produtos simples com expansão de imagem e carrinho funcional e interativo.",
          "stacks": [
             "/assets/icons/front-end/react.svg",
@@ -186,6 +189,7 @@
          "url": "https://countries-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/countries",
          "name": "API Countries",
+         "code": "apiCountries",
          "description": "Interface que apresenta países e suas informações, tiradas da API Rest Countries, com funcionalidade de navegação entre fronteiras.",
          "stacks": [
             "/assets/icons/front-end/react.svg",
@@ -200,6 +204,7 @@
          "url": "https://stranger-things4.vercel.app/",
          "repository": "https://github.com/Saviovd/stranger_things",
          "name": "Stranger Things 4°",
+         "code": "strangerThings",
          "description": "Landing Page baseada na 4° temporada da série Stranger Things da Netflix.",
          "stacks": [
             "/assets/icons/front-end/html5.svg",
@@ -212,6 +217,7 @@
          "url": "https://crudtodo.vercel.app/",
          "repository": "https://github.com/Saviovd/ToDo",
          "name": "ToDo List",
+         "code": "toDoList",
          "description": "Interface de tarefas a fazer simples e funcional, conta com verificações para banco de dados.",
          "stacks": [
             "/assets/icons/front-end/nextjs.svg",

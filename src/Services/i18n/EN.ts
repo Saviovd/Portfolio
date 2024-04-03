@@ -12,12 +12,13 @@ const translations = {
       toAboutMe: 'about me',
       devfrontend: 'Front-End Developer',
       devmobile: 'Mobile Developer',
-      designer:'UX/UI Designer'
+      designer: 'UX/UI Designer',
    },
    AboutMe: {
       about: 'about',
       me: 'me',
-      apresentation: 'Hi! I am Sávio Almeida, a developer passionate about creating intuitive and visually appealing web interfaces and applications. With 3 years of experience, I have a solid knowledge of HTML, CSS and JavaScript, as well as popular libraries and frameworks like React, Vue.js and Next.Js.',
+      apresentation:
+         'Hi! I am Sávio Almeida, a developer passionate about creating intuitive and visually appealing web interfaces and applications. With 3 years of experience, I have a solid knowledge of HTML, CSS and JavaScript, as well as popular libraries and frameworks like React, Vue.js and Next.Js.',
       obs: 'My work stands out for:',
       emphasis1: 'Responsive and user-friendly design:',
       emphasis2: 'Clean and efficient code:',
@@ -28,8 +29,46 @@ const translations = {
    },
    Habilities: {
       my: 'My',
-      habilities: 'Habilities',
-      certifications: 'certifications'
+      habilities: 'skills',
+      certifications: 'certifications',
+   },
+   Projects: {
+      projects: 'projects',
+      recent: 'recent',
+      projectButton: 'project',
+      repositoryButton: 'repository',
+      devBy: 'Developed with:',
+      more: 'more projects',
+      dsfBank: {
+         name: 'DSF Bank',
+         description:
+            'A modern bank interface with 3D elements using the ThreeJs library and animations with Framer Motion.',
+      },
+      spaceTourism: {
+         name: 'Space Tourism',
+         description:
+            'A website presenting a space tourism agency, with some destinations and team members.',
+      },
+      SneakersECommerce: {
+         name: 'Sneakers e-commerce',
+         description:
+            'A simple product selection page with image expansion and a functional and interactive cart.',
+      },
+      apiCountries: {
+         name: 'API Countries',
+         description:
+            'An interface that presents countries and their information, taken from the Rest Countries API, with the functionality of navigating between borders.',
+      },
+      strangerThings: {
+         name: 'Stranger Things 4°',
+         description:
+            'Landing Page based on the 4th season of the Netflix series Stranger Things.',
+      },
+      toDoList: {
+         name: 'ToDo List',
+         description:
+            'A simple and functional to-do list interface, with database checks.',
+      },
    },
 };
 export default translations;

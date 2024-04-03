@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
    max-width: 1700px;
-   margin: 15rem auto 0;
+   margin: 15rem auto 5rem;
    padding: 0 2rem;
 
    text-align: center;
