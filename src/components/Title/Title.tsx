@@ -13,6 +13,7 @@ const TitleStyle = styled.div`
    .title {
       margin: 0 0 3rem 0;
       font-size: 4.5rem;
+      text-transform: capitalize;
 
       @media screen {
          @media (max-width: 1600px) {

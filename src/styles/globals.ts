@@ -68,6 +68,141 @@ const GlobalStyle = createGlobalStyle`
       }
    }
 
-
+   @keyframes glitch-cursor {
+      0% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      5% {
+         cursor: default;
+      }
+      10% {
+         cursor: wait;
+      }
+      25% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      30% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      35% {
+         cursor: wait;
+      }
+      40% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      45% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      50% {
+         cursor: await;
+      }
+      55% {
+         cursor: await;
+      }
+      60% {
+         cursor: await;
+      }
+      65% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      70% {
+         cursor: pointer;
+      }
+      75% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      80% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      85% {
+         cursor: pointer;
+      }
+      90% {
+         cursor: await;
+      }
+      95% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      100% {
+         cursor: pointer;
+      }
+   }
+   @keyframes glitch-cursor-seta {
+      0% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      5% {
+         cursor: default;
+      }
+      10% {
+         cursor: wait;
+      }
+      25% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      30% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      35% {
+         cursor: wait;
+      }
+      40% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      45% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      50% {
+         cursor: await;
+      }
+      55% {
+         cursor: await;
+      }
+      60% {
+         cursor: await;
+      }
+      65% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      70% {
+         cursor: default;
+      }
+      75% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      80% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      85% {
+         cursor: default;
+      }
+      90% {
+         cursor: await;
+      }
+      95% {
+         cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
+            default;
+      }
+      100% {
+         cursor: default;
+      }
+   }
 `;
 export default GlobalStyle;

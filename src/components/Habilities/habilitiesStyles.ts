@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
    max-width: 1700px;
-   margin: 15rem auto 0;
+   margin: 15rem auto 5rem;
    padding: 0 2rem;
 
    text-align: center;
@@ -10,74 +10,31 @@ export const HabilitiesStyle = styled.section`
    .stacks {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      justify-content: center;
+      margin: 5rem 0;
 
       .stack_box {
-         flex-grow: 1;
          display: flex;
          flex-wrap: wrap;
-         gap: 1rem;
          position: relative;
-         border: 1px solid rgb(var(--primary-pink));
-         justify-content: space-evenly;
-         .stack_type {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
 
-            h3 {
-               font-size: 2.5rem;
-               letter-spacing: 3px;
-               color: rgb(var(--primary-blue));
-               margin: 0;
-
-               padding: 0.5rem 2rem 0.5rem;
-               font-weight: 400;
-               white-space: nowrap;
-
-               background-color: rgba(var(--primary-pink), 0.1);
-               border-bottom: 1px solid rgb(var(--primary-pink));
-               border-right: 1px solid rgb(var(--primary-pink));
-
-               @media screen {
-                  @media (max-width: 768px) {
-                     font-size: 2rem;
-                  }
-                  @media (max-width: 420px) {
-                     font-size: 1.8rem;
-                     padding: 0.5rem 1rem;
-                  }
-               }
-            }
-         }
          .stack {
-            flex-basis: 9rem;
-            margin: 0 1rem;
-
-            height: 12rem;
+            margin: 1rem;
+            height: 9rem;
             width: 9rem;
             transition: 0.5s;
 
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
+            justify-content: center;
             position: relative;
-            .stack_icon {
-               width: 50px;
-               height: 50px;
 
-               @media screen {
-                  @media (max-width: 1440px) {
-                     width: 40px;
-                     height: 40px;
-                  }
-                  @media (max-width: 390px) {
-                     width: 35px;
-                     height: 35px;
-                  }
-               }
+            &:hover {
+               animation: glitch-cursor-seta 400ms forwards;
+            }
+            .stack_icon {
             }
             .stack_name {
                color: rgba(var(--primary-blue), 0.9);
@@ -92,11 +49,11 @@ export const HabilitiesStyle = styled.section`
                }
             }
             &:hover {
-               transform: scale(1.1);
+               transform: scale(1.5);
             }
             &:before,
             &:after {
-               content: '☠☠☠☠';
+               content: '☠_@☠';
                position: absolute;
                top: 0;
                left: 0;
@@ -119,7 +76,7 @@ export const HabilitiesStyle = styled.section`
             }
             &:after {
                left: 2px;
-               bottom: -2px;
+               bottom: 2px;
                text-shadow: -1px 0 rgb(var(--primary-pink));
                box-shadow: -1px 0 rgb(var(--primary-blue));
             }
@@ -134,7 +91,7 @@ export const HabilitiesStyle = styled.section`
                @media (max-width: 1440px) {
                   flex-basis: 7rem;
                   height: 8rem;
-                  margin: .5rem 0;
+                  margin: 0.5rem 0;
                }
             }
          }

@@ -1,5 +1,6 @@
 import { NavItemStyle } from './navItemStyles';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link as ScrollLink } from 'react-scroll';
 
 interface INavItemProps {
@@ -11,6 +12,7 @@ interface INavItemProps {
 
 const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProps) => {
    const [isInView, setIsInView] = React.useState(false);
+   const { t } = useTranslation();
 
    // eslint-disable-next-line react-hooks/exhaustive-deps
    const handleScroll = () => {
@@ -18,7 +20,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
       const element = document.getElementById(name);
       if (element) {
          const { top, bottom } = element.getBoundingClientRect();
-         const isVisible = top - 220 <= pagePosition && bottom - 220 >= 0 ;
+         const isVisible = top - 190 <= pagePosition && bottom - 190 >= 0 ;
          setIsInView(isVisible);
       }
    };
@@ -31,15 +33,15 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
    }, [name, pagePosition, isSelected, handleScroll]);
 
    return (
-      <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? 'selected' : ''}`}>
+      <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? '' : ''}`}>
             <ScrollLink
                onClick={setIsSelected}
-               className={isInView || isSelected  ? 'selected' : ''}
+               className={isInView || isSelected  ? 'selected-item' : ''}
                to={`${name}`}
                smooth={true}
                spy={true}
                duration={500}
-               offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -80 : -150}>
+               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -80 : -180}>
                {name}
             </ScrollLink>
       </NavItemStyle>

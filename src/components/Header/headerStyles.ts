@@ -2,49 +2,43 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
    z-index: 3;
-   max-width: 1200px;
-   width: 80%;
-   margin: 0 auto;
-   padding: 0 2rem;
-
+   width: 95%;
    display: flex;
    align-items: center;
-   justify-content: flex-start;
-
+   justify-content: flex-end;
    position: fixed;
-   top: 3rem;
-   right: 0%;
-   left: 0%;
+   top: 6rem;
 
-   backdrop-filter: blur(5px);
-
-   background-color: rgb(var(--primary-pink));
-   border-radius: 2px;
-
-
+   @media screen {
+      @media (max-width: 1024px) {
+         top: 5rem;
+         width: 97%;
+      }
+      @media (max-width: 768px) {
+         /* top: 4rem; */
+         width: 100%;
+      }
+   }
 
    .logo {
       position: absolute;
-      left: 3rem;
+      left: 6rem;
+
       @media screen {
          @media (max-width: 1440px) {
-            height: 3rem;
-            width: 6rem;
-            height: 6rem;
+            left: 5rem;
+            width: 8rem;
+            height: 8rem;
          }
-         @media (max-width: 1024px) {
-            height: 3rem;
-            width: 5rem;
-            height: 5rem;
-         }
-         @media screen {
-            @media (max-width: 768px) {
-               top: 2rem;
-               left: 1.5rem;
-               width: 4rem;
-               height: 4rem;
-            }
-         }
+      }
+      @media (max-width: 1024px) {
+         left: 4rem;
+         width: 7rem;
+         height: 7rem;
+      }
+      @media (max-width: 768px) {
+         width: 6rem;
+         height: 6rem;
       }
    }
 
@@ -52,7 +46,7 @@ export const HeaderStyle = styled.header`
       cursor: pointer;
       position: absolute;
       right: 2rem;
-      top: 2.5rem;
+      top: -2rem;
       font-size: 4rem;
       color: rgb(var(--secondary-white));
       z-index: 9;
@@ -60,27 +54,23 @@ export const HeaderStyle = styled.header`
 
       @media screen {
          @media (max-width: 768px) {
-            display: initial;
+            display: block;
          }
       }
    }
+   .rotate {
+      animation: rotation 400ms forwards;
 
-   @media screen {
-      @media (max-width: 1024px) {
-         justify-content: flex-end;
-         top: 2rem;
-         width: 100%;
-         top: 0;
-         justify-content: flex-end;
-         background-color: rgba(var(--primary-pink), 0.5);
-      }
-      @media (max-width: 768px) {
-         padding: 0;
-         height: 8rem;
-         top: 0;
-         width: 100%;
-         border-bottom: 1px solid rgb(var(--primary-pink));
-         background-color: transparent;
+      @keyframes rotation {
+         0% {
+            transform: rotate(0deg);
+         }
+         50% {
+            transform: rotate(-360deg);
+         }
+         100% {
+            transform: rotate(0deg);
+         }
       }
    }
 `;

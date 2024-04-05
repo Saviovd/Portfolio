@@ -2,116 +2,33 @@ import styled from 'styled-components';
 
 export const AboutStyle = styled.section`
    max-width: 1700px;
-   margin: 15rem auto 0;
+   margin: 0 auto;
+   padding-top: 5rem;
    min-height: 50rem;
+   height: 85vh;
+   transform: translateY(5rem);
 
    display: flex;
    align-items: center;
    flex-direction: column;
 
    .about_content {
-      max-width: 130rem;
+      max-width: 160rem;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      margin: 0 auto ;
-      height: 45rem;
+      margin: 0 auto;
+      min-height: 50rem;
+      height: auto;
       z-index: 1;
-      .img_box {
-         height: 100%;
-         min-width: 520px;
-         display: flex;
-         flex-flow: column;
-         justify-content: center;
-         align-items: center;
-
-         .filter {
-            display: none;
-         }
-         .imgWrap {
-            cursor: url(https://cdn.custom-cursor.com/db/4732/32/arrow2699.png),
-               default !important;
-            width: 80%;
-            height: 100%;
-            max-width: 50rem;
-            max-height: 45rem;
-            position: relative;
-            overflow: hidden;
-
-            .photograph {
-               width: 100%;
-               height: 100%;
-               transform: translate(-50%, -50%);
-               object-fit: cover;
-               position: absolute;
-               top: 50%;
-               left: 50%;
-            }
-            .red {
-               filter: url(#alphaRed);
-               mix-blend-mode: lighten;
-            }
-            .green {
-               filter: url(#alphaGreen);
-               mix-blend-mode: lighten;
-            }
-            .blue {
-               filter: url(#alphaBlue);
-               mix-blend-mode: lighten;
-            }
-            &:hover {
-               .red {
-                  transform: translate(-49.5%, -49.8%);
-                  animation-name: imgGlitch;
-                  animation-duration: 2s;
-                  animation-timing-function: linear;
-                  animation-iteration-count: infinite;
-               }
-               .green {
-                  transform: translate(-50.5%, -48.8%);
-                  animation-name: imgGlitch;
-                  animation-duration: 2s;
-                  animation-timing-function: linear;
-                  animation-iteration-count: infinite;
-               }
-               .blue {
-                  transform: translate(-50.5%, -50.8%);
-                  animation-name: imgGlitch;
-                  animation-duration: 2s;
-                  animation-timing-function: linear;
-                  animation-iteration-count: infinite;
-               }
-            }
-
-            @media screen {
-               @media (max-width: 1600px) {
-                  width: 100%;
-               }
-            }
-         }
-
-         @media screen {
-            @media (max-width: 1600px) {
-               min-width: 45rem;
-            }
-            @media (max-width: 850px) {
-               min-width: 30rem;
-            }
-            @media (max-width: 700px) {
-               min-width: 4rem;
-               width: 100%;
-               height: 55rem;
-               margin-bottom: 2rem;
-            }
-            @media (max-width: 500px) {
-               height: 35rem;
-            }
-            @media (max-width: 400px) {
-               height: 30rem;
-            }
+      .photograph {
+         clip-path: inset(0 0 29px 0);
+         aspect-ratio: 4/3;
+         object-fit: cover;
+         &:hover {
+            animation: glitch-cursor-seta 800ms forwards;
          }
       }
-
       @media screen {
          @media (max-width: 1440px) {
             width: 90%;
@@ -140,17 +57,20 @@ export const AboutStyle = styled.section`
    .content {
       height: 100%;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
+      width: 40%;
 
       .about_me {
-         font-size: 2.5rem;
+         font-size: 2.4rem;
          font-weight: 200;
-         line-height: 4rem;
+         line-height: 3rem;
          letter-spacing: 1px;
-         margin: 2rem 0;
+         margin: 0 0 0 3rem;
 
          .name {
+            font-size: 2.6rem;
             color: rgba(var(--primary-pink));
             font-weight: 500;
          }
@@ -180,52 +100,30 @@ export const AboutStyle = styled.section`
             }
          }
       }
+      .qualities {
+         font-size: 2rem;
+         font-weight: 200;
+         line-height: 2.2rem;
+         letter-spacing: 1px;
+         margin: 2rem 0 0 3rem;
 
-      .social_medias {
-         width: 60%;
-         display: flex;
-         justify-content: flex-start;
-         .media_icon {
-            font-size: 6rem;
-            transition: 0.4s;
-            margin: 0 2rem;
-
-            padding: 1rem;
-            border-radius: 2px;
-            &:hover {
-               transform: scale(1.1);
-               fill: rgba(var(--primary-pink));
-               box-shadow: 0 0 1px rgb(var(--secondary-white)),
-                  0 0 1px rgb(var(--secondary-white)),
-                  0 0 1px rgb(var(--secondary-white)),
-                  0 0 5px rgba(var(--primary-pink)),
-                  0 0 7px rgba(var(--primary-pink)),
-                  0 0 10px rgba(var(--primary-pink));
-            }
-
-            @media screen {
-               @media (max-width: 1440px) {
-                  font-size: 6rem;
-                  margin: 0 1rem;
-               }
-               @media (max-width: 1024px) {
-                  font-size: 5rem;
-                  margin: 0 .5rem;
-               }
-               @media (max-width: 1024px) {
-                  margin: 0 1rem;
-               }
-            }
+         .qualities_title {
+            font-weight: 300;
+            margin-bottom: 0;
          }
-         @media screen {
-            @media (max-width: 1440px) {
-               width: 40%;
-            }
-            @media (max-width: 700px) {
-               width: 100%;
-               margin-top: 1rem;
-               justify-content: center;
-            }
+
+         .emphasis {
+            color: rgba(var(--primary-blue));
+            font-weight: 500;
+            margin-right: 0.7rem;
+         }
+         ul {
+            padding: 0;
+            margin: 4rem 0 0 0;
+         }
+
+         li {
+            margin: 0 0 1.5rem 0;
          }
       }
       @media screen {

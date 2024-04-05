@@ -1,12 +1,16 @@
 import React from 'react';
 import NavItem from './NavItem/NavItem';
 import { NavStyle } from './navStyles';
+import { useTranslation } from 'react-i18next';
+import LanguageBar from '../Languages/Languages';
 
 interface INavProps {
    isVisible: boolean
 }
 
 const Nav = ({isVisible}: INavProps) => {
+   const { t } = useTranslation();
+
    const [selectedNavItem, setSelectedNavItem] = React.useState('');
    const [pagePosition] = React.useState(0);
    const scrollRef = React.useRef<HTMLDivElement>(null);
@@ -22,28 +26,28 @@ const Nav = ({isVisible}: INavProps) => {
       <NavStyle style={{animation: `${isVisible ? 'enterMenu 0.5s forwards' : ''}`}}>
          <ul className={`nav_list ${isVisible ? 'isVisible' : ''}`}>
             <NavItem
-               isSelected={selectedNavItem === 'home'}
-               setIsSelected={() => handleNavItemSelect('home')}
+               isSelected={selectedNavItem === t('Header.home')}
+               setIsSelected={() => handleNavItemSelect(t('Header.home'))}
                pagePosition={pagePosition}
-               name='home'
+               name={t('Header.home')}
             />
             <NavItem
-               isSelected={selectedNavItem === 'sobre mim'}
-               setIsSelected={() => handleNavItemSelect('sobre mim')}
+               isSelected={selectedNavItem === t('Header.aboutme')}
+               setIsSelected={() => handleNavItemSelect(t('Header.aboutme'))}
                pagePosition={pagePosition}
-               name='sobre mim'
+               name={t('Header.aboutme')}
             />
             <NavItem
-               isSelected={selectedNavItem === 'habilidades'}
-               setIsSelected={() => handleNavItemSelect('habilidades')}
+               isSelected={selectedNavItem === t('Header.habilities')}
+               setIsSelected={() => handleNavItemSelect(t('Header.habilities'))}
                pagePosition={pagePosition}
-               name='habilidades'
+               name={t('Header.habilities')}
             />
             <NavItem
-               isSelected={selectedNavItem === 'projetos'}
-               setIsSelected={() => handleNavItemSelect('projetos')}
+               isSelected={selectedNavItem === t('Header.projects')}
+               setIsSelected={() => handleNavItemSelect(t('Header.projects'))}
                pagePosition={pagePosition}
-               name='projetos'
+               name={t('Header.projects')}
             />
             {/* <NavItem
                isSelected={selectedNavItem === 'depoimentos'}
@@ -57,6 +61,8 @@ const Nav = ({isVisible}: INavProps) => {
                pagePosition={pagePosition}
                name=''
             />
+         <LanguageBar />
+            moon
          </ul>
          <div ref={scrollRef}></div>
       </NavStyle>
