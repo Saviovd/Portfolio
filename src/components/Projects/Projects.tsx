@@ -5,11 +5,13 @@ import { ProjectsStyle } from './projectStyles';
 import data from '@/data/data.json';
 import Button from '../Button/Button';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const { projects } = data;
 
 const Projects = () => {
    const [active, setActive] = useState(0);
+   const { t } = useTranslation();
 
    const motionProps = (initialX: number, finalX: number) => ({
       initial: { opacity: 0, x: initialX },
@@ -24,12 +26,12 @@ const Projects = () => {
    });
 
    return (
-      <ProjectsStyle id='projetos'>
+      <ProjectsStyle id={t('Projects.projects')}>
          <Title
             firstColor='rgb(var(--secondary-white))'
             secondColor='rgb(var(--primary-pink))'
-            firstWord='Projetos'
-            secondWord='Recentes'
+            firstWord={t('Projects.projects')}
+            secondWord={t('Projects.recent')}
          />
 
          <motion.div
@@ -58,14 +60,17 @@ const Projects = () => {
                   3
                </span>
             </div>
-            <Image
-               className='project_photo'
-               src={projects[active].image}
-               alt='ok'
-               width={800}
-               height={400}
-            />
-
+            {projects[active].image ? (
+               <Image
+                  className='project_photo'
+                  src={projects[active].image}
+                  alt='ok'
+                  width={800}
+                  height={400}
+               />
+            ) : (
+               <h3 className='project_name'>{projects[active].name}</h3>
+            )}
             <motion.div
                {...(typeof window !== 'undefined' && window.innerWidth > 768
                   ? { ...motionProps(300, 0) }
@@ -73,30 +78,36 @@ const Projects = () => {
                className='about_project'
             >
                <h3 className='project_name'>{projects[active].name}</h3>
+
+
                <p className='project_description'>
-                  {projects[active].description}
+                  {
+                     projects[active].name === t(`Projects.${projects[active].code}.name`) ? t(`Projects.${projects[active].code}.description`) : projects[active].description
+                  }
                </p>
+
+
                <div className='links_to_project'>
                   <Button
-                     title='Projeto'
+                     title={t('Projects.projectButton')}
                      url={projects[active].url}
                      _blank={true}
                   />
                   <Button
-                     title='Repositório'
+                     title={t('Projects.repositoryButton')}
                      url={projects[active].repository}
                      _blank={true}
                   />
                </div>
-               <span className='dev_by'>Desenvolvido com:</span>
+               <span className='dev_by'>{t('Projects.devBy')}</span>
                <ul className='stack_list'>
                   {projects[active].stacks.map((stack: string, i: number) => (
                      <li className='stack' key={i}>
                         <Image
                            src={stack}
                            alt='stack logo'
-                           width={32}
-                           height={32}
+                           width={40}
+                           height={40}
                            className='stack_logo'
                         />
                      </li>
@@ -106,7 +117,7 @@ const Projects = () => {
          </motion.div>
          <div className='more_projects'>
             <Button
-               title='Veja Mais!'
+               title={t('Projects.more')}
                url='/projects'
                bgColor='rgb(var(--primary-pink))'
                _blank={false}

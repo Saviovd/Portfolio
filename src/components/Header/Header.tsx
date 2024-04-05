@@ -1,31 +1,50 @@
-import React from 'react';
-import Nav from '../Nav/Nav';
-import { HeaderStyle } from './headerStyles';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import Image from 'next/image';
+
+import Nav from '../Nav/Nav';
+import { HeaderStyle } from './headerStyles';
 
 const Header = () => {
-   const [isActive, setIsActive] = React.useState(false);
+   const { t } = useTranslation();
+   const [isActive, setIsActive] = useState(false);
+   const [isRotating, setIsRotating] = useState(false);
+
+   const handleRotationClick = () => {
+      setIsRotating(true);
+
+      setTimeout(() => {
+         setIsRotating(false);
+      }, 600);
+   };
 
    return (
       <>
          <HeaderStyle
-            style={{height: `${isActive ? 'auto' : `${typeof window !== 'undefined' &&  window.innerWidth < 768 ? '8rem' : ''}`}`}}
-            onClick={() => isActive ? setIsActive(false) : isActive}
+            style={{
+               // height: `${
+               //    isActive
+               //       ? 'auto'
+               //       : `${typeof window !== 'undefined' && window.innerWidth < 768 ? '8rem' : ''}`
+               // }`,
+            }}
+            onClick={() => (isActive ? setIsActive(false) : setIsActive)}
          >
-            <Image className='logo' src={'/assets/logo.png'} alt={'Logo de Sávio Almeida'} width={60} height={60} />
+            <Image className='logo' src={'/assets/logo.svg'} alt={t('Header.logoAlt')} width={90} height={90} />
             <Nav isVisible={isActive} />
+            {/* moon */}
             {!isActive ? (
-               <RxHamburgerMenu
-                  onClick={() => setIsActive(!isActive)}
-                  className='burger_icon'
-               />
+               <RxHamburgerMenu onClick={() => {
+                  handleRotationClick()
+                  setIsActive(!isActive)
+               }} className={`burger_icon ${isRotating ? 'rotate' : ''}`} />
             ) : (
-               <AiOutlineClose
-                  onClick={() => setIsActive(!isActive)}
-                  className='burger_icon'
-               />
+               <AiOutlineClose onClick={() => {
+                  handleRotationClick()
+                  setIsActive(!isActive)
+               }} className={`burger_icon ${isRotating ? 'rotate' : ''}`} />
             )}
          </HeaderStyle>
       </>

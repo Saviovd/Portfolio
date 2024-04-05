@@ -41,7 +41,7 @@ const Certifications = () => {
                      Análise e desenvolvimento de sistemas
                   </h3>
                   <h5 className='university'>Universidade Anhembi Morumbi</h5>
-                  <p className='date'>06/2021 - 12/2023</p>
+                  <p className='date'>08/2021 - 06/2024</p>
                </div>
                <div className='graduate'>
                   <Image

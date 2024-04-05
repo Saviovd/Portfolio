@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const ProjectsStyle = styled.section`
    max-width: 1700px;
-   margin: 15.5rem auto 0 auto;
+   height: 90vh;
+   margin: 0 auto;
    text-align: center;
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
 
    .project_container {
       display: flex;
@@ -44,7 +46,7 @@ export const ProjectsStyle = styled.section`
                }
                @media (max-width: 1024px) {
                   text-align: center;
-                  width: 25%;
+                  width: 30%;
                   padding: 1.5rem;
                   text-align: right;
                   height: 2rem;
@@ -195,15 +197,14 @@ export const ProjectsStyle = styled.section`
             .stack {
                margin-right: 0.7rem;
                padding: 1rem;
-               border: 1px solid rgba(var(--primary-pink), 0.8);
                border-radius: 2px;
                transition: 0.5s;
 
                .stack_logo {
                   @media screen {
                      @media (max-width: 1440px) {
-                        width: 25px;
-                        height: 25px;
+                        width: 30px;
+                        height: 30px;
                      }
                      @media (max-width: 1170px) {
                         width: 22px;
@@ -212,12 +213,7 @@ export const ProjectsStyle = styled.section`
                   }
                }
                &:hover {
-                  box-shadow: 0 0 3px rgb(var(--secondary-white)),
-                     0 0 5px rgb(var(--secondary-white)),
-                     0 0 5px rgb(var(--secondary-white)),
-                     0 0 5px rgba(var(--primary-pink)),
-                     0 0 10px rgba(var(--primary-pink)),
-                     0 0 15px rgba(var(--primary-pink));
+                  transform: scale(1.5);
                }
                @media screen {
                   @media (max-width: 1170px) {

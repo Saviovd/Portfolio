@@ -9,8 +9,8 @@ export const ButtonStyle = styled.a`
    background: none;
    border: none;
    outline: none;
-   padding: 1rem 3rem;
-   font-size: 1.5rem;
+   padding: 2rem 4.5rem;
+   font-size: 2.5rem;
    letter-spacing: 0.3rem;
    text-align: center;
    text-transform: uppercase;
@@ -49,7 +49,7 @@ export const ButtonStyle = styled.a`
    }
 
    &:hover {
-      cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png), pointer;
+      animation: glitch-cursor 500ms forwards;
    }
 
    &:hover:before {
@@ -117,18 +117,64 @@ export const ButtonStyle = styled.a`
       }
    }
 
+   @keyframes glitch-cursor {
+      0% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      5% {
+         cursor: default;
+      }
+      10% {
+         cursor: wait;
+      }
+      25% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      30% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      35% {
+         cursor: wait;
+      }
+      40% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      45% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      70% {
+         cursor: pointer;
+      }
+      75% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      80% {
+         cursor: url(https://cdn.custom-cursor.com/db/4731/32/arrow2699.png),
+            pointer;
+      }
+      100% {
+         cursor: pointer;
+      }
+   }
+
    @media screen {
-      @media (max-width: 1600px) {
+      @media (max-width: 2048px) or (max-height: 1152px) {
+         padding: 1.5rem 3.5rem;
+         font-size: 2rem;
+      }
+      @media (max-width: 1728px) or (max-height: 1085px) {
+         padding: 1rem 3rem;
+         font-size: 1.5rem;
+      }
+      @media (max-width: 620px) {
          padding: 1rem 2rem;
-         font-size: 1.4rem;
-      }
-      @media (max-width: 775px) {
-         padding: 1rem 1.5rem;
          font-size: 1.2rem;
-      }
-      @media (max-width: 440px) {
-         padding: 1rem 1rem;
-         font-size: 1rem;
       }
    }
 `;
