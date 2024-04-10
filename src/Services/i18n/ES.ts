@@ -34,7 +34,7 @@ const translations = {
    },
    Projects: {
       projects: 'proyectos',
-      recients: 'recientes',
+      recent: 'recientes',
       projectButton: 'proyecto',
       repositoryButton: 'repositorio',
       devBy: 'Desarrollado con:',

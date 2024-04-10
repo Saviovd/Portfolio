@@ -30,8 +30,8 @@ const Projects = () => {
          <Title
             firstColor='rgb(var(--secondary-white))'
             secondColor='rgb(var(--primary-pink))'
-            firstWord={t('Projects.projects')}
-            secondWord={t('Projects.recent')}
+            firstWord={t('Projects.projects') === 'projects' ? t('Projects.recent') : t('Projects.projects')}
+            secondWord={t('Projects.recent') === 'recent' ? t('Projects.projects') : t('Projects.recent')}
          />
 
          <motion.div
