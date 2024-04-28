@@ -57,7 +57,7 @@ export const HomeStyle = styled.section`
       }
 
       @media screen {
-         @media (max-width: 2048px) or (max-height: 1152px) {
+         @media (max-width: 2048px) {
             .calls_me {
                font-size: 5rem;
             }
@@ -68,7 +68,7 @@ export const HomeStyle = styled.section`
                font-size: 4rem;
             }
          }
-         @media (max-width: 1728px) or (max-height: 1085px) {
+         @media (max-width: 1728px) {
             .calls_me {
                font-size: 4rem;
             }
@@ -77,6 +77,14 @@ export const HomeStyle = styled.section`
             }
             .loader {
                font-size: 3rem;
+            }
+         }
+         @media (max-width: 1728px) {
+            .calls_me {
+               font-size: 3.5rem;
+            }
+            .my_name {
+               font-size: 6rem;
             }
          }
          @media (max-width: 1024px) {
@@ -230,6 +238,7 @@ export const DrippingDown = styled.div`
          }
       }
    }
+   transform: translateX(-2rem);
 
    @media screen {
       @media (max-width: 2048px) or (max-height: 1152px) {

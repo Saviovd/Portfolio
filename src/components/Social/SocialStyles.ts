@@ -26,19 +26,28 @@ export const SocialStyle = styled.div`
          right: 2rem;
 
          .social {
-            width: 75px;
-            height: 75px;
+            width: 65px;
+            height: 65px;
          }
       }
       @media (max-width: 1024px) {
-         right: 1.5rem;
-         top: 12rem;
          gap: 1rem;
+         right: 0;
+         top: 0;
+         position: static;
+         flex-direction: row;
+         transform: translateY(20rem);
 
          .social {
             width: 60px;
             height: 60px;
          }
+      }
+      @media (max-height: 930px) {
+         transform: translateY(12rem);
+      }
+      @media (max-height: 800px) {
+         transform: translateY(10rem);
       }
       @media (max-width: 768px) {
          top: auto;

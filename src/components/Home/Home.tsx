@@ -46,6 +46,7 @@ const Intro = () => {
                      url='/documents/curriculum.pdf'
                   />
                </Buttons>
+               <Social />
             </motion.div>
             <DrippingDown>
                <ScrollLink
@@ -62,7 +63,6 @@ const Intro = () => {
                   <div className='chevron'></div>
                </ScrollLink>
             </DrippingDown>
-            <Social />
          </HomeStyle>
       </>
    );
