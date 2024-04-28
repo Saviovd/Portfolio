@@ -12,18 +12,7 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
    text-decoration: none;
    white-space: nowrap;
    z-index: 2;
-
    position: relative;
-
-   @media screen {
-      @media (max-width: 1440px) {
-         font-size: 2.5rem;
-      }
-      @media (max-width: 1024px) {
-         font-size: 2.2rem;
-         margin: 0 1rem;
-      };
-   }
 
    &[data-glitch] {
       content: attr(data-glitch);
@@ -87,9 +76,6 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          text-align: center;
       }
    }
-
-   @media screen {
-   }
    @keyframes glow {
       to {
          width: 100%;
@@ -140,6 +126,14 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
       }
       to {
          transform: translate(0);
+      }
+   }
+   @media screen {
+      @media (max-width: 1440px) {
+         font-size: 2.5rem;
+      }
+      @media (max-width: 1024px) {
+         font-size: 2.2rem;
       }
    }
 `;
