@@ -37,7 +37,7 @@ export const LanguageStyles = styled.div<LanguageStylesProps>`
       @media (max-width: 1024px) {
          font-size: 1.2rem;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 820px) {
          background-color: rgba(var(--primary-blue), 0.8);
          margin: 0 auto;
          transform: translate(0);

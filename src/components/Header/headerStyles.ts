@@ -25,7 +25,7 @@ export const HeaderStyle = styled.header`
       display: none;
 
       @media screen {
-         @media (max-width: 768px) {
+         @media (max-width: 820px) {
             display: block;
          }
       }

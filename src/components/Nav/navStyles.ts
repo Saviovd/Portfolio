@@ -19,7 +19,7 @@ export const NavStyle = styled.nav`
 
    @keyframes enterList {
       to {
-         right: 0;
+         right: -2.5rem;
       }
    }
    @keyframes quitMenu {
@@ -28,6 +28,11 @@ export const NavStyle = styled.nav`
       }
    }
    @media screen {
+      @media (max-width: 1600px) {
+         .nav_list {
+            gap: 15px;
+         }
+      }
       @media (max-width: 1440px) {
          .nav_list {
             gap: 5px;
@@ -38,7 +43,7 @@ export const NavStyle = styled.nav`
             gap: 0;
          }
       }
-      @media (max-width: 768px) {
+      @media (max-width: 820px) {
          .nav_list {
             flex-direction: column;
             width: 70%;
