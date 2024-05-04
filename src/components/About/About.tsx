@@ -28,6 +28,7 @@ const About = () => {
          setIsHovering(false);
       }, 1000);
    };
+
    return (
       <AboutStyle id={t('Header.aboutme')}>
          <Title
@@ -58,28 +59,26 @@ const About = () => {
                />
             )}
             <div className='content'>
-               <p className='about_me'>
-               {t('AboutMe.apresentation')}
-               </p>
+               <p className='about_me'>{t('AboutMe.apresentation')}</p>
                <div className='qualities'>
-                  <p className='qualities_title' >
-                  {t('AboutMe.obs')}
-                  </p>
+                  <p className='qualities_title'>{t('AboutMe.obs')}</p>
                   <ul>
                      <li>
                         <span className='emphasis'>
-                        {t('AboutMe.emphasis1')}
+                           {t('AboutMe.emphasis1')}:
                         </span>
                         {t('AboutMe.text1')}
                      </li>
                      <li>
                         <span className='emphasis'>
-                        {t('AboutMe.emphasis2')}
+                           {t('AboutMe.emphasis2')}:
                         </span>
                         {t('AboutMe.text2')}
                      </li>
                      <li>
-                        <span className='emphasis'>{t('AboutMe.emphasis3')}</span>
+                        <span className='emphasis'>
+                           {t('AboutMe.emphasis3')}:
+                        </span>
                         {t('AboutMe.text3')}
                      </li>
                   </ul>
