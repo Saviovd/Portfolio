@@ -23,12 +23,6 @@ export const HeaderStyle = styled.header`
       color: rgb(var(--secondary-white));
       z-index: 9;
       display: none;
-
-      @media screen {
-         @media (max-width: 820px) {
-            display: block;
-         }
-      }
    }
    .rotate {
       animation: rotation 400ms forwards;
@@ -42,48 +36,6 @@ export const HeaderStyle = styled.header`
          }
          100% {
             transform: rotate(0deg);
-         }
-      }
-   }
-
-   @media screen {
-      @media (max-width: 1440px) {
-         top: 5rem;
-
-         .logo {
-            left: 5rem;
-            width: 8rem;
-            height: 8rem;
-         }
-      }
-      @media (max-width: 1024px) {
-         top: 5rem;
-         width: 97%;
-
-         .logo {
-            left: 3.5rem;
-            width: 7rem;
-            height: 7rem;
-         }
-      }
-      @media (max-width: 768px) {
-         width: 100%;
-
-         .logo {
-            top: -1rem;
-            width: 6rem;
-            height: 6rem;
-         }
-      }
-      @media (max-width: 490px) {
-         .logo {
-            top: -3rem;
-            left: 2rem;
-         }
-         .burger_icon {
-            right: 2rem;
-            top: -3rem;
-            font-size: 5rem;
          }
       }
    }

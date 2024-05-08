@@ -39,14 +39,6 @@ export const HabilitiesStyle = styled.section`
             .stack_name {
                color: rgba(var(--primary-blue), 0.9);
                margin: 0.1rem 0 0 0;
-               @media screen {
-                  @media (max-width: 850px) {
-                     font-size: 1.4rem;
-                  }
-                  @media (max-width: 475px) {
-                     font-size: 1.1rem;
-                  }
-               }
             }
             &:hover {
                transform: scale(1.5);
@@ -86,26 +78,6 @@ export const HabilitiesStyle = styled.section`
             &:hover:after {
                animation: glitch-button 1.3s forwards linear alternate-reverse;
             }
-
-            @media screen {
-               @media (max-width: 1440px) {
-                  flex-basis: 7rem;
-                  height: 8rem;
-                  margin: 0.5rem 0;
-               }
-            }
-         }
-
-         @media screen {
-            @media (max-width: 1440px) {
-               gap: 0;
-            }
-            @media (max-width: 768px) {
-               margin: 3.5rem 0 0 0;
-            }
-            @media (max-width: 400px) {
-               margin: 2rem 0 0 0;
-            }
          }
       }
       .stack_box:nth-child(1) {
@@ -116,20 +88,6 @@ export const HabilitiesStyle = styled.section`
       display: flex;
       margin: 6rem 2rem 0 0;
       justify-content: flex-end;
-      @media screen {
-         @media (max-width: 1440px) {
-            margin: 4rem 1rem 0 0;
-         }
-         @media (max-width: 850px) {
-            margin: 4rem 0 0 0;
-         }
-      }
-   }
-
-   @media screen {
-      @media (max-width: 850px) {
-         padding: 0 2rem;
-      }
    }
 
    @keyframes glitch {

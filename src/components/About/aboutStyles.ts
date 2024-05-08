@@ -28,39 +28,6 @@ export const AboutStyle = styled.section`
          &:hover {
             animation: glitch-cursor-seta 800ms forwards;
          }
-         @media screen {
-            @media (max-width: 1600px) {
-               height: 95%;
-               width: 40rem;
-            }
-            @media (max-width: 1140px) {
-               width: 40%;
-            }
-            @media (max-width: 950px) {
-               height: 100%;
-               width: 80%;
-            }
-            /* height */
-            @media (max-height: 760px) {
-               height: 90%;
-            }
-         }
-      }
-      @media screen {
-         @media (max-width: 1440px) {
-            width: 90%;
-            height: 35rem;
-         }
-         @media (max-width: 1024px) {
-            width: 85%;
-         }
-         @media (max-width: 950px) {
-            flex-direction: column-reverse;
-            justify-content: flex-end;
-            align-items: center;
-            text-align: center;
-            width: 90%;
-         }
       }
    }
 
@@ -84,20 +51,6 @@ export const AboutStyle = styled.section`
             color: rgba(var(--primary-pink));
             font-weight: 500;
          }
-
-         @media screen {
-            @media (max-width: 1600px) {
-               font-size: 2rem;
-               line-height: 2.5rem;
-            }
-            @media (max-width: 950px) {
-               margin: 0;
-            }
-            @media (max-width: 510px) {
-               font-size: 1.5rem;
-               margin: 0 0 0 1rem;
-            }
-         }
       }
       .qualities {
          font-size: 2rem;
@@ -110,14 +63,6 @@ export const AboutStyle = styled.section`
          .qualities_title {
             font-weight: 300;
             margin-bottom: 0;
-            @media screen {
-               @media (max-width: 1600px) {
-                  margin: 1rem 0;
-               }
-               @media (max-width: 950px) {
-                  margin: 1rem 0 0 0;
-               }
-            }
          }
 
          .emphasis {
@@ -128,39 +73,10 @@ export const AboutStyle = styled.section`
          ul {
             padding: 0;
             margin: 4rem 0 0 0;
-            @media screen {
-               @media (max-width: 1600px) {
-                  margin: 0 0 1rem 0;
-               }
-            }
          }
 
          li {
             margin: 0 0 1.5rem 0;
-         }
-         @media screen {
-            @media (max-width: 1600px) {
-               font-size: 1.6rem;
-               margin: 0 0 0 3rem;
-            }
-            @media (max-width: 950px) {
-               text-align: center;
-               width: 90%;
-            }
-            @media (max-width: 510px) {
-               font-size: 1.4rem;
-               margin: 0 0 0 1rem;
-            }
-         }
-      }
-      @media screen {
-         @media (max-width: 1440px) {
-            width: 50%;
-            min-width: 63rem;
-         }
-         @media (max-width: 1140px) {
-            width: auto;
-            min-width: 0;
          }
       }
 
@@ -198,21 +114,6 @@ export const AboutStyle = styled.section`
                'M400.21,112.61v-15.31H234.82v-9.04h52.51v-6.59h112.67V32.54h-33.6V6.06h-95.3V0H69.47V2.36H29.34V13.55h40.13v7.51H32.34v20.87h-12.38v10.18H0v36.15H19.96v49.37h18.2v23.05H13.82v11.8H.23v6.81H13.82v37.96h18.52v22.74H13.14v13.3h19.2v8.96h106.23v4.44H.23v26.8H61.69v30.62h-29.35v14.67H114.47v11.23H17.55v30.62h18.3v17.63h51.68v-17.63h26.94v11.98h143.72v5.65h141.81v-25.45h-114.47v-5.21h101.25v-.75h13.22v-8.29h-13.22v-29.24h-17.58v-10.32h30.72v-10.85h-30.72v-5.11h30.72v-31.26h-16.99v-29.1h17.08v-24.74h-60.14v-6.74h-24.11v-8.11h70.6v-61.25h-20.92v-29.24h34.78Zm-164.97,180.87v-8.94h88.66v12.37h-108.46v-3.43h19.79Zm-50.53-151.63v18.82h-30.76v-23.05h71.6v4.23h-40.84Z'
             );
          }
-      }
-
-      @media screen {
-         @media (max-width: 950px) {
-            height: auto;
-         }
-         @media (max-width: 820px) {
-            padding: 0;
-         }
-      }
-   }
-   @media screen {
-      @media (max-width: 820px) {
-         padding-top: 0;
-         transform: translateY(0);
       }
    }
 `;

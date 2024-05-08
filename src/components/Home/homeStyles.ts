@@ -55,89 +55,6 @@ export const HomeStyle = styled.section`
          animation: glitch-cursor 700ms forwards;
          animation-delay: ${Math.random() * 5000 + 1000}ms;
       }
-
-      @media screen {
-         @media (max-width: 2048px) {
-            .calls_me {
-               font-size: 5rem;
-            }
-            .my_name {
-               font-size: 9rem;
-            }
-            .loader {
-               font-size: 4rem;
-            }
-         }
-         @media (max-width: 1728px) {
-            .calls_me {
-               font-size: 4rem;
-            }
-            .my_name {
-               font-size: 7rem;
-            }
-            .loader {
-               font-size: 3rem;
-            }
-         }
-         @media (max-width: 1728px) {
-            .calls_me {
-               font-size: 3.5rem;
-            }
-            .my_name {
-               font-size: 6rem;
-            }
-         }
-         @media (max-width: 1024px) {
-            .calls_me {
-               font-size: 3rem;
-            }
-            .my_name {
-               font-size: 6rem;
-            }
-            .loader {
-               font-size: 2.5rem;
-            }
-         }
-         @media (max-width: 768px) {
-            .calls_me {
-               font-size: 2.5rem;
-               align-self: center;
-            }
-            .my_name {
-               font-size: 5rem;
-            }
-            .loader {
-               font-size: 2rem;
-            }
-         }
-         @media (max-width: 620px) {
-            .calls_me {
-               font-size: 2rem;
-            }
-            .my_name {
-               font-size: 4rem;
-            }
-            .loader {
-               font-size: 1.7rem;
-            }
-         }
-         @media (max-width: 620px) {
-            .my_name {
-               font-size: 3.2rem;
-            }
-            .loader {
-               font-size: 1.5rem;
-            }
-         }
-         @media (max-width: 390px) {
-            .my_name {
-               font-size: 2.7rem;
-            }
-            .loader {
-               font-size: 1.3rem;
-            }
-         }
-      }
    }
    @keyframes move {
       25% {
@@ -165,28 +82,6 @@ export const Buttons = styled.div`
    .left,
    .right {
       margin: 0 auto;
-   }
-
-   @media screen {
-      @media (max-width: 1728px) or (max-height: 1085px) {
-         margin: 0 auto;
-         width: 80%;
-         transform: translateY(70px);
-      }
-      @media (max-width: 1024px) {
-         transform: translateY(60px);
-      }
-      @media (max-width: 768px) {
-         width: 100%;
-      }
-      @media (max-width: 390px) {
-         /* margin: 0; */
-         justify-content: center;
-         .left,
-         .right {
-            margin: 0 5px;
-         }
-      }
    }
 `;
 
@@ -239,9 +134,4 @@ export const DrippingDown = styled.div`
       }
    }
    transform: translateX(-2rem);
-
-   @media screen {
-      @media (max-width: 2048px) or (max-height: 1152px) {
-      }
-   }
 `;

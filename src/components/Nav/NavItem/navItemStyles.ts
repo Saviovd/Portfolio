@@ -128,15 +128,4 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          transform: translate(0);
       }
    }
-   @media screen {
-      @media (max-width: 1600px) {
-         font-size: 2.2rem;
-      }
-      @media (max-width: 1440px) {
-         font-size: 2rem;
-      }
-      @media (max-width: 1024px) {
-         font-size: 2.2rem;
-      }
-   }
 `;

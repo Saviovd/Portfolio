@@ -162,19 +162,4 @@ export const ButtonStyle = styled.a`
          cursor: pointer;
       }
    }
-
-   @media screen {
-      @media (max-width: 2048px) or (max-height: 1152px) {
-         padding: 1.5rem 3.5rem;
-         font-size: 2rem;
-      }
-      @media (max-width: 1728px) or (max-height: 1085px) {
-         padding: 1rem 3rem;
-         font-size: 1.5rem;
-      }
-      @media (max-width: 620px) {
-         padding: 1rem 2rem;
-         font-size: 1.2rem;
-      }
-   }
 `;
