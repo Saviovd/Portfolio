@@ -3,28 +3,44 @@ import styled from 'styled-components';
 export const AboutStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
-   padding-top: 5rem;
    min-height: 45rem;
-   height: 85vh;
-   transform: translateY(5rem);
-
+   margin-top: 10rem;
+   padding-top: 5rem;
    display: flex;
    align-items: center;
    flex-direction: column;
+   justify-content: center;
 
    .about_content {
-      max-width: 160rem;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      margin: 0 auto;
-      min-height: 50rem;
-      height: auto;
+      align-items: flex-end;
       z-index: 1;
+      height: 100%;
+      @media screen {
+         @media (max-width: 1055px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 3rem;
+         }
+         @media (max-width: 460px) {
+            padding: 0 1rem;
+         }
+      }
       .photograph {
-         clip-path: inset(0 0 29px 0);
-         aspect-ratio: 4/3;
+         clip-path: inset(0 4rem 29px);
+         height: max-content;
          object-fit: cover;
+         transform: translateY(16px);
+         min-height: 41.5rem;
+         @media screen {
+            @media (max-width: 500px) {
+               min-height: 0;
+               width: 95%;
+            }
+         }
          &:hover {
             animation: glitch-cursor-seta 800ms forwards;
          }
@@ -32,24 +48,38 @@ export const AboutStyle = styled.section`
    }
 
    .content {
-      height: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
+      align-self: center;
       flex-direction: column;
-      width: 40%;
+      max-width: 70rem;
+      padding-right: 2rem;
+      @media screen {
+         @media (max-width: 1055px) {
+            padding: 0;
+         }
+      }
 
       .about_me {
          font-size: 2.3rem;
          font-weight: 200;
          line-height: 3rem;
          letter-spacing: 1px;
-         margin: 0 0 0 3rem;
+         margin: 0;
 
          .name {
             font-size: 2.6rem;
             color: rgba(var(--primary-pink));
             font-weight: 500;
+         }
+         @media screen {
+            @media (max-width: 1440px) {
+               font-size: 2rem;
+            }
+            @media (max-width: 1125px) {
+               font-size: 1.8rem;
+            }
          }
       }
       .qualities {
@@ -57,8 +87,16 @@ export const AboutStyle = styled.section`
          font-weight: 200;
          line-height: 2.2rem;
          letter-spacing: 1px;
-         margin: 2rem 0 0 3rem;
-         height: auto;
+         margin: 0;
+
+         @media screen {
+            @media (max-width: 1440px) {
+               font-size: 1.8rem;
+            }
+            @media (max-width: 1125px) {
+               font-size: 1.6rem;
+            }
+         }
 
          .qualities_title {
             font-weight: 300;
@@ -72,7 +110,7 @@ export const AboutStyle = styled.section`
          }
          ul {
             padding: 0;
-            margin: 4rem 0 0 0;
+            margin: 1rem 0 0 0;
          }
 
          li {

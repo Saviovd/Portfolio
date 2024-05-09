@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const HomeStyle = styled.section`
-   height: calc(100vh - 8rem);
+   height: 100vh;
    min-height: 55rem;
    max-width: 1800px;
    margin: 0 auto;
    padding: 0 5rem;
    position: relative;
+   transform: translateY(-5rem);
 
    display: flex;
    flex-direction: column;
@@ -157,7 +158,7 @@ export const DrippingDown = styled.div`
    display: flex;
    justify-content: flex-end;
    align-items: flex-end;
-   transform: translate(-2rem, 3rem);
+   transform: translateX(-2rem);
    .dripping_down {
       position: relative;
       margin: 0 auto;
