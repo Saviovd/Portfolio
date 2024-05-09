@@ -107,6 +107,19 @@ export const AboutStyle = styled.section`
             color: rgba(var(--primary-blue));
             font-weight: 500;
             margin-right: 0.7rem;
+
+            &::after {
+               content: ':';
+            }
+            @media screen {
+               @media screen {
+                  @media (max-width: 1055px) {
+                     &::after {
+                        content: '';
+                     }
+                  }
+               }
+            }
          }
          ul {
             padding: 0;
@@ -115,6 +128,12 @@ export const AboutStyle = styled.section`
 
          li {
             margin: 0 0 1.5rem 0;
+            @media screen {
+               @media (max-width: 1055px) {
+                  display: flex;
+                  flex-direction: column;
+               }
+            }
          }
       }
 
