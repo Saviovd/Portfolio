@@ -80,6 +80,15 @@ export const AboutStyle = styled.section`
             @media (max-width: 1125px) {
                font-size: 1.8rem;
             }
+            @media (max-width: 500px) {
+               font-size: 1.6rem;
+               text-align: justify;
+               line-height: 2.5rem;
+               padding: 0 1rem;
+            }
+            @media (max-width: 390px) {
+               padding: 0 1.5rem;
+            }
          }
       }
       .qualities {
@@ -99,7 +108,8 @@ export const AboutStyle = styled.section`
          }
 
          .qualities_title {
-            font-weight: 300;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
             margin-bottom: 0;
          }
 
@@ -112,13 +122,12 @@ export const AboutStyle = styled.section`
                content: ':';
             }
             @media screen {
-               @media screen {
-                  @media (max-width: 1055px) {
-                     font-weight: 600;
-                     font-size: 1.65rem;
-                     &::after {
-                        content: '';
-                     }
+               @media (max-width: 1055px) {
+                  font-weight: 600;
+                  font-size: 1.65rem;
+                  margin: 0 auto 0.5rem;
+                  &::after {
+                     content: '';
                   }
                }
             }
@@ -134,6 +143,11 @@ export const AboutStyle = styled.section`
                @media (max-width: 1055px) {
                   display: flex;
                   flex-direction: column;
+                  margin: 0 0 1.8rem 0;
+
+                  &:nth-child(3) {
+                     margin: 0;
+                  }
                }
             }
          }
