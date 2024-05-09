@@ -114,6 +114,8 @@ export const AboutStyle = styled.section`
             @media screen {
                @media screen {
                   @media (max-width: 1055px) {
+                     font-weight: 600;
+                     font-size: 1.65rem;
                      &::after {
                         content: '';
                      }
