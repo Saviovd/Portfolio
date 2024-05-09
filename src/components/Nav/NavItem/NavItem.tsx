@@ -41,7 +41,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
                smooth={true}
                spy={true}
                duration={500}
-               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -100 : -180}>
+               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -100 : -150}>
                {name}
             </ScrollLink>
       </NavItemStyle>
