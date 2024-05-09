@@ -6,10 +6,34 @@ export const SocialStyle = styled.div`
    gap: 2rem;
 
    position: absolute;
-   right: 0;
+   right: 4rem;
+   top: 40%;
+
+   @media screen {
+      @media (max-width: 1024px) {
+         top: 12rem;
+         position: relative;
+         flex-direction: row;
+         width: 100%;
+         right: 0;
+         align-items: center;
+         justify-content: center;
+      }
+   }
 
    .social {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
+
+      @media screen {
+         @media (max-width: 1440px) {
+            width: 60px;
+            height: 60px;
+         }
+         @media (max-width: 430px) {
+            width: 50px;
+            height: 50px;
+         }
+      }
    }
 `;

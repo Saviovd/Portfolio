@@ -22,7 +22,6 @@ const Intro = () => {
       },
    });
 
-
    return (
       <>
          <HomeStyle id={t('Header.home')}>
@@ -55,7 +54,7 @@ const Intro = () => {
                   spy={true}
                   duration={700}
                   delay={100}
-                  offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -90 : -80}
+                  offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -100 : -80}
                   className='dripping_down'
                >
                   <div className='chevron'></div>
