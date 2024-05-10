@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
-   max-width: 1700px;
+   max-width: 1800px;
    margin: 15rem auto 5rem;
    padding: 0 2rem;
 
@@ -10,8 +10,22 @@ export const HabilitiesStyle = styled.section`
    .stacks {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
+      justify-content: flex-start;
+      justify-items: center;
       margin: 5rem 0;
+      padding: 0 3rem;
+      max-width: 175rem;
+
+      @media screen {
+         @media (max-width: 1440px) {
+            margin: 3rem 0;
+            padding: 0 0 0 1rem;
+         }
+         @media (max-width: 1024px) {
+            padding: 0;
+         }
+      }
 
       .stack_box {
          display: flex;
@@ -19,9 +33,9 @@ export const HabilitiesStyle = styled.section`
          position: relative;
 
          .stack {
-            margin: 1rem;
-            height: 9rem;
-            width: 9rem;
+            margin: 3rem 4rem 0 0;
+            height: 8rem;
+            width: 7rem;
             transition: 0.5s;
 
             display: flex;
@@ -30,22 +44,59 @@ export const HabilitiesStyle = styled.section`
             align-items: center;
             justify-content: center;
             position: relative;
-
+            @media screen {
+               @media (max-width: 1440px) {
+                  margin: 2.5rem 3rem 0 0;
+                  height: 7rem;
+                  width: 6rem;
+               }
+               @media (max-width: 1140px) {
+                  margin: 2rem 2rem 0 0;
+               }
+               @media (max-width: 1024px) {
+                  margin: 3rem 1rem 0;
+                  height: 10rem;
+                  width: 21%;
+               }
+               @media (max-width: 600px) {
+                  margin: 2rem auto 0;
+                  height: 10rem;
+                  width: 30%;
+               }
+            }
             &:hover {
                animation: glitch-cursor-seta 400ms forwards;
             }
             .stack_icon {
+               object-fit: contain;
+               @media screen {
+                  @media (max-width: 1024px) {
+                     transform: scale(1.5);
+                  }
+               @media (max-width: 600px) {
+                  transform: scale(1.2);
+               }
+               @media (max-width: 390px) {
+                  transform: scale(1);
+               }
+               }
             }
             .stack_name {
+               font-size: 1rem;
                color: rgba(var(--primary-blue), 0.9);
-               margin: 0.1rem 0 0 0;
+               margin: 0.5rem auto 0;
                @media screen {
-                  @media (max-width: 850px) {
-                     font-size: 1.4rem;
+                  @media (max-width: 1024px) {
+                     margin: 1.5rem auto 0;
+                     font-size: 1.3rem;
                   }
-                  @media (max-width: 475px) {
-                     font-size: 1.1rem;
-                  }
+               @media (max-width: 600px) {
+                  font-size: 1.2rem;
+                  margin: 1rem auto 0;
+               }
+               @media (max-width: 390px) {
+                  font-size: 1.1rem;
+               }
                }
             }
             &:hover {
@@ -67,6 +118,17 @@ export const HabilitiesStyle = styled.section`
                align-items: center;
                justify-content: center;
                font-size: 2rem;
+
+               @media screen {
+                  @media (max-width: 1024px) {
+                     width: 40%;
+                     transform: translateX(75%);
+                  }
+                  @media (max-width: 600px) {
+                     width: 55%;
+                     transform: translateX(40%);
+                  }
+               }
             }
             &:before {
                left: -3px;
@@ -86,26 +148,6 @@ export const HabilitiesStyle = styled.section`
             &:hover:after {
                animation: glitch-button 1.3s forwards linear alternate-reverse;
             }
-
-            @media screen {
-               @media (max-width: 1440px) {
-                  flex-basis: 7rem;
-                  height: 8rem;
-                  margin: 0.5rem 0;
-               }
-            }
-         }
-
-         @media screen {
-            @media (max-width: 1440px) {
-               gap: 0;
-            }
-            @media (max-width: 768px) {
-               margin: 3.5rem 0 0 0;
-            }
-            @media (max-width: 400px) {
-               margin: 2rem 0 0 0;
-            }
          }
       }
       .stack_box:nth-child(1) {
@@ -114,21 +156,14 @@ export const HabilitiesStyle = styled.section`
    }
    .more_habilities {
       display: flex;
-      margin: 6rem 2rem 0 0;
+      margin: 6rem 4rem 0 0;
       justify-content: flex-end;
-      @media screen {
-         @media (max-width: 1440px) {
-            margin: 4rem 1rem 0 0;
-         }
-         @media (max-width: 850px) {
-            margin: 4rem 0 0 0;
-         }
-      }
-   }
 
-   @media screen {
-      @media (max-width: 850px) {
-         padding: 0 2rem;
+      @media screen {
+         @media (max-width: 600px) {
+            margin: 6rem auto 0;
+            justify-content: center;
+         }
       }
    }
 

@@ -2,62 +2,77 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
    z-index: 3;
-   width: 95%;
+   width: 100%;
+   max-width: 180rem;
+   height: 10rem;
    display: flex;
    align-items: center;
    justify-content: flex-end;
    position: fixed;
-   top: 6rem;
+   padding-top: 1rem;
+   backdrop-filter: blur(0.6rem);
 
    @media screen {
-      @media (max-width: 1024px) {
-         top: 5rem;
-         width: 97%;
-      }
-      @media (max-width: 768px) {
-         /* top: 4rem; */
-         width: 100%;
+      @media (max-width: 1300px) {
+         height: 8rem;
       }
    }
 
    .logo {
       position: absolute;
-      left: 6rem;
-
+      left: 2rem;
       @media screen {
-         @media (max-width: 1440px) {
-            left: 5rem;
-            width: 8rem;
-            height: 8rem;
+         @media (max-width: 1820px) {
+            width: 6rem;
+            height: 7rem;
          }
-      }
-      @media (max-width: 1024px) {
-         left: 4rem;
-         width: 7rem;
-         height: 7rem;
-      }
-      @media (max-width: 768px) {
-         width: 6rem;
-         height: 6rem;
+         @media (max-width: 1300px) {
+            width: 5rem;
+            height: 6rem;
+         }
       }
    }
 
-   .burger_icon {
-      cursor: pointer;
-      position: absolute;
-      right: 2rem;
-      top: -2rem;
-      font-size: 4rem;
-      color: rgb(var(--secondary-white));
+   .center {
       z-index: 9;
+      cursor: pointer;
       display: none;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 50px;
 
       @media screen {
-         @media (max-width: 768px) {
+         @media (max-width: 800px) {
             display: block;
          }
       }
+
+      &::before,
+      &::after,
+      & div {
+         background: rgb(var(--secondary-white));
+         content: '';
+         display: block;
+         height: 6px;
+         border-radius: 3px;
+         margin: 7px 0;
+         transition: 0.5s;
+      }
+
+      &.active::before {
+         transform: translateY(12px) rotate(135deg);
+      }
+
+      &.active::after {
+         transform: translateY(-12px) rotate(-135deg);
+      }
+
+      &.active div {
+         transform: scale(0);
+      }
    }
+
    .rotate {
       animation: rotation 400ms forwards;
 

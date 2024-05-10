@@ -37,18 +37,6 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             height: 100%;
             width: 10rem;
             color: white;
-
-            @media screen {
-               @media screen and (max-width: 1130px) {
-                  width: 7rem;
-               }
-               @media screen and (max-width: 1024px) {
-                  width: 10rem;
-               }
-               @media screen and (max-width: 400px) {
-                  width: 9rem;
-               }
-            }
          }
 
          .type {
@@ -63,12 +51,6 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             font-size: 1.7rem;
             margin: 0;
             padding: 0.5rem;
-
-            @media screen {
-               @media screen and (max-width: 400px) {
-                  font-size: 1.5rem;
-               }
-            }
          }
          position: relative;
          z-index: 1;
@@ -95,44 +77,6 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
                position: absolute;
             }
          }
-         @media screen {
-            @media screen and (max-width: 1130px) {
-               width: 30rem;
-               grid-template-columns: 25% auto;
-            }
-            @media screen and (max-width: 1024px) {
-               grid-template-columns: 31% auto;
-               width: 40rem;
-            }
-            @media screen and (max-width: 768px) {
-               width: 80%;
-            }
-            @media screen and (max-width: 530px) {
-               width: 90%;
-            }
-            @media screen and (max-width: 420px) {
-               width: 100%;
-               min-width: 290px;
-               height: 9rem;
-               grid-template-columns: 32% auto;
-            }
-         }
       }
-
-      @media screen and (max-width: 1024px) {
-         flex-direction: column;
-         align-items: center;
-         gap: 2rem;
-      }
-   }
-
-   @media screen and (max-width: 1024px) {
-      width: 80%;
-   }
-   @media screen and (max-width: 768px) {
-      margin-top: 6rem;
-   }
-   @media screen and (max-width: 455px) {
-      width: 85%;
    }
 `;

@@ -30,98 +30,121 @@ const Projects = () => {
          <Title
             firstColor='rgb(var(--secondary-white))'
             secondColor='rgb(var(--primary-pink))'
-            firstWord={t('Projects.projects')}
-            secondWord={t('Projects.recent')}
+            firstWord={
+               t('Projects.projects') === 'projects'
+                  ? t('Projects.recent')
+                  : t('Projects.projects')
+            }
+            secondWord={
+               t('Projects.recent') === 'recent'
+                  ? t('Projects.projects')
+                  : t('Projects.recent')
+            }
          />
-
-         <motion.div
-            {...(typeof window !== 'undefined' && window.innerWidth > 768
-               ? { ...motionProps(0, 0) }
-               : { ...motionProps(-150, 0) })}
-            className='project_container'
-         >
-            <div className='pagination'>
-               <span
-                  className={`one ${active === 0 ? 'isActive' : ''}`}
-                  onClick={() => setActive(0)}
-               >
-                  1
-               </span>
-               <span
-                  className={`two ${active === 1 ? 'isActive' : ''}`}
-                  onClick={() => setActive(1)}
-               >
-                  2
-               </span>
-               <span
-                  className={`three ${active === 2 ? 'isActive' : ''}`}
-                  onClick={() => setActive(2)}
-               >
-                  3
-               </span>
-            </div>
-            {projects[active].image ? (
-               <Image
-                  className='project_photo'
-                  src={projects[active].image}
-                  alt='ok'
-                  width={800}
-                  height={400}
-               />
-            ) : (
-               <h3 className='project_name'>{projects[active].name}</h3>
-            )}
+         <div className='projects'>
+            <Button
+               className='pagination'
+               title='🢀'
+               bgColor={active > 0 ? 'rgb(var(--primary-pink))' : 'rgba(var(--primary-pink), .3)'}
+               strColor={active > 0 ? '' : 'rgba(250, 250, 250 , 0.5)'}
+               _blank={false}
+               onClick={() => {
+                  if (active > 0) {
+                     setActive(active - 1);
+                  }
+                  return;
+               }}
+            />
             <motion.div
                {...(typeof window !== 'undefined' && window.innerWidth > 768
-                  ? { ...motionProps(300, 0) }
-                  : { ...motionProps(-300, 0) })}
-               className='about_project'
+                  ? { ...motionProps(0, 0) }
+                  : { ...motionProps(-150, 0) })}
+               className='project_container'
             >
-               <h3 className='project_name'>{projects[active].name}</h3>
-
-
-               <p className='project_description'>
-                  {
-                     projects[active].name === t(`Projects.${projects[active].code}.name`) ? t(`Projects.${projects[active].code}.description`) : projects[active].description
-                  }
-               </p>
-
-
-               <div className='links_to_project'>
-                  <Button
-                     title={t('Projects.projectButton')}
-                     url={projects[active].url}
-                     _blank={true}
+               {projects[active].image ? (
+                  <Image
+                     className='project_photo'
+                     src={projects[active].image}
+                     alt='ok'
+                     width={800}
+                     height={400}
                   />
-                  <Button
-                     title={t('Projects.repositoryButton')}
-                     url={projects[active].repository}
-                     _blank={true}
-                  />
-               </div>
-               <span className='dev_by'>{t('Projects.devBy')}</span>
-               <ul className='stack_list'>
-                  {projects[active].stacks.map((stack: string, i: number) => (
-                     <li className='stack' key={i}>
-                        <Image
-                           src={stack}
-                           alt='stack logo'
-                           width={40}
-                           height={40}
-                           className='stack_logo'
-                        />
-                     </li>
-                  ))}
-               </ul>
+               ) : (
+                  <h3 className='project_name'>{projects[active].name}</h3>
+               )}
+               <motion.div
+                  {...(typeof window !== 'undefined' && window.innerWidth > 768
+                     ? { ...motionProps(300, 0) }
+                     : { ...motionProps(-300, 0) })}
+                  className='about_project'
+               >
+                  <h3 className='project_name'>{projects[active].name}</h3>
+
+                  <p className='project_description'>
+                     {projects[active].name ===
+                     t(`Projects.${projects[active].code}.name`)
+                        ? t(`Projects.${projects[active].code}.description`)
+                        : projects[active].description}
+                  </p>
+
+                  <div className='links_to_project'>
+                     <Button
+                        className='project_button'
+                        title={t('Projects.projectButton')}
+                        url={projects[active].url}
+                        _blank={true}
+                     />
+                     <Button
+                        className='project_button'
+                        title={t('Projects.repositoryButton')}
+                        url={projects[active].repository}
+                        _blank={true}
+                     />
+                  </div>
+                  <span className='dev_by'>{t('Projects.devBy')}</span>
+                  <ul className='stack_list'>
+                     {projects[active].stacks.map(
+                        (stack: string, i: number) => (
+                           <li className='stack' key={i}>
+                              <Image
+                                 src={stack}
+                                 alt='stack logo'
+                                 width={40}
+                                 height={40}
+                                 className='stack_logo'
+                              />
+                           </li>
+                        )
+                     )}
+                  </ul>
+               </motion.div>
             </motion.div>
-         </motion.div>
-         <div className='more_projects'>
             <Button
-               title={t('Projects.more')}
-               url='/projects'
-               bgColor='rgb(var(--primary-pink))'
+               className='pagination'
+               title='🡺'
+               bgColor={active < projects.length - 1 ? 'rgb(var(--primary-pink))' : 'rgba(var(--primary-pink), .3)'}
+               strColor={active > projects.length - 1 ? 'rgba(250, 250, 250 , 0.5)' : ''}
                _blank={false}
+               onClick={() => {
+                  if (active < projects.length - 1) {
+                     setActive(active + 1);
+                  }
+                  return;
+               }}
             />
+         </div>
+         <div className='numeration'>
+            {projects.map((project) => (
+               <span
+                  key={project.code}
+                  className={`number ${
+                     active === project.id - 1 ? 'isActive' : ''
+                  }`}
+                  onClick={() => setActive(project.id - 1)}
+               >
+                  {project.id}
+               </span>
+            ))}
          </div>
       </ProjectsStyle>
    );

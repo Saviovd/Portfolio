@@ -7,10 +7,9 @@ export const ButtonStyle = styled.a`
    display: block;
    position: relative;
    background: none;
-   border: none;
    outline: none;
-   padding: 2rem 4.5rem;
-   font-size: 2.5rem;
+   padding: 1.5rem 4.5rem;
+   font-size: 2.2rem;
    letter-spacing: 0.3rem;
    text-align: center;
    text-transform: uppercase;
@@ -19,11 +18,34 @@ export const ButtonStyle = styled.a`
    white-space: nowrap;
    cursor: default;
    z-index: 0;
-
+   @media screen {
+      @media (max-width: 1600px) {
+         font-size: 2rem;
+         padding: 1.1rem 4rem;
+      }
+      @media (max-width: 830px) {
+         font-size: 1.8rem;
+      }
+      @media (max-width: 590px) {
+         font-size: 1.5rem;
+         padding: 1rem 3rem;
+      }
+      @media (max-width: 430px) {
+         font-size: 1.2rem;
+         padding: 0.8rem 2rem;
+      }
+      @media (max-width: 370px) {
+         font-size: 1.1rem;
+         padding: 0.8rem 1.8rem;
+      }
+   }
    &:before,
    &:after {
       content: '☠ GET OUT! ☠';
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       top: 0;
       left: 0;
       padding: 8px 0;
@@ -160,21 +182,6 @@ export const ButtonStyle = styled.a`
       }
       100% {
          cursor: pointer;
-      }
-   }
-
-   @media screen {
-      @media (max-width: 2048px) or (max-height: 1152px) {
-         padding: 1.5rem 3.5rem;
-         font-size: 2rem;
-      }
-      @media (max-width: 1728px) or (max-height: 1085px) {
-         padding: 1rem 3rem;
-         font-size: 1.5rem;
-      }
-      @media (max-width: 620px) {
-         padding: 1rem 2rem;
-         font-size: 1.2rem;
       }
    }
 `;

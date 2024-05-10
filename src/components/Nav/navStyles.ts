@@ -5,42 +5,42 @@ export const NavStyle = styled.nav`
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding: 0;
-      gap: 30px;
+      padding: 0 1rem 0 0;
+      gap: 1rem;
 
       @media screen {
-         @media (max-width: 1440px) {
-            gap: 5px;
+         @media (max-width: 1820px) {
+            padding: 0 4rem;
          }
-         @media (max-width: 1024px) {
+         @media (max-width: 1440px) {
+            gap: 0.2rem;
+         }
+         @media (max-width: 1300px) {
             gap: 0;
          }
-         @media (max-width: 768px) {
+         @media (max-width: 1024px) {
+            padding: 0 1rem;
+         }
+         @media (max-width: 800px) {
             flex-direction: column;
-            width: 70%;
-            height: 100vh;
-            overflow: hidden;
-            z-index: 5;
-            background-color: rgba(50, 50, 50, 0.6);
-            margin: 0;
-
-            position: absolute;
-            right: -100%;
-            top: -5rem;
-            align-items: center;
             justify-content: center;
-            gap: 2rem;
-            transition: 0.5s;
+            height: 100vh;
+            width: 70vw;
+            background-color: rgba(50, 50, 50, 0.6);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -100%;
+            padding: 0;
+            margin: 0;
          }
       }
    }
    .isVisible {
-      margin: 0;
-      animation: enterList 0.5s 0.2s forwards;
+      animation: enterList 0.4s 0.2s forwards;
    }
    .isNotVisible {
-      display: block;
-      animation: quitMenu 1s 0.2s forwards;
+      animation: quitMenu 0.3s forwards;
    }
 
    @keyframes enterList {
@@ -49,6 +49,9 @@ export const NavStyle = styled.nav`
       }
    }
    @keyframes quitMenu {
+      from {
+         right: 0%;
+      }
       to {
          right: -100%;
       }

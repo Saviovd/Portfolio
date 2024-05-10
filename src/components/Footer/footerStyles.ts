@@ -13,29 +13,10 @@ export const FooterStyle = styled.section`
    .name {
       font-size: 1.9rem;
       color: rgb(var(--primary-blue));
-
-      @media screen and (max-width: 500px) {
-         font-size: 1.6rem;
-      }
-      @media screen and (max-width: 400px) {
-         font-size: 1.3rem;
-      }
    }
 
    .copy {
       font-size: 1.3rem;
       color: rgba(var(--secondary-white), 0.4);
-
-      @media screen and (max-width: 500px) {
-         font-size: 1rem;
-      }
-      @media screen and (max-width: 500px) {
-         font-size: .8rem;
-      }
-   }
-
-   @media screen and (max-width: 500px) {
-      padding: 0 1rem 0 1rem;
-      height: 5rem;
    }
 `;
