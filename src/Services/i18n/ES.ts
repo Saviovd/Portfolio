@@ -80,7 +80,7 @@ const translations = {
       2: {
          id: '2',
          office: 'Coordinadora | Votorantim',
-         testimony: '',
+         testimony: 'Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo.',
       },
       3: {
          id: '3',

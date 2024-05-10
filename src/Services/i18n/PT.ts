@@ -68,7 +68,7 @@ const translations = {
       1:{
          id: '1',
          office: 'Quality Assurance | Banco BMG',
-         testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sodales lectus. Nam posuere tincidunt tortor, a suscipit lorem viverra at. Aliquam mi orci, faucibus in tristique sed, fermentum sit amet eros. Sed mattis nulla nulla, non commodo nibh placerat eu. Sed nec ex aliquam, consequat dui id, consectetur metus. Sed at sem in nulla rutrum volutpat.',
+         testimony: '',
       },
       2: {
          id: '2',

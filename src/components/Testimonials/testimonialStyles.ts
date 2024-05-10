@@ -159,13 +159,13 @@ export const TestimonialsStyle = styled.section`
             align-items: center;
          }
          .swiper-pagination-bullet {
-            background-color: rgb(var(--primary-blue));
+            background-color: rgba(var(--primary-blue), .9);
             width: 1.8rem;
             height: 1.8rem;
             border-radius: 0;
 
             &:hover {
-               background-color: rgb(var(--primary-pink));
+               background-color: rgb(var(--primary-blue));
             }
          }
       }
