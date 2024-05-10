@@ -20,7 +20,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
       const element = document.getElementById(name);
       if (element) {
          const { top, bottom } = element.getBoundingClientRect();
-         const isVisible = top - 190 <= pagePosition && bottom - 190 >= 0 ;
+         const isVisible = top - 210 <= pagePosition && bottom - 210 >= 0 ;
          setIsInView(isVisible);
       }
    };
@@ -41,7 +41,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
                smooth={true}
                spy={true}
                duration={500}
-               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -80 : -180}>
+               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -100 : -150}>
                {name}
             </ScrollLink>
       </NavItemStyle>

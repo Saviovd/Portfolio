@@ -5,24 +5,38 @@ interface IGlitchTextProps {
 }
 
 export const NavItemStyle = styled.li<IGlitchTextProps>`
-   margin: 0 1.4rem;
-   font-size: 3rem;
+   margin: 0 1.5rem;
+   font-size: 2.5rem;
    font-weight: 500;
    text-transform: capitalize;
    text-decoration: none;
    white-space: nowrap;
    z-index: 2;
-
    position: relative;
 
    @media screen {
+      @media (max-width: 1820px) {
+         margin: 0 0 0 3rem;
+      }
       @media (max-width: 1440px) {
-         font-size: 2.5rem;
+         font-size: 2.3rem;
+      }
+      @media (max-width: 1300px) {
+         font-size: 2.1rem;
+         margin: 0 0 0 2.5rem;
       }
       @media (max-width: 1024px) {
-         font-size: 2.2rem;
-         margin: 0 1rem;
-      };
+         margin: 0 0 0 1.8rem;
+         font-size: 2rem;
+      }
+      @media (max-width: 800px) {
+         font-size: 2.8rem;
+         margin: 0 0 2rem 0;
+      }
+      @media (max-width: 400px) {
+         font-size: 2.5rem;
+         margin: 0 0 1.5rem 0;
+      }
    }
 
    &[data-glitch] {
@@ -86,9 +100,6 @@ export const NavItemStyle = styled.li<IGlitchTextProps>`
          align-items: center;
          text-align: center;
       }
-   }
-
-   @media screen {
    }
    @keyframes glow {
       to {

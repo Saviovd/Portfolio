@@ -19,21 +19,20 @@ const GlobalStyle = createGlobalStyle`
    html {
       font-size: 10px;
       min-height: 100vh;
+      background-color: rgb(var(--bg-black));
 
       body {
          animation: cursorAnimation 10s infinite ;
          scroll-behavior: smooth;
-         margin: 0;
+         margin: 0 auto;
          padding: 0;
          box-sizing: border-box;
          overflow-x: hidden;
-         max-width: 100vw;
+         max-width: 180rem;
          overflow-x: hidden;
 
          font-family: var(--outfit);
-         background-color: rgb(var(--bg-black));
          color: #f1f1f1;
-
 
          li {
             list-style-type: none;
