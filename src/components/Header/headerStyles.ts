@@ -9,15 +9,11 @@ export const HeaderStyle = styled.header`
    align-items: center;
    justify-content: flex-end;
    position: fixed;
-   top: 3rem;
+   padding-top: 1rem;
    backdrop-filter: blur(0.6rem);
 
    @media screen {
-      @media (max-width: 1920px) {
-         top: 2.5rem;
-      }
       @media (max-width: 1300px) {
-         top: 0rem;
          height: 8rem;
       }
    }

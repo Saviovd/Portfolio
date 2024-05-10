@@ -145,6 +145,7 @@
    ],
    "projects": [
       {
+         "id": 1,
          "image": "/assets/Projects/dsf_bank.png",
          "url": "https://dsf-bank-nine.vercel.app/",
          "repository": "https://github.com/Saviovd/DSF-Bank",
@@ -160,6 +161,7 @@
          ]
       },
       {
+         "id": 2,
          "image": "/assets/Projects/space_tourism.png",
          "url": "https://space-tourism-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/space_tourism",
@@ -174,6 +176,7 @@
          ]
       },
       {
+         "id": 3,
          "image": "/assets/Projects/sneaker_company.png",
          "url": "https://buypage-ecommerce.vercel.app/",
          "repository": "https://github.com/Saviovd/buypage-ecommerce",
@@ -187,6 +190,7 @@
          ]
       },
       {
+         "id": 4,
          "image": "/assets/Projects/Rest-countries.png",
          "url": "https://countries-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/countries",
@@ -202,12 +206,13 @@
          ]
       },
       {
+         "id": 5,
          "image": "/assets/Projects/strangerThings.png",
          "url": "https://stranger-things4.vercel.app/",
          "repository": "https://github.com/Saviovd/stranger_things",
          "name": "Stranger Things 4°",
          "code": "strangerThings",
-         "description": "Landing Page baseada na 4° temporada da série Stranger Things da Netflix.",
+         "description": "Landing Page baseada na 4° temporada da série Stranger Things da Netflix. Resposivo para tablet e smartphone",
          "stacks": [
             "/assets/icons/front-end/html5.svg",
             "/assets/icons/front-end/css3.svg",
@@ -215,6 +220,7 @@
          ]
       },
       {
+         "id": 6,
          "image": "/assets/Projects/toDoLIst.png",
          "url": "https://crudtodo.vercel.app/",
          "repository": "https://github.com/Saviovd/ToDo",

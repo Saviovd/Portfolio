@@ -19,7 +19,7 @@ export const ButtonStyle = styled.a`
    cursor: default;
    z-index: 0;
    @media screen {
-      @media (max-width: 1440px) {
+      @media (max-width: 1600px) {
          font-size: 2rem;
          padding: 1.1rem 4rem;
       }
@@ -43,6 +43,9 @@ export const ButtonStyle = styled.a`
    &:after {
       content: '☠ GET OUT! ☠';
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       top: 0;
       left: 0;
       padding: 8px 0;
