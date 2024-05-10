@@ -70,5 +70,23 @@ const translations = {
             'Una interfaz de lista de tareas simple y funcional, con verificaciones de base de datos.',
       },
    },
+   Testimonials: {
+      testimonialTitle: 'Testimonios',
+      1: {
+         id: '1',
+         office: 'Quality Assurance | Banco BMG',
+         testimony: '',
+      },
+      2: {
+         id: '2',
+         office: 'Coordinadora | Votorantim',
+         testimony: '',
+      },
+      3: {
+         id: '3',
+         office: 'Administradora | BigBang Digital',
+         testimony: '',
+      },
+   },
 };
 export default translations;

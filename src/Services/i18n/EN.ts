@@ -70,5 +70,23 @@ const translations = {
             'A simple and functional to-do list interface, with database checks.',
       },
    },
+   Testimonials: {
+      testimonialTitle: 'Testimonials',
+      1: {
+         id: '1',
+         office: 'Quality Assurance | Banco BMG',
+         testimony: '',
+      },
+      2: {
+         id: '2',
+         office: 'Coordinator | Votorantim',
+         testimony: '',
+      },
+      3: {
+         id: '3',
+         office: 'Administrator | BigBang Digital',
+         testimony: '',
+      },
+   },
 };
 export default translations;

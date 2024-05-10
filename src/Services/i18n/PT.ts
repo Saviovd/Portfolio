@@ -1,7 +1,7 @@
 const translations = {
    Header: {
       logoAlt: 'Logo de Sávio Almeida',
-		home: 'inicio',
+      home: 'inicio',
       aboutme: 'sobre mim',
       habilities: 'habilidades',
       projects: 'projetos',
@@ -12,7 +12,7 @@ const translations = {
       toAboutMe: 'sobre mim',
       devfrontend: 'Desenvolvedor Front-End',
       devmobile: 'Desenvolvedor Mobile',
-      designer:'UX/UI Designer'
+      designer: 'UX/UI Designer'
    },
    AboutMe: {
       about: 'sobre',
@@ -62,6 +62,24 @@ const translations = {
          name: 'ToDo List',
          description: 'Interface de tarefas a fazer simples e funcional, conta com verificações para banco de dados.'
       },
+   },
+   Testimonials: {
+      testimonialTitle: 'depoimentos',
+      1:{
+         id: '1',
+         office: 'Quality Assurance | Banco BMG',
+         testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sodales lectus. Nam posuere tincidunt tortor, a suscipit lorem viverra at. Aliquam mi orci, faucibus in tristique sed, fermentum sit amet eros. Sed mattis nulla nulla, non commodo nibh placerat eu. Sed nec ex aliquam, consequat dui id, consectetur metus. Sed at sem in nulla rutrum volutpat.',
+      },
+      2: {
+         id: '2',
+         office: 'Coordenadora | Votorantim',
+         testimony: 'Sávio é um excelente profissional que tive o privilégio de trabalhar. Interessado, inconformado, estudioso, arrojado, esses são alguns dos adjetivos que posso descreve-lo. Ávido por tecnologia, apoiou e desenvolveu automatizações na área em que atuou no COE Votorantim, auxiliando a equipe na busca da excelência, consciente de que processos bem estabelecidos unidos de automatização/digitalização, são imprescindíveis para o presente e o futuro muito próximo.',
+      },
+      3: {
+         id: '3',
+         office: 'Administradora | BigBang Digital',
+         testimony: '',
+      }
    }
 }
 export default translations;
