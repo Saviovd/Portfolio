@@ -13,10 +13,21 @@ export const FooterStyle = styled.section`
    .name {
       font-size: 1.9rem;
       color: rgb(var(--primary-blue));
+
+      @media screen {
+         @media (max-width: 600px) {
+            font-size: 1.4rem;
+         }
+      }
    }
 
    .copy {
       font-size: 1.3rem;
       color: rgba(var(--secondary-white), 0.4);
+      @media screen {
+         @media (max-width: 600px) {
+            font-size: 1.2rem;
+         }
+      }
    }
 `;

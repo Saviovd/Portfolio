@@ -4,9 +4,12 @@ const nextConfig = {
    eslint: {
       ignoreDuringBuilds: true,
    },
+   images: {
+      domains: ['media.licdn.com'],
+   },
    // compiler: {
    //    styledComponents: true,
    // }
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

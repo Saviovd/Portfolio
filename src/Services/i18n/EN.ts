@@ -70,5 +70,23 @@ const translations = {
             'A simple and functional to-do list interface, with database checks.',
       },
    },
+   Testimonials: {
+      testimonialTitle: 'Testimonials',
+      1: {
+         id: '1',
+         office: 'Quality Assurance | Banco BMG',
+         testimony: '',
+      },
+      2: {
+         id: '2',
+         office: 'Coordinator | Votorantim',
+         testimony: 'Sávio is an outstanding professional with whom I had the privilege of working. Interested, nonconformist, and studious, these are just a few of the adjectives that can describe him. Passionate about technology, he supported and developed automations in the area where he worked at the Votorantim COE, assisting the team in the pursuit of excellence, aware that well-established processes combined with automation/digitization are essential for the present and the very near future.',
+      },
+      3: {
+         id: '3',
+         office: 'Administrator | BigBang Digital',
+         testimony: '',
+      },
+   },
 };
 export default translations;
