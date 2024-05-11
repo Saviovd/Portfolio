@@ -238,24 +238,24 @@
    "testimonials": [
       {
          "id": "1",
-         "name": "Sávio Almeida",
-         "office": "Desenvolvedor | Freela",
-         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras.",
-         "photo": "/assets/Photo/savio.jpg"
+         "name": "Daniel Arruda",
+         "office": "Quality Assurance | BMG",
+         "testimony": "ainda não adicionou seu depoimento.",
+         "photo": "https://media.licdn.com/dms/image/D4D03AQGasWWu45UYbw/profile-displayphoto-shrink_100_100/0/1670429056482?e=1720656000&v=beta&t=16yAFoCS_jgYOxeq0VOMY03-8vvL9QZtPMYlaB1-d6E"
       },
       {
          "id": "2",
-         "name": "Jamilly Frota",
-         "office": "Designer | Freela",
-         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras.",
-         "photo": "/assets/Photo/jsf.jpg"
+         "name": "Verônica Vegas",
+         "office": "Coordenadora | Votorantim",
+         "testimony": "ainda não adicionou seu depoimento.",
+         "photo": "https://media.licdn.com/dms/image/C4D03AQEd2Ju8Xz3tog/profile-displayphoto-shrink_200_200/0/1516402346889?e=1720656000&v=beta&t=JY-9s-DjquxSUnvyWvxlX-VdppntcSk1U1TIoWIUr6o"
       },
       {
          "id": "3",
-         "name": "Daniel Arruda",
-         "office": "Quality Assurance | BMG",
-         "testimony": "Neste espaço, você encontrará uma variedade de projetos e habilidades que exemplificam minha paixão e conhecimento na criação de soluções web abrangentes e inovadoras.",
-         "photo": "/assets/Photo/dsa.jpg"
+         "name": "Clisliane Melo",
+         "office": "Administradora | BigBang Digital",
+         "testimony": "ainda não adicionou seu depoimento.",
+         "photo": "https://media.licdn.com/dms/image/C4D03AQG_TcMdCkiZIw/profile-displayphoto-shrink_100_100/0/1658153960095?e=1720656000&v=beta&t=MRACMv3z6eCVPCphfp--0GyXD-cEyUxxJuprvL9keTs"
       }
    ],
    "socials": [
@@ -264,13 +264,6 @@
          "type": "Linkedin",
          "name": "Sávio Almeida",
          "url": "https://www.linkedin.com/in/saviovd/",
-         "side": "left"
-      },
-      {
-         "icon": "/assets/icons/social/instagram.svg",
-         "type": "Instagram",
-         "name": "saviovd",
-         "url": "https://www.instagram.com/saviovd/",
          "side": "left"
       },
       {
@@ -284,7 +277,7 @@
          "icon": "/assets/icons/media/email.svg",
          "type": "E-mail",
          "name": "savio.pinheiroal@gmail.com",
-         "url": "mailto:email@provedor.com.br",
+         "url": "",
          "side": "left"
       }
    ],

@@ -6,6 +6,7 @@ import About from '@/components/About/About';
 import Habilities from '@/components/Habilities/Habilities';
 import Projects from '@/components/Projects/Projects';
 import Contacts from '@/components/Contacts/Contacts';
+import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
             <About />
             <Habilities />
             <Projects />
-            {/*  <Testimonials />*/}
+            <Testimonials />
             <Contacts />
          </main>
          <Footer />

@@ -70,5 +70,23 @@ const translations = {
             'Una interfaz de lista de tareas simple y funcional, con verificaciones de base de datos.',
       },
    },
+   Testimonials: {
+      testimonialTitle: 'Testimonios',
+      1: {
+         id: '1',
+         office: 'Quality Assurance | Banco BMG',
+         testimony: '',
+      },
+      2: {
+         id: '2',
+         office: 'Coordinadora | Votorantim',
+         testimony: 'Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo.',
+      },
+      3: {
+         id: '3',
+         office: 'Administradora | BigBang Digital',
+         testimony: '',
+      },
+   },
 };
 export default translations;
