@@ -22,7 +22,7 @@ export const TestimonialsStyle = styled.section`
             border: 1px solid rgb(var(--primary-pink));
             width: 60%;
             min-height: 10rem;
-            padding: 2.5rem 1.5rem 8.5rem;
+            padding: 2.5rem 2rem 8.5rem;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
