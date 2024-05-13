@@ -12,14 +12,18 @@ interface IRenderProps {
    language_name: string;
    logo: string;
    fill?: string;
+   bgWhite?: boolean | undefined;
 }
 
 const Habilities = () => {
    const { habilities } = data;
    const { t } = useTranslation();
 
-
-   const motionProps = (initialY: number, finalY: number, duration: number) => ({
+   const motionProps = (
+      initialY: number,
+      finalY: number,
+      duration: number
+   ) => ({
       initial: { opacity: 0, y: initialY },
       whileInView: { opacity: 1, y: finalY },
       viewport: { once: true },
@@ -39,10 +43,14 @@ const Habilities = () => {
             firstColor='#FFF'
             secondColor='rgb(var(--primary-blue))'
          />
-         <motion.div {...motionProps(100, 0,  0.5)} className='stacks'>
+         <motion.div {...motionProps(100, 0, 0.5)} className='stacks'>
             {habilities.map(({ languages }, i: number) => (
                <>
-                  <motion.div {...motionProps(100, 0, 1)} className='stack_box' key={i}>
+                  <motion.div
+                     {...motionProps(100, 0, 1)}
+                     className='stack_box'
+                     key={i}
+                  >
                      {languages?.map((lang: IRenderProps) => (
                         <div className='stack' key={lang.id}>
                            <Image
@@ -51,6 +59,11 @@ const Habilities = () => {
                               width={44}
                               height={44}
                               className='stack_icon'
+                              style={
+                                 lang.bgWhite && lang.bgWhite
+                                    ? { backgroundColor: 'white' }
+                                    : {}
+                              }
                            />
                            <h2 className='stack_name'>{lang.language_name}</h2>
                         </div>

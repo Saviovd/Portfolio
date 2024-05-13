@@ -6,91 +6,93 @@
                "id": "1",
                "type": "Front-End",
                "language_name": "HTML",
-               "logo": "/assets/icons/front-end/html5.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/html5.svg"
             },
             {
                "id": "2",
                "type": "Front-End",
                "language_name": "CSS",
-               "logo": "/assets/icons/front-end/css3.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/css3.svg"
             },
             {
                "id": "3",
                "type": "Front-End",
                "language_name": "JavaScript",
-               "logo": "/assets/icons/front-end/js.svg"
+               "logo": "https://abrudz.github.io/logos/JS.svg"
             },
             {
                "id": "4",
                "type": "Front-End",
                "language_name": "TypeScript",
-               "logo": "/assets/icons/front-end/ts.svg"
+               "logo": "https://abrudz.github.io/logos/TypeScript.svg"
             },
             {
                "id": "5",
                "type": "Front-End",
                "language_name": "ReactJs",
-               "logo": "/assets/icons/front-end/react.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg"
+            },
+            {
+               "id": "5.1",
+               "type": "Front-End",
+               "language_name": "VueJs",
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/vuejs.svg"
             },
             {
                "id": "6",
                "type": "Front-End",
                "language_name": "NextJs",
-               "logo": "/assets/icons/front-end/nextjs.svg"
+               "logo": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
+               "bgWhite": true
             },
             {
                "id": "7",
                "type": "Front-End",
                "language_name": "Sass",
-               "logo": "/assets/icons/front-end/sass.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/sass.svg"
             },
             {
                "id": "8",
                "type": "Front-End",
                "language_name": "CSS-in-JS",
-               "logo": "/assets/icons/front-end/styled-components.svg"
+               "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
             },
             {
                "id": "9",
                "type": "Front-End",
                "language_name": "Angular",
-               "logo": "/assets/icons/front-end/angular.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/angular.svg"
             },
             {
                "id": "10",
                "type": "Back-End",
                "language_name": "NodeJs",
-               "logo": "/assets/icons/back-end/node-js.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/nodejs.svg"
             },
             {
                "id": "11",
                "type": "Back-End",
                "language_name": "Express",
-               "logo": "/assets/icons/back-end/express.svg"
+               "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+               "bgWhite": true
             },
             {
                "id": "12",
                "type": "Back-End",
                "language_name": "Python",
-               "logo": "/assets/icons/back-end/python.svg"
+               "logo": "https://abrudz.github.io/logos/Python.svg"
             },
             {
                "id": "13",
                "type": "Back-End",
                "language_name": "Ruby",
-               "logo": "/assets/icons/back-end/ruby.svg"
-            },
-            {
-               "id": "14",
-               "type": "Back-End",
-               "language_name": "C",
-               "logo": "/assets/icons/back-end/c.svg"
+               "logo": "https://abrudz.github.io/logos/Ruby.svg"
             },
             {
                "id": "15",
                "type": "Mobile",
                "language_name": "Flutter",
-               "logo": "/assets/icons/mobile/flutter.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/flutter.svg"
             },
             {
                "id": "16",
@@ -102,43 +104,43 @@
                "id": "17",
                "type": "Mobile",
                "language_name": "Kotlin",
-               "logo": "/assets/icons/mobile/kotlin.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/kotlin.svg"
             },
             {
                "id": "18",
                "type": "Quality Assurance",
                "language_name": "Cypress",
-               "logo": "/assets/icons/qa/cypress.svg"
+               "logo": "https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png"
             },
             {
                "id": "19",
                "type": "Quality Assurance",
                "language_name": "Postman",
-               "logo": "/assets/icons/qa/postman.svg"
+               "logo": "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png"
             },
             {
                "id": "20",
                "type": "Banco de dados & Cloud",
                "language_name": "AWS",
-               "logo": "/assets/icons/db/aws.svg"
+               "logo": "https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo.png"
             },
             {
                "id": "21",
                "type": "Banco de dados & Cloud",
                "language_name": "Docker",
-               "logo": "/assets/icons/db/docker.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/docker.svg"
             },
             {
                "id": "22",
                "type": "Banco de dados & Cloud",
                "language_name": "MongoDB",
-               "logo": "/assets/icons/db/mongodb.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/databases/mongodb.svg"
             },
             {
                "id": "23",
                "type": "Banco de dados & Cloud",
                "language_name": "MySQL",
-               "logo": "/assets/icons/db/mysql.svg"
+               "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/databases/mysql.svg"
             }
          ]
       }
