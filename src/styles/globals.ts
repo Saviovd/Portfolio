@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 10px;
       min-height: 100vh;
       background-color: rgb(var(--bg-black));
+      overflow-x: hidden;
 
       body {
          animation: cursorAnimation 10s infinite ;
