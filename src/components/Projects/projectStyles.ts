@@ -36,8 +36,9 @@ export const ProjectsStyle = styled.section`
             @media (max-width: 1500px) {
                padding: 1rem 2.5rem;
             }
-            @media (max-width: 500px) {
-               padding: 0.5rem 1rem;
+            @media (max-width: 600px) {
+               padding: 0.5rem;
+               height: 4rem;
                font-size: 1rem;
             }
          }
@@ -57,6 +58,9 @@ export const ProjectsStyle = styled.section`
 
             @media (max-width: 900px) {
                max-width: 58.9rem;
+            }
+            @media (max-width: 500px) {
+               max-width: 42.9rem;
             }
          }
 

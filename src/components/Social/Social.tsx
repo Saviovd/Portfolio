@@ -12,18 +12,25 @@ const Social = () => {
       viewport: { once: true },
       transition: {
          type: 'spring',
-         bounce: 0.4,
-         duration: 0.5,
-         delay: 1.2,
+         bounce: 0.2,
+         duration: 4,
+         delay: 3.5,
       },
    });
    return (
       <SocialStyle>
          {socials.map((social, i) => {
-            if (i < 3) {
+            if (i < 3 && social.type != 'e-mail') {
                return (
                   // eslint-disable-next-line react/jsx-key
-                  <motion.div {...motionProps(100, 0)}>
+                  <motion.div  {...motionProps(100, 0)}
+                  transition={{
+                     when: 'beforeChildren',
+                     staggerChildren: 0.5,
+                     type: 'spring',
+                     duration: 4,
+                     delay: 3.5,
+                  }}>
                      <Link href={social.url} key={i} target='_blank'>
                         <Image
                            alt={social.name}

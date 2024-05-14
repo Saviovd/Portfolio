@@ -88,4 +88,14 @@ export const HeaderStyle = styled.header`
          }
       }
    }
+
+   .progress-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.3rem;
+      background: rgb(var(--secondary-white));
+      transform-origin: 0%;
+   }
 `;
