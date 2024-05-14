@@ -64,7 +64,7 @@ const Habilities = () => {
                               className='stack_icon'
                               style={
                                  lang.bgWhite && lang.bgWhite
-                                    ? { backgroundColor: 'white' }
+                                    ? { backgroundColor: 'white', padding: '.2rem' }
                                     : {}
                               }
                            />

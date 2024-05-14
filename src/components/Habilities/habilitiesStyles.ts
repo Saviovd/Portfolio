@@ -33,7 +33,7 @@ export const HabilitiesStyle = styled.section`
          position: relative;
 
          .stack {
-            margin: 3rem 4rem 0 0;
+            margin: 3rem 0 0 4rem;
             height: 8rem;
             width: 7rem;
             transition: 0.5s;
@@ -46,12 +46,12 @@ export const HabilitiesStyle = styled.section`
             position: relative;
             @media screen {
                @media (max-width: 1440px) {
-                  margin: 2.5rem 3rem 0 0;
+                  margin: 2.5rem 0 0 3rem;
                   height: 7rem;
                   width: 6rem;
                }
                @media (max-width: 1140px) {
-                  margin: 2rem 2rem 0 0;
+                  margin: 2rem 0 0 2rem;
                }
                @media (max-width: 1024px) {
                   margin: 3rem 1rem 0;
