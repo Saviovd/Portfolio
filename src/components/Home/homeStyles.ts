@@ -7,7 +7,6 @@ export const HomeStyle = styled.section`
    margin: 0 auto;
    padding: 0 5rem;
    position: relative;
-   transform: translateY(-5rem);
 
    display: flex;
    flex-direction: column;
@@ -34,10 +33,10 @@ export const HomeStyle = styled.section`
       gap: 1rem;
 
       @media screen {
-         @media (max-width: 1440px) {
+         @media (max-width: 1640px) {
             gap: 0.5rem;
          }
-         @media (max-width: 590px) {
+         @media (max-width: 640px) {
             text-align: center;
          }
       }
@@ -48,20 +47,20 @@ export const HomeStyle = styled.section`
          font-size: 5rem;
          align-self: flex-start;
          @media screen {
-            @media (max-width: 1440px) {
+            @media (max-width: 1640px) {
                font-size: 4.5rem;
             }
             @media (max-width: 830px) {
                font-size: 4rem;
             }
-            @media (max-width: 590px) {
+            @media (max-width: 650px) {
                font-size: 3rem;
                align-self: auto;
             }
-            @media (max-width: 430px) {
+            @media (max-width: 510px) {
                font-size: 2.5rem;
             }
-            @media (max-width: 370px) {
+            @media (max-width: 380px) {
                font-size: 2.2rem;
             }
          }
@@ -77,19 +76,19 @@ export const HomeStyle = styled.section`
          justify-self: center;
          margin: 0;
          @media screen {
-            @media (max-width: 1440px) {
+            @media (max-width: 1640px) {
                font-size: 7rem;
             }
             @media (max-width: 830px) {
                font-size: 6rem;
             }
-            @media (max-width: 590px) {
+            @media (max-width: 650px) {
                font-size: 4rem;
             }
-            @media (max-width: 430px) {
+            @media (max-width: 510px) {
                font-size: 3rem;
             }
-            @media (max-width: 370px) {
+            @media (max-width: 380px) {
                font-size: 2.7rem;
             }
          }
@@ -103,16 +102,16 @@ export const HomeStyle = styled.section`
          justify-self: center;
          text-align: center;
          @media screen {
-            @media (max-width: 1440px) {
+            @media (max-width: 1640px) {
                font-size: 3rem;
             }
             @media (max-width: 830px) {
                font-size: 2.5rem;
             }
-            @media (max-width: 590px) {
+            @media (max-width: 650px) {
                font-size: 2rem;
             }
-            @media (max-width: 430px) {
+            @media (max-width: 510px) {
                font-size: 1.7rem;
             }
          }
@@ -134,7 +133,7 @@ export const HomeStyle = styled.section`
       .right {
          margin: 0 auto;
 
-         @media (max-width: 430px) {
+         @media (max-width: 510px) {
             margin: 0;
          }
       }
@@ -163,7 +162,7 @@ export const DrippingDown = styled.div`
    display: flex;
    justify-content: flex-end;
    align-items: flex-end;
-   transform: translateX(-2rem);
+   transform: translate(-2rem, -5rem);
    .dripping_down {
       position: relative;
       margin: 0 auto;

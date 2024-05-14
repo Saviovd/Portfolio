@@ -19,22 +19,22 @@ export const ButtonStyle = styled.a`
    cursor: default;
    z-index: 0;
    @media screen {
-      @media (max-width: 1600px) {
+      @media (max-width: 1640px) {
          font-size: 2rem;
          padding: 1.1rem 4rem;
       }
       @media (max-width: 830px) {
          font-size: 1.8rem;
       }
-      @media (max-width: 590px) {
+      @media (max-width: 650px) {
          font-size: 1.5rem;
          padding: 1rem 3rem;
       }
-      @media (max-width: 430px) {
+      @media (max-width: 510px) {
          font-size: 1.2rem;
          padding: 0.8rem 2rem;
       }
-      @media (max-width: 370px) {
+      @media (max-width: 380px) {
          font-size: 1.1rem;
          padding: 0.8rem 1.8rem;
       }
