@@ -29,7 +29,7 @@ const Habilities = () => {
       viewport: { once: true },
       transition: {
          type: 'spring',
-         bounce: 0.4,
+         bounce: 0.1,
          duration: duration,
          delay: 0.2,
       },
@@ -43,14 +43,17 @@ const Habilities = () => {
             firstColor='#FFF'
             secondColor='rgb(var(--primary-blue))'
          />
-         <motion.div {...motionProps(100, 0, 0.5)} className='stacks'>
+         <motion.div
+            className='stacks'
+            {...motionProps(100, 0, 1)}
+            transition={{
+               staggerChildren: 0.5,
+               type: 'spring',
+            }}
+         >
             {habilities.map(({ languages }, i: number) => (
                <>
-                  <motion.div
-                     {...motionProps(100, 0, 1)}
-                     className='stack_box'
-                     key={i}
-                  >
+                  <div className='stack_box' key={i}>
                      {languages?.map((lang: IRenderProps) => (
                         <div className='stack' key={lang.id}>
                            <Image
@@ -68,7 +71,7 @@ const Habilities = () => {
                            <h2 className='stack_name'>{lang.language_name}</h2>
                         </div>
                      ))}
-                  </motion.div>
+                  </div>
                </>
             ))}
          </motion.div>
