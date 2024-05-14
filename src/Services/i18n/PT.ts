@@ -12,7 +12,8 @@ const translations = {
       toAboutMe: 'sobre mim',
       devfrontend: 'Desenvolvedor Front-End',
       devmobile: 'Desenvolvedor Mobile',
-      designer: 'UX/UI Designer'
+      designer: 'UX/UI Designer',
+      devfullstack: 'Desenvolvedor Fullstack',
    },
    AboutMe: {
       about: 'sobre',

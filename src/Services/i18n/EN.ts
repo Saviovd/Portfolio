@@ -13,6 +13,7 @@ const translations = {
       devfrontend: 'Front-End Developer',
       devmobile: 'Mobile Developer',
       designer: 'UX/UI Designer',
+      devfullstack: 'Fullstack Developer',
    },
    AboutMe: {
       about: 'about',

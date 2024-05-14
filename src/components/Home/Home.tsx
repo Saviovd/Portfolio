@@ -9,8 +9,10 @@ import Social from '../Social/Social';
 import baffle from 'baffle';
 
 const Intro = () => {
-   const { t } = useTranslation();
+   const { t, i18n } = useTranslation();
    const [isLoaded, setIsloaded] = React.useState(false);
+   const [currentLanguage, setCurrentLanguage] = React.useState('pt');
+   const [words, setWords] = React.useState([t('Home.devfullstack')]);
 
    const motionProps = (initialY: number, finalY: number) => ({
       initial: { opacity: 0, y: initialY },
@@ -31,21 +33,28 @@ const Intro = () => {
          speed: 100,
       });
       a.start();
-      a.reveal(500, 1000);
+      a.reveal(500, 0);
       a.stop();
       const b = baffle('.my_name');
       b.set({
-         characters: '█▓☠ GET OUT! ☠░▒▓/',
+         characters: '█▓GET OUT!☠░▒▓/',
          speed: 100,
       });
       b.start();
-      b.reveal(900, 1400);
+      b.reveal(500, 0);
       b.stop();
 
       setTimeout(() => {
          setIsloaded(true);
-      }, 4000);
+      }, 2000);
    });
+   React.useEffect(() => {
+      setCurrentLanguage(i18n.language);
+      if (i18n.language !== currentLanguage) {
+         setWords([t('Home.devfullstack')]);
+         setIsloaded(true);
+      }
+   }, [currentLanguage, i18n.language, t]);
 
    return (
       <>
@@ -53,7 +62,11 @@ const Intro = () => {
             <div className='apresentation'>
                <span className='calls_me'>{t('Home.call')}</span>
                <h3 className='my_name'>Sávio Almeida {'< />'}</h3>
-               {isLoaded ? <Loader /> : <div style={{ height: '5rem' }}></div>}
+               {isLoaded && currentLanguage === i18n.language ? (
+                  <Loader words={words} />
+               ) : (
+                  <div style={{ height: '5rem' }}></div>
+               )}
                <motion.div className='buttons' {...motionProps(200, 0)}>
                   <Button
                      className='left'
