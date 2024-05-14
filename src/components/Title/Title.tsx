@@ -16,8 +16,13 @@ const TitleStyle = styled.div`
       text-transform: capitalize;
 
       @media screen {
-         @media (max-width: 768px) {
+         @media (max-width: 1024px) {
             font-size: 3.5rem;
+            margin: 0 0 2rem 0;
+         }
+         @media (max-width: 600px) {
+            font-size: 3rem;
+            margin: 0;
          }
       }
    }

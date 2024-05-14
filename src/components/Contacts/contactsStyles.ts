@@ -37,6 +37,9 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             align-items: flex-start;
             gap: 5rem 2rem;
          }
+         @media (max-width: 600px) {
+            margin-top: 2rem;
+         }
          @media (max-width: 500px) {
             gap: 2rem;
          }
