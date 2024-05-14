@@ -19,6 +19,10 @@ export const HomeStyle = styled.section`
          padding: 0 1rem;
       }
    }
+   div {
+      margin: 0;
+      padding: 0;
+   }
 
    .apresentation {
       height: 60vh;
@@ -119,6 +123,22 @@ export const HomeStyle = styled.section`
          animation-delay: ${Math.random() * 5000 + 1000}ms;
       }
    }
+
+   .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8rem;
+
+      .left,
+      .right {
+         margin: 0 auto;
+
+         @media (max-width: 430px) {
+            margin: 0;
+         }
+      }
+   }
    @keyframes move {
       25% {
          opacity: 1;
@@ -134,21 +154,6 @@ export const HomeStyle = styled.section`
       100% {
          opacity: 0;
          transform: translateY(55px) scale3d(1, 1, 1);
-      }
-   }
-`;
-export const Buttons = styled.div`
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   transform: translateY(7rem);
-
-   .left,
-   .right {
-      margin: 0 auto;
-
-      @media (max-width: 430px) {
-         margin: 0;
       }
    }
 `;

@@ -16,7 +16,7 @@ const Loader = () => {
          options={{
             loop: true,
             cursor: '_',
-            strings: [t('Home.devfrontend'), t('Home.devmobile'), t('Home.designer')],
+            strings: [t('Home.devfrontend'), t('Home.devmobile'),],
             autoStart: true,
             delay: 50,
             deleteSpeed: 30,
