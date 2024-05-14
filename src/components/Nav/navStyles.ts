@@ -26,7 +26,8 @@ export const NavStyle = styled.nav`
             justify-content: center;
             height: 100vh;
             width: 70vw;
-            background-color: rgba(50, 50, 50, 0.6);
+            background-color: rgba(var(--bg-black), .9);
+            border-left: 1px solid rgba(var(--secondary-white), 0.8);
             position: absolute;
             top: 0;
             bottom: 0;
