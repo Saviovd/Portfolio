@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 10px;
       min-height: 100vh;
       background-color: rgb(var(--bg-black));
+      overflow-x: hidden;
 
       body {
          animation: cursorAnimation 10s infinite ;
@@ -47,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
          }
 
          &::-webkit-scrollbar {
-            width: .5rem;
+            width: 0rem;
          }
          &::-webkit-scrollbar-track {
             background-color: transparent;

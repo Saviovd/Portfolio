@@ -83,11 +83,11 @@ const Contacts = () => {
                         </a>
                      ) : (
                         <div
-                           content={type === 'E-mail' ? name : type}
+                           content={type === 'e-mail' ? name : type}
                            key={i}
                            className='contact_item'
                            onClick={() =>
-                              type === 'E-mail' ? copyToClipboard(name) : ''
+                              type === 'e-mail' ? copyToClipboard(name) : ''
                            }
                         >
                            <div className='icon_box'>
