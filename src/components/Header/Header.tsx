@@ -3,16 +3,22 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Nav from '../Nav/Nav';
 import { HeaderStyle } from './headerStyles';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 const Header = () => {
    const { t } = useTranslation();
    const [isActive, setIsActive] = useState(false);
 
+   const { scrollYProgress } = useScroll();
+   const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001,
+   });
+
    return (
       <>
-         <HeaderStyle
-            onClick={() => setIsActive(!isActive)}
-         >
+         <HeaderStyle onClick={() => setIsActive(!isActive)}>
             <Image
                className='logo'
                src={'/assets/logo.svg'}
@@ -22,9 +28,13 @@ const Header = () => {
             />
             <Nav isVisible={isActive} />
             {/* moon */}
-            <div className={isActive ? 'center active' : 'center'} onClick={() => setIsActive(!isActive)}>
+            <div
+               className={isActive ? 'center active' : 'center'}
+               onClick={() => setIsActive(!isActive)}
+            >
                <div></div>
             </div>
+         <motion.div className='progress-bar' style={{ scaleX }} />
          </HeaderStyle>
       </>
    );

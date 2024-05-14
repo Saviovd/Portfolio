@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
          }
 
          &::-webkit-scrollbar {
-            width: .5rem;
+            width: 0rem;
          }
          &::-webkit-scrollbar-track {
             background-color: transparent;
