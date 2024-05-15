@@ -5,6 +5,7 @@ const translations = {
       aboutme: 'about me',
       habilities: 'skills',
       projects: 'projects',
+      testimonials: 'testimonials'
    },
    Home: {
       call: '_hi, my name is',
@@ -72,7 +73,7 @@ const translations = {
       },
    },
    Testimonials: {
-      testimonialTitle: 'Testimonials',
+      testimonialTitle: 'testimonials',
       1: {
          id: '1',
          office: 'Quality Assurance | Banco BMG',

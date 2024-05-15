@@ -49,6 +49,12 @@ const Nav = ({isVisible}: INavProps) => {
                pagePosition={pagePosition}
                name={t('Header.projects')}
             />
+            <NavItem
+               isSelected={selectedNavItem === t('Header.testimonials')}
+               setIsSelected={() => handleNavItemSelect(t('Header.testimonials'))}
+               pagePosition={pagePosition}
+               name={t('Header.testimonials')}
+            />
             {/* <NavItem
                isSelected={selectedNavItem === 'depoimentos'}
                setIsSelected={() => handleNavItemSelect('depoimentos')}

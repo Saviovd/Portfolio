@@ -5,6 +5,7 @@ const translations = {
       aboutme: 'sobre mim',
       habilities: 'habilidades',
       projects: 'projetos',
+      testimonials: 'depoimentos'
    },
    Home: {
       call: '_olá, me chamo',
