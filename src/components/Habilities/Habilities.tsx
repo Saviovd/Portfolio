@@ -102,7 +102,7 @@ const Habilities = () => {
                   className='view'
                   onClick={() => setItensNumber(itensNumber + 12)}
                >
-                  ver mais
+                  {t('Habilities.viewmore')}
                   <IoChevronDownSharp className='chevron' />
                </button>
             )}
@@ -111,7 +111,7 @@ const Habilities = () => {
                   className='view'
                   onClick={() => setItensNumber(itensNumber - 12)}
                >
-                  ver menos
+                  {t('Habilities.viewless')}
                   <IoChevronUpSharp className='chevron' />
                </button>
             )}

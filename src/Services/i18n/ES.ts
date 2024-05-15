@@ -33,6 +33,8 @@ const translations = {
    Habilities: {
       my: 'mis',
       habilities: 'habilidades',
+      viewmore: 'Ver más',
+      viewless: 'Ver menos',
       certifications: 'certificaciones',
    },
    Projects: {
