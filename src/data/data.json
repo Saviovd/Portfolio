@@ -122,7 +122,8 @@
                "id": "20",
                "type": "Banco de dados & Cloud",
                "language_name": "AWS",
-               "logo": "https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo.png"
+               "logo": "https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo.png",
+               "bgWhite": true
             },
             {
                "id": "21",
