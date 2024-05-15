@@ -30,7 +30,7 @@ const Testimonials = () => {
    });
 
    return (
-      <TestimonialsStyle id='depoimentos'>
+      <TestimonialsStyle id={t('Header.testimonials')}>
          <Title
             firstColor='rgb(var(--first-primary-color))'
             firstWord={t('Testimonials.testimonialTitle')}

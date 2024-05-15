@@ -11,6 +11,13 @@ export const AboutStyle = styled.section`
    flex-direction: column;
    justify-content: center;
 
+   @media screen {
+      @media (max-width: 790px) {
+         margin-top: 7rem;
+         padding-top: 2rem;
+      }
+   }
+
    .about_content {
       display: flex;
       justify-content: center;
@@ -59,17 +66,20 @@ export const AboutStyle = styled.section`
          @media (max-width: 1055px) {
             padding: 0;
          }
+         @media (max-width: 600px) {
+            margin-top: 2rem;
+         }
       }
 
       .about_me {
-         font-size: 2.3rem;
+         font-size: 2.1rem;
          font-weight: 200;
          line-height: 3rem;
          letter-spacing: 1px;
          margin: 0;
 
          .name {
-            font-size: 2.6rem;
+            font-size: 2.2rem;
             color: rgba(var(--primary-pink));
             font-weight: 500;
          }
@@ -77,22 +87,24 @@ export const AboutStyle = styled.section`
             @media (max-width: 1440px) {
                font-size: 2rem;
             }
-            @media (max-width: 1125px) {
+            @media (max-width: 1210px) {
                font-size: 1.8rem;
+            }
+            @media (max-width: 790px) {
+               font-size: 1.7rem;
+               width: 95%;
             }
             @media (max-width: 500px) {
                font-size: 1.6rem;
-               text-align: justify;
                line-height: 2.5rem;
-               padding: 0 1rem;
             }
-            @media (max-width: 390px) {
-               padding: 0 1.5rem;
+            @media (max-width: 430px) {
+               font-size: 1.3rem;
             }
          }
       }
       .qualities {
-         font-size: 2rem;
+         font-size: 1.9rem;
          font-weight: 200;
          line-height: 2.2rem;
          letter-spacing: 1px;
@@ -102,8 +114,14 @@ export const AboutStyle = styled.section`
             @media (max-width: 1440px) {
                font-size: 1.8rem;
             }
-            @media (max-width: 1125px) {
+            @media (max-width: 1210px) {
                font-size: 1.6rem;
+            }
+            @media (max-width: 790px) {
+               font-size: 1.4rem;
+            }
+            @media (max-width: 430px) {
+               font-size: 1.2rem;
             }
          }
 
@@ -125,10 +143,20 @@ export const AboutStyle = styled.section`
                @media (max-width: 1055px) {
                   font-weight: 600;
                   font-size: 1.65rem;
-                  margin: 0 auto 0.5rem;
+                  margin: 1rem auto 0.5rem;
                   &::after {
                      content: '';
                   }
+               }
+               @media (max-width: 790px) {
+                  font-size: 1.5rem;
+               }
+               @media (max-width: 470px) {
+                  margin: 0.5rem auto 0.3rem;
+               }
+               @media (max-width: 430px) {
+                  font-size: 1.4rem;
+                  margin: 0.5rem auto 0;
                }
             }
          }
@@ -144,9 +172,21 @@ export const AboutStyle = styled.section`
                   display: flex;
                   flex-direction: column;
                   margin: 0 0 1.8rem 0;
+                  max-width: 50rem;
 
                   &:nth-child(3) {
                      margin: 0;
+                  }
+               }
+               @media (max-width: 790px) {
+                  max-width: 40rem;
+               }
+               @media (max-width: 470px) {
+                  max-width: max-content;
+                  width: 90%;
+                  margin: 0 auto;
+                  &:nth-child(3) {
+                     margin: 0 auto;
                   }
                }
             }
