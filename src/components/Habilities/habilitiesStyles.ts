@@ -41,7 +41,7 @@ export const HabilitiesStyle = styled.section`
          .stack {
             margin: 2rem;
             height: 8rem;
-            width: 7rem;
+            width: 8rem;
             transition: 0.5s;
 
             display: flex;
