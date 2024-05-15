@@ -19,7 +19,18 @@ interface IRenderProps {
 const Habilities = () => {
    const { habilities } = data;
    const { t } = useTranslation();
-   const [itensNumber, setItensNumber] = React.useState(12);
+   const [itensNumber, setItensNumber] = React.useState(24);
+   const [isMobile, setIsMobile] = React.useState(itensNumber == 12 ?? true);
+
+   React.useEffect(() => {
+      if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+         setItensNumber(12);
+         setIsMobile(true);
+         return;
+      }
+      setItensNumber(24);
+      setIsMobile(false);
+   }, []);
 
    const motionProps = (
       initialY: number,
@@ -95,7 +106,7 @@ const Habilities = () => {
                   <IoChevronDownSharp className='chevron' />
                </button>
             )}
-            {itensNumber > 12 && (
+            {itensNumber > 12 && isMobile && (
                <button
                   className='view'
                   onClick={() => setItensNumber(itensNumber - 12)}
