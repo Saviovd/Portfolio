@@ -7,15 +7,20 @@ export const HabilitiesStyle = styled.section`
 
    text-align: center;
 
+   @media screen {
+      @media (max-width: 600px) {
+         margin: 12.5rem auto 5rem;
+      }
+   }
+
    .stacks {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       justify-items: center;
-      margin: 5rem 0;
-      padding: 0 3rem;
-      max-width: 175rem;
+      margin: 5rem auto 2rem;
+      max-width: 155rem;
 
       @media screen {
          @media (max-width: 1440px) {
@@ -29,11 +34,12 @@ export const HabilitiesStyle = styled.section`
 
       .stack_box {
          display: flex;
+         justify-content: space-evenly;
          flex-wrap: wrap;
          position: relative;
 
          .stack {
-            margin: 3rem 0 0 4rem;
+            margin: 2rem;
             height: 8rem;
             width: 7rem;
             transition: 0.5s;
@@ -65,7 +71,7 @@ export const HabilitiesStyle = styled.section`
                }
             }
             &:hover {
-               animation: glitch-cursor-seta 400ms forwards;
+               animation: glitch-cursor-seta 800ms forwards;
             }
             .stack_icon {
                object-fit: contain;
@@ -73,16 +79,17 @@ export const HabilitiesStyle = styled.section`
                   @media (max-width: 1024px) {
                      transform: scale(1.5);
                   }
-               @media (max-width: 600px) {
-                  transform: scale(1.2);
-               }
-               @media (max-width: 390px) {
-                  transform: scale(1);
-               }
+                  @media (max-width: 600px) {
+                     transform: scale(1.2);
+                  }
+                  @media (max-width: 390px) {
+                     transform: scale(1);
+                  }
                }
             }
             .stack_name {
                font-size: 1rem;
+               font-weight: 300;
                color: rgba(var(--primary-blue), 0.9);
                margin: 0.5rem auto 0;
                @media screen {
@@ -90,13 +97,13 @@ export const HabilitiesStyle = styled.section`
                      margin: 1.5rem auto 0;
                      font-size: 1.3rem;
                   }
-               @media (max-width: 600px) {
-                  font-size: 1.2rem;
-                  margin: 1rem auto 0;
-               }
-               @media (max-width: 390px) {
-                  font-size: 1.1rem;
-               }
+                  @media (max-width: 600px) {
+                     font-size: 1.2rem;
+                     margin: 1rem auto 0;
+                  }
+                  @media (max-width: 390px) {
+                     font-size: 1.1rem;
+                  }
                }
             }
             &:hover {
@@ -130,28 +137,38 @@ export const HabilitiesStyle = styled.section`
                   }
                }
             }
-            &:before {
-               left: -3px;
-               top: -2px;
-               text-shadow: 2px 0 rgb(var(--primary-pink));
-               box-shadow: 2px 0 rgb(var(--primary-blue));
-            }
-            &:after {
-               left: 2px;
-               bottom: 2px;
-               text-shadow: -1px 0 rgb(var(--primary-pink));
-               box-shadow: -1px 0 rgb(var(--primary-blue));
-            }
-            &:hover:before {
-               animation: glitch-button 1s forwards linear alternate-reverse;
-            }
-            &:hover:after {
-               animation: glitch-button 1.3s forwards linear alternate-reverse;
-            }
          }
       }
       .stack_box:nth-child(1) {
          margin: 0;
+      }
+   }
+
+   .view_area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 32rem;
+      .view {
+         font-family: var(--outfit);
+         border: 0;
+         background-color: rgb(var(--secondary-white));
+         padding: 0.5rem;
+         color: rgb(var(--primary-pink));
+         font-size: 1.8rem;
+         font-weight: 500;
+         cursor: pointer;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin: 0 auto;
+
+         .chevron {
+            margin-left: 1rem;
+            background-color: rgb(var(--primary-pink));
+         }
       }
    }
    .more_habilities {

@@ -20,8 +20,12 @@ const TitleStyle = styled.div`
             font-size: 3.5rem;
             margin: 0 0 2rem 0;
          }
-         @media (max-width: 600px) {
+         @media (max-width: 800px) {
             font-size: 3rem;
+            margin: 0 0 1rem 0;
+         }
+         @media (max-width: 600px) {
+            font-size: 2.5rem;
             margin: 0;
          }
       }
