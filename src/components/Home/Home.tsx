@@ -21,41 +21,43 @@ const Intro = () => {
       transition: {
          type: 'spring',
          bounce: 0.1,
-         duration: 5,
-         delay: 2.5,
+         duration: 2,
+         delay: 1.5,
       },
    });
 
    React.useEffect(() => {
-      const a = baffle('.calls_me');
-      a.set({
-         characters: '▓█>▒/▒░ █▒▓/',
-         speed: 100,
-      });
-      a.start();
-      a.reveal(500, 0);
-      a.stop();
-      const b = baffle('.my_name');
-      b.set({
-         characters: '█▓GET OUT!☠░▒▓/',
-         speed: 100,
-      });
-      b.start();
-      b.reveal(500, 0);
-      b.stop();
-
-      setTimeout(() => {
-         setIsloaded(true);
-      }, 2000);
+      if (!isLoaded) {
+         const a = baffle('.calls_me');
+         a.set({
+            characters: '▓█>▒/▒░ █▒▓/',
+            speed: 100,
+         });
+         a.start();
+         a.reveal(500, 0);
+         a.stop();
+         const b = baffle('.my_name');
+         b.set({
+            characters: '█▓GET OUT!☠░▒▓/',
+            speed: 100,
+         });
+         b.start();
+         b.reveal(500, 0);
+         b.stop();
+      }
    });
    React.useEffect(() => {
       setCurrentLanguage(i18n.language);
+      setIsloaded(false);
       if (i18n.language !== currentLanguage) {
          setWords([t('Home.devfullstack')]);
          setIsloaded(true);
       }
    }, [currentLanguage, i18n.language, t]);
 
+   setTimeout(() => {
+      setIsloaded(true);
+   }, 2000);
    return (
       <>
          <HomeStyle id={t('Header.home')}>
@@ -65,7 +67,7 @@ const Intro = () => {
                {isLoaded && currentLanguage === i18n.language ? (
                   <Loader words={words} />
                ) : (
-                  <div style={{ height: '5rem' }}></div>
+                  <div className='loader-space'></div>
                )}
                <motion.div className='buttons' {...motionProps(200, 0)}>
                   <Button

@@ -23,7 +23,7 @@ const Nav = ({isVisible}: INavProps) => {
    };
 
    return (
-      <NavStyle style={{animation: `${isVisible ? 'enterMenu 0.2s forwards' : 'quitMenu 0.2s forwards'}`}}>
+      <NavStyle style={{animation: `${isVisible ? 'enterMenu 0.2s forwards' : ''}`}}>
          <ul className={`nav_list ${isVisible ? 'isVisible' : 'isNotVisible'}`}>
             <NavItem
                isSelected={selectedNavItem === t('Header.home')}

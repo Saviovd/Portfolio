@@ -40,6 +40,15 @@ export const HomeStyle = styled.section`
             text-align: center;
          }
       }
+
+      .loader-space {
+         height: 5rem;
+         @media screen {
+            @media (max-width: 650px) {
+               height: 2.5rem;
+            }
+         }
+      }
       .calls_me {
          text-transform: uppercase;
          font-weight: 500;
