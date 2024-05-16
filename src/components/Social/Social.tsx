@@ -22,18 +22,19 @@ const Social = () => {
          {socials.map((social, i) => {
             if (i < 3 && social.type != 'e-mail') {
                return (
-                  // eslint-disable-next-line react/jsx-key
-                  <motion.div  {...motionProps(0, 0)}>
-                     <Link href={social.url} key={i} target='_blank'>
-                        <Image
-                           alt={social.name}
-                           src={social.icon}
-                           width={50}
-                           height={50}
-                           className='social'
-                        />
-                     </Link>
-                  </motion.div>
+                  <>
+                     <motion.div {...motionProps(0, 0)}>
+                        <Link href={social.url} key={i} target='_blank'>
+                           <Image
+                              alt={social.name}
+                              src={social.icon}
+                              width={50}
+                              height={50}
+                              className='social'
+                           />
+                        </Link>
+                     </motion.div>
+                  </>
                );
             }
          })}
