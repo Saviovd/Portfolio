@@ -37,7 +37,6 @@ const Header = () => {
                height={80}
             />
             {isLoaded && <Nav isVisible={isActive} />}
-            {/* moon */}
             <div
                className={isActive ? 'center active' : 'center'}
                onClick={() => setIsActive(!isActive)}

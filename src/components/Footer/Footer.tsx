@@ -6,7 +6,7 @@ const Footer = () => {
       <>
          <FooterStyle>
             <p className='name'>
-               Sávio Almeida <span className='copy'>&copy; 2023, All Rights Reserved.</span>
+               Sávio Almeida <span className='copy'>&copy; 2024, All Rights Reserved.</span>
             </p>
             <Image src='/assets/logo.png' alt='Logo of Savio Almeida' width={24} height={24} />
          </FooterStyle>
