@@ -11,7 +11,7 @@ export const HomeStyle = styled.section`
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-end;
+   justify-content: center;
 
    @media screen {
       @media (max-width: 730px) {
@@ -167,11 +167,20 @@ export const HomeStyle = styled.section`
 `;
 
 export const DrippingDown = styled.div`
-   height: 20%;
    display: flex;
    justify-content: flex-end;
    align-items: flex-end;
-   transform: translate(-2rem, -5rem);
+   justify-self: flex-end;
+   transform: translate(-2rem, 5rem);
+
+   @media screen {
+      @media (max-width: 1024px) {
+         transform: translate(-2rem, 8rem);
+      }
+      @media (max-width: 1024px) {
+         transform: translate(-2rem, 5rem);
+      }
+   }
    .dripping_down {
       position: relative;
       margin: 0 auto;
