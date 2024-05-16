@@ -4,19 +4,19 @@ export const HeaderStyle = styled.header`
    z-index: 3;
    width: 100%;
    max-width: 180rem;
-   height: 10rem;
+   height: 8rem;
    display: flex;
    align-items: center;
    justify-content: flex-end;
    position: fixed;
-   padding-top: 1rem;
+   padding: .5rem 0;
    backdrop-filter: blur(0.3rem);
    box-shadow: 0px .1px 0px 0px rgba(var(--secondary-white), .4);
 
    @media screen {
       @media (max-width: 1300px) {
-         height: 8rem;
-         box-shadow: 0px .4px 0px 0px rgba(var(--secondary-white), .4);
+         height: 7rem;
+         box-shadow: 0px .1px 0px 0px rgba(var(--secondary-white), .4);
       }
       @media (max-width: 600px) {
          height: 5rem;
@@ -27,19 +27,16 @@ export const HeaderStyle = styled.header`
 
    .logo {
       position: absolute;
-      left: 2rem;
+      left: 2.5rem;
       @media screen {
          @media (max-width: 1820px) {
-            width: 6rem;
-            height: 7rem;
+            width: 5.5rem;
          }
          @media (max-width: 1300px) {
-            width: 5rem;
-            height: 6rem;
+            width: 4.5rem;
          }
          @media (max-width: 600px) {
             width: 3rem;
-            height: 4rem;
          }
       }
    }
