@@ -32,6 +32,8 @@ const translations = {
    Habilities: {
       my: 'My',
       habilities: 'skills',
+      viewmore: 'View more',
+      viewless: 'View less',
       certifications: 'certifications',
    },
    Projects: {

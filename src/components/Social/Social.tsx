@@ -13,8 +13,8 @@ const Social = () => {
       transition: {
          type: 'spring',
          bounce: 0.2,
-         duration: 4,
-         delay: 3.5,
+         duration: 1,
+         delay: 2.5,
       },
    });
    return (
@@ -23,14 +23,7 @@ const Social = () => {
             if (i < 3 && social.type != 'e-mail') {
                return (
                   // eslint-disable-next-line react/jsx-key
-                  <motion.div  {...motionProps(100, 0)}
-                  transition={{
-                     when: 'beforeChildren',
-                     staggerChildren: 0.5,
-                     type: 'spring',
-                     duration: 4,
-                     delay: 3.5,
-                  }}>
+                  <motion.div  {...motionProps(0, 0)}>
                      <Link href={social.url} key={i} target='_blank'>
                         <Image
                            alt={social.name}

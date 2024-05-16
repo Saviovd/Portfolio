@@ -25,7 +25,6 @@ export const HabilitiesStyle = styled.section`
       @media screen {
          @media (max-width: 1440px) {
             margin: 3rem 0;
-            padding: 0 0 0 1rem;
          }
          @media (max-width: 1024px) {
             padding: 0;
@@ -41,7 +40,7 @@ export const HabilitiesStyle = styled.section`
          .stack {
             margin: 2rem;
             height: 8rem;
-            width: 7rem;
+            width: 8rem;
             transition: 0.5s;
 
             display: flex;

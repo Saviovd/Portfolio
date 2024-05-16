@@ -45,6 +45,9 @@ export const NavStyle = styled.nav`
    }
 
    @keyframes enterList {
+      from {
+         right: -100%;
+      }
       to {
          right: 0;
       }

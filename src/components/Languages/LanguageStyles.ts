@@ -28,7 +28,8 @@ export const LanguageStyles = styled.div<LanguageStylesProps>`
       @media (max-width: 800px) {
          margin: 0 auto 2rem;
          height: 2rem;
-         font-size: 1.5rem;
+         font-size: 1.8rem;
+         color: white;
          background-color: transparent;
       }
    }
