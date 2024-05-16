@@ -16,10 +16,12 @@ export const HeaderStyle = styled.header`
    @media screen {
       @media (max-width: 1300px) {
          height: 8rem;
+         box-shadow: 0px .4px 0px 0px rgba(var(--secondary-white), .4);
       }
       @media (max-width: 600px) {
          height: 5rem;
          padding: 0.5rem 0;
+         box-shadow: 0px .2px 0px 0px rgba(var(--secondary-white), .4);
       }
    }
 

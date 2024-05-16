@@ -13,7 +13,7 @@ const Header = () => {
       if (window !== undefined && window.innerWidth <= 800) {
          setTimeout(() => {
             setIsLoaded(true);
-         }, 1500);
+         }, 2000);
       }
       if (window !== undefined && window.innerWidth > 800) {
          setIsLoaded(true);

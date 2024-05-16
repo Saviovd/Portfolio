@@ -6,6 +6,7 @@ import data from '@/data/data.json';
 import Button from '../Button/Button';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
 const { projects } = data;
 
@@ -13,13 +14,13 @@ const Projects = () => {
    const [active, setActive] = useState(0);
    const { t } = useTranslation();
 
-   const motionProps = (initialX: number, finalX: number) => ({
-      initial: { opacity: 0, x: initialX },
-      whileInView: { opacity: 1, x: finalX },
+   const motionProps = (initialY: number, finalY: number) => ({
+      initial: { opacity: 0, y: initialY },
+      whileInView: { opacity: 1, y: finalY },
       viewport: { once: true },
       transition: {
          type: 'spring',
-         bounce: 0.4,
+         bounce: 0.1,
          duration: 1,
          delay: 0.2,
       },
@@ -41,24 +42,11 @@ const Projects = () => {
                   : t('Projects.recent')
             }
          />
-         <div className='projects'>
-            <Button
-               className='pagination'
-               title='🢀'
-               bgColor={active > 0 ? 'rgb(var(--primary-pink))' : 'rgba(var(--primary-pink), .3)'}
-               strColor={active > 0 ? '' : 'rgba(250, 250, 250 , 0.5)'}
-               _blank={false}
-               onClick={() => {
-                  if (active > 0) {
-                     setActive(active - 1);
-                  }
-                  return;
-               }}
-            />
-            <motion.div
-               {...(typeof window !== 'undefined' && window.innerWidth > 768
-                  ? { ...motionProps(0, 0) }
-                  : { ...motionProps(-150, 0) })}
+         <motion.div className='projects'
+         {...(typeof window !== 'undefined' && window.innerWidth > 768
+         ? { ...motionProps(200, 0) }
+         : { ...motionProps(150, 0) })}>
+            <div
                className='project_container'
             >
                {projects[active].image ? (
@@ -72,12 +60,7 @@ const Projects = () => {
                ) : (
                   <h3 className='project_name'>{projects[active].name}</h3>
                )}
-               <motion.div
-                  {...(typeof window !== 'undefined' && window.innerWidth > 768
-                     ? { ...motionProps(300, 0) }
-                     : { ...motionProps(-300, 0) })}
-                  className='about_project'
-               >
+               <div className='about_project'>
                   <h3 className='project_name'>{projects[active].name}</h3>
 
                   <p className='project_description'>
@@ -117,23 +100,20 @@ const Projects = () => {
                         )
                      )}
                   </ul>
-               </motion.div>
-            </motion.div>
-            <Button
+               </div>
+            </div>
+         </motion.div>
+         <div className='numeration'>
+            <BiChevronLeft
                className='pagination'
-               title='🡺'
-               bgColor={active < projects.length - 1 ? 'rgb(var(--primary-pink))' : 'rgba(var(--primary-pink), .3)'}
-               strColor={active > projects.length - 1 ? 'rgba(250, 250, 250 , 0.5)' : ''}
-               _blank={false}
                onClick={() => {
-                  if (active < projects.length - 1) {
-                     setActive(active + 1);
+                  if (active > 0) {
+                     setActive(active - 1);
+                     return;
                   }
-                  return;
+                  setActive(projects.length - 1);
                }}
             />
-         </div>
-         <div className='numeration'>
             {projects.map((project) => (
                <span
                   key={project.code}
@@ -145,6 +125,16 @@ const Projects = () => {
                   {project.id}
                </span>
             ))}
+            <BiChevronRight
+               className='pagination'
+               onClick={() => {
+                  if (active < projects.length - 1) {
+                     setActive(active + 1);
+                     return;
+                  }
+                  setActive(0);
+               }}
+            />
          </div>
       </ProjectsStyle>
    );
