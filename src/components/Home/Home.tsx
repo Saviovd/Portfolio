@@ -82,7 +82,7 @@ const Intro = () => {
                      title='Download CV'
                      download={true}
                      _blank={false}
-                     url='/documents/curriculum.pdf'
+                     url='/documents/Curriculum.pdf'
                   />
                </motion.div>
                <Social />
