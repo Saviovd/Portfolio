@@ -224,7 +224,7 @@
       },
       {
          "id": 6,
-         "image": "/assets/Projects/toDoLIst.png",
+         "image": "/assets/Projects/toDoList.png",
          "url": "https://crudtodo.vercel.app/",
          "repository": "https://github.com/Saviovd/ToDo",
          "name": "ToDo List",
