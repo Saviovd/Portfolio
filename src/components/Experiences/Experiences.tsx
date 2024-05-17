@@ -67,6 +67,7 @@ const Experiences = () => {
                                              height={25}
                                              src={language.logo}
                                              alt={language.language_name}
+                                             className='stack'
                                           />
                                        </li>
                                     ))}
@@ -101,7 +102,7 @@ const Experiences = () => {
                               <Image
                                  src={logo}
                                  key={course}
-                                 alt={`${course} logo`}
+                                 alt={`${institution} logo`}
                                  width={70}
                                  height={70}
                                  className='logo'
@@ -140,7 +141,7 @@ const Experiences = () => {
                                     <Image
                                        src={logo}
                                        key={course}
-                                       alt={`${course} logo`}
+                                       alt={`${institution} logo`}
                                        width={50}
                                        height={50}
                                        className='logo'
@@ -172,7 +173,7 @@ const Experiences = () => {
                                                    height={25}
                                                    src={language.logo}
                                                    alt={language.language_name}
-                                                   className='language-logo'
+                                                   className='stack-logo'
                                                 />
                                              </li>
                                           ))}
