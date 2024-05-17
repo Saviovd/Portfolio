@@ -5,7 +5,7 @@ const translations = {
       aboutme: 'sobre mí',
       habilities: 'habilidades',
       projects: 'proyectos',
-      testimonials: 'testimonios'
+      testimonials: 'testimonios',
    },
    Home: {
       call: '_hola, mi nombre es',
@@ -15,7 +15,6 @@ const translations = {
       devmobile: 'Desarrollador móvil',
       designer: 'Diseñador UX/UI',
       devfullstack: 'Desarrollador Fullstack',
-
    },
    AboutMe: {
       about: 'sobre',
@@ -29,13 +28,96 @@ const translations = {
       text1: 'Creo interfaces que se adaptan a cualquier dispositivo, brindando una experiencia de usuario impecable.',
       text2: 'Me preocupo por la calidad del código, utilizando buenas prácticas y técnicas de optimización para garantizar el mejor rendimiento.',
       text3: 'Creo que la mejor interfaz es la que es fácil de usar y entender, siempre poniendo al usuario en el centro del proceso de desarrollo.',
+      experienceTitle: 'Experiencias',
+      jobs: [
+         {
+            id: 0,
+            office: 'Desarrollador Front-End',
+            currently: ' ',
+            assignments: [
+               {
+                  id: 0,
+                  assignment:
+                     'Desarrollo de sitios web, aplicaciones y sistemas con Vue.js, Quasar.',
+               },
+               {
+                  id: 1,
+                  assignment:
+                     'Mantenimiento y refactorización de código antiguo.',
+               },
+               {
+                  id: 2,
+                  assignment:
+                     'Integración de sistemas con Node.js y PHP (Laravel).',
+               },
+            ],
+         },
+         {
+            id: 1,
+            office: 'Inteligencia de Negocios - Interno',
+            currently: ' ',
+            assignments: [
+               {
+                  id: 0,
+                  assignment: 'Desarrollo de automatizaciones.',
+               },
+               {
+                  id: 1,
+                  assignment:
+                     'Análisis de datos con las herramientas Power Automate y Power BI.',
+               },
+               {
+                  id: 2,
+                  assignment:
+                     'Automatizaciones utilizando API con Node.js y Python.',
+               },
+            ],
+         },
+         {
+            id: 2,
+            office: 'Desarrollador FullStack',
+            currently: 'Actualmente',
+            assignments: [
+               {
+                  id: 0,
+                  assignment:
+                     'Desarrollo de sitios web y aplicaciones con React.js, React Native, Next.js y Flutter.',
+               },
+               {
+                  id: 1,
+                  assignment:
+                     'Desarrollo de software con Python, Ruby y Kotlin.',
+               },
+            ],
+         },
+      ],
+      graduationTitle: 'graduación',
+      graduations: [
+         {
+            id: 0,
+            course: 'Análisis y desarrollo de sistemas',
+            institution: 'Universidad Anhembi Morumbi',
+            category: 'tecnólogo',
+         },
+      ],
+      coursesTitle: 'cursos',
+      courses: [
+         { id: 0, course: 'JavaScript con enfoque en el back-end' },
+         { id: 1, course: 'Cómo crear CRUDs con Calidad' },
+         { id: 6, course: 'APIs con Node.js y Express' },
+         { id: 3, course: 'WebMaster Front-End Completo' },
+         { id: 4, course: 'JavaScript: tipos, variables y funciones' },
+         { id: 5, course: 'Python con Orientación a Objetos' },
+         { id: 6, course: 'CURSO FRONT-END COMPLETO 2.0' },
+         { id: 7, course: 'Gestione aplicaciones React con Typescript' },
+         { id: 8, course: 'Lógica de Programación Esencial' },
+      ],
    },
    Habilities: {
       my: 'mis',
       habilities: 'habilidades',
       viewmore: 'Ver más',
       viewless: 'Ver menos',
-      certifications: 'certificaciones',
    },
    Projects: {
       projects: 'proyectos',
@@ -85,7 +167,8 @@ const translations = {
       2: {
          id: '2',
          office: 'Coordinadora | Votorantim',
-         testimony: 'Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo.',
+         testimony:
+            'Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo.',
       },
       3: {
          id: '3',

@@ -5,7 +5,7 @@ const translations = {
       aboutme: 'about me',
       habilities: 'skills',
       projects: 'projects',
-      testimonials: 'testimonials'
+      testimonials: 'testimonials',
    },
    Home: {
       call: '_hi, my name is',
@@ -28,13 +28,94 @@ const translations = {
       text1: 'I create interfaces that adapt to any device, providing an impeccable user experience.',
       text2: 'I care about the quality of the code, using good practices and optimization techniques to ensure the best performance.',
       text3: 'I believe that the best interface is the one that is easy to use and understand, always putting the user at the center of the development process.',
+      experienceTitle: 'Experiences',
+      jobs: [
+         {
+            id: 0,
+            office: 'Front-End Developer',
+            currently: ' ',
+            assignments: [
+               {
+                  id: 0,
+                  assignment:
+                     'Development of websites, apps, and systems with Vue.js, Quasar.',
+               },
+               {
+                  id: 1,
+                  assignment: 'Maintenance and refactoring of old code.',
+               },
+               {
+                  id: 2,
+                  assignment:
+                     'Integration of systems with Node.js and PHP (Laravel).',
+               },
+            ],
+         },
+         {
+            id: 1,
+            office: 'Business Intelligence - Intern',
+            currently: ' ',
+            assignments: [
+               {
+                  id: 0,
+                  assignment: 'Development of automations.',
+               },
+               {
+                  id: 1,
+                  assignment:
+                     'Data analysis with Power Automate and Power BI tools.',
+               },
+               {
+                  id: 2,
+                  assignment: 'Automations using API with Node.js and Python.',
+               },
+            ],
+         },
+         {
+            id: 2,
+            office: 'FullStack Developer',
+            currently: 'Currently',
+            assignments: [
+               {
+                  id: 0,
+                  assignment:
+                     'Development of websites and apps with React.js, React Native, Next.js, and Flutter.',
+               },
+               {
+                  id: 1,
+                  assignment:
+                     'Software development with Python, Ruby, and Kotlin.',
+               },
+            ],
+         },
+      ],
+      graduationTitle: 'graduation',
+      graduations: [
+         {
+            id: 0,
+            course: 'Systems Analysis and Development',
+            institution: 'Anhembi Morumbi University',
+            category: 'technologist',
+         },
+      ],
+      coursesTitle: 'courses',
+      courses: [
+         { id: 0, course: 'JavaScript with focus on back-end' },
+         { id: 1, course: 'How to create CRUDs with Quality' },
+         { id: 6, course: 'APIs with Node.js and Express' },
+         { id: 3, course: 'Complete Front-End WebMaster' },
+         { id: 4, course: 'JavaScript: types, variables, and functions' },
+         { id: 5, course: 'Python with Object Orientation' },
+         { id: 6, course: 'COMPLETE FRONT-END COURSE 2.0' },
+         { id: 7, course: 'Manage React applications with Typescript' },
+         { id: 8, course: 'Essential Programming Logic' },
+      ],
    },
    Habilities: {
       my: 'My',
       habilities: 'skills',
       viewmore: 'View more',
       viewless: 'View less',
-      certifications: 'certifications',
    },
    Projects: {
       projects: 'projects',
@@ -84,7 +165,8 @@ const translations = {
       2: {
          id: '2',
          office: 'Coordinator | Votorantim',
-         testimony: 'Sávio is an outstanding professional with whom I had the privilege of working. Interested, nonconformist, and studious, these are just a few of the adjectives that can describe him. Passionate about technology, he supported and developed automations in the area where he worked at the Votorantim COE, assisting the team in the pursuit of excellence, aware that well-established processes combined with automation/digitization are essential for the present and the very near future.',
+         testimony:
+            'Sávio is an outstanding professional with whom I had the privilege of working. Interested, nonconformist, and studious, these are just a few of the adjectives that can describe him. Passionate about technology, he supported and developed automations in the area where he worked at the Votorantim COE, assisting the team in the pursuit of excellence, aware that well-established processes combined with automation/digitization are essential for the present and the very near future.',
       },
       3: {
          id: '3',
