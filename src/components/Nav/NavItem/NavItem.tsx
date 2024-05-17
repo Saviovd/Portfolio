@@ -14,23 +14,22 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
    const [isInView, setIsInView] = React.useState(false);
    const { t } = useTranslation();
 
-   // eslint-disable-next-line react-hooks/exhaustive-deps
-   const handleScroll = () => {
-      setIsSelected()
-      const element = document.getElementById(name);
-      if (element) {
-         const { top, bottom } = element.getBoundingClientRect();
-         const isVisible = top - 210 <= pagePosition && bottom - 210 >= 0 ;
-         setIsInView(isVisible);
-      }
-   };
    React.useEffect(() => {
+      const handleScroll = () => {
+         setIsSelected()
+         const element = document.getElementById(name);
+         if (element) {
+            const { top, bottom } = element.getBoundingClientRect();
+            const isVisible = top - 210 <= pagePosition && bottom - 210 >= 0 ;
+            setIsInView(isVisible);
+         }
+      };
       window.addEventListener('scroll', handleScroll);
 
       return () => {
          window.removeEventListener('scroll', handleScroll);
       };
-   }, [name, pagePosition, isSelected, handleScroll]);
+   }, [name, pagePosition, isSelected, setIsSelected]);
 
    return (
       <NavItemStyle data-glitch glitchText={name} className={`${isInView || isSelected  ? '' : ''}`}>

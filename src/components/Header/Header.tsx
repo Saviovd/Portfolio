@@ -33,11 +33,10 @@ const Header = () => {
                className='logo'
                src={'/assets/logo.svg'}
                alt={t('Header.logoAlt')}
-               width={75}
+               width={60}
                height={80}
             />
             {isLoaded && <Nav isVisible={isActive} />}
-            {/* moon */}
             <div
                className={isActive ? 'center active' : 'center'}
                onClick={() => setIsActive(!isActive)}

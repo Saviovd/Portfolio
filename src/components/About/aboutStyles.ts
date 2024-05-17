@@ -4,8 +4,8 @@ export const AboutStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
    min-height: 45rem;
-   margin-top: 10rem;
-   padding-top: 5rem;
+   margin-top: 5rem;
+   padding-top: 3rem;
    display: flex;
    align-items: center;
    flex-direction: column;

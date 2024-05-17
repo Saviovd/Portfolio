@@ -4,6 +4,7 @@ import Title from '../Title/Title';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
+import Experiences from '../Experiences/Experiences';
 
 const About = () => {
    const { t } = useTranslation();
@@ -37,7 +38,6 @@ const About = () => {
             firstWord={t('AboutMe.about')}
             secondWord={t('AboutMe.me')}
          />
-
          <motion.div {...motionProps(100, 0)} className='about_content'>
             {isHovering ? (
                <Image
@@ -85,6 +85,7 @@ const About = () => {
                </div>
             </div>
          </motion.div>
+            <Experiences />
       </AboutStyle>
    );
 };
