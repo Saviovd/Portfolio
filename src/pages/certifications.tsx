@@ -5,7 +5,7 @@ import Image from 'next/image';
 import data from '../data/data.json';
 import Head from 'next/head';
 
-const { courses } = data;
+const { experiences } = data;
 
 const Certifications = () => {
    return (
@@ -102,8 +102,8 @@ const Certifications = () => {
 
             <Title firstColor='rgb(var(--primary-pink))' firstWord='Cursos' />
 
-            <div className='courses_box'>{
-               courses.map((course, i: number) => (
+            <div className='course_box'>{
+               experiences.courses.map((course, i: number) => (
                   <div key={`${i}_${course.course}`} className='course'>
                      <div className='about_course'>
                         <p className='course_category'>{course.category}</p>
@@ -111,13 +111,13 @@ const Certifications = () => {
                      </div>
                      <Image
                         className='icon'
-                        src={course.icon}
+                        src={course.logo}
                         alt='course icon'
                         width={90}
                         height={90}
                      />
                      <h3 className='course_name'>{course.course}</h3>
-                     <h5 className='school'>{course.instituition}</h5>
+                     <h5 className='school'>{course.institution}</h5>
                      <Button
                         _blank={true}
                         title='Certificado'
