@@ -159,6 +159,11 @@ export const ProjectsStyle = styled.section`
             justify-content: flex-start;
             gap: 2rem;
 
+            @media screen {
+                  @media (max-width: 1024px) {
+                     justify-content: center;
+                  }}
+
             .project_button {
                @media screen {
                   @media (max-width: 1500px) {

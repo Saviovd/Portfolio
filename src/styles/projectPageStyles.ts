@@ -16,7 +16,7 @@ export const ProjectsStyle = styled.main`
 
       @media screen {
          @media (max-width: 1200px) {
-            /* margin: 7rem 0 0rem 5rem; */
+
          }
       }
    }

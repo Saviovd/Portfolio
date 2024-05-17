@@ -55,12 +55,6 @@ const Nav = ({isVisible}: INavProps) => {
                pagePosition={pagePosition}
                name={t('Header.testimonials')}
             />
-            {/* <NavItem
-               isSelected={selectedNavItem === 'depoimentos'}
-               setIsSelected={() => handleNavItemSelect('depoimentos')}
-               pagePosition={pagePosition}
-               name='depoimentos'
-            /> */}
             <NavItem
                isSelected={selectedNavItem === ''}
                setIsSelected={() => handleNavItemSelect('')}
@@ -68,7 +62,6 @@ const Nav = ({isVisible}: INavProps) => {
                name=''
             />
          <LanguageBar />
-            moon
          </ul>
          <div ref={scrollRef}></div>
       </NavStyle>

@@ -6,16 +6,17 @@ export const NavStyle = styled.nav`
       align-items: center;
       justify-content: flex-end;
       padding: 0 1rem 0 0;
-      gap: 1rem;
+      gap: 0.5rem;
 
       @media screen {
          @media (max-width: 1820px) {
-            padding: 0 4rem;
+            padding: 0 4rem 0 0;
          }
          @media (max-width: 1440px) {
             gap: 0.2rem;
          }
          @media (max-width: 1300px) {
+            padding: 0 2rem 0 0;
             gap: 0;
          }
          @media (max-width: 1024px) {

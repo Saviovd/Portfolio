@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typewriter } from 'react-simple-typewriter';
-// import { useTranslation } from 'react-i18next';
 
 interface iTypeWriterProps {
    words: string[]
@@ -12,7 +11,6 @@ const LoaderStyle = styled.div`
    min-width: 10rem;
 `;
 const Loader = ({words}: iTypeWriterProps) => {
-   // const { t } = useTranslation();
 
    return (
       <LoaderStyle className='loader' id='loader'>
