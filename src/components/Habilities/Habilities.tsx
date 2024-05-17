@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Title from '../Title/Title';
 import { HabilitiesStyle } from './habilitiesStyles';
 import data from '@/data/data.json';
-import Button from '../Button/Button';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { IoChevronDownSharp, IoChevronUpSharp } from 'react-icons/io5';
@@ -115,15 +114,6 @@ const Habilities = () => {
                   <IoChevronUpSharp className='chevron' />
                </button>
             )}
-         </div>
-         <div className='more_habilities'>
-            <Button
-               title={t('Habilities.certifications')}
-               url='/certifications'
-               bgColor='rgb(var(--primary-pink))'
-               _blank={false}
-               className='button'
-            />
          </div>
       </HabilitiesStyle>
    );

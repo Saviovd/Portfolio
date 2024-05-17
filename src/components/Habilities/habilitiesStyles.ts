@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
    max-width: 1800px;
-   margin: 15rem auto 5rem;
+   margin: 15rem auto 0rem;
    padding: 0 2rem;
 
    text-align: center;
@@ -19,12 +19,12 @@ export const HabilitiesStyle = styled.section`
       align-items: center;
       justify-content: center;
       justify-items: center;
-      margin: 5rem auto 2rem;
+      margin: 2rem auto;
       max-width: 155rem;
 
       @media screen {
          @media (max-width: 1440px) {
-            margin: 3rem 0;
+            margin: 1rem 0 0;
          }
          @media (max-width: 1024px) {
             padding: 0;
