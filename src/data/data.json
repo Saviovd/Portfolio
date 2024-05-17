@@ -284,114 +284,266 @@
          "side": "left"
       }
    ],
-   "courses": [
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Back-End",
-         "course": "Como criar CRUDs com Qualidade",
-         "instituition": "DevSoutinho",
-         "hours": "10h",
-         "stacks": [
-            "/assets/icons/icons/ts.svg",
-            "/assets/icons/front-end/styled-components.svg",
-            "/assets/icons/front-end/nextjs.svg",
-            "/assets/icons/back-end/node-js.svg"
-         ],
-         "certificate": "https://crudcomqualidade.club.hotmart.com/public/user-certificate/190c359e-13c6-429b-b27f-ba222a81874b/_"
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Back-End",
-         "course": "JavaScript com foco no back-end",
-         "instituition": "Alura",
-         "hours": "74h",
-         "stacks": [
-            "/assets/icons/front-end/js.svg",
-            "/assets/icons/back-end/node-js.svg"
-         ],
-         "certificate": "#"
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "JavaScript",
-         "course": "JavaScript: tipos, variáveis e funções",
-         "instituition": "Alura",
-         "hours": "12h",
-         "stacks": "",
-         "certificate": ""
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Python",
-         "course": "Python com Orientação a Objetos",
-         "instituition": "Alura",
-         "hours": "93h",
-         "stacks": [
-            "/assets/icons/back-end/python.svg"
-         ],
-         "certificate": ""
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Front-End",
-         "course": "WebMaster Front-End Completo",
-         "instituition": "Danki.Code",
-         "hours": "81h",
-         "stacks": [
-            "/assets/icons/front-end/html5.svg",
-            "/assets/icons/front-end/css3.svg",
-            "/assets/icons/front-end/js.svg",
-            "/assets/icons/front-end/react.svg"
-         ],
-         "certificate": "https://cursos.dankicode.com/api/certificados/c4c8b9a3-dc5b-4a4c-b6a9-b29c1881ab57"
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Front-End",
-         "course": "CURSO FRONT-END COMPLETO 2.0",
-         "instituition": "Danki.Code",
-         "hours": "10h",
-         "stacks": [
-            "/assets/icons/front-end/html5.svg",
-            "/assets/icons/front-end/css3.svg",
-            "/assets/icons/front-end/js.svg",
-            "/assets/icons/front-end/react.svg"
-         ],
-         "certificate": "https://cursos.dankicode.com/api/certificados/e8498ebd-733a-464a-8773-3a2d0e7223b3"
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "API REST",
-         "course": "APIs com Node.js e Express",
-         "instituition": "Alura",
-         "hours": "70h",
-         "stacks": [
-            "/assets/icons/back-end/node-js.svg",
-            "/assets/icons/back-end/express.svg",
-            "/assets/icons/front-end/ts.svg"
-         ],
-         "certificate": ""
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Front-End",
-         "course": "Gerencie aplicações React com Typescript",
-         "instituition": "Alura",
-         "hours": "83h",
-         "stacks": "",
-         "certificate": ""
-      },
-      {
-         "icon": "/assets/icons/education/code.svg",
-         "category": "Back-End",
-         "course": "Lógica de Programação Essencial",
-         "instituition": "Digital Innovation One",
-         "hours": "4h",
-         "stacks": [
-            "/assets/icons/back-end/node-js.svg",
-            "/assets/icons/front-end/js.svg"
-         ],
-         "certificate": "https://www.dio.me/certificate/3A22FCA6/share"
-      }
-   ]
+   "experiences": {
+      "jobs": [
+         {
+            "office": "Desenvolvedor Front-End",
+            "company": "BigBang Digital",
+            "icon": "https://media.licdn.com/dms/image/C4D0BAQHTVN1NxnQ4Mw/company-logo_100_100/0/1630580474378/big_bang_shop_logo?e=1723680000&v=beta&t=e4_5ClFK5XDDIv21pWcZPD7-MolU1kllYBV7haBnApQ",
+            "start": "08/2023",
+            "end": "01/2024",
+            "assignments": [
+               "Desenvolvimento de sites, apps e sistemas com VueJs, Quasar.",
+               "Manutenção e refatoração de códigos antigos.",
+               "Integração de sistemas com NodeJs e PHP(Laravel)."
+            ],
+            "stacks": [
+               {
+                  "name": "VueJs"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "PHP"
+               },
+               {
+                  "name": "MySQL"
+               },
+               {
+                  "name": "Docker"
+               }
+            ]
+         },
+         {
+            "office": "Business Intelligence - intern",
+            "company": "Votorantim",
+            "icon": "https://media.licdn.com/dms/image/D4D0BAQHid9cPrRd6zA/company-logo_100_100/0/1701461577042/votorantim_logo?e=1723680000&v=beta&t=Hbhp3szeE-8m6_09e4-EPad56fBtRPgwLhH-qfIQ66E",
+            "start": "01/2023",
+            "end": "07/2023",
+            "assignments": [
+               "Desenvolvimento de automações.",
+               "Análise de dados com as ferramentas Power Automate e Power BI.",
+               "Automações utilizando API com NodeJS e Python."
+            ],
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "Python"
+               }
+            ]
+         },
+         {
+            "office": "Desenvolvedor FullStack",
+            "company": "Freelancer",
+            "icon": "/assets/logo.png",
+            "start": "02/2022",
+            "end": "atualmente",
+            "assignments": [
+               "Desenvolvimento de sites e apps com ReactJs, React Native, NextJs e Flutter.",
+               "Desenvolvimento de software com Python, Ruby e Kotlin."
+            ],
+            "stacks": [
+               {
+                  "name": "ReactJs"
+               },
+               {
+                  "name": "NextJS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "MySQL"
+               }
+            ]
+         }
+      ],
+      "formation": [
+         {
+            "course": "Análise e desenvolvimento de sistemas",
+            "instituition": "Universidade Anhembi Morumbi",
+            "category": "tecnólogo",
+            "logo": "https://media.licdn.com/dms/image/C4D0BAQGcTGL2HhDUwg/company-logo_100_100/0/1630477125888?e=1723680000&v=beta&t=Zlx7SxuSlMK1k8tbR34J1_b-Mu6KLY4B9QAXCpqhDsg",
+            "start": "06/2021",
+            "end": "06/2024",
+            "certificate": ""
+         }
+      ],
+      "courses": [
+         {
+            "course": "Como criar CRUDs com Qualidade",
+            "instituition": "DevSoutinho",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFOI51rxtacFw/company-logo_100_100/0/1674513714818/devsoutinho_tech_logo?e=1723680000&v=beta&t=P_xCsLvYIcuitrj_I5LIhhlky5aM1zAwEOhGMcKKoT4",
+            "category": "Back-End",
+            "hours": "10h",
+            "stacks": [
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "CSS-in-JS"
+               },
+               {
+                  "name": "NextJS"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "https://crudcomqualidade.club.hotmart.com/public/user-certificate/190c359e-13c6-429b-b27f-ba222a81874b/_"
+         },
+         {
+            "course": "JavaScript com foco no back-end",
+            "instituition": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Back-End",
+            "hours": "74h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "#"
+         },
+         {
+            "course": "JavaScript: tipos, variáveis e funções",
+            "instituition": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "JavaScript",
+            "hours": "12h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "CURSO FRONT-END COMPLETO 2.0",
+            "instituition": "Danki.Code",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFvKVfQZ_cWNg/company-logo_100_100/0/1630579031066?e=1723680000&v=beta&t=VeCfeLDwC4UFeZAKWz7LO0ADZS47la-FVuDbYtoGBJA",
+            "category": "Front-End",
+            "hours": "10h",
+            "stacks": [
+               {
+                  "name": "HTML"
+               },
+               {
+                  "name": "CSS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/e8498ebd-733a-464a-8773-3a2d0e7223b3"
+         },
+         {
+            "course": "Python com Orientação a Objetos",
+            "instituition": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Python",
+            "hours": "93h",
+            "stacks": [
+               {
+                  "name": "Python"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "WebMaster Front-End Completo",
+            "instituition": "Danki.Code",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFvKVfQZ_cWNg/company-logo_100_100/0/1630579031066?e=1723680000&v=beta&t=VeCfeLDwC4UFeZAKWz7LO0ADZS47la-FVuDbYtoGBJA",
+            "category": "Front-End",
+            "hours": "81h",
+            "stacks": [
+               {
+                  "name": "HTML"
+               },
+               {
+                  "name": "CSS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/c4c8b9a3-dc5b-4a4c-b6a9-b29c1881ab57"
+         },
+         {
+            "course": "APIs com Node.js e Express",
+            "instituition": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "API REST",
+            "hours": "70h",
+            "stacks": [
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "Express"
+               },
+               {
+                  "name": "TypeScript"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "Gerencie aplicações React com Typescript",
+            "instituition": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Front-End",
+            "hours": "83h",
+            "stacks": [
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "Lógica de Programação Essencial",
+            "instituition": "Digital Innovation One",
+            "logo": "https://media.licdn.com/dms/image/C4D0BAQEKbzdlM0lHQA/company-logo_100_100/0/1652539870372/diof_logo?e=1723680000&v=beta&t=3HNUZPSDIBiTtU_CJL29X9r2SInSjCtaJjTjhBr3RJs",
+            "category": "Back-End",
+            "hours": "4h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "https://www.dio.me/certificate/3A22FCA6/share"
+         }
+      ]
+   }
 }
