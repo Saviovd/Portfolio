@@ -3,17 +3,29 @@ import data from '../../data/data.json';
 import { ExperiencesStyles } from './experiencesStyles';
 import { TbArrowUpRhombus } from 'react-icons/tb';
 import Button from '../Button/Button';
+import { useTranslation } from 'react-i18next';
 
 const { experiences, habilities } = data;
 
 const Experiences = () => {
+   const { t } = useTranslation();
    return (
       <>
          <ExperiencesStyles>
             <div className='container jobs'>
+               <p className='title' style={{marginBottom: '1.5rem'}}>{t(`AboutMe.experienceTitle`)}</p>
                {experiences.jobs.map(
                   (
-                     { icon, company, office, start, end, stacks, assignments },
+                     {
+                        icon,
+                        company,
+                        office,
+                        start,
+                        end,
+                        stacks,
+                        assignments,
+                        id,
+                     },
                      i
                   ) => {
                      return (
@@ -28,9 +40,16 @@ const Experiences = () => {
                                  className='logo'
                               />
                               <span className='company'>{company}</span>
-                              <span className='office'>{office}</span>
+                              <span className='office'>
+                                 {id === Number(t(`AboutMe.jobs.${id}.id`))
+                                    ? t(`AboutMe.jobs.${id}.office`)
+                                    : office}
+                              </span>
                               <span className='period'>
-                                 {start} - {end}
+                                 {start + ' '} -{' '}
+                                 {t(`AboutMe.jobs.${id}.currently`) !== ' '
+                                    ? t(`AboutMe.jobs.${id}.currently`)
+                                    : end}
                               </span>
                               <ul className='stacks'>
                                  {habilities[0].languages
@@ -55,7 +74,12 @@ const Experiences = () => {
                               <ul className='assignments'>
                                  {assignments.map((assignment, i) => (
                                     <li key={i} className='assignment'>
-                                       {assignment}
+                                       {id ===
+                                       Number(t(`AboutMe.jobs.${id}.id`))
+                                          ? t(
+                                               `AboutMe.jobs.${id}.assignments.${i}.assignment`
+                                            )
+                                          : assignment}
                                     </li>
                                  ))}
                               </ul>
@@ -67,10 +91,12 @@ const Experiences = () => {
             </div>
             <div className='container formations'>
                {experiences.formation.map(
-                  ({ course, instituition, logo, category, start, end }) => {
+                  ({ course, institution, logo, category, start, end }, i) => {
                      return (
                         <>
-                           <p className='title'>graduação</p>
+                           <p className='title'>
+                              {t(`AboutMe.graduationTitle`)}
+                           </p>
                            <div className='graduation'>
                               <Image
                                  src={logo}
@@ -80,11 +106,18 @@ const Experiences = () => {
                                  height={70}
                                  className='logo'
                               />
-                              <span className='course'>{course}</span>
-                              <span className='instituition'>
-                                 {instituition}
+                              <span className='course'>
+                                 {t(`AboutMe.graduations.${i}.course`) ||
+                                    course}
                               </span>
-                              <span className='category'>{category}</span>
+                              <span className='institution'>
+                                 {t(`AboutMe.graduations.${i}.institution`) ||
+                                    institution}
+                              </span>
+                              <span className='category'>
+                                 {t(`AboutMe.graduations.${i}.category`) ||
+                                    category}
+                              </span>
                               <span className='period'>
                                  {start + ' '}-{' ' + end}
                               </span>
@@ -94,10 +127,10 @@ const Experiences = () => {
                   }
                )}
                <div className='courses'>
-                  <p className='title'>cursos</p>
+                  <p className='title'>{t(`AboutMe.coursesTitle`)}</p>
                   {experiences.courses.map(
                      (
-                        { course, logo, category, hours, instituition, stacks },
+                        { course, logo, category, hours, institution, stacks },
                         i
                      ) => {
                         return (
@@ -113,9 +146,11 @@ const Experiences = () => {
                                        className='logo'
                                     />
                                     <span className='category'>{category}</span>
-                                    <span className='course-name'>{course}</span>
-                                    <span className='instituition'>
-                                       {instituition}
+                                    <span className='course-name'>
+                                       {t(`AboutMe.courses.${i}.course`)}
+                                    </span>
+                                    <span className='institution'>
+                                       {institution}
                                     </span>
                                     <span className='hours'>{hours}</span>
                                     <ul className='stacks'>
@@ -149,7 +184,12 @@ const Experiences = () => {
                      }
                   )}
                </div>
-               <Button _blank={false} title='Mais cursos' className='button' url='/certifications' />
+               <Button
+                  _blank={false}
+                  title='Mais cursos'
+                  className='button'
+                  url='/certifications'
+               />
             </div>
          </ExperiencesStyles>
       </>

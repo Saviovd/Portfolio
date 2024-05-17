@@ -108,7 +108,7 @@ export const ExperiencesStyles = styled.div`
          display: grid;
          grid-template-areas:
             'logo course'
-            'logo instituition'
+            'logo institution'
             'logo period';
          justify-content: start;
          justify-items: start;
@@ -121,8 +121,8 @@ export const ExperiencesStyles = styled.div`
             font-size: 1.8rem;
             margin-right: 10rem;
          }
-         .instituition {
-            grid-area: instituition;
+         .institution {
+            grid-area: institution;
             font-size: 1.5rem;
          }
          .category {
@@ -152,7 +152,7 @@ export const ExperiencesStyles = styled.div`
             display: grid;
             grid-template-areas:
                'logo course course'
-               'logo instituition stacks'
+               'logo institution stacks'
                'logo hours stacks';
             justify-content: start;
             justify-items: start;
@@ -178,8 +178,8 @@ export const ExperiencesStyles = styled.div`
                font-size: 1.8rem;
                padding-top: 0.5rem;
             }
-            .instituition {
-               grid-area: instituition;
+            .institution {
+               grid-area: institution;
                font-size: 1.4rem;
             }
             .hours {
