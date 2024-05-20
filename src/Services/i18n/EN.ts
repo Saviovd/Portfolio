@@ -110,6 +110,7 @@ const translations = {
          { id: 7, course: 'Manage React applications with Typescript' },
          { id: 8, course: 'Essential Programming Logic' },
       ],
+      moreCourses: 'more courses',
    },
    Habilities: {
       my: 'My',

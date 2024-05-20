@@ -137,6 +137,7 @@ const translations = {
             course: 'Lógica de Programação Essencial',
          },
       ],
+      moreCourses: 'mais cursos',
    },
    Habilities: {
       my: 'Minhas',

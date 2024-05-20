@@ -187,7 +187,7 @@ const Experiences = () => {
                </div>
                <Button
                   _blank={false}
-                  title='Mais cursos'
+                  title={t('AboutMe.moreCourses')}
                   className='button'
                   url='/certifications'
                />

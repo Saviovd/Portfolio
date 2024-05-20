@@ -10,7 +10,7 @@ const translations = {
    Home: {
       call: '_hola, mi nombre es',
       github: 'Mi GitHub',
-      toAboutMe: 'acerca de mí',
+      toAboutMe: 'sobre mí',
       devfrontend: 'Desarrollador front-end',
       devmobile: 'Desarrollador móvil',
       designer: 'Diseñador UX/UI',
@@ -112,6 +112,7 @@ const translations = {
          { id: 7, course: 'Gestione aplicaciones React con Typescript' },
          { id: 8, course: 'Lógica de Programación Esencial' },
       ],
+      moreCourses: 'más cursos',
    },
    Habilities: {
       my: 'mis',
