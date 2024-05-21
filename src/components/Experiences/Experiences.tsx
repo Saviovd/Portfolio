@@ -4,6 +4,7 @@ import { ExperiencesStyles } from './experiencesStyles';
 import { TbArrowUpRhombus } from 'react-icons/tb';
 import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const { experiences, habilities } = data;
 
@@ -189,7 +190,7 @@ const Experiences = () => {
                   _blank={false}
                   title={t('AboutMe.moreCourses')}
                   className='button'
-                  url='/certifications'
+                  url={`/${i18next.language}/certifications`}
                />
             </div>
          </ExperiencesStyles>

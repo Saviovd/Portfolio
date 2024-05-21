@@ -4,10 +4,13 @@ import { CertificationsStyle } from '@/styles/certificationsPageStyles';
 import Image from 'next/image';
 import data from '../data/data.json';
 import Head from 'next/head';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const { experiences } = data;
 
 const Certifications = () => {
+   const { t } = useTranslation();
    return (
       <>
          <Head>
@@ -19,7 +22,7 @@ const Certifications = () => {
                   className='button'
                   _blank={false}
                   title='Voltar'
-                  url='/'
+                  url={`/${i18next.language}/#${t('Header.aboutme')}`}
                />
             </div>
             <Title
@@ -40,7 +43,7 @@ const Certifications = () => {
                   <h3 className='course'>
                      Análise e desenvolvimento de sistemas
                   </h3>
-                  <h5 className='university'>Universidade Anhembi Morumbi</h5>
+                  <h5 className='university'>{t('AboutMe.graduations.0.institution')}</h5>
                   <p className='date'>08/2021 - 06/2024</p>
                </div>
                <div className='graduate'>
@@ -102,8 +105,8 @@ const Certifications = () => {
 
             <Title firstColor='rgb(var(--primary-pink))' firstWord='Cursos' />
 
-            <div className='course_box'>{
-               experiences.courses.map((course, i: number) => (
+            <div className='course_box'>
+               {experiences.courses.map((course, i: number) => (
                   <div key={`${i}_${course.course}`} className='course'>
                      <div className='about_course'>
                         <p className='course_category'>{course.category}</p>
@@ -125,8 +128,8 @@ const Certifications = () => {
                         className='button'
                      />
                   </div>
-               ))
-            }</div>
+               ))}
+            </div>
          </CertificationsStyle>
       </>
    );
