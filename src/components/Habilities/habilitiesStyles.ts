@@ -152,7 +152,8 @@ export const HabilitiesStyle = styled.section`
       .view {
          font-family: var(--outfit);
          border: 0;
-         background-color: rgb(var(--secondary-white));
+         background-color: transparent;
+         border: 1px solid rgb(var(--primary-pink));
          padding: 0.5rem;
          color: rgb(var(--primary-pink));
          font-size: 1.8rem;
@@ -162,10 +163,17 @@ export const HabilitiesStyle = styled.section`
          display: flex;
          align-items: center;
          justify-content: space-between;
-         margin: 0 auto;
+         margin: 2.5rem auto 0;
+
+         &:active {
+            .chevron {
+               stroke: white;
+            }
+         }
 
          .chevron {
             margin-left: 1rem;
+            stroke: rgb(var(--bg-black));
             background-color: rgb(var(--primary-pink));
          }
       }
