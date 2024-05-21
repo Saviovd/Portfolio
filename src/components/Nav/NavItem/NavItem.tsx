@@ -1,6 +1,5 @@
 import { NavItemStyle } from './navItemStyles';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { Link as ScrollLink } from 'react-scroll';
 
 interface INavItemProps {
@@ -12,7 +11,6 @@ interface INavItemProps {
 
 const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProps) => {
    const [isInView, setIsInView] = React.useState(false);
-   const { t } = useTranslation();
 
    React.useEffect(() => {
       const handleScroll = () => {
@@ -40,7 +38,7 @@ const NavItem = ({ name, isSelected, setIsSelected, pagePosition }: INavItemProp
                smooth={true}
                spy={true}
                duration={500}
-               offset={typeof window !== 'undefined' && window.innerWidth < 768 || name !== t('Header.habilities') ? -140 : -150}>
+               offset={typeof window !== 'undefined' && window.innerWidth < 768 ? -100 : -150}>
                {name}
             </ScrollLink>
       </NavItemStyle>
