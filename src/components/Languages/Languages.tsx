@@ -8,7 +8,7 @@ const LanguageBar = () => {
    const [currentLang, setCurrentLang] = useState(i18next.language);
 
    const handleLanguageChange = (newLocale: string) => {
-      router.push('/', '/', { locale: newLocale });
+      router.replace(router.asPath, router.asPath, { locale: newLocale, shallow: true });
       i18next.changeLanguage(newLocale);
       setCurrentLang(newLocale);
    };
