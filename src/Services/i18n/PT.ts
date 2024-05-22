@@ -137,6 +137,7 @@ const translations = {
             course: 'Lógica de Programação Essencial',
          },
       ],
+      moreCourses: 'mais cursos',
    },
    Habilities: {
       my: 'Minhas',
@@ -198,7 +199,7 @@ const translations = {
       3: {
          id: '3',
          office: 'Administradora | BigBang Digital',
-         testimony: '',
+         testimony: 'Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, Sávio demonstrou qualidades notáveis e contribuiu de maneira positiva para a nossa equipe. Uma das características mais marcantes do Sávio é sua dedicação e vontade de aprender. Ele estava sempre disposto a enfrentar novos desafios. Além de suas habilidades técnicas, Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa. Ele se comunicava bem com colegas e estava sempre pronto para ajudar e compartilhar conhecimentos. Apesar de não ser um desenvolvedor experiente na época, Sávio mostrou um potencial considerável e acredito que, com tempo e prática, ele continuará a crescer e a se destacar na área de desenvolvimento. Recomendo Sávio para quaisquer oportunidades futuras e estou confiante de que ele será um ativo valioso para qualquer equipe.',
       },
    },
 };

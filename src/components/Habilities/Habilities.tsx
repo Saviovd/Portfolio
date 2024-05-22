@@ -3,17 +3,9 @@ import Image from 'next/image';
 import Title from '../Title/Title';
 import { HabilitiesStyle } from './habilitiesStyles';
 import data from '@/data/data.json';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { IoChevronDownSharp, IoChevronUpSharp } from 'react-icons/io5';
-
-interface IRenderProps {
-   id: string;
-   language_name: string;
-   logo: string;
-   fill?: string;
-   bgWhite?: boolean | undefined;
-}
 
 const Habilities = () => {
    const { habilities } = data;
@@ -61,38 +53,44 @@ const Habilities = () => {
             transition={{
                staggerChildren: 0.5,
                type: 'spring',
+               duration: 0.5
             }}
          >
-            {habilities.map(({ languages }, i: number) => (
-               <>
-                  <div className='stack_box' key={i}>
-                     {languages?.map(
-                        (lang: IRenderProps, i: number) =>
-                           i < itensNumber && (
-                              <div className='stack' key={lang.id}>
-                                 <Image
-                                    src={lang.logo}
-                                    alt={lang.language_name}
-                                    width={44}
-                                    height={44}
-                                    className='stack_icon'
-                                    style={
-                                       lang.bgWhite && lang.bgWhite
-                                          ? {
-                                               backgroundColor: 'white',
-                                               padding: '.2rem',
-                                            }
-                                          : {}
-                                    }
-                                 />
-                                 <h2 className='stack_name'>
-                                    {lang.language_name}
-                                 </h2>
-                              </div>
-                           )
-                     )}
-                  </div>
-               </>
+            {habilities.map(({ languages }, i) => (
+               <div className='stack_box' key={i}>
+                  {languages?.map((lang, j) => (
+                     <AnimatePresence key={lang.id}>
+                        {j < itensNumber && (
+                           <motion.div
+                              className='stack'
+                              initial={{ opacity: 0, y: 0 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: 100 }}
+                              transition={{ duration: 0.5 }}
+                           >
+                              <Image
+                                 src={lang.logo}
+                                 alt={lang.language_name}
+                                 width={44}
+                                 height={44}
+                                 className='stack_icon'
+                                 style={
+                                    lang.bgWhite
+                                       ? {
+                                            backgroundColor: 'white',
+                                            padding: '.2rem',
+                                         }
+                                       : {}
+                                 }
+                              />
+                              <h2 className='stack_name'>
+                                 {lang.language_name}
+                              </h2>
+                           </motion.div>
+                        )}
+                     </AnimatePresence>
+                  ))}
+               </div>
             ))}
          </motion.div>
          <div className='view_area'>

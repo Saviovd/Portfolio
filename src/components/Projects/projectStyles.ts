@@ -28,9 +28,6 @@ export const ProjectsStyle = styled.section`
          }
          @media (max-width: 1024px) {
             padding: 0;
-            background-color: rgba(var(--primary-pink), 0.1);
-            box-shadow: 0px 0px 5px 1px rgba(49, 156, 234),
-               0px 0px 5px 0px rgba(var(--secondary-white));
             margin: 2rem 0;
             max-width: 62rem;
          }
@@ -289,7 +286,7 @@ export const ProjectsStyle = styled.section`
       }
 
       .isActive {
-         transition: 0.5s;
+         transition: 0.3s;
          background-color: rgba(var(--primary-blue), 0.8);
       }
 

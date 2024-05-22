@@ -110,6 +110,7 @@ const translations = {
          { id: 7, course: 'Manage React applications with Typescript' },
          { id: 8, course: 'Essential Programming Logic' },
       ],
+      moreCourses: 'more courses',
    },
    Habilities: {
       my: 'My',
@@ -171,7 +172,7 @@ const translations = {
       3: {
          id: '3',
          office: 'Administrator | BigBang Digital',
-         testimony: '',
+         testimony: 'I had the pleasure of working with Sávio during his time at Big Bang Digital. Even in a relatively short period, Sávio demonstrated notable qualities and contributed positively to our team. One of Sávio`s most remarkable characteristics is his dedication and willingness to learn. He was always ready to face new challenges. In addition to his technical skills, Sávio possesses a strong sense of teamwork and a collaborative attitude. He communicated well with colleagues and was always ready to help and share knowledge. Despite not being an experienced developer at the time, Sávio showed considerable potential, and I believe that, with time and practice, he will continue to grow and excel in the field of development. I recommend Sávio for any future opportunities and am confident that he will be a valuable asset to any team.',
       },
    },
 };
