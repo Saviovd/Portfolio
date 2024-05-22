@@ -6,6 +6,7 @@ import i18n from 'i18next';
 import en from '@/Services/i18n/EN';
 import pt from '@/Services/i18n/PT';
 import es from '@/Services/i18n/ES';
+import i18next from 'i18next';
 
 i18n.use(initReactI18next).init({
    resources: {
@@ -19,7 +20,7 @@ i18n.use(initReactI18next).init({
          translation: es,
       },
    },
-   lng: 'pt',
+   lng: i18next.language,
    interpolation: {
       escapeValue: false,
    },

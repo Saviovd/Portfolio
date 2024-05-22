@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { LanguageStyles } from './LanguageStyles';
 
 const LanguageBar = () => {
    const router = useRouter();
-   const [currentLang, setCurrentLang] = useState('pt');
+   const [currentLang, setCurrentLang] = useState(i18next.language);
 
    const handleLanguageChange = (newLocale: string) => {
       router.push('/', '/', { locale: newLocale });
-      i18n.changeLanguage(newLocale);
+      i18next.changeLanguage(newLocale);
       setCurrentLang(newLocale);
    };
 

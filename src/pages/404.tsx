@@ -1,4 +1,5 @@
 import Button from '@/components/Button/Button';
+import i18next from 'i18next';
 import styled from 'styled-components';
 
 const ErrorPageStyle = styled.main`
@@ -227,7 +228,7 @@ const NotFound = () => {
                _blank={false}
                title='Back to Home'
                className='errorpage_button'
-               url='/'
+               url={`/${i18next.language}`}
             />
          </ErrorPageStyle>
       </>
