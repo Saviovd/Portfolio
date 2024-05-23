@@ -267,21 +267,21 @@
          "type": "linkedin",
          "name": "Sávio Almeida",
          "url": "https://www.linkedin.com/in/saviovd/",
-         "side": "left"
+         "text": "Visitar"
       },
       {
          "icon": "/assets/icons/social/github.svg",
          "type": "github",
          "name": "saviovd",
          "url": "https://github.com/Saviovd",
-         "side": "left"
+         "text": "Visitar"
       },
       {
          "icon": "/assets/icons/media/email.svg",
          "type": "e-mail",
          "name": "savio.pinheiroal@gmail.com",
          "url": "",
-         "side": "left"
+         "text": "Copiar e-mail"
       }
    ],
    "experiences": {

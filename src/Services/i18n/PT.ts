@@ -199,14 +199,22 @@ const translations = {
       3: {
          id: '3',
          office: 'Administradora | BigBang Digital',
-         testimony: 'Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.',
+         testimony:
+            'Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.',
       },
+   },
+   Contacts: {
+      my: 'meus',
+      contacts: 'contatos',
+      copied: 'E-mail copiado',
+      visit: 'Visitar',
+      copy: 'Copiar',
    },
    Courses: {
       back: 'Voltar',
       certificate: 'Certificado',
       courses: 'Cursos',
-      inProgress: 'Em Andamento'
-   }
+      inProgress: 'Em Andamento',
+   },
 };
 export default translations;
