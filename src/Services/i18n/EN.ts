@@ -172,12 +172,22 @@ const translations = {
       3: {
          id: '3',
          office: 'Administrator | BigBang Digital',
-         testimony: 'I had the pleasure of working with Sávio during his time at Big Bang Digital. Even in a relatively short period, he demonstrated dedication, a willingness to learn, and notable technical skills. Sávio has a strong sense of teamwork and a collaborative attitude, always ready to help and share knowledge. Although he was not an experienced developer at the time, he showed considerable potential. I recommend Sávio for future opportunities, confident that he will be a valuable asset to any team.',
+         testimony:
+            'I had the pleasure of working with Sávio during his time at Big Bang Digital. Even in a relatively short period, he demonstrated dedication, a willingness to learn, and notable technical skills. Sávio has a strong sense of teamwork and a collaborative attitude, always ready to help and share knowledge. Although he was not an experienced developer at the time, he showed considerable potential. I recommend Sávio for future opportunities, confident that he will be a valuable asset to any team.',
       },
+   },
+   Contacts: {
+      my: 'my',
+      contacts: 'contacts',
+      copied: 'Email copied',
+      visit: 'Visit',
+      copy: 'Copy',
    },
    Courses: {
       back: 'Return',
-      certificate: 'certificate'
-   }
+      certificate: 'certificate',
+      courses: 'Courses',
+      inProgress: 'In Progress',
+   },
 };
 export default translations;

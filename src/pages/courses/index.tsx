@@ -31,8 +31,7 @@ const Certifications = () => {
             <div className='container'>
                <Title
                   firstColor='rgb(var(--primary-pink))'
-                  firstWord='Em'
-                  secondWord='Andamento'
+                  firstWord={t(`Courses.inProgress`)}
                />
                <div className='graduate_box'>
                   {experiences.formation.map(
@@ -93,7 +92,7 @@ const Certifications = () => {
             <div className='container'>
                <Title
                   firstColor='rgb(var(--primary-pink))'
-                  firstWord='Cursos'
+                  firstWord={t(`Courses.courses`)}
                />
                <div className='courses_box'>
                   {experiences.courses.map((course, i: number) => (
