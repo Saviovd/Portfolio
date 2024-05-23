@@ -20,7 +20,7 @@ const translations = {
       about: 'sobre',
       me: 'mim',
       apresentation:
-         'Olá! eu sou Sávio Almeida, um desenvolvedor apaixonado por criar interfaces web e aplicações intuitivas e visualmente atraentes. Com 3 anos de experiência, possuo um sólido conhecimento em HTML, CSS e JavaScript, além de bibliotecas e frameworks populares como React, Vue.js e Next.Js.',
+         'Olá! Sou Sávio Almeida, um desenvolvedor apaixonado por criar interfaces intuitivas e visualmente atraentes. Com 3 anos de experiência, tenho um sólido conhecimento em JavaScript e seus principais frameworks, como React e Vue.js, além de um amplo domínio de linguagens back-end, como Python e Ruby.',
       obs: 'Meu trabalho se destaca por:',
       emphasis1: 'Design responsivo e amigável',
       emphasis2: 'Código limpo e eficiente',
