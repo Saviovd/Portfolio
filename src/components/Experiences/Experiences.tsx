@@ -14,7 +14,9 @@ const Experiences = () => {
       <>
          <ExperiencesStyles>
             <div className='container jobs'>
-               <p className='title' style={{marginBottom: '1.5rem'}}>{t(`AboutMe.experienceTitle`)}</p>
+               <p className='title' style={{ marginBottom: '1.5rem' }}>
+                  {t(`AboutMe.experienceTitle`)}
+               </p>
                {experiences.jobs.map(
                   (
                      {
@@ -92,38 +94,50 @@ const Experiences = () => {
                )}
             </div>
             <div className='container formations'>
+               <p className='title'>{t(`AboutMe.graduationTitle`)}</p>
                {experiences.formation.map(
-                  ({ course, institution, logo, category, start, end }, i) => {
+                  (
+                     {
+                        UniversityEducation,
+                        course,
+                        institution,
+                        logo,
+                        category,
+                        start,
+                        end,
+                     },
+                     i
+                  ) => {
                      return (
                         <>
-                           <p className='title'>
-                              {t(`AboutMe.graduationTitle`)}
-                           </p>
-                           <div className='graduation'>
-                              <Image
-                                 src={logo}
-                                 key={course}
-                                 alt={`${institution} logo`}
-                                 width={70}
-                                 height={70}
-                                 className='logo'
-                              />
-                              <span className='course'>
-                                 {t(`AboutMe.graduations.${i}.course`) ||
-                                    course}
-                              </span>
-                              <span className='institution'>
-                                 {t(`AboutMe.graduations.${i}.institution`) ||
-                                    institution}
-                              </span>
-                              <span className='category'>
-                                 {t(`AboutMe.graduations.${i}.category`) ||
-                                    category}
-                              </span>
-                              <span className='period'>
-                                 {start + ' '}-{' ' + end}
-                              </span>
-                           </div>
+                           {UniversityEducation && (
+                              <div className='graduation'>
+                                 <Image
+                                    src={logo}
+                                    key={course}
+                                    alt={`${institution} logo`}
+                                    width={70}
+                                    height={70}
+                                    className='logo'
+                                 />
+                                 <span className='course'>
+                                    {t(`AboutMe.graduations.${i}.course`) ||
+                                       course}
+                                 </span>
+                                 <span className='institution'>
+                                    {t(
+                                       `AboutMe.graduations.${i}.institution`
+                                    ) || institution}
+                                 </span>
+                                 <span className='category'>
+                                    {t(`AboutMe.graduations.${i}.category`) ||
+                                       category}
+                                 </span>
+                                 <span className='period'>
+                                    {start + ' '}-{' ' + end}
+                                 </span>
+                              </div>
+                           )}
                         </>
                      );
                   }
@@ -190,7 +204,7 @@ const Experiences = () => {
                   _blank={false}
                   title={t('AboutMe.moreCourses')}
                   className='button'
-                  url={`/${i18next.language}/certifications`}
+                  url={`/${i18next.language}/courses/`}
                />
             </div>
          </ExperiencesStyles>
