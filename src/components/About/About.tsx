@@ -85,7 +85,7 @@ const About = () => {
                </div>
             </div>
          </motion.div>
-            <Experiences />
+         <Experiences />
       </AboutStyle>
    );
 };

@@ -177,5 +177,9 @@ const translations = {
          testimony: 'Tuve el placer de trabajar con Sávio durante su tiempo en Big Bang Digital. Incluso en un período relativamente corto, Sávio demostró cualidades notables y contribuyó de manera positiva a nuestro equipo. Una de las características más destacadas de Sávio es su dedicación y ganas de aprender. Siempre estaba dispuesto a enfrentar nuevos desafíos. Además de sus habilidades técnicas, Sávio posee un fuerte sentido de trabajo en equipo y una actitud colaborativa. Se comunicaba bien con los colegas y siempre estaba listo para ayudar y compartir conocimientos. A pesar de no ser un desarrollador experimentado en ese momento, Sávio mostró un potencial considerable y creo que, con el tiempo y la práctica, continuará creciendo y destacándose en el campo del desarrollo. Recomiendo a Sávio para cualquier oportunidad futura y estoy seguro de que será un activo valioso para cualquier equipo.',
       },
    },
+   Courses: {
+      back: 'volver',
+      certificate: 'certificado'
+   }
 };
 export default translations;

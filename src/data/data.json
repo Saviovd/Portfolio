@@ -378,6 +378,7 @@
       ],
       "formation": [
          {
+            "UniversityEducation": true,
             "course": "Análise e desenvolvimento de sistemas",
             "institution": "Universidade Anhembi Morumbi",
             "category": "tecnólogo",
@@ -385,6 +386,38 @@
             "start": "06/2021",
             "end": "06/2024",
             "certificate": ""
+         },
+         {
+            "UniversityEducation": false,
+            "course": "CS50: Introduction to Computer Science",
+            "institution": "Havard University",
+            "category": "course",
+            "logo": "https://pll.harvard.edu/themes/custom/twel_scholar/logo.svg",
+            "start": "",
+            "end": "",
+            "certificate": "",
+            "stacks": [
+               {
+                  "name": "HTML",
+                  "logo": "/assets/icons/front-end/html5.svg"
+               },
+               {
+                  "name": "CSS",
+                  "logo": "/assets/icons/front-end/css3.svg"
+               },
+               {
+                  "name": "JavaScript",
+                  "logo": "/assets/icons/front-end/js.svg"
+               },
+               {
+                  "name": "Python",
+                  "logo": "/assets/icons/back-end/python.svg"
+               },
+               {
+                  "name": "C",
+                  "logo": "/assets/icons/back-end/c.svg"
+               }
+            ]
          }
       ],
       "courses": [
