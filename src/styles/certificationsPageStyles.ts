@@ -9,9 +9,20 @@ export const CertificationsStyle = styled.main`
    .back {
       width: 100%;
       margin: 5rem auto 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       .button {
          width: 10rem;
          background-color: rgba(var(--primary-pink), 0.6);
+      }
+      .langs {
+         margin: 0;
+         height: 2rem;
+         font-size: 1.8rem;
+         color: white;
+         background-color: transparent;
+         padding-right: 2rem;
       }
 
       @media screen {
@@ -20,32 +31,47 @@ export const CertificationsStyle = styled.main`
       }
    }
 
-   .graduate_box {
-      width: 90%;
-      margin: 0 auto;
-      padding: 5rem 0;
+   .container {
+      background-color: rgba(var(--primary-blue), 0.15);
+      padding: 1rem 2rem 0;
+      width: 85%;
+      margin: 0 auto 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+   }
 
+   .graduate_box {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
+      gap: 1rem;
 
       .graduate {
          width: 30rem;
          height: 40rem;
-         margin: 2rem 1rem;
-         border: 2px solid rgb(var(--primary-blue));
-         min-width: 29rem;
-
-         .icon {
-            height: 60%;
+         margin: 2rem 0;
+         padding: 1rem 1rem 0;
+         border: 1px solid rgb(var(--primary-blue));
+         background-color: rgba(var(--bg-black), 0.3);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .logo {
+            object-fit: contain;
+            width: 80%;
+            padding: 0 0.5rem;
          }
          .course {
-            margin: 0 auto;
+            margin: 1.8rem auto 0.1rem;
             font-size: 1.55rem;
             font-weight: 700;
             color: rgba(var(--primary-blue));
-            width: 90%;
+            width: 95%;
          }
          .university {
             margin: 0;
@@ -55,7 +81,7 @@ export const CertificationsStyle = styled.main`
          }
          .date {
             font-size: 1.6rem;
-            transform: translateY(3rem);
+            transform: translateY(2rem);
             color: rgba(var(--primary-blue));
          }
          .stack_list {
@@ -71,36 +97,55 @@ export const CertificationsStyle = styled.main`
    .courses_box {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0 auto;
+      padding-bottom: 1rem;
 
+      @media screen {
+         @media (max-width: 1024px) {
+            justify-content: space-evenly;
+         }
+      }
       .course {
          border: 1px solid rgba(var(--primary-pink));
-         width: 25rem;
-         height: 35rem;
-         margin: 5rem 10rem;
+         background-color: rgba(var(--bg-black), 0.3);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         padding: 5rem 1rem 1rem;
+         margin: 0;
+         min-width: 24rem;
+         min-height: 26rem;
+
          .about_course {
             display: flex;
             justify-content: space-between;
-            padding: 0 0.5rem;
             color: rgb(var(--primary-blue));
-            font-weight: 700;
-            font-size: 1.5rem;
+            font-weight: 300;
+            font-size: 1.4rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            left: 0.5rem;
             p {
-               margin: 0.8rem 0;
+               margin: 0;
             }
          }
-         .icon {
-            height: 45%;
+         .logo {
          }
          .course_name {
-            font-size: 1.5rem;
-            margin: 0 auto;
-            width: 90%;
+            color: rgb(var(--primary-pink));
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 1rem 0 0;
          }
          .school {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: .5rem 0 0;
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin: 0.5rem 0 0;
             color: rgb(var(--primary-blue));
          }
          .stack_list {
@@ -113,15 +158,8 @@ export const CertificationsStyle = styled.main`
          .button {
             width: 15rem;
             margin: 3rem auto 0;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             padding: 1rem;
-         }
-
-         @media screen {
-            @media (max-width: 980px) {
-               margin: 5rem 2rem;
-               min-width: 29rem;
-            }
          }
       }
    }

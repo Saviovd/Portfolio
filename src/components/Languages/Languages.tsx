@@ -3,7 +3,11 @@ import { useRouter } from 'next/router';
 import i18next from 'i18next';
 import { LanguageStyles } from './LanguageStyles';
 
-const LanguageBar = () => {
+interface ILanguagesProps {
+   className?: string
+}
+
+const LanguageBar = ({className}: ILanguagesProps) => {
    const router = useRouter();
    const [currentLang, setCurrentLang] = useState(i18next.language);
 
@@ -14,7 +18,7 @@ const LanguageBar = () => {
    };
 
    return (
-      <LanguageStyles currentLang={currentLang}>
+      <LanguageStyles className={className} currentLang={currentLang}>
          <span className={`language ${currentLang === 'pt' ? 'currentLang' : ''}`} onClick={() => handleLanguageChange('pt')}>
             PT
          </span>
