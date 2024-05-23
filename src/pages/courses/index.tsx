@@ -103,7 +103,7 @@ const Certifications = () => {
                            <p className='course_time'>{course.hours}</p>
                         </div>
                         <Image
-                           className='icon'
+                           className='logo'
                            src={course.logo}
                            alt='course icon'
                            width={90}
