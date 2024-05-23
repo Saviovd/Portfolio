@@ -6,10 +6,12 @@ import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
 
 const { socials } = data;
 
 const Contacts = () => {
+   const {t} = useTranslation()
    const motionProps = (initialY: number, finalY: number) => ({
       initial: { opacity: 0, y: initialY },
       whileInView: { opacity: 1, y: finalY },
@@ -23,7 +25,7 @@ const Contacts = () => {
    const copyToClipboard = async (text: string) => {
       try {
          await navigator.clipboard.writeText(text);
-         toast('E-mail copiado', {
+         toast(t('Contacts.copied'), {
             position: 'top-center',
             autoClose: 4000,
             hideProgressBar: false,
@@ -43,9 +45,9 @@ const Contacts = () => {
       <>
          <ContactStyle id='contatos'>
             <Title
-               secondWord='Contatos'
+               secondWord={t('Contacts.contacts')}
                firstColor='rgb(var(--primary-blue))'
-               firstWord='Meus'
+               firstWord={t('Contacts.my')}
             />
             <motion.div
                {...motionProps(100, 0)}
@@ -63,7 +65,7 @@ const Contacts = () => {
                         <a
                            href={url ? url : ''}
                            target='_blank'
-                           content={type}
+                           content={t('Contacts.visit') +' '+ type}
                            className='contact_item'
                            key={i}
                         >
@@ -83,7 +85,7 @@ const Contacts = () => {
                         </a>
                      ) : (
                         <div
-                           content={type === 'e-mail' ? name : type}
+                           content={t('Contacts.copy') +' '+ type}
                            key={i}
                            className='contact_item'
                            onClick={() =>
