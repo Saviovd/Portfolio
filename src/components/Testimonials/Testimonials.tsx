@@ -67,9 +67,11 @@ const Testimonials = () => {
                               <Image
                                  className='photograph'
                                  src={photo}
-                                 alt='ok'
-                                 width={50}
-                                 height={50}
+                                 alt={`${name} photo`}
+                                 width={120}
+                                 height={120}
+                                 quality={100}
+                                 layout='intrinsic'
                               />
                            ) : (
                               <GoPerson className='noPhoto' />
