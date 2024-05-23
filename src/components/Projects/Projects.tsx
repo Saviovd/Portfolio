@@ -33,7 +33,7 @@ const Projects = () => {
          x: direction < 0 ? 1000 : -1000,
          opacity: 0,
          transition: {
-            duration: 0.5
+            duration: 0.3
          }
       })
    };
@@ -79,7 +79,7 @@ const Projects = () => {
                      <Image
                         className='project_photo'
                         src={projects[active].image}
-                        alt='project image'
+                        alt={`${projects[active].name} in browser image`}
                         width={800}
                         height={400}
                      />
