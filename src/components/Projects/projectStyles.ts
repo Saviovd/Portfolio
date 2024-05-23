@@ -265,7 +265,7 @@ export const ProjectsStyle = styled.section`
          display: flex;
          align-items: center;
          justify-content: center;
-         transition: 1s;
+         transition: 0.4s;
          @media screen {
             @media (max-width: 1024px) {
                font-size: 1.4rem;
@@ -286,7 +286,7 @@ export const ProjectsStyle = styled.section`
       }
 
       .isActive {
-         transition: 0.3s;
+         transition: 0.4s;
          background-color: rgba(var(--primary-blue), 0.8);
       }
 
@@ -300,7 +300,7 @@ export const ProjectsStyle = styled.section`
          background-color: rgba(var(--primary-pink), 0.2);
          border: 2px solid rgba(var(--primary-pink));
          fill: rgba(var(--primary-pink));
-         transition: 0.1s;
+         transition: 0.2s;
 
          &:hover {
             background-color: rgba(var(--primary-blue), 0.1);
