@@ -204,7 +204,9 @@ const translations = {
    },
    Courses: {
       back: 'Voltar',
-      certificate: 'Certificado'
+      certificate: 'Certificado',
+      courses: 'Cursos',
+      inProgress: 'Em Andamento'
    }
 };
 export default translations;
