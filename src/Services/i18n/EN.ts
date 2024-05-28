@@ -175,6 +175,12 @@ const translations = {
          testimony:
             'I had the pleasure of working with Sávio during his time at Big Bang Digital. Even in a relatively short period, he demonstrated dedication, a willingness to learn, and notable technical skills. Sávio has a strong sense of teamwork and a collaborative attitude, always ready to help and share knowledge. Although he was not an experienced developer at the time, he showed considerable potential. I recommend Sávio for future opportunities, confident that he will be a valuable asset to any team.',
       },
+      4: {
+         id: '4',
+         office: 'Co-Founder Studio Mozak | Front-end Developer',
+         testimony:
+            'Great professional, attentive to the code, I worked with him as a front-end Vue.js developer, great experience.',
+      },
    },
    Contacts: {
       my: 'my',
