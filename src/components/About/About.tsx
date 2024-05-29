@@ -41,7 +41,7 @@ const About = () => {
          <motion.div {...motionProps(100, 0)} className='about_content'>
             {isHovering ? (
                <Image
-                  src={'/assets/photo.gif'}
+                  src={'/assets/Photo/savio.gif'}
                   alt='Savio´s Photograph'
                   width={450}
                   height={580}
@@ -50,12 +50,13 @@ const About = () => {
                />
             ) : (
                <Image
-                  src={'/assets/Photo/savio.jpg'}
+                  src={'/assets/Photo/savio.png'}
                   alt='Savio´s Photograph'
                   width={450}
                   height={580}
                   onMouseEnter={handleMouseEnter}
                   className='photograph'
+                  quality={100}
                />
             )}
             <div className='content'>
