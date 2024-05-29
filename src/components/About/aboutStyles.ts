@@ -37,19 +37,35 @@ export const AboutStyle = styled.section`
          }
       }
       .photograph {
-         clip-path: inset(0 4rem 29px);
+         clip-path: polygon(
+            20% 0%,
+            80% 0%,
+            100% 50%,
+            80% 100%,
+            20% 100%,
+            0% 50%
+         );
          height: max-content;
          object-fit: cover;
-         transform: translateY(16px);
-         min-height: 41.5rem;
-         @media screen {
-            @media (max-width: 500px) {
-               min-height: 0;
-               width: 95%;
-            }
+         border-radius: 50%;
+         transition: transform 0.3s ease-in-out;
+
+         @media screen and (max-width: 500px) {
+            min-height: 0;
+            width: 95%;
+            clip-path: polygon(
+               10% 0%,
+               90% 0%,
+               100% 50%,
+               90% 100%,
+               10% 100%,
+               0% 50%
+            );
          }
+
          &:hover {
-            animation: glitch-cursor-seta 800ms forwards;
+            animation: glitch-cursor-seta 800ms forwards, distort 0.5s infinite;
+            transform: scale(1.05);
          }
       }
    }
