@@ -1,4 +1,4 @@
-import Button from '@/components/Button/Button';
+import ButtonLink from '@/components/Buttons/ButtonLink';
 import i18next from 'i18next';
 import styled from 'styled-components';
 
@@ -224,9 +224,9 @@ const NotFound = () => {
                   </div>
                </div>
             </div>
-            <Button
+            <ButtonLink
                _blank={false}
-               title='Back to Home'
+               content='Back to Home'
                className='errorpage_button'
                url={`/${i18next.language}`}
             />

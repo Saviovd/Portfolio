@@ -1,55 +1,30 @@
 import styled from 'styled-components';
 
-export const ButtonStyle = styled.a`
-   align-self: center;
-   justify-self: center;
-
-   display: block;
+export const ButtonLinkStyle = styled.a`
+   max-width: 20rem;
    position: relative;
-   background: none;
    outline: none;
-   padding: 1.5rem 4.5rem;
-   font-size: 2.2rem;
-   letter-spacing: 0.3rem;
+   letter-spacing: 0.1rem;
    text-align: center;
-   text-transform: uppercase;
-   border: 1px solid rgb(var(--primary-blue));
    transition: all 0.2s ease;
    white-space: nowrap;
-   cursor: default;
-   z-index: 0;
-   @media screen {
-      @media (max-width: 1640px) {
-         font-size: 2rem;
-         padding: 1.1rem 4rem;
-      }
-      @media (max-width: 830px) {
-         font-size: 1.8rem;
-      }
-      @media (max-width: 650px) {
-         font-size: 1.5rem;
-         padding: 1rem 3rem;
-      }
-      @media (max-width: 510px) {
-         font-size: 1.2rem;
-         padding: 0.8rem 2rem;
-      }
-      @media (max-width: 380px) {
-         font-size: 1.1rem;
-         padding: 0.8rem 1.8rem;
-      }
-   }
+   display: flex;
+   align-items: center;
+
    &:before,
    &:after {
       content: '☠ GET OUT! ☠';
       position: absolute;
       display: flex;
       align-items: center;
+      font-size: inherit;
       justify-content: center;
       top: 0;
       left: 0;
-      padding: 8px 0;
+      right: 0;
+      bottom: 0;
       width: 100%;
+      height: 100%;
       -webkit-clip: rect(0px, 0px, 0px, 0px);
       clip: rect(0px, 0px, 0px, 0px);
       background: rgb(var(--primary-blue));
@@ -72,15 +47,15 @@ export const ButtonStyle = styled.a`
 
    &:hover {
       animation: glitch-cursor 500ms forwards;
+      &::before {
+         animation: glitch-button 1.5s forwards linear alternate-reverse;
+      }
+      &::after {
+         animation: glitch-button 2s forwards linear alternate;
+      }
    }
 
-   &:hover:before {
-      animation: glitch-button 1.5s forwards linear alternate-reverse;
-   }
 
-   &:hover:after {
-      animation: glitch-button 2s forwards linear alternate;
-   }
 
    @keyframes glitch-button {
       0% {

@@ -2,7 +2,7 @@ import React from 'react';
 import { HomeStyle, DrippingDown } from './homeStyles';
 import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
-import Button from '../Button/Button';
+import ButtonLink from '../Buttons/ButtonLink';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Social from '../Social/Social';
@@ -14,35 +14,23 @@ const Intro = () => {
    const [currentLanguage, setCurrentLanguage] = React.useState('pt');
    const [words, setWords] = React.useState([t('Home.devfullstack')]);
 
-   const motionProps = (initialY: number, finalY: number) => ({
-      initial: { opacity: 0, y: initialY },
-      whileInView: { opacity: 1, y: finalY },
-      viewport: { once: true },
-      transition: {
-         type: 'spring',
-         bounce: 0.1,
-         duration: 2,
-         delay: 1.5,
-      },
-   });
-
    React.useEffect(() => {
       if (!isLoaded) {
          const a = baffle('.calls_me');
          a.set({
-            characters: '▓█>▒/▒░ █▒▓/',
-            speed: 100,
+            characters: '▓█>▒/▒▓/',
+            speed: 50,
          });
          a.start();
-         a.reveal(500, 0);
+         a.reveal(800, 200);
          a.stop();
          const b = baffle('.my_name');
          b.set({
-            characters: '█▓GET OUT!☠░▒▓/',
-            speed: 100,
+            characters: '█▓SAVIO☠░▒▓/',
+            speed: 50,
          });
          b.start();
-         b.reveal(500, 0);
+         b.reveal(800, 200);
          b.stop();
       }
    });
@@ -69,17 +57,21 @@ const Intro = () => {
                ) : (
                   <div className='loader-space'></div>
                )}
-               <motion.div className='buttons' {...motionProps(200, 0)}>
-                  <Button
-                     className='left'
-                     title={t('Home.github')}
+               <motion.div className='buttons'>
+                  <ButtonLink
+                     fontSize={2}
+                     className='button'
+                     content={t('Home.github')}
                      url='https://github.com/Saviovd'
                      bgColor='rgba(var(--primary-pink), 0.6)'
+                     cursor='pointer'
                      _blank={true}
+                     icon={<IoIosExpand />}
                   />
-                  <Button
-                     className='right'
-                     title='Download CV'
+                  <ButtonLink
+                     fontSize={2}
+                     className='button'
+                     content='Download CV'
                      download={true}
                      _blank={false}
                      url='/documents/Curriculum.pdf'

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import data from '../../data/data.json';
 import { ExperiencesStyles } from './experiencesStyles';
 import { TbArrowUpRhombus } from 'react-icons/tb';
-import Button from '../Button/Button';
+import ButtonLink from '../Buttons/ButtonLink';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
@@ -200,9 +200,9 @@ const Experiences = () => {
                      }
                   )}
                </div>
-               <Button
+               <ButtonLink
                   _blank={false}
-                  title={t('AboutMe.moreCourses')}
+                  content={t('AboutMe.moreCourses')}
                   className='button'
                   url={`/${i18next.language}/courses/`}
                />

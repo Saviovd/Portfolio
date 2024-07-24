@@ -1,5 +1,3 @@
-declare module 'baffle';
-
 export type Locale = 'en' | 'pt' | 'es';
 
 declare module '*.json' {
