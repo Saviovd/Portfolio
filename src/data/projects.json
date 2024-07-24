@@ -1,0 +1,603 @@
+{
+   "projects": [
+      {
+         "image": "/assets/Projects/desktop/games-by.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-games-by.png",
+         "url": "https://games-by.vercel.app/",
+         "repository": "https://github.com/Games-By/games-by",
+         "name": "Games By",
+         "code": "GamesBy",
+         "description": {
+            "pt": "Uma interface intuitiva e moderna com navegação completa e funcional, semelhante à Epic Games e Steam. Possui integração com diversos serviços desenvolvidos especificamente para esta aplicação.",
+            "en": "An intuitive and modern interface with complete and functional navigation, similar to Epic Games and Steam. It has integration with various services developed specifically for this application.",
+            "es": "Una interfaz intuitiva y moderna con navegación completa y funcional, similar a Epic Games y Steam. Tiene integración con varios servicios desarrollados específicamente para esta aplicación."
+         },
+         "features": {
+            "pt": [
+               "Integração com diversas APIs",
+               "Sistema de compras totalmente funcional",
+               "Autenticação de usuário"
+            ],
+            "en": [
+               "Integration with various APIs",
+               "Fully functional shopping system",
+               "User authentication"
+            ],
+            "es": [
+               "Integración con varias APIs",
+               "Sistema de compras totalmente funcional",
+               "Autenticación de usuario"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "Next.js",
+               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+               "background": true,
+               "rounded": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React",
+               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "CSS-in-JS",
+               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "background": true,
+               "padding": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Axios",
+               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
+               "width": 90,
+               "height": 50
+            },
+            {
+               "name": "NodeJs",
+               "src": "https://www.svgrepo.com/show/452075/node-js.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Express",
+               "src": "https://www.svgrepo.com/show/330398/express.svg",
+               "background": true,
+               "padding": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Framer Motion",
+               "src": "https://www.svgrepo.com/show/452207/framer.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "MongoDB",
+               "src": "https://www.svgrepo.com/show/354090/mongodb.svg",
+               "padding": true,
+               "background": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Figma",
+               "src": "https://www.svgrepo.com/show/354987/figma.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "backend": [
+            {
+               "name": "client-data",
+               "repository": "https://github.com/Games-By/client-data"
+            },
+            {
+               "name": "games-service",
+               "repository": "https://github.com/Games-By/games-service"
+            }
+         ],
+         "year": 2023
+      },
+      {
+         "image": "/assets/Projects/desktop/dashboard.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-dashboard.png",
+         "url": "https://teste-tecnico-bobby.vercel.app/",
+         "repository": "https://github.com/Saviovd/teste-tecnico-front",
+         "name": "Users Dashboard",
+         "code": "UsersDashboard",
+         "description": {
+            "en": "This project is a mini-application developed for user management, allowing efficient management of user information with complete CRUD (Create, Read, Update, Delete) functionalities. The application is built using Vue.js 3 and integrated with the Reqres public API.",
+            "pt": "Este projeto é uma mini-aplicação desenvolvida para o controle de usuários, permitindo uma gestão eficiente das informações dos usuários com funcionalidades completas de CRUD (Criar, Ler, Atualizar, Excluir). A aplicação é construída utilizando o Vue.js 3 e é integrada com a API pública do Reqres.",
+            "es": "Este proyecto es una miniaplicación desarrollada para la gestión de usuarios, permitiendo una gestión eficiente de la información de los usuarios con funcionalidades completas de CRUD (Crear, Leer, Actualizar, Eliminar). La aplicación está construida usando Vue.js 3 y está integrada con la API pública de Reqres."
+         },
+         "features": {
+            "en": [
+               "User list with CRUD",
+               "Graph generation with metrics",
+               "Responsive design"
+            ],
+            "pt": [
+               "Lista de usuarios com crud",
+               "Geração de gráficos com métricas",
+               "Design responsivo"
+            ],
+            "es": [
+               "Lista de usuarios con CRUD",
+               "Generación de gráficos con métricas",
+               "Diseño responsivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "VueJs",
+               "src": "https://www.svgrepo.com/show/303494/vue-9-logo.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TailwindCSS",
+               "src": "https://www.svgrepo.com/show/374118/tailwind.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Axios",
+               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
+               "width": 90,
+               "height": 50
+            },
+            {
+               "name": "NodeJs",
+               "src": "https://www.svgrepo.com/show/452075/node-js.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2023
+      },
+      {
+         "image": "/assets/Projects/desktop/dsf-bank.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-dsf-bank.png",
+         "url": "https://dsf-bank-nine.vercel.app/",
+         "repository": "https://github.com/Saviovd/DSF-Bank",
+         "name": "DSF Bank",
+         "code": "dsfBank",
+         "description": {
+            "en": "A modern bank interface with 3D elements using the ThreeJs library, and animations with Framer Motion.",
+            "pt": "Uma interface de banco moderna com elementos de 3D utilizando a biblioteca ThreeJs, e animações com Framer Motion.",
+            "es": "Una interfaz bancaria moderna con elementos 3D utilizando la biblioteca ThreeJs y animaciones con Framer Motion."
+         },
+         "features": {
+            "en": [
+               "3D interactive elements",
+               "Modern user interface",
+               "Responsive design",
+               "Animations with Framer Motion"
+            ],
+            "pt": [
+               "Elementos interativos 3D",
+               "Interface de usuário moderna",
+               "Design responsivo",
+               "Animações com Framer Motion"
+            ],
+            "es": [
+               "Elementos interactivos 3D",
+               "Interfaz de usuario moderna",
+               "Diseño responsivo",
+               "Animaciones con Framer Motion"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "Next.js",
+               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+               "background": true,
+               "rounded": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "CSS-in-JS",
+               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "background": true,
+               "padding": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Framer Motion",
+               "src": "https://www.svgrepo.com/show/452207/framer.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Three.js",
+               "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Three.js_Icon.svg",
+               "background": true,
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2023
+      },
+      {
+         "image": "/assets/Projects/desktop/space.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-space.png",
+         "url": "https://space-tourism-saviovd.vercel.app/",
+         "repository": "https://github.com/Saviovd/space_tourism",
+         "name": "Space Tourism",
+         "code": "spaceTourism",
+         "description": {
+            "en": "A presentation website for a space tourism agency, showcasing destinations and team.",
+            "pt": "Um website de apresentação de uma agência de turismo espacial, com apresentação de alguns destinos e equipe.",
+            "es": "Un sitio web de presentación de una agencia de turismo espacial, que muestra destinos y equipo."
+         },
+         "features": {
+            "en": [
+               "Showcases space destinations",
+               "Information about the team",
+               "Responsive design"
+            ],
+            "pt": [
+               "Apresenta destinos espaciais",
+               "Informações sobre a equipe",
+               "Design responsivo"
+            ],
+            "es": [
+               "Muestra destinos espaciales",
+               "Información sobre el equipo",
+               "Diseño responsivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "React",
+               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Sass",
+               "src": "https://www.svgrepo.com/show/374061/sass.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React Router",
+               "src": "https://www.svgrepo.com/show/354262/react-router.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2022
+      },
+      {
+         "image": "/assets/Projects/desktop/sneakers.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-sneakers.png",
+         "url": "https://buypage-ecommerce.vercel.app/",
+         "repository": "https://github.com/Saviovd/buypage-ecommerce",
+         "name": "Sneakers e-commerce",
+         "code": "SneakersECommerce",
+         "description": {
+            "en": "A simple product selection page with image expansion and an interactive functional cart.",
+            "pt": "Página de seleção de produtos simples com expansão de imagem e carrinho funcional e interativo.",
+            "es": "Página de selección de productos simple con expansión de imagen y carrito funcional e interactivo."
+         },
+         "features": {
+            "en": [
+               "Simple product selection",
+               "Image expansion",
+               "Interactive functional cart"
+            ],
+            "pt": [
+               "Seleção simples de produtos",
+               "Expansão de imagem",
+               "Carrinho funcional e interativo"
+            ],
+            "es": [
+               "Selección simple de productos",
+               "Expansión de imagen",
+               "Carrito funcional e interactivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "React",
+               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Sass",
+               "src": "https://www.svgrepo.com/show/374061/sass.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2021
+      },
+      {
+         "image": "/assets/Projects/desktop/countries.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-countries.png",
+         "url": "https://countries-saviovd.vercel.app/",
+         "repository": "https://github.com/Saviovd/countries",
+         "name": "API Countries",
+         "code": "apiCountries",
+         "description": {
+            "en": "Interface that displays countries and their information from the Rest Countries API, with border navigation functionality.",
+            "pt": "Interface que apresenta países e suas informações, tiradas da API Rest Countries, com funcionalidade de navegação entre fronteiras.",
+            "es": "Interfaz que muestra países y su información, obtenida de la API Rest Countries, con funcionalidad de navegación entre fronteras."
+         },
+         "features": {
+            "en": [
+               "Displays country information",
+               "Border navigation functionality",
+               "Responsive design"
+            ],
+            "pt": [
+               "Exibe informações dos países",
+               "Funcionalidade de navegação entre fronteiras",
+               "Design responsivo"
+            ],
+            "es": [
+               "Muestra información de los países",
+               "Funcionalidad de navegación entre fronteras",
+               "Diseño responsivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "React",
+               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Vite",
+               "src": "https://www.svgrepo.com/show/374167/vite.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "CSS-in-JS",
+               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "background": true,
+               "padding": true,
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React Router",
+               "src": "https://www.svgrepo.com/show/354262/react-router.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2022
+      },
+      {
+         "image": "/assets/Projects/desktop/stranger-things.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-stranger-things.png",
+         "url": "https://stranger-things4.vercel.app/",
+         "repository": "https://github.com/Saviovd/stranger_things",
+         "name": "Stranger Things 4°",
+         "code": "strangerThings",
+         "description": {
+            "en": "Landing page based on the 4th season of the Netflix series Stranger Things. Responsive for tablet and smartphone.",
+            "pt": "Landing Page baseada na 4° temporada da série Stranger Things da Netflix. Resposivo para tablet e smartphone.",
+            "es": "Página de aterrizaje basada en la 4ª temporada de la serie de Netflix Stranger Things. Responsive para tablet y smartphone."
+         },
+         "features": {
+            "en": [
+               "Based on Stranger Things season 4",
+               "Responsive for tablet and smartphone",
+               "Modern design"
+            ],
+            "pt": [
+               "Baseado na 4ª temporada de Stranger Things",
+               "Responsivo para tablet e smartphone",
+               "Design moderno"
+            ],
+            "es": [
+               "Basado en la 4ª temporada de Stranger Things",
+               "Responsive para tablet y smartphone",
+               "Diseño moderno"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "HTML5",
+               "src": "https://www.svgrepo.com/show/452228/html-5.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "CSS3",
+               "src": "https://www.svgrepo.com/show/452185/css-3.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "JavaScript",
+               "src": "https://www.svgrepo.com/show/353925/javascript.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2021
+      },
+      {
+         "image": "/assets/Projects/desktop/crud.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-crud.png",
+         "url": "https://crudtodo.vercel.app/",
+         "repository": "https://github.com/Saviovd/ToDo",
+         "name": "ToDo List",
+         "code": "toDoList",
+         "description": {
+            "en": "A simple and functional task list interface, with database verification.",
+            "pt": "Interface de tarefas a fazer simples e funcional, conta com verificações para banco de dados.",
+            "es": "Interfaz de lista de tareas simple y funcional, con verificación de base de datos."
+         },
+         "features": {
+            "en": [
+               "Simple and functional task list",
+               "Database verification",
+               "Responsive design"
+            ],
+            "pt": [
+               "Lista de tarefas simples e funcional",
+               "Verificação de banco de dados",
+               "Design responsivo"
+            ],
+            "es": [
+               "Lista de tareas simple y funcional",
+               "Verificación de base de datos",
+               "Diseño responsivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "Next.js",
+               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+               "background": true,
+               "rounded": true,
+               "width": 50,
+               "height": 50
+            },
+            {
+               "name": "CSS-in-JS",
+               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "background": true,
+               "padding": true,
+               "width": 70,
+               "height": 50
+            },
+            {
+               "name": "TypeScript",
+               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+               "width": 50,
+               "height": 50
+            },
+            {
+               "name": "Cypress",
+               "src": "https://www.svgrepo.com/show/330247/cypress.svg",
+               "background": true,
+               "rounded": true,
+               "width": 50,
+               "height": 50
+            }
+         ],
+         "year": 2023
+      },
+      {
+         "image": "/assets/Projects/desktop/github-repo-consulter.png",
+         "mobileImage": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
+         "url": "https://github-consulter-two.vercel.app/",
+         "repository": "https://github.com/Saviovd/github-consulter",
+         "name": "GitHub Consulter",
+         "code": "GitHubConsulter",
+         "description": {
+            "en": "An application that allows you to search and view public repositories of a GitHub user. Simply enter the username to list the repositories, including details such as name, description, and some charts with project metrics.",
+            "pt": "Uma aplicação que permite buscar e visualizar repositórios públicos de um usuário no GitHub. Basta inserir o nome de usuário para listar os repositórios, com detalhes como nome, descrição e alguns gráficos com métricas do projeto.",
+            "es": "Una aplicación que permite buscar y visualizar repositorios públicos de un usuario en GitHub. Solo debes ingresar el nombre de usuario para listar los repositorios, con detalles como nombre, descripción y algunos gráficos con métricas del proyecto."
+         },
+         "features": {
+            "en": [
+               "Functional repository list",
+               "Chart generation for metrics",
+               "Responsive design"
+            ],
+            "pt": [
+               "Lista de repositórios funcional",
+               "Geração de gráficos com métricas",
+               "Design responsivo"
+            ],
+            "es": [
+               "Lista de repositorios funcional",
+               "Generación de gráficos com métricas",
+               "Diseño responsivo"
+            ]
+         },
+         "stacks": [
+            {
+               "name": "Next.js",
+               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+               "background": true,
+               "rounded": true,
+               "width": 50,
+               "height": 50
+            },
+            {
+               "name": "Axios",
+               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
+               "width": 90,
+               "height": 50
+            },
+            {
+               "name": "CSS-in-JS",
+               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "background": true,
+               "padding": true,
+               "width": 70,
+               "height": 50
+            },
+            {
+               "name": "Framer Motion",
+               "src": "https://www.svgrepo.com/show/452207/framer.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React",
+               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "GraphQl",
+               "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg",
+               "width": 50,
+               "height": 50
+            },
+            {
+               "name": "Redux",
+               "src": "https://www.svgrepo.com/show/452093/redux.svg",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2023
+      }
+   ]
+}

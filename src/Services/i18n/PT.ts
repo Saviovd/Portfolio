@@ -151,37 +151,7 @@ const translations = {
       projectButton: 'projeto',
       repositoryButton: 'repositório',
       devBy: 'Desenvolvido com:',
-      more: 'mais projetos',
-      dsfBank: {
-         name: 'DSF Bank',
-         description:
-            'Uma interface de banco moderna com elementos de 3D utilizando a biblioteca ThreeJs, e animações com Framer Motion.',
-      },
-      spaceTourism: {
-         name: 'Space Tourism',
-         description:
-            'Um website de apresentação de uma agência de turismo espacial, com apresentação de alguns destinos e equipe.',
-      },
-      SneakersECommerce: {
-         name: 'Sneakers e-commerce',
-         description:
-            'Página de selação de produtos simples com expansão de imagem e carrinho funcional e interativo.',
-      },
-      apiCountries: {
-         name: 'API Countries',
-         description:
-            'Interface que apresenta países e suas informações, tiradas da API Rest Countries, com funcionalidade de navegação entre fronteiras.',
-      },
-      strangerThings: {
-         name: 'Stranger Things 4°',
-         description:
-            'Landing Page baseada na 4° temporada da série Stranger Things da Netflix.',
-      },
-      toDoList: {
-         name: 'ToDo List',
-         description:
-            'Interface de tarefas a fazer simples e funcional, conta com verificações para banco de dados.',
-      },
+      more: 'mais projetos'
    },
    Testimonials: {
       testimonialTitle: 'depoimentos',

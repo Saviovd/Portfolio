@@ -124,37 +124,7 @@ const translations = {
       projectButton: 'project',
       repositoryButton: 'repository',
       devBy: 'Developed with:',
-      more: 'more projects',
-      dsfBank: {
-         name: 'DSF Bank',
-         description:
-            'A modern bank interface with 3D elements using the ThreeJs library and animations with Framer Motion.',
-      },
-      spaceTourism: {
-         name: 'Space Tourism',
-         description:
-            'A website presenting a space tourism agency, with some destinations and team members.',
-      },
-      SneakersECommerce: {
-         name: 'Sneakers e-commerce',
-         description:
-            'A simple product selection page with image expansion and a functional and interactive cart.',
-      },
-      apiCountries: {
-         name: 'API Countries',
-         description:
-            'An interface that presents countries and their information, taken from the Rest Countries API, with the functionality of navigating between borders.',
-      },
-      strangerThings: {
-         name: 'Stranger Things 4°',
-         description:
-            'Landing Page based on the 4th season of the Netflix series Stranger Things.',
-      },
-      toDoList: {
-         name: 'ToDo List',
-         description:
-            'A simple and functional to-do list interface, with database checks.',
-      },
+      more: 'more projects'
    },
    Testimonials: {
       testimonialTitle: 'testimonials',
