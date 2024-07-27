@@ -14,7 +14,6 @@ const ButtonLink = ({
    cursor,
    textTransform,
    border,
-   fontSize
 }: IButtonProps) => {
 
    return (
@@ -30,7 +29,6 @@ const ButtonLink = ({
                'none',
             border: border || '1px solid transparent',
             cursor: cursor || '',
-            fontSize: `${fontSize}rem` || '',
          }}
          className={className}
       >

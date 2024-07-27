@@ -66,7 +66,6 @@ const Intro = () => {
                      bgColor='rgba(var(--primary-pink), 0.6)'
                      cursor='pointer'
                      _blank={true}
-                     icon={<IoIosExpand />}
                   />
                   <ButtonLink
                      fontSize={2}

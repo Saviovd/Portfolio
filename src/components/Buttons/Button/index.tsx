@@ -2,7 +2,7 @@ import { IButtonProps } from '@/types/button';
 import { ButtonStyle } from './buttonStyles';
 import React from 'react';
 
-const ButtonLink = ({
+const Button = ({
    content,
    icon,
    className,
@@ -35,4 +35,4 @@ const ButtonLink = ({
    );
 };
 
-export default ButtonLink;
+export default Button;

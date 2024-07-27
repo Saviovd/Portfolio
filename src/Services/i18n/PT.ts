@@ -151,7 +151,7 @@ const translations = {
       projectButton: 'projeto',
       repositoryButton: 'repositório',
       devBy: 'Desenvolvido com:',
-      more: 'mais projetos'
+      more: 'Saiba mais',
    },
    Testimonials: {
       testimonialTitle: 'depoimentos',
@@ -191,6 +191,10 @@ const translations = {
       certificate: 'Certificado',
       courses: 'Cursos',
       inProgress: 'Em Andamento',
+   },
+   ProjectModal: {
+      features: 'Características',
+      services: 'Serviços',
    },
 };
 export default translations;

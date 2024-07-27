@@ -3,6 +3,7 @@
       {
          "image": "/assets/Projects/desktop/games-by.png",
          "mobileImage": "/assets/Projects/mobile/mobile-games-by.png",
+         "screens": "/assets/Projects/screens/games-by.png",
          "url": "https://games-by.vercel.app/",
          "repository": "https://github.com/Games-By/games-by",
          "name": "Games By",
@@ -46,17 +47,16 @@
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
                "background": true,
-               "padding": true,
-               "width": 60,
+               "width": 70,
                "height": 60
             },
             {
                "name": "Axios",
                "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
-               "width": 90,
-               "height": 50
+               "width": 120,
+               "height": 60
             },
             {
                "name": "NodeJs",
@@ -93,7 +93,7 @@
                "height": 60
             }
          ],
-         "backend": [
+         "services": [
             {
                "name": "client-data",
                "repository": "https://github.com/Games-By/client-data"
@@ -108,6 +108,7 @@
       {
          "image": "/assets/Projects/desktop/dashboard.png",
          "mobileImage": "/assets/Projects/mobile/mobile-dashboard.png",
+         "screens": "/assets/Projects/screens/dashboard.png",
          "url": "https://teste-tecnico-bobby.vercel.app/",
          "repository": "https://github.com/Saviovd/teste-tecnico-front",
          "name": "Users Dashboard",
@@ -142,6 +143,12 @@
                "height": 60
             },
             {
+               "name": "VueX",
+               "src": "https://seeklogo.com/images/V/vuex-logo-8383C0CED5-seeklogo.com.png",
+               "width": 50,
+               "height": 50
+            },
+            {
                "name": "TailwindCSS",
                "src": "https://www.svgrepo.com/show/374118/tailwind.svg",
                "width": 60,
@@ -150,8 +157,8 @@
             {
                "name": "Axios",
                "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
-               "width": 90,
-               "height": 50
+               "width": 120,
+               "height": 60
             },
             {
                "name": "NodeJs",
@@ -165,6 +172,7 @@
       {
          "image": "/assets/Projects/desktop/dsf-bank.png",
          "mobileImage": "/assets/Projects/mobile/mobile-dsf-bank.png",
+         "screens": "/assets/Projects/screens/bank.png",
          "url": "https://dsf-bank-nine.vercel.app/",
          "repository": "https://github.com/Saviovd/DSF-Bank",
          "name": "DSF Bank",
@@ -211,10 +219,9 @@
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
                "background": true,
-               "padding": true,
-               "width": 60,
+               "width": 70,
                "height": 60
             },
             {
@@ -236,6 +243,7 @@
       {
          "image": "/assets/Projects/desktop/space.png",
          "mobileImage": "/assets/Projects/mobile/mobile-space.png",
+         "screens": "/assets/Projects/screens/space.png",
          "url": "https://space-tourism-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/space_tourism",
          "name": "Space Tourism",
@@ -293,6 +301,7 @@
       {
          "image": "/assets/Projects/desktop/sneakers.png",
          "mobileImage": "/assets/Projects/mobile/mobile-sneakers.png",
+         "screens": "/assets/Projects/screens/sneakers.png",
          "url": "https://buypage-ecommerce.vercel.app/",
          "repository": "https://github.com/Saviovd/buypage-ecommerce",
          "name": "Sneakers e-commerce",
@@ -344,6 +353,7 @@
       {
          "image": "/assets/Projects/desktop/countries.png",
          "mobileImage": "/assets/Projects/mobile/mobile-countries.png",
+         "screens": "/assets/Projects/screens/countries.png",
          "url": "https://countries-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/countries",
          "name": "API Countries",
@@ -385,10 +395,9 @@
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
                "background": true,
-               "padding": true,
-               "width": 60,
+               "width": 70,
                "height": 60
             },
             {
@@ -409,6 +418,7 @@
       {
          "image": "/assets/Projects/desktop/stranger-things.png",
          "mobileImage": "/assets/Projects/mobile/mobile-stranger-things.png",
+         "screens": "/assets/Projects/screens/stranger-things.png",
          "url": "https://stranger-things4.vercel.app/",
          "repository": "https://github.com/Saviovd/stranger_things",
          "name": "Stranger Things 4°",
@@ -460,6 +470,7 @@
       {
          "image": "/assets/Projects/desktop/crud.png",
          "mobileImage": "/assets/Projects/mobile/mobile-crud.png",
+         "screens": "/assets/Projects/screens/todos.png",
          "url": "https://crudtodo.vercel.app/",
          "repository": "https://github.com/Saviovd/ToDo",
          "name": "ToDo List",
@@ -492,30 +503,29 @@
                "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
                "background": true,
                "rounded": true,
-               "width": 50,
-               "height": 50
+               "width": 60,
+               "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
                "background": true,
-               "padding": true,
                "width": 70,
-               "height": 50
+               "height": 60
             },
             {
                "name": "TypeScript",
                "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
-               "width": 50,
-               "height": 50
+               "width": 60,
+               "height": 60
             },
             {
                "name": "Cypress",
                "src": "https://www.svgrepo.com/show/330247/cypress.svg",
                "background": true,
                "rounded": true,
-               "width": 50,
-               "height": 50
+               "width": 60,
+               "height": 60
             }
          ],
          "year": 2023
@@ -523,6 +533,7 @@
       {
          "image": "/assets/Projects/desktop/github-repo-consulter.png",
          "mobileImage": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
+         "screens": "/assets/Projects/screens/github.png",
          "url": "https://github-consulter-two.vercel.app/",
          "repository": "https://github.com/Saviovd/github-consulter",
          "name": "GitHub Consulter",
@@ -555,22 +566,21 @@
                "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
                "background": true,
                "rounded": true,
-               "width": 50,
-               "height": 50
+               "width": 60,
+               "height": 60
             },
             {
                "name": "Axios",
                "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
-               "width": 90,
-               "height": 50
+               "width": 120,
+               "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://www.svgrepo.com/show/306811/styled-components.svg",
+               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
                "background": true,
-               "padding": true,
                "width": 70,
-               "height": 50
+               "height": 60
             },
             {
                "name": "Framer Motion",
@@ -587,8 +597,8 @@
             {
                "name": "GraphQl",
                "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg",
-               "width": 50,
-               "height": 50
+               "width": 60,
+               "height": 60
             },
             {
                "name": "Redux",
