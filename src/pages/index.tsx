@@ -4,7 +4,7 @@ import Header from '@/components/Header/Header';
 import Intro from '@/components/Home/Home';
 import About from '@/components/About/About';
 import Habilities from '@/components/Habilities/Habilities';
-import Projects from '@/components/Projects/Projects';
+import Projects from '@/components/Projects';
 import Contacts from '@/components/Contacts/Contacts';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';

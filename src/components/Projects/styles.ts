@@ -116,14 +116,20 @@ export const ProjectsContainer = styled(motion.div)`
    gap: 5rem 0;
    flex-wrap: wrap;
 
-   @media screen {
-      @media (max-width: 1250px) {
-         width: 95%;
-         gap: 3rem 0;
-      }
-      @media (max-width: 1024px) {
-         width: 85%;
-         gap: 2.5rem 0;
-      }
+   @media (max-width: 1250px) {
+      width: 95%;
+      gap: 3rem 0;
+   }
+   @media (max-width: 1024px) {
+      width: 90%;
+      gap: 2.5rem 0;
+   }
+   @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem 0;
+   }
+   @media (max-width: 450px) {
+      width: 100%;
    }
 `;

@@ -1,5 +1,4 @@
 export interface ProjectProps {
-   id: number;
    image: string;
    mobileImage: string;
    screens: string;
@@ -27,9 +26,9 @@ interface Stack {
    src: string;
    width: number;
    height: number;
-   background: boolean;
-   rounded: boolean;
-   padding: boolean;
+   background?: boolean;
+   rounded?: boolean;
+   padding?: boolean;
 }
 
 export interface ProjectServices {

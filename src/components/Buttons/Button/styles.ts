@@ -10,6 +10,7 @@ export const ButtonStyle = styled.button`
    white-space: nowrap;
    display: flex;
    align-items: center;
+   background-color: transparent;
 
    &:before,
    &:after {
