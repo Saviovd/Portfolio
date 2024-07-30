@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavItem from './NavItem';
 import { NavStyle } from './styles';
 import { useTranslation } from 'react-i18next';
 import LanguageBar from '../Languages';
 import { motion } from 'framer-motion';
+import useWindowSize from '@/hooks/useWindowSize';
 
 interface INavProps {
    isActive: boolean;
@@ -16,6 +17,7 @@ const Nav = ({ isActive }: INavProps) => {
    const [pagePosition] = React.useState(0);
    const scrollRef = React.useRef<HTMLDivElement>(null);
 
+   const { width } = useWindowSize();
    const handleNavItemSelect = (name: string) => {
       setSelectedNavItem(name);
       if (scrollRef.current) {
@@ -24,12 +26,16 @@ const Nav = ({ isActive }: INavProps) => {
    };
 
    const navVariants = {
-      hidden: { opacity: 0, x: '120%' },
+      hidden: { opacity: 0, x: width < 1024 ? '120%' : 0 },
       visible: { opacity: 1, x: 0 },
       exit: { opacity: 0, x: '120%' },
    };
 
-   const navTransition = { duration: 0.5 };
+   useEffect(() => {
+      if (!selectedNavItem) {
+         handleNavItemSelect(t('Header.home'));
+      }
+   }, [pagePosition, selectedNavItem, t]);
 
    return (
       <NavStyle>
@@ -41,7 +47,7 @@ const Nav = ({ isActive }: INavProps) => {
                animate='visible'
                exit='exit'
                variants={navVariants}
-               transition={navTransition}
+               transition={{ duration: width < 1024 ? 0.5 : 0.2 }}
             >
                <NavItem
                   isSelected={selectedNavItem === t('Header.home')}

@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const HeaderStyle = styled.header`
+export const HeaderStyle = styled(motion.header)`
    z-index: 10;
    width: 100%;
    height: 9rem;

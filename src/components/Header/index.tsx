@@ -24,7 +24,12 @@ const Header = () => {
 
    return (
       <>
-         <HeaderStyle>
+         <HeaderStyle
+            initial={{ y: '-120%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '-120%' }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+         >
             <div className='header-container'>
                <Image
                   className='logo'
