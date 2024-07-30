@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import GlobalStyle from '@/styles/globals';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Intro from '@/components/Home/Home';
 import About from '@/components/About/About';
 import Habilities from '@/components/Habilities/Habilities';

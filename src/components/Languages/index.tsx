@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import i18next from 'i18next';
-import { LanguageStyles } from './LanguageStyles';
+import { LanguageStyles } from './styles';
 
 interface ILanguagesProps {
    className?: string

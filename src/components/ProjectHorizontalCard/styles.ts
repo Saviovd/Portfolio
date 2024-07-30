@@ -9,6 +9,7 @@ export const HorizonntalContainer = styled.div`
    border: 1px solid rgba(var(--primary-blue), 0.5);
    border-bottom: none;
    cursor: pointer;
+   position: relative;
 
    .cover {
       width: 100%;
