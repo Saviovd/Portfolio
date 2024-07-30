@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import NavItem from './NavItem';
 import { NavStyle } from './styles';
 import { useTranslation } from 'react-i18next';
@@ -14,7 +14,6 @@ const Nav = ({ isActive }: INavProps) => {
    const { t } = useTranslation();
 
    const [selectedNavItem, setSelectedNavItem] = React.useState('');
-   const [pagePosition] = React.useState(0);
    const scrollRef = React.useRef<HTMLDivElement>(null);
 
    const { width } = useWindowSize();
@@ -31,12 +30,6 @@ const Nav = ({ isActive }: INavProps) => {
       exit: { opacity: 0, x: '120%' },
    };
 
-   useEffect(() => {
-      if (!selectedNavItem) {
-         handleNavItemSelect(t('Header.home'));
-      }
-   }, [pagePosition, selectedNavItem, t]);
-
    return (
       <NavStyle>
          {isActive && (
@@ -52,13 +45,11 @@ const Nav = ({ isActive }: INavProps) => {
                <NavItem
                   isSelected={selectedNavItem === t('Header.home')}
                   setIsSelected={() => handleNavItemSelect(t('Header.home'))}
-                  pagePosition={pagePosition}
                   name={t('Header.home')}
                />
                <NavItem
                   isSelected={selectedNavItem === t('Header.aboutme')}
                   setIsSelected={() => handleNavItemSelect(t('Header.aboutme'))}
-                  pagePosition={pagePosition}
                   name={t('Header.aboutme')}
                />
                <NavItem
@@ -66,7 +57,6 @@ const Nav = ({ isActive }: INavProps) => {
                   setIsSelected={() =>
                      handleNavItemSelect(t('Header.habilities'))
                   }
-                  pagePosition={pagePosition}
                   name={t('Header.habilities')}
                />
                <NavItem
@@ -74,7 +64,6 @@ const Nav = ({ isActive }: INavProps) => {
                   setIsSelected={() =>
                      handleNavItemSelect(t('Header.projects'))
                   }
-                  pagePosition={pagePosition}
                   name={t('Header.projects')}
                />
                <NavItem
@@ -82,13 +71,11 @@ const Nav = ({ isActive }: INavProps) => {
                   setIsSelected={() =>
                      handleNavItemSelect(t('Header.testimonials'))
                   }
-                  pagePosition={pagePosition}
                   name={t('Header.testimonials')}
                />
                <NavItem
                   isSelected={selectedNavItem === ''}
                   setIsSelected={() => handleNavItemSelect('')}
-                  pagePosition={pagePosition}
                   name=''
                />
                <LanguageBar />

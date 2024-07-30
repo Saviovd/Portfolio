@@ -58,7 +58,7 @@ const Header = () => {
                   <motion.div className='progress-bar' style={{ scaleX }} />
                )}
             </div>
-            {isMenuMobileActive && (
+            {isMenuMobileActive && width < 1024 && (
                <div
                   className='outside'
                   onClick={() => setIsActive(false)}

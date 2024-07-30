@@ -1,29 +1,23 @@
 import { NavItemStyle } from './styles';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 interface INavItemProps {
    name: string;
    isSelected?: boolean;
    setIsSelected: () => void;
-   pagePosition: number;
 }
 
-const NavItem = ({
-   name,
-   isSelected,
-   setIsSelected,
-   pagePosition,
-}: INavItemProps) => {
-   const [isInView, setIsInView] = React.useState(false);
+const NavItem = ({ name, isSelected, setIsSelected }: INavItemProps) => {
+   const [isInView, setIsInView] = useState(false);
 
-   React.useEffect(() => {
+   useEffect(() => {
       const handleScroll = () => {
          setIsSelected();
          const element = document.getElementById(name);
          if (element) {
             const { top, bottom } = element.getBoundingClientRect();
-            const isVisible = top - 230 <= pagePosition && bottom - 230 >= 0;
+            const isVisible = top - 400 <= 0 && bottom - 230 >= 0;
             setIsInView(isVisible);
          }
       };
@@ -32,12 +26,10 @@ const NavItem = ({
       return () => {
          window.removeEventListener('scroll', handleScroll);
       };
-   }, [name, pagePosition, isSelected, setIsSelected]);
+   }, [name, isSelected, setIsSelected]);
 
    return (
-      <NavItemStyle
-         data-glitch
-      >
+      <NavItemStyle data-glitch>
          <ScrollLink
             onClick={setIsSelected}
             className={isInView || isSelected ? 'selected-item' : ''}
