@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HomeStyle = styled.section`
    height: 99vh;
+   min-height: 47.5rem;
    max-width: 1800px;
    margin: 0 auto;
    position: relative;

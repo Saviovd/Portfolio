@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { HomeStyle, DrippingDown } from './homeStyles';
+import { HomeStyle, DrippingDown } from './styles';
 import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
 import ButtonLink from '../Buttons/ButtonLink';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import Social from '../Social/Social';
+import Social from '../Social';
 import baffle from 'baffle';
 import { MdSimCardDownload } from 'react-icons/md';
 

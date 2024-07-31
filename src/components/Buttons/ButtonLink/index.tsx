@@ -1,5 +1,5 @@
 import { IButtonProps } from '@/types/button';
-import { ButtonLinkStyle } from './buttonLink';
+import { ButtonLinkStyle } from './styles';
 import React from 'react';
 
 const ButtonLink = ({

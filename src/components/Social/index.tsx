@@ -1,4 +1,4 @@
-import { SocialStyle } from './SocialStyles';
+import { SocialStyle } from './styles';
 import data from '../../data/social.json';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
