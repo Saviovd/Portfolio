@@ -37,7 +37,7 @@ const NavItem = ({ name, isSelected, setIsSelected }: INavItemProps) => {
             smooth={true}
             spy={true}
             duration={500}
-            offset={-50}
+            offset={0}
          >
             {name}
          </ScrollLink>

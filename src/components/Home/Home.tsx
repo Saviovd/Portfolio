@@ -67,7 +67,7 @@ const Home = () => {
                   spy={true}
                   duration={700}
                   delay={100}
-                  offset={-50}
+                  offset={0}
                   className='dripping_down'
                >
                   <div className='chevron'></div>

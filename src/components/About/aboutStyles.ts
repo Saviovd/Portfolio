@@ -3,9 +3,7 @@ import styled from 'styled-components';
 export const AboutStyle = styled.section`
    max-width: 1700px;
    margin: 0 auto;
-   min-height: 45rem;
-   margin-top: 5rem;
-   padding-top: 3rem;
+   padding-top: 13rem;
    display: flex;
    align-items: center;
    flex-direction: column;
