@@ -176,29 +176,6 @@
          "photo": "https://media.licdn.com/dms/image/D4D03AQHL2iHF5xZeZw/profile-displayphoto-shrink_800_800/0/1711021256924?e=1722470400&v=beta&t=8VJt_IfkIx56o9I5pd6xTbXX_xPbhtNfY26Dv9tfqFo"
       }
    ],
-   "socials": [
-      {
-         "icon": "/assets/icons/social/linkedin.svg",
-         "type": "linkedin",
-         "name": "Sávio Almeida",
-         "url": "https://www.linkedin.com/in/saviovd/",
-         "text": "Visitar"
-      },
-      {
-         "icon": "/assets/icons/social/github.svg",
-         "type": "github",
-         "name": "saviovd",
-         "url": "https://github.com/Saviovd",
-         "text": "Visitar"
-      },
-      {
-         "icon": "/assets/icons/media/email.svg",
-         "type": "e-mail",
-         "name": "savio.pinheiroal@gmail.com",
-         "url": "",
-         "text": "Copiar e-mail"
-      }
-   ],
    "experiences": {
       "jobs": [
          {

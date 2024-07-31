@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const HomeStyle = styled.section`
-   height: 100vh;
-   min-height: 55rem;
+   height: 99vh;
    max-width: 1800px;
    margin: 0 auto;
-   padding: 0 5rem;
    position: relative;
 
    display: flex;
@@ -13,180 +11,142 @@ export const HomeStyle = styled.section`
    align-items: center;
    justify-content: center;
 
-   @media screen {
-      @media (max-width: 730px) {
-         padding: 0 1rem;
-      }
-   }
-   div {
-      margin: 0;
-      padding: 0;
-   }
-
    .apresentation {
-      height: 60vh;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 1rem;
 
-      @media screen {
-         @media (max-width: 1640px) {
-            gap: 0.5rem;
-         }
-         @media (max-width: 640px) {
-            text-align: center;
-         }
-      }
-
-      .loader-space {
-         height: 5rem;
-         @media screen {
-            @media (max-width: 650px) {
-               height: 2.5rem;
-            }
-         }
-      }
       .calls_me {
+         font-size: 3rem;
          text-transform: uppercase;
          font-weight: 500;
          letter-spacing: 2px;
-         font-size: 5rem;
          align-self: flex-start;
+
          @media screen {
-            @media (max-width: 1640px) {
-               font-size: 4.5rem;
+            @media (max-width: 520px) {
+               font-size: 2rem;
             }
-            @media (max-width: 830px) {
-               font-size: 4rem;
-            }
-            @media (max-width: 650px) {
-               font-size: 3rem;
-               align-self: auto;
-            }
-            @media (max-width: 510px) {
-               font-size: 2.5rem;
-            }
-            @media (max-width: 380px) {
-               font-size: 2.2rem;
+            @media (max-width: 410px) {
+               font-size: 1.7rem;
+               align-self: center;
             }
          }
       }
       .my_name {
+         font-size: 5rem;
          color: rgb(var(--primary-blue));
-         font-size: 8rem;
          text-transform: uppercase;
-         letter-spacing: 3px;
+         letter-spacing: 2px;
          font-weight: 600;
 
          align-self: center;
          justify-self: center;
          margin: 0;
+
          @media screen {
-            @media (max-width: 1640px) {
-               font-size: 7rem;
+            @media (max-width: 520px) {
+               font-size: 3.5rem;
             }
-            @media (max-width: 830px) {
-               font-size: 6rem;
-            }
-            @media (max-width: 650px) {
-               font-size: 4rem;
-            }
-            @media (max-width: 510px) {
+            @media (max-width: 410px) {
                font-size: 3rem;
-            }
-            @media (max-width: 380px) {
-               font-size: 2.7rem;
+               align-self: center;
             }
          }
       }
       .loader {
+         font-size: 3rem;
          color: rgb(var(--primary-pink));
-         font-size: 4rem;
          text-transform: uppercase;
          font-weight: 600;
          align-self: center;
          justify-self: center;
          text-align: center;
          @media screen {
-            @media (max-width: 1640px) {
-               font-size: 3rem;
-            }
-            @media (max-width: 830px) {
-               font-size: 2.5rem;
-            }
-            @media (max-width: 650px) {
+            @media (max-width: 520px) {
                font-size: 2rem;
             }
-            @media (max-width: 510px) {
+            @media (max-width: 410px) {
                font-size: 1.7rem;
+               align-self: center;
             }
          }
       }
-
+      transition: 0.3s;
       &:hover {
-         animation: glitch-cursor 700ms forwards;
-         animation-delay: ${Math.random() * 5000 + 1000}ms;
+         scale: 1.01;
+      }
+
+      @media screen {
+         @media (max-width: 768px) {
+            scale: 0.8;
+            &:hover {
+               scale: 0.81;
+            }
+         }
+         @media (max-width: 520px) {
+            scale: 1;
+            width: 94%;
+            gap: 0.5rem;
+            white-space: nowrap;
+
+            &:hover {
+               scale: 1.01;
+            }
+         }
       }
    }
 
    .buttons {
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      margin-top: 8rem;
+      justify-content: center;
+      gap: 5rem;
+      margin-top: 5rem;
 
-      .left,
-      .right {
-         margin: 0 auto;
+      .button {
+         padding: 1rem 2.5rem;
+         font-size: 1.4rem;
+         border-radius: 1px;
+         transition: 0.5s;
+         border: 1px solid rgb(var(--primary-blue));
+         gap: 1rem;
 
-         @media (max-width: 510px) {
-            margin: 0;
+         &:hover {
+            scale: 1.05;
+            background-color: rgb(var(--primary-pink), 0.2);
+            border: 1px solid rgb(var(--primary-pink));
          }
       }
-   }
-   @keyframes move {
-      25% {
-         opacity: 1;
-      }
-      33% {
-         opacity: 1;
-         transform: translateY(30px);
-      }
-      67% {
-         opacity: 1;
-         transform: translateY(40px);
-      }
-      100% {
-         opacity: 0;
-         transform: translateY(55px) scale3d(1, 1, 1);
+
+      @media screen {
+         @media (max-width: 768px) {
+            scale: 0.8;
+            &:hover {
+               scale: 0.85;
+            }
+         }
       }
    }
 `;
 
 export const DrippingDown = styled.div`
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
-   justify-self: flex-end;
-   transform: translate(-2rem, 5rem);
+   position: absolute;
+   width: 20rem;
+   height: 8rem;
+   top: calc(100% - 8rem);
+   left: calc(50% - 10rem);
 
-   @media screen {
-      @media (max-width: 1024px) {
-         transform: translate(-2rem, 8rem);
-      }
-      @media (max-width: 1024px) {
-         transform: translate(-2rem, 5rem);
-      }
-   }
    .dripping_down {
-      position: relative;
-      margin: 0 auto;
-      width: 3.5rem;
-      height: 5rem;
+      height: 100%;
+      width: 100%;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: center;
 
       .chevron {
          position: absolute;
@@ -222,6 +182,23 @@ export const DrippingDown = styled.div`
             width: 50%;
             transform: skew(0deg, -30deg);
          }
+      }
+   }
+   @keyframes move {
+      25% {
+         opacity: 1;
+      }
+      33% {
+         opacity: 1;
+         transform: translateY(30px);
+      }
+      67% {
+         opacity: 1;
+         transform: translateY(40px);
+      }
+      100% {
+         opacity: 0;
+         transform: translateY(55px) scale3d(1, 1, 1);
       }
    }
 `;

@@ -10,6 +10,7 @@ export const ButtonLinkStyle = styled.a`
    white-space: nowrap;
    display: flex;
    align-items: center;
+   border: 1px solid transparent;
 
    &:before,
    &:after {

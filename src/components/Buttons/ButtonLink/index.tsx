@@ -7,13 +7,11 @@ const ButtonLink = ({
    content,
    icon,
    className,
-   bgColor,
    _blank,
    download,
    strColor,
    cursor,
    textTransform,
-   border,
 }: IButtonProps) => {
 
    return (
@@ -22,12 +20,10 @@ const ButtonLink = ({
          target={_blank ? '_blank' : ''}
          download={download ? true : undefined}
          style={{
-            backgroundColor: bgColor || 'transparent',
             color: strColor || 'white',
             textTransform:
                (textTransform as React.CSSProperties['textTransform']) ||
                'none',
-            border: border || '1px solid transparent',
             cursor: cursor || '',
          }}
          className={className}

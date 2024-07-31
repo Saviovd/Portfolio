@@ -28,7 +28,7 @@ const Header = () => {
             initial={{ y: '-120%' }}
             animate={{ y: 0 }}
             exit={{ y: '-120%' }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.42, 0, 0.58, 1] }}
          >
             <div className='header-container'>
                <Image
