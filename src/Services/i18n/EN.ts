@@ -17,87 +17,9 @@ const translations = {
       devfullstack: 'Fullstack Developer',
    },
    AboutMe: {
-      about: 'about',
-      me: 'me',
-      apresentation:
-         'Hello! I´m Sávio Almeida, a passionate developer focused on creating intuitive and visually appealing interfaces. With 3 years of experience, I have solid knowledge in JavaScript and its main frameworks such as React, Vue.js, and Next.js, as well as extensive expertise in back-end languages like Python and Ruby.',
-      obs: 'My work stands out for:',
-      emphasis1: 'Responsive and user-friendly design',
-      emphasis2: 'Clean and efficient code',
-      emphasis3: 'User focus',
-      text1: 'I create interfaces that adapt to any device, providing an impeccable user experience.',
-      text2: 'I care about the quality of the code, using good practices and optimization techniques to ensure the best performance.',
-      text3: 'I believe that the best interface is the one that is easy to use and understand, always putting the user at the center of the development process.',
+      aboutme: 'about me',
       experienceTitle: 'Experiences',
-      jobs: [
-         {
-            id: 0,
-            office: 'Front-End Developer',
-            currently: ' ',
-            assignments: [
-               {
-                  id: 0,
-                  assignment:
-                     'Development of websites, apps, and systems with Vue.js, Quasar.',
-               },
-               {
-                  id: 1,
-                  assignment: 'Maintenance and refactoring of old code.',
-               },
-               {
-                  id: 2,
-                  assignment:
-                     'Integration of systems with Node.js and PHP (Laravel).',
-               },
-            ],
-         },
-         {
-            id: 1,
-            office: 'Business Intelligence - Intern',
-            currently: ' ',
-            assignments: [
-               {
-                  id: 0,
-                  assignment: 'Development of automations.',
-               },
-               {
-                  id: 1,
-                  assignment:
-                     'Data analysis with Power Automate and Power BI tools.',
-               },
-               {
-                  id: 2,
-                  assignment: 'Automations using API with Node.js and Python.',
-               },
-            ],
-         },
-         {
-            id: 2,
-            office: 'FullStack Developer',
-            currently: 'Currently',
-            assignments: [
-               {
-                  id: 0,
-                  assignment:
-                     'Development of websites and apps with React.js, React Native, Next.js, and Flutter.',
-               },
-               {
-                  id: 1,
-                  assignment:
-                     'Software development with Python, Ruby, and Kotlin.',
-               },
-            ],
-         },
-      ],
       graduationTitle: 'graduation',
-      graduations: [
-         {
-            id: 0,
-            course: 'Systems Analysis and Development',
-            institution: 'Anhembi Morumbi University',
-            category: 'technologist',
-         },
-      ],
       coursesTitle: 'courses',
       courses: [
          { id: 0, course: 'JavaScript with focus on back-end' },
