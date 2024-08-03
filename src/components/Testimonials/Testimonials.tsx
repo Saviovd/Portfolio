@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Title from '../Title/Title';
+import Title from '../Title';
 import data from '@/data/data.json';
 import { TestimonialsStyle } from './testimonialStyles';
 import { Swiper, SwiperSlide } from 'swiper/react';

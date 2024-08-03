@@ -60,9 +60,17 @@
                "es": "Desarrollador Front-End"
             },
             "company": "BigBang Digital",
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "companyLinkedin": "",
+            "location": "Belo Horizonte/MG - Brasil",
             "icon": "https://media.licdn.com/dms/image/C4D0BAQHTVN1NxnQ4Mw/company-logo_100_100/0/1630580474378/big_bang_shop_logo?e=1723680000&v=beta&t=e4_5ClFK5XDDIv21pWcZPD7-MolU1kllYBV7haBnApQ",
             "start": "08/2023",
             "end": "01/2024",
+            "working": false,
             "assignments": {
                "en": [
                   {
@@ -136,9 +144,17 @@
                "es": "Inteligencia de Negocios - Interno"
             },
             "company": "Votorantim",
+            "regime": {
+               "en": "hybrid",
+               "pt": "híbrido",
+               "es": "híbrido"
+            },
+            "companyLinkedin": "",
+            "location": "Curitiba/PR - Brasil",
             "icon": "https://media.licdn.com/dms/image/D4D0BAQHid9cPrRd6zA/company-logo_100_100/0/1701461577042/votorantim_logo?e=1723680000&v=beta&t=Hbhp3szeE-8m6_09e4-EPad56fBtRPgwLhH-qfIQ66E",
             "start": "01/2023",
             "end": "07/2023",
+            "working": false,
             "assignments": {
                "en": [
                   {
@@ -203,9 +219,17 @@
                "es": "Desarrollador FullStack"
             },
             "company": "Freelancer",
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "companyLinkedin": "/",
+            "location": "Brasil",
             "icon": "/assets/logo.png",
             "start": "02/2022",
-            "end": "atualmente",
+            "end": "",
+            "working": true,
             "assignments": {
                "en": [
                   {
@@ -263,6 +287,16 @@
       "formation": [
          {
             "UniversityEducation": true,
+            "concluded": {
+               "en": "concluded",
+               "pt": "concluído",
+               "es": "concluyó"
+            },
+            "situation": {
+               "en": "graduate",
+               "pt": "graduado",
+               "es": "graduado"
+            },
             "course": {
                "en": "Systems Analysis and Development",
                "pt": "Análise e desenvolvimento de sistemas",
@@ -271,12 +305,12 @@
             "institution": {
                "en": "Anhembi Morumbi University",
                "pt": "Universidade Anhembi Morumbi",
-               "es": "tecnólogo"
+               "es": "Universidad Anhembi Morumbi"
             },
             "category": {
                "en": "technologist",
                "pt": "tecnólogo",
-               "es": "Universidad Anhembi Morumbi"
+               "es": "tecnólogo"
             },
             "logo": "https://media.licdn.com/dms/image/C4D0BAQGcTGL2HhDUwg/company-logo_100_100/0/1630477125888?e=1723680000&v=beta&t=Zlx7SxuSlMK1k8tbR34J1_b-Mu6KLY4B9QAXCpqhDsg",
             "start": "06/2021",

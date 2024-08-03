@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Title from '../Title/Title';
+import Title from '../Title';
 import { HabilitiesStyle } from './habilitiesStyles';
 import data from '@/data/data.json';
 import { motion, AnimatePresence } from 'framer-motion';

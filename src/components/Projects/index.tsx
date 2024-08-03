@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Title from '../Title/Title';
+import Title from '../Title';
 import { ProjectsContainer, ProjectsStyle } from './styles';
 import data from '@/data/projects.json';
 import { useTranslation } from 'react-i18next';

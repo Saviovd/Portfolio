@@ -33,6 +33,7 @@ const translations = {
          { id: 8, course: 'Essential Programming Logic' },
       ],
       moreCourses: 'more courses',
+      since: 'Since',
    },
    Habilities: {
       my: 'My',

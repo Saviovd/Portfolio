@@ -60,6 +60,7 @@ const translations = {
          },
       ],
       moreCourses: 'mais cursos',
+      since: 'Desde',
    },
    Habilities: {
       my: 'Minhas',

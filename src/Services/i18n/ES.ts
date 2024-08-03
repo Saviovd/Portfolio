@@ -33,6 +33,7 @@ const translations = {
          { id: 8, course: 'Lógica de Programación Esencial' },
       ],
       moreCourses: 'más cursos',
+      since: 'Desde',
    },
    Habilities: {
       my: 'mis',
