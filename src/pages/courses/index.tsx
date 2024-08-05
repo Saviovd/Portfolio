@@ -1,4 +1,4 @@
-import Button from '@/components/Button/Button';
+import ButtonLink from '@/components/Buttons/ButtonLink';
 import Title from '@/components/Title/Title';
 import { CertificationsStyle } from '@/styles/certificationsPageStyles';
 import Image from 'next/image';
@@ -20,10 +20,10 @@ const Certifications = () => {
          </Head>
          <CertificationsStyle>
             <div className='back'>
-               <Button
+               <ButtonLink
                   className='button'
                   _blank={false}
-                  title={t(`Courses.back`)}
+                  content={t(`Courses.back`)}
                   url={`/${i18next.language}/#${t('Header.aboutme')}`}
                />
                <LanguageBar className='langs' />
@@ -115,7 +115,7 @@ const Certifications = () => {
                               : course.course}
                         </h3>
                         <h5 className='school'>{course.institution}</h5>
-                        <Button
+                        <ButtonLink
                            _blank={true}
                            title={t(`Courses.certificate`)}
                            url={course.certificate}

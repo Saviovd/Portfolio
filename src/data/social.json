@@ -1,0 +1,25 @@
+{
+   "socials": [
+      {
+         "icon": "https://www.svgrepo.com/show/452051/linkedin.svg",
+         "type": "linkedin",
+         "name": "Sávio Almeida",
+         "url": "https://www.linkedin.com/in/saviovd/",
+         "text": "Visitar"
+      },
+      {
+         "icon": "https://www.svgrepo.com/show/475654/github-color.svg",
+         "type": "github",
+         "name": "saviovd",
+         "url": "https://github.com/Saviovd",
+         "text": "Visitar"
+      },
+      {
+         "icon": "https://www.svgrepo.com/show/452213/gmail.svg",
+         "type": "e-mail",
+         "name": "savio.pinheiroal@gmail.com",
+         "url": "",
+         "text": "Copiar e-mail"
+      }
+   ]
+}

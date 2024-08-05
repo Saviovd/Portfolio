@@ -1,0 +1,483 @@
+{
+   "about": {
+      "description": {
+         "en": "Hello! I´m Sávio Almeida, a passionate developer focused on creating intuitive and visually appealing interfaces. With 3 years of experience, I have solid knowledge in JavaScript and its main frameworks such as React, Vue.js, and Next.js, as well as extensive expertise in back-end languages like Python and Ruby.",
+         "pt": "¡Hola! Soy Sávio Almeida, un desarrollador apasionado por crear interfaces intuitivas y visualmente atractivas. Con 3 años de experiencia, tengo un sólido conocimiento en JavaScript y sus principales frameworks, como React, Vue.js y Next.js, además de un amplio dominio de lenguajes back-end como Python y Ruby.",
+         "es": "Olá! Sou Sávio Almeida, um desenvolvedor apaixonado por criar interfaces intuitivas e visualmente atraentes. Com 3 anos de experiência, tenho um sólido conhecimento em JavaScript e seus principais frameworks, como React e Vue.js, além de um amplo domínio de linguagens back-end, como Python e Ruby."
+      },
+      "quality": {
+         "en": [
+            {
+               "title": "Responsive and user-friendly design",
+               "text": "I create interfaces that adapt to any device, providing an impeccable user experience."
+            },
+            {
+               "title": "Clean and efficient code",
+               "text": "I care about the quality of the code, using good practices and optimization techniques to ensure the best performance."
+            },
+            {
+               "title": "User focus",
+               "text": "I believe that the best interface is the one that is easy to use and understand, always putting the user at the center of the development process."
+            }
+         ],
+         "pt": [
+            {
+               "title": "Design responsivo e amigável",
+               "text": "Crio interfaces que se adaptam a qualquer dispositivo, proporcionando uma experiência de usuário impecável."
+            },
+            {
+               "title": "Código limpo e eficiente",
+               "text": "Me preocupo com a qualidade do código, utilizando boas práticas e técnicas de otimização para garantir o melhor desempenho."
+            },
+            {
+               "title": "Foco no usuário",
+               "text": "Acredito que a melhor interface é aquela que é fácil de usar e entender, sempre colocando o usuário no centro do processo de desenvolvimento."
+            }
+         ],
+         "es": [
+            {
+               "title": "Diseño receptivo y fácil de usar",
+               "text": "Creo interfaces que se adaptan a cualquier dispositivo, brindando una experiencia de usuario impecable."
+            },
+            {
+               "title": "Código limpio y eficiente",
+               "text": "Me preocupo por la calidad del código, utilizando buenas prácticas y técnicas de optimización para garantizar el mejor rendimiento."
+            },
+            {
+               "title": "Enfoque en el usuario",
+               "text": "Creo que la mejor interfaz es la que es fácil de usar y entender, siempre poniendo al usuario en el centro del proceso de desarrollo."
+            }
+         ]
+      }
+   },
+   "experiences": {
+      "jobs": [
+         {
+            "id": 0,
+            "office": {
+               "en": "Front-End Developer",
+               "pt": "Desenvolvedor Front-End",
+               "es": "Desarrollador Front-End"
+            },
+            "company": "BigBang Digital",
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "companyLinkedin": "",
+            "location": "Belo Horizonte/MG - Brasil",
+            "icon": "https://media.licdn.com/dms/image/C4D0BAQHTVN1NxnQ4Mw/company-logo_100_100/0/1630580474378/big_bang_shop_logo?e=1723680000&v=beta&t=e4_5ClFK5XDDIv21pWcZPD7-MolU1kllYBV7haBnApQ",
+            "start": "08/2023",
+            "end": "01/2024",
+            "working": false,
+            "assignments": {
+               "en": [
+                  {
+                     "id": 0,
+                     "assignment": "Development of websites, apps, and systems with Vue.js, Quasar."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Maintenance and refactoring of old code."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Integration of systems with Node.js and PHP(Laravel)."
+                  }
+               ],
+               "pt": [
+                  {
+                     "id": 0,
+                     "assignment": "Desenvolvimento de sites, apps e sistemas com VueJs, Quasar."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Manutenção e refatoração de códigos antigos."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Integração de sistemas com NodeJs e PHP(Laravel)."
+                  }
+               ],
+               "es": [
+                  {
+                     "id": 0,
+                     "assignment": "Desarrollo de sitios web, aplicaciones y sistemas con Vue.js, Quasar."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Mantenimiento y refactorización de código antiguo."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Integración de sistemas con Node.js y PHP(Laravel)."
+                  }
+               ]
+            },
+            "stacks": [
+               {
+                  "name": "VueJs"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "PHP"
+               },
+               {
+                  "name": "MySQL"
+               },
+               {
+                  "name": "Docker"
+               }
+            ]
+         },
+         {
+            "id": 1,
+            "office": {
+               "en": "Business Intelligence - Intern",
+               "pt": "Business Intelligence - intern",
+               "es": "Inteligencia de Negocios - Interno"
+            },
+            "company": "Votorantim",
+            "regime": {
+               "en": "hybrid",
+               "pt": "híbrido",
+               "es": "híbrido"
+            },
+            "companyLinkedin": "",
+            "location": "Curitiba/PR - Brasil",
+            "icon": "https://media.licdn.com/dms/image/D4D0BAQHid9cPrRd6zA/company-logo_100_100/0/1701461577042/votorantim_logo?e=1723680000&v=beta&t=Hbhp3szeE-8m6_09e4-EPad56fBtRPgwLhH-qfIQ66E",
+            "start": "01/2023",
+            "end": "07/2023",
+            "working": false,
+            "assignments": {
+               "en": [
+                  {
+                     "id": 0,
+                     "assignment": "Development of automations."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Data analysis with Power Automate and Power BI tools."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Automations using API with Node.js and Python."
+                  }
+               ],
+               "pt": [
+                  {
+                     "id": 0,
+                     "assignment": "Desenvolvimento de automações."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Análise de dados com as ferramentas Power Automate e Power BI."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Automações utilizando API com NodeJS e Python."
+                  }
+               ],
+               "es": [
+                  {
+                     "id": 0,
+                     "assignment": "Desarrollo de automatizaciones."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Análisis de datos con las herramientas Power Automate y Power BI."
+                  },
+                  {
+                     "id": 2,
+                     "assignment": "Automatizaciones utilizando API con Node.js y Python."
+                  }
+               ]
+            },
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "Python"
+               }
+            ]
+         },
+         {
+            "id": 2,
+            "office": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "company": "Freelancer",
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "companyLinkedin": "/",
+            "location": "Brasil",
+            "icon": "/assets/logo.png",
+            "start": "02/2022",
+            "end": "",
+            "working": true,
+            "assignments": {
+               "en": [
+                  {
+                     "id": 0,
+                     "assignment": "Development of websites and apps with React.js, React Native, Next.js, and Flutter."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Software development with Python, Ruby, and Kotlin."
+                  }
+               ],
+               "pt": [
+                  {
+                     "id": 0,
+                     "assignment": "Desenvolvimento de sites e apps com ReactJs, React Native, NextJs e Flutter."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Desenvolvimento de software com Python, Ruby e Kotlin."
+                  }
+               ],
+               "es": [
+                  {
+                     "id": 0,
+                     "assignment": "Desarrollo de sitios web y aplicaciones con React.js, React Native, Next.js y Flutter."
+                  },
+                  {
+                     "id": 1,
+                     "assignment": "Desarrollo de software con Python, Ruby y Kotlin."
+                  }
+               ]
+            },
+            "stacks": [
+               {
+                  "name": "ReactJs"
+               },
+               {
+                  "name": "NextJS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "MySQL"
+               }
+            ]
+         }
+      ],
+      "formation": [
+         {
+            "UniversityEducation": true,
+            "concluded": {
+               "en": "concluded",
+               "pt": "concluído",
+               "es": "concluyó"
+            },
+            "situation": {
+               "en": "graduate",
+               "pt": "graduado",
+               "es": "graduado"
+            },
+            "course": {
+               "en": "Systems Analysis and Development",
+               "pt": "Análise e desenvolvimento de sistemas",
+               "es": "Análisis y desarrollo de sistemas"
+            },
+            "institution": {
+               "en": "Anhembi Morumbi University",
+               "pt": "Universidade Anhembi Morumbi",
+               "es": "Universidad Anhembi Morumbi"
+            },
+            "category": {
+               "en": "technologist",
+               "pt": "tecnólogo",
+               "es": "tecnólogo"
+            },
+            "logo": "https://media.licdn.com/dms/image/C4D0BAQGcTGL2HhDUwg/company-logo_100_100/0/1630477125888?e=1723680000&v=beta&t=Zlx7SxuSlMK1k8tbR34J1_b-Mu6KLY4B9QAXCpqhDsg",
+            "start": "06/2021",
+            "end": "06/2024",
+            "certificate": ""
+         }
+      ],
+      "courses": [
+         {
+            "course": "JavaScript com foco no back-end",
+            "institution": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Back-End",
+            "hours": "74h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "#"
+         },
+         {
+            "course": "Como criar CRUDs com Qualidade",
+            "institution": "DevSoutinho",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFOI51rxtacFw/company-logo_100_100/0/1674513714818/devsoutinho_tech_logo?e=1723680000&v=beta&t=P_xCsLvYIcuitrj_I5LIhhlky5aM1zAwEOhGMcKKoT4",
+            "category": "Back-End",
+            "hours": "10h",
+            "stacks": [
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "CSS-in-JS"
+               },
+               {
+                  "name": "NextJS"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "https://crudcomqualidade.club.hotmart.com/public/user-certificate/190c359e-13c6-429b-b27f-ba222a81874b/_"
+         },
+         {
+            "course": "APIs com Node.js e Express",
+            "institution": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "API REST",
+            "hours": "70h",
+            "stacks": [
+               {
+                  "name": "NodeJs"
+               },
+               {
+                  "name": "Express"
+               },
+               {
+                  "name": "TypeScript"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "WebMaster Front-End Completo",
+            "institution": "Danki.Code",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFvKVfQZ_cWNg/company-logo_100_100/0/1630579031066?e=1723680000&v=beta&t=VeCfeLDwC4UFeZAKWz7LO0ADZS47la-FVuDbYtoGBJA",
+            "category": "Front-End",
+            "hours": "81h",
+            "stacks": [
+               {
+                  "name": "HTML"
+               },
+               {
+                  "name": "CSS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/c4c8b9a3-dc5b-4a4c-b6a9-b29c1881ab57"
+         },
+         {
+            "course": "JavaScript: tipos, variáveis e funções",
+            "institution": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "JavaScript",
+            "hours": "12h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "Python com Orientação a Objetos",
+            "institution": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Python",
+            "hours": "93h",
+            "stacks": [
+               {
+                  "name": "Python"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "CURSO FRONT-END COMPLETO 2.0",
+            "institution": "Danki.Code",
+            "logo": "https://media.licdn.com/dms/image/C4E0BAQFvKVfQZ_cWNg/company-logo_100_100/0/1630579031066?e=1723680000&v=beta&t=VeCfeLDwC4UFeZAKWz7LO0ADZS47la-FVuDbYtoGBJA",
+            "category": "Front-End",
+            "hours": "10h",
+            "stacks": [
+               {
+                  "name": "HTML"
+               },
+               {
+                  "name": "CSS"
+               },
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/e8498ebd-733a-464a-8773-3a2d0e7223b3"
+         },
+         {
+            "course": "Gerencie aplicações React com Typescript",
+            "institution": "Alura",
+            "logo": "https://media.licdn.com/dms/image/D4D0BAQEZkMsv5FwbDA/company-logo_100_100/0/1710187635900/aluracursos_logo?e=1723680000&v=beta&t=jYz7IRxBLhUBWQXX39hyEgSk7G-iMIKoqSHo8M_Gj2s",
+            "category": "Front-End",
+            "hours": "83h",
+            "stacks": [
+               {
+                  "name": "TypeScript"
+               },
+               {
+                  "name": "ReactJs"
+               }
+            ],
+            "certificate": ""
+         },
+         {
+            "course": "Lógica de Programação Essencial",
+            "institution": "Digital Innovation One",
+            "logo": "https://media.licdn.com/dms/image/C4D0BAQEKbzdlM0lHQA/company-logo_100_100/0/1652539870372/diof_logo?e=1723680000&v=beta&t=3HNUZPSDIBiTtU_CJL29X9r2SInSjCtaJjTjhBr3RJs",
+            "category": "Back-End",
+            "hours": "4h",
+            "stacks": [
+               {
+                  "name": "JavaScript"
+               },
+               {
+                  "name": "NodeJs"
+               }
+            ],
+            "certificate": "https://www.dio.me/certificate/3A22FCA6/share"
+         }
+      ]
+   }
+}

@@ -14,6 +14,7 @@ const nextConfig = {
          'static-00.iconduck.com',
          'raw.githubusercontent.com',
          'w7.pngwing.com',
+         'seeklogo.com'
       ],
    },
    i18n: {

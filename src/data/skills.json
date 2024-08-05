@@ -1,0 +1,293 @@
+{
+   "skills": [
+      {
+         "id": 1,
+         "type": "Front-End",
+         "language_name": "HTML5",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/html5.svg",
+         "description": {
+            "en": "A markup language used for structuring and presenting content on the web.",
+            "pt": "Uma linguagem de marcação usada para estruturar e apresentar conteúdo na web.",
+            "es": "Un lenguaje de marcado utilizado para estructurar y presentar contenido en la web."
+         }
+      },
+      {
+         "id": 2,
+         "type": "Front-End",
+         "language_name": "CSS3",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/css3.svg",
+         "description": {
+            "en": "A style sheet language used for describing the presentation of a document written in HTML or XML.",
+            "pt": "Uma linguagem de folha de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML.",
+            "es": "Un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en HTML o XML."
+         }
+      },
+      {
+         "id": 3,
+         "type": "Front-End",
+         "language_name": "JavaScript",
+         "logo": "https://abrudz.github.io/logos/JS.svg",
+         "description": {
+            "en": "A programming language that is one of the core technologies of the World Wide Web.",
+            "pt": "Uma linguagem de programação que é uma das tecnologias principais da World Wide Web.",
+            "es": "Un lenguaje de programación que es una de las tecnologías centrales de la World Wide Web."
+         }
+      },
+      {
+         "id": 4,
+         "type": "Front-End",
+         "language_name": "TypeScript",
+         "logo": "https://abrudz.github.io/logos/TypeScript.svg",
+         "description": {
+            "en": "A strict syntactical superset of JavaScript and adds optional static typing to the language.",
+            "pt": "Um superset sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+            "es": "Un superconjunto sintáctico estricto de JavaScript que agrega tipado estático opcional al lenguaje."
+         }
+      },
+      {
+         "id": 5,
+         "type": "Front-End",
+         "language_name": "ReactJs",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
+         "description": {
+            "en": "A JavaScript library for building user interfaces.",
+            "pt": "Uma biblioteca JavaScript para construir interfaces de usuário.",
+            "es": "Una biblioteca de JavaScript para construir interfaces de usuario."
+         }
+      },
+      {
+         "id": 6,
+         "type": "Front-End",
+         "language_name": "VueJs",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/vuejs.svg",
+         "description": {
+            "en": "An open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.",
+            "pt": "Um framework JavaScript de front-end de código aberto para construir interfaces de usuário e aplicações de página única.",
+            "es": "Un marco de JavaScript de front-end de código abierto para construir interfaces de usuario y aplicaciones de una sola página."
+         }
+      },
+      {
+         "id": 7,
+         "type": "Front-End",
+         "language_name": "NextJs",
+         "logo": "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
+         "bgWhite": true,
+         "description": {
+            "en": "A React framework that enables several extra features, including server-side rendering and generating static websites.",
+            "pt": "Um framework React que habilita várias funcionalidades extras, incluindo renderização do lado do servidor e geração de sites estáticos.",
+            "es": "Un marco de React que habilita varias características adicionales, incluyendo renderización del lado del servidor y generación de sitios web estáticos."
+         }
+      },
+      {
+         "id": 8,
+         "type": "Front-End",
+         "language_name": "Sass",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/sass.svg",
+         "description": {
+            "en": "A preprocessor scripting language that is interpreted or compiled into CSS.",
+            "pt": "Uma linguagem de script pré-processador que é interpretada ou compilada em CSS.",
+            "es": "Un lenguaje de scripting preprocesador que se interpreta o compila en CSS."
+         }
+      },
+      {
+         "id": 9,
+         "type": "Front-End",
+         "language_name": "CSS-in-JS",
+         "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
+         "description": {
+            "en": "A styling technique where JavaScript is used to style components.",
+            "pt": "Uma técnica de estilização onde o JavaScript é usado para estilizar componentes.",
+            "es": "Una técnica de estilización donde se utiliza JavaScript para estilizar componentes."
+         }
+      },
+      {
+         "id": 10,
+         "type": "Front-End",
+         "language_name": "Angular",
+         "logo": "https://www.svgrepo.com/show/452156/angular.svg",
+         "description": {
+            "en": "A platform for building mobile and desktop web applications.",
+            "pt": "Uma plataforma para construir aplicações web móveis e de desktop.",
+            "es": "Una plataforma para construir aplicaciones web móviles y de escritorio."
+         }
+      },
+      {
+         "id": 11,
+         "type": "Back-End",
+         "language_name": "NodeJs",
+         "logo": "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
+         "description": {
+            "en": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+            "pt": "Um ambiente de execução JavaScript construído no motor JavaScript V8 do Chrome.",
+            "es": "Un entorno de ejecución de JavaScript construido en el motor de JavaScript V8 de Chrome."
+         }
+      },
+      {
+         "id": 12,
+         "type": "Back-End",
+         "language_name": "Express",
+         "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+         "bgWhite": true,
+         "description": {
+            "en": "A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+            "pt": "Um framework de aplicação web minimalista e flexível para Node.js que fornece um conjunto robusto de recursos para aplicações web e móveis.",
+            "es": "Un marco de aplicación web minimalista y flexible para Node.js que proporciona un conjunto robusto de características para aplicaciones web y móviles."
+         }
+      },
+      {
+         "id": 13,
+         "type": "Back-End",
+         "language_name": "Python",
+         "logo": "https://abrudz.github.io/logos/Python.svg",
+         "description": {
+            "en": "A high-level, interpreted, and general-purpose programming language.",
+            "pt": "Uma linguagem de programação de alto nível, interpretada e de propósito geral.",
+            "es": "Un lenguaje de programación de alto nivel, interpretado y de propósito general."
+         }
+      },
+      {
+         "id": 14,
+         "type": "Back-End",
+         "language_name": "Ruby",
+         "logo": "https://abrudz.github.io/logos/Ruby.svg",
+         "description": {
+            "en": "A dynamic, open-source programming language with a focus on simplicity and productivity.",
+            "pt": "Uma linguagem de programação dinâmica e de código aberto com foco na simplicidade e produtividade.",
+            "es": "Un lenguaje de programación dinámico y de código abierto con un enfoque en la simplicidad y la productividad."
+         }
+      },
+      {
+         "id": 15,
+         "type": "Mobile",
+         "language_name": "Flutter",
+         "logo": "https://www.svgrepo.com/show/353751/flutter.svg",
+         "description": {
+            "en": "An open-source UI software development toolkit created by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.",
+            "pt": "Um kit de ferramentas de desenvolvimento de software de UI de código aberto criado pelo Google para construir aplicações compiladas nativamente para mobile, web e desktop a partir de uma única base de código.",
+            "es": "Un kit de herramientas de desarrollo de UI de código abierto creado por Google para construir aplicaciones compiladas nativamente para móvil, web y escritorio a partir de una sola base de código."
+         }
+      },
+      {
+         "id": 16,
+         "type": "Mobile",
+         "language_name": "React Native",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
+         "description": {
+            "en": "A framework for building native applications using React.",
+            "pt": "Um framework para construir aplicações nativas usando React.",
+            "es": "Un marco para construir aplicaciones nativas utilizando React."
+         }
+      },
+      {
+         "id": 17,
+         "type": "Mobile",
+         "language_name": "Kotlin",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/kotlin.svg",
+         "description": {
+            "en": "A statically typed programming language that runs on the Java Virtual Machine and is officially supported by Google for Android development.",
+            "pt": "Uma linguagem de programação estaticamente tipada que roda na Java Virtual Machine e é oficialmente suportada pelo Google para desenvolvimento Android.",
+            "es": "Un lenguaje de programación tipado estáticamente que se ejecuta en la Java Virtual Machine y es oficialmente soportado por Google para el desarrollo de Android."
+         }
+      },
+      {
+         "id": 18,
+         "type": "Quality Assurance",
+         "language_name": "Cypress",
+         "logo": "https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png",
+         "description": {
+            "en": "A JavaScript end-to-end testing framework that provides a fast, easy, and reliable way to test anything that runs in a browser.",
+            "pt": "Um framework de testes end-to-end em JavaScript que fornece uma maneira rápida, fácil e confiável de testar qualquer coisa que execute em um navegador.",
+            "es": "Un marco de pruebas end-to-end en JavaScript que proporciona una manera rápida, fácil y confiable de probar cualquier cosa que se ejecute en un navegador."
+         }
+      },
+      {
+         "id": 19,
+         "type": "Quality Assurance",
+         "language_name": "Postman",
+         "logo": "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+         "description": {
+            "en": "A tool for testing APIs by sending requests and inspecting responses.",
+            "pt": "Uma ferramenta para testar APIs enviando solicitações e inspecionando respostas.",
+            "es": "Una herramienta para probar APIs enviando solicitudes e inspeccionando respuestas."
+         }
+      },
+      {
+         "id": 20,
+         "type": "Database & Cloud",
+         "language_name": "AWS",
+         "logo": "https://www.svgrepo.com/show/376356/aws.svg",
+         "bgWhite": true,
+         "description": {
+            "en": "A comprehensive cloud computing platform provided by Amazon.",
+            "pt": "Uma plataforma abrangente de computação em nuvem fornecida pela Amazon.",
+            "es": "Una plataforma integral de computación en la nube proporcionada por Amazon."
+         }
+      },
+      {
+         "id": 21,
+         "type": "Database & Cloud",
+         "language_name": "Docker",
+         "logo": "https://www.svgrepo.com/show/448221/docker.svg",
+         "description": {
+            "en": "An open-source platform used for automating the deployment of applications inside lightweight, portable containers.",
+            "pt": "Uma plataforma de código aberto usada para automatizar o deployment de aplicações dentro de containers leves e portáteis.",
+            "es": "Una plataforma de código abierto utilizada para automatizar el despliegue de aplicaciones dentro de contenedores ligeros y portátiles."
+         }
+      },
+      {
+         "id": 22,
+         "type": "Database & Cloud",
+         "language_name": "MongoDB",
+         "logo": "https://www.svgrepo.com/show/331488/mongodb.svg",
+         "description": {
+            "en": "A NoSQL database that uses a document-oriented data model.",
+            "pt": "Um banco de dados NoSQL que usa um modelo de dados orientado a documentos.",
+            "es": "Una base de datos NoSQL que usa un modelo de datos orientado a documentos."
+         }
+      },
+      {
+         "id": 23,
+         "type": "Database & Cloud",
+         "language_name": "MySQL",
+         "logo": "https://www.svgrepo.com/show/355133/mysql.svg",
+         "description": {
+            "en": "An open-source relational database management system.",
+            "pt": "Um sistema de gerenciamento de banco de dados relacional de código aberto.",
+            "es": "Un sistema de gestión de bases de datos relacional de código abierto."
+         }
+      },
+      {
+         "id": 24,
+         "type": "Design",
+         "language_name": "Figma",
+         "logo": "https://www.svgrepo.com/show/354987/figma.svg",
+         "description": {
+            "en": "A web-based app that provides tools for UI/UX design, prototyping, and collaboration.",
+            "pt": "Um aplicativo baseado na web que fornece ferramentas para design de UI/UX, prototipagem e colaboração.",
+            "es": "Una aplicación basada en la web que proporciona herramientas para diseño de UI/UX, prototipado y colaboración."
+         }
+      },
+      {
+         "id": 25,
+         "type": "Front-End",
+         "language_name": "TailwindCss",
+         "logo": "https://www.svgrepo.com/show/374118/tailwind.svg",
+         "description": {
+            "en": "A utility-first CSS framework for creating custom designs without having to leave your HTML.",
+            "pt": "Um framework CSS utilitário-primeiro para criar designs personalizados sem precisar sair do seu HTML.",
+            "es": "Un framework CSS de primera utilidad para crear diseños personalizados sin tener que salir de tu HTML."
+         }
+      },
+      {
+         "id": 26,
+         "type": "Front-End",
+         "language_name": "GraphQL",
+         "logo": "https://www.svgrepo.com/show/353834/graphql.svg",
+         "description": {
+            "en": "A query language for your API and a server-side runtime for executing those queries by using a type system that you define.",
+            "pt": "Uma linguagem de consulta para sua API e um tempo de execução do lado do servidor para executar essas consultas usando um sistema de tipos que você define.",
+            "es": "Un lenguaje de consulta para tu API y un entorno de ejecución del lado del servidor para ejecutar esas consultas mediante un sistema de tipos que tú defines."
+         }
+      }
+   ]
+}

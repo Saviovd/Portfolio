@@ -1,4 +1,4 @@
-import Button from '@/components/Button/Button';
+import ButtonLink from '@/components/Buttons/ButtonLink';
 import { ProjectsStyle } from '@/styles/projectPageStyles';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -15,10 +15,10 @@ const Projects = () => {
          </Head>
          <ProjectsStyle>
             <div className='back'>
-               <Button
+               <ButtonLink
                   className='button'
                   _blank={false}
-                  title='Voltar'
+                  content='Voltar'
                   url='/'
                />
             </div>
@@ -52,9 +52,9 @@ const Projects = () => {
                   <p className='project_description'>{project.description}</p>
 
                   <div className='links_to_project'>
-                     <Button title='Projeto' url={project.url} _blank={true} />
-                     <Button
-                        title='Repositório'
+                     <ButtonLink content='Projeto' url={project.url} _blank={true} />
+                     <ButtonLink
+                        content='Repositório'
                         url={project.repository}
                         _blank={true}
                      />
