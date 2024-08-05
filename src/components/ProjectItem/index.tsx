@@ -20,7 +20,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project, action }) => {
    const windowSize = useWindowSize();
 
    return (
-      <Project className='project_container' key={project.id} onClick={action}>
+      <Project className='project_container' key={project.code} onClick={action}>
          <Image
             className='cover'
             src={project.image}

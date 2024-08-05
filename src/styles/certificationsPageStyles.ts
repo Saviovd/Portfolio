@@ -46,6 +46,11 @@ export const CertificationsStyle = styled.main`
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      gap: 4rem;
+
+      .title {
+         width: 90%;
+      }
 
       @media screen {
          @media (max-width: 690px) {
@@ -118,7 +123,7 @@ export const CertificationsStyle = styled.main`
       @media screen {
          @media (max-width: 690px) {
             justify-content: center;
-            padding: 0 .5rem;
+            padding: 0 0.5rem;
             margin-top: 2rem;
          }
          @media (max-width: 485px) {
@@ -148,7 +153,7 @@ export const CertificationsStyle = styled.main`
             @media (max-width: 485px) {
                padding: 5rem 0.5rem 1rem;
                min-height: 0;
-               }
+            }
          }
 
          .about_course {
@@ -221,6 +226,10 @@ export const CertificationsStyle = styled.main`
             margin: 3rem auto 0;
             font-size: 1.3rem;
             padding: 1rem;
+            background-color: rgba(var(--primary-blue), 0.1);
+            border: 1px solid rgb(var(--primary-blue));
+            justify-content: center;
+            text-transform: capitalize;
             @media screen {
                @media (max-width: 690px) {
                   width: 10rem;
@@ -232,6 +241,12 @@ export const CertificationsStyle = styled.main`
                   width: 9rem;
                   padding: 0.4rem;
                }
+            }
+
+            &:hover {
+               scale: 1.05;
+               border: 1px solid rgba(var(--primary-pink));
+               background-color: rgba(var(--primary-pink), 0.1);
             }
          }
       }
