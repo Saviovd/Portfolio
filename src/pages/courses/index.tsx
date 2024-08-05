@@ -1,18 +1,23 @@
 import ButtonLink from '@/components/Buttons/ButtonLink';
-import Title from '@/components/Title/Title';
+import Title from '@/components/Title';
 import { CertificationsStyle } from '@/styles/certificationsPageStyles';
 import Image from 'next/image';
-import data from '../../data/data.json';
+import data from '@/data/about.json';
 import Head from 'next/head';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import Footer from '@/components/Footer/Footer';
-import LanguageBar from '@/components/Languages/Languages';
+import LanguageBar from '@/components/Languages';
+import { Experiences } from '@/types/education';
+import { Formation } from '@/types/education';
+import { Locale } from '@/types/types';
 
-const { experiences } = data;
+const { experiences }: { experiences: Experiences } = data;
 
 const Certifications = () => {
    const { t } = useTranslation();
+   const locale = i18next.language as Locale;
+
    return (
       <>
          <Head>
@@ -29,73 +34,67 @@ const Certifications = () => {
                <LanguageBar className='langs' />
             </div>
             <div className='container'>
-               <Title
-                  firstColor='rgb(var(--primary-pink))'
-                  firstWord={t(`Courses.inProgress`)}
-               />
+               <Title className='title' text={t(`Courses.inProgress`)} />
                <div className='graduate_box'>
                   {experiences.formation.map(
-                     ({ logo, course, institution, start, end, stacks }, i) => {
+                     (
+                        {
+                           logo,
+                           course,
+                           institution,
+                           start,
+                           end,
+                           stacks,
+                        }: Formation,
+                        i: number
+                     ) => {
                         return (
-                           <>
-                              <div className='graduate' key={i}>
-                                 <Image
-                                    className='logo'
-                                    src={logo}
-                                    alt={`${institution} icon`}
-                                    width={110}
-                                    height={110}
-                                 />
-                                 <h3 className='course'>
-                                    {t(`AboutMe.graduations.${i}.course`) !==
-                                    `AboutMe.graduations.${i}.course`
-                                       ? t(`AboutMe.graduations.${i}.course`)
-                                       : course}
-                                 </h3>
-                                 <h5 className='university'>
-                                    {t(
-                                       `AboutMe.graduations.${i}.institution`
-                                    ) !== `AboutMe.graduations.${i}.institution`
-                                       ? t(
-                                            `AboutMe.graduations.${i}.institution`
-                                         )
-                                       : institution}
-                                 </h5>
-                                 {start && end && (
-                                    <p className='date'>08/2021 - 06/2024</p>
-                                 )}
-                                 {stacks ? (
-                                    <ul className='stack_list'>
-                                       {stacks.map(({ logo, name }) => {
-                                          return (
-                                             <li className='stack' key={name}>
-                                                <Image
-                                                   src={logo}
-                                                   alt={`${name} logo`}
-                                                   width={30}
-                                                   height={30}
-                                                />
-                                             </li>
-                                          );
-                                       })}
-                                    </ul>
-                                 ) : (
-                                    ''
-                                 )}
-                              </div>
-                           </>
+                           <div className='graduate' key={i}>
+                              <Image
+                                 className='logo'
+                                 src={logo}
+                                 alt={`${institution} icon`}
+                                 width={110}
+                                 height={110}
+                              />
+                              <h3 className='course'>{course[locale]}</h3>
+                              <h5 className='university'>
+                                 {institution[locale]}
+                              </h5>
+                              {start && end && (
+                                 <p className='date'>
+                                    {start} - {end}
+                                 </p>
+                              )}
+                              {stacks && (
+                                 <ul className='stack_list'>
+                                    {stacks.map(
+                                       (
+                                          stack: { name: string },
+                                          index: number
+                                       ) => (
+                                          <li className='stack' key={index}>
+                                             <Image
+                                                src={stack.name}
+                                                alt={`${stack.name} logo`}
+                                                width={30}
+                                                height={30}
+                                             />
+                                          </li>
+                                       )
+                                    )}
+                                 </ul>
+                              )}
+                           </div>
                         );
                      }
                   )}
                </div>
             </div>
             <div className='container'>
-               <Title
-                  firstColor='rgb(var(--primary-pink))'
-                  firstWord={t(`Courses.courses`)}
-               />
+               <Title className='title' text={t(`Courses.courses`)} />
                <div className='courses_box'>
-                  {experiences.courses.map((course, i: number) => (
+                  {experiences.courses.map((course, i) => (
                      <div key={`${i}_${course.course}`} className='course'>
                         <div className='about_course'>
                            <p className='course_category'>{course.category}</p>
@@ -117,7 +116,7 @@ const Certifications = () => {
                         <h5 className='school'>{course.institution}</h5>
                         <ButtonLink
                            _blank={true}
-                           title={t(`Courses.certificate`)}
+                           content={t(`Courses.certificate`)}
                            url={course.certificate}
                            className='button'
                         />
@@ -130,4 +129,5 @@ const Certifications = () => {
       </>
    );
 };
+
 export default Certifications;
