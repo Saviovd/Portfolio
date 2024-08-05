@@ -1,17 +1,18 @@
 import React from 'react';
-import data from '@/data/data.json';
+import data from '@/data/social.json';
 import Image from 'next/image';
-import Title from '../Title/Title';
+import Title from '../Title';
 import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
+import { RiContactsLine } from 'react-icons/ri';
 
 const { socials } = data;
 
 const Contacts = () => {
-   const {t} = useTranslation()
+   const { t } = useTranslation();
    const motionProps = (initialY: number, finalY: number) => ({
       initial: { opacity: 0, y: initialY },
       whileInView: { opacity: 1, y: finalY },
@@ -44,11 +45,7 @@ const Contacts = () => {
    return (
       <>
          <ContactStyle id='contatos'>
-            <Title
-               secondWord={t('Contacts.contacts')}
-               firstColor='rgb(var(--primary-blue))'
-               firstWord={t('Contacts.my')}
-            />
+            <Title className='section-title' text={t('Contacts.contacts')} icon={<RiContactsLine style={{fontSize: '4rem'}} />} />
             <motion.div
                {...motionProps(100, 0)}
                transition={{
@@ -65,7 +62,7 @@ const Contacts = () => {
                         <a
                            href={url ? url : ''}
                            target='_blank'
-                           content={t('Contacts.visit') +' '+ type}
+                           content={t('Contacts.visit') + ' ' + type}
                            className='contact_item'
                            key={i}
                         >
@@ -85,7 +82,7 @@ const Contacts = () => {
                         </a>
                      ) : (
                         <div
-                           content={t('Contacts.copy') +' '+ type}
+                           content={t('Contacts.copy') + ' ' + type}
                            key={i}
                            className='contact_item'
                            onClick={() =>

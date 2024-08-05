@@ -1,21 +1,21 @@
 {
    "socials": [
       {
-         "icon": "/assets/icons/social/linkedin.svg",
+         "icon": "https://www.svgrepo.com/show/452051/linkedin.svg",
          "type": "linkedin",
          "name": "Sávio Almeida",
          "url": "https://www.linkedin.com/in/saviovd/",
          "text": "Visitar"
       },
       {
-         "icon": "/assets/icons/social/github.svg",
+         "icon": "https://www.svgrepo.com/show/475654/github-color.svg",
          "type": "github",
          "name": "saviovd",
          "url": "https://github.com/Saviovd",
          "text": "Visitar"
       },
       {
-         "icon": "/assets/icons/media/email.svg",
+         "icon": "https://www.svgrepo.com/show/452213/gmail.svg",
          "type": "e-mail",
          "name": "savio.pinheiroal@gmail.com",
          "url": "",
