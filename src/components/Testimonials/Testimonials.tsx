@@ -1,11 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Title from '../Title';
-import data from '@/data/data.json';
+import data from '@/data/testimonials.json';
 import { TestimonialsStyle } from './testimonialStyles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
 import { GoPerson } from 'react-icons/go';
+import { BiMessageAltCheck } from 'react-icons/bi';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -32,8 +33,8 @@ const Testimonials = () => {
    return (
       <TestimonialsStyle id={t('Header.testimonials')}>
          <Title
-            firstColor='rgb(var(--first-primary-color))'
-            firstWord={t('Testimonials.testimonialTitle')}
+            text={t('Testimonials.testimonialTitle')}
+            icon={<BiMessageAltCheck />}
          />
 
          <motion.div
