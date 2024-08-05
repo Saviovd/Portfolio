@@ -6,10 +6,12 @@ import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import { MdPermIdentity } from 'react-icons/md';
 import Experiences from '../Experiences';
-import { about } from '@/data/about.json';
+import data from '@/data/about.json';
 import i18next from 'i18next';
 import { Locale } from '@/types/types';
 import useWindowSize from '@/hooks/useWindowSize';
+
+const { about } = data;
 
 const About = () => {
    const { t } = useTranslation();

@@ -33,10 +33,12 @@ const Header = () => {
             <div className='header-container'>
                <Image
                   className='logo'
-                  src={'/assets/logo.svg'}
+                  src={'/assets/logo.png'}
                   alt={t('Header.logoAlt')}
                   width={60}
-                  height={80}
+                  height={60}
+                  style={{width: 'auto', height: 'auto'}}
+                  quality={100}
                />
                {/* Nav Bar */}
                <AnimatePresence>

@@ -7,18 +7,12 @@ const Button = ({
    icon,
    className,
    strColor,
-   cursor,
-   textTransform,
    onClick,
 }: IButtonProps) => {
    return (
       <ButtonStyle
          style={{
             color: strColor || 'white',
-            textTransform:
-               (textTransform as React.CSSProperties['textTransform']) ||
-               'none',
-            cursor: cursor || '',
          }}
          onClick={onClick}
          className={className}

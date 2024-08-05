@@ -25,7 +25,6 @@ export const HeaderStyle = styled(motion.header)`
       .logo {
          position: absolute;
          left: 2.5rem;
-         height: 70%;
          object-fit: contain;
 
          @media screen {

@@ -41,9 +41,9 @@ const HorizontalCard: React.FC<ProjectItemProps> = ({ project, action }) => {
                   width={30}
                   height={30}
                   style={{
-                     background: stack.background ? 'white' : '',
-                     padding: stack.padding ? '0 1px' : '',
-                     borderRadius: stack.rounded ? '50%' : ''
+                     background: stack.background ? 'white' : 'transparent',
+                     padding: stack.padding ? '0 1px' : '0',
+                     borderRadius: stack.rounded ? '50%' : '0',
                   }}
                />
             ))}

@@ -9,7 +9,7 @@ interface ITitleProps {
    className?: string;
 }
 
-const Title = ({ text, color, icon, className }: ITitleProps) => {
+const Title = ({ text, icon, className }: ITitleProps) => {
    return (
       <>
          <TitleStyle
@@ -22,7 +22,6 @@ const Title = ({ text, color, icon, className }: ITitleProps) => {
             {icon ? icon : ''}
             <motion.h2
                className='title'
-               style={{ color: `${color ? color : ''}` }}
             >
                {text}
             </motion.h2>

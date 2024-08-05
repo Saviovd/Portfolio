@@ -2,11 +2,13 @@ import { ExperiencesStyles } from './styles';
 import ButtonLink from '../Buttons/ButtonLink';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import { experiences } from '@/data/about.json';
+import data from '@/data/about.json';
 import JobItem from '../JobItem';
 import GraduationItem from '../GraduationItem';
 import CourseItem from '../CourseItem';
 import { FaPlus } from 'react-icons/fa';
+
+const { experiences } = data;
 
 const Experiences: React.FC = () => {
    const { t } = useTranslation();
@@ -15,7 +17,7 @@ const Experiences: React.FC = () => {
       <>
          <ExperiencesStyles>
             <div className='jobs'>
-            <p className='title'>{t(`AboutMe.experienceTitle`)}</p>
+               <p className='title'>{t(`AboutMe.experienceTitle`)}</p>
                {experiences.jobs.map((job, i) => (
                   <JobItem key={job.company} job={job} index={i} />
                ))}
