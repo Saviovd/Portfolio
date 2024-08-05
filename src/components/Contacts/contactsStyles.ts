@@ -4,27 +4,21 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
    max-width: 1800px;
    padding-bottom: 6rem;
    margin: 0 auto;
-   margin: 15rem 15rem 0;
+   margin: 5rem auto 0;
 
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    flex-direction: column;
-   @media screen {
-      @media (max-width: 1265px) {
-         margin: 15rem 5rem 0;
-      }
-      @media (max-width: 1090px) {
-         margin: 15rem 2rem 0;
-      }
-      @media (max-width: 500px) {
-         margin: 10rem 0 0;
-      }
-   }
 
+   .section-title {
+      align-items: center;
+      gap: 1rem;
+   }
    .contact_container {
       display: flex;
       justify-content: space-around;
+      margin-top: 2rem;
       width: 100%;
       gap: 2rem;
 
@@ -59,6 +53,7 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
          @media screen {
             @media (max-width: 1085px) {
                height: 8rem;
+               max-width: 26.5rem;
             }
             @media (max-width: 950px) {
                width: 35%;
@@ -104,6 +99,7 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
                color: rgba(var(--primary-blue));
                align-self: center;
                margin-left: 6rem;
+               text-transform: capitalize;
                @media screen {
                   @media (max-width: 1500px) {
                   }

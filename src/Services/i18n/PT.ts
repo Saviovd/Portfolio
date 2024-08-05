@@ -17,87 +17,9 @@ const translations = {
       devfullstack: 'Desenvolvedor Fullstack',
    },
    AboutMe: {
-      about: 'sobre',
-      me: 'mim',
-      apresentation:
-         'Olá! Sou Sávio Almeida, um desenvolvedor apaixonado por criar interfaces intuitivas e visualmente atraentes. Com 3 anos de experiência, tenho um sólido conhecimento em JavaScript e seus principais frameworks, como React e Vue.js, além de um amplo domínio de linguagens back-end, como Python e Ruby.',
-      obs: 'Meu trabalho se destaca por:',
-      emphasis1: 'Design responsivo e amigável',
-      emphasis2: 'Código limpo e eficiente',
-      emphasis3: 'Foco no usuário',
-      text1: 'Crio interfaces que se adaptam a qualquer dispositivo, proporcionando uma experiência de usuário impecável.',
-      text2: 'Me preocupo com a qualidade do código, utilizando boas práticas e técnicas de otimização para garantir o melhor desempenho.',
-      text3: 'Acredito que a melhor interface é aquela que é fácil de usar e entender, sempre colocando o usuário no centro do processo de desenvolvimento.',
+      aboutme: 'sobre mim',
       experienceTitle: 'Experiências',
-      jobs: [
-         {
-            id: 0,
-            office: 'Desenvolvedor Front-End',
-            currently: ' ',
-            assignments: [
-               {
-                  id: 0,
-                  assignment:
-                     'Desenvolvimento de sites, apps e sistemas com VueJs, Quasar.',
-               },
-               {
-                  id: 1,
-                  assignment: 'Manutenção e refatoração de códigos antigos.',
-               },
-               {
-                  id: 2,
-                  assignment:
-                     'Integração de sistemas com NodeJs e PHP(Laravel).',
-               },
-            ],
-         },
-         {
-            id: 1,
-            office: 'Business Intelligence - intern',
-            currently: ' ',
-            assignments: [
-               {
-                  id: 0,
-                  assignment: 'Desenvolvimento de automações.',
-               },
-               {
-                  id: 1,
-                  assignment:
-                     'Análise de dados com as ferramentas Power Automate e Power BI.',
-               },
-               {
-                  id: 2,
-                  assignment: 'Automações utilizando API com NodeJS e Python.',
-               },
-            ],
-         },
-         {
-            id: 2,
-            office: 'Desenvolvedor FullStack',
-            currently: 'Atualmente',
-            assignments: [
-               {
-                  id: 0,
-                  assignment:
-                     'Desenvolvimento de sites e apps com ReactJs, React Native, NextJs e Flutter.',
-               },
-               {
-                  id: 1,
-                  assignment:
-                     'Desenvolvimento de software com Python, Ruby e Kotlin.',
-               },
-            ],
-         },
-      ],
       graduationTitle: 'graduação',
-      graduations: [
-         {
-            id: 0,
-            course: 'Análise e desenvolvimento de sistemas',
-            institution: 'Universidade Anhembi Morumbi',
-            category: 'tecnólogo',
-         },
-      ],
       coursesTitle: 'cursos',
       courses: [
          {
@@ -138,6 +60,7 @@ const translations = {
          },
       ],
       moreCourses: 'mais cursos',
+      since: 'Desde',
    },
    Habilities: {
       my: 'Minhas',
@@ -151,37 +74,7 @@ const translations = {
       projectButton: 'projeto',
       repositoryButton: 'repositório',
       devBy: 'Desenvolvido com:',
-      more: 'mais projetos',
-      dsfBank: {
-         name: 'DSF Bank',
-         description:
-            'Uma interface de banco moderna com elementos de 3D utilizando a biblioteca ThreeJs, e animações com Framer Motion.',
-      },
-      spaceTourism: {
-         name: 'Space Tourism',
-         description:
-            'Um website de apresentação de uma agência de turismo espacial, com apresentação de alguns destinos e equipe.',
-      },
-      SneakersECommerce: {
-         name: 'Sneakers e-commerce',
-         description:
-            'Página de selação de produtos simples com expansão de imagem e carrinho funcional e interativo.',
-      },
-      apiCountries: {
-         name: 'API Countries',
-         description:
-            'Interface que apresenta países e suas informações, tiradas da API Rest Countries, com funcionalidade de navegação entre fronteiras.',
-      },
-      strangerThings: {
-         name: 'Stranger Things 4°',
-         description:
-            'Landing Page baseada na 4° temporada da série Stranger Things da Netflix.',
-      },
-      toDoList: {
-         name: 'ToDo List',
-         description:
-            'Interface de tarefas a fazer simples e funcional, conta com verificações para banco de dados.',
-      },
+      more: 'Saiba mais',
    },
    Testimonials: {
       testimonialTitle: 'depoimentos',
@@ -221,6 +114,10 @@ const translations = {
       certificate: 'Certificado',
       courses: 'Cursos',
       inProgress: 'Em Andamento',
+   },
+   ProjectModal: {
+      features: 'Características',
+      services: 'Serviços',
    },
 };
 export default translations;

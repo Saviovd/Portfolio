@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const TestimonialsStyle = styled.section`
    max-width: 1800px;
-   margin: 15rem auto 0 auto;
+   margin: 0 auto;
+   padding-top: 15rem;
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -184,6 +185,12 @@ export const TestimonialsStyle = styled.section`
                background-color: rgb(var(--primary-blue));
             }
          }
+      }
+   }
+
+   @media screen {
+      @media (max-width: 768px) {
+         padding-top: 11rem;
       }
    }
 `;
