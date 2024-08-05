@@ -56,7 +56,7 @@ const Home = () => {
                   _blank={false}
                   icon={<MdSimCardDownload style={{fontSize: '1.5rem'}} />}
                   border='1px solid rgba(var(--primary-blue))'
-                  url='/documents/Curriculum.pdf'
+                  url='/documents/Curriculo - Savio Almeida.pdf'
                />
             </motion.div>
             <Social />
