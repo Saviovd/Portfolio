@@ -57,7 +57,6 @@ const HorizontalCard: React.FC<ProjectItemProps> = ({ project, action }) => {
                bgColor='rgba(var(--bg-black),0.5)'
                textTransform='uppercase'
                strColor='rgba(var(--secondary-white))'
-               border='1px solid rgba(var(--primary-blue))'
             />
          </motion.div>
       </HorizonntalContainer>

@@ -5,12 +5,16 @@ export const ProjectsStyle = styled.section`
    width: 100%;
    max-width: 170rem;
    margin: 0 auto;
-   margin-top: 13rem;
+   padding-top: 13rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    align-content: center;
+
+   .section-title {
+      gap: 1rem;
+   }
    .swiper {
       width: 100%;
       display: flex;
@@ -108,7 +112,7 @@ export const ProjectsStyle = styled.section`
 
 export const ProjectsContainer = styled(motion.div)`
    width: 90%;
-   margin: 0 auto;
+   margin: 5rem auto 0;
    display: flex;
    justify-content: space-between;
    align-items: flex-start;

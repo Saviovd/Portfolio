@@ -93,7 +93,7 @@ export const ModalContent = styled(motion.div)<{ services: ProjectServices[] }>`
       @media (max-width: 700px) {
          width: 90%;
          grid-template-rows: 4rem auto auto auto auto 4rem;
-         padding: 1rem .7rem;
+         padding: 1rem 0.7rem;
       }
       @media (max-width: 370px) {
          width: 92%;
@@ -242,18 +242,24 @@ export const StackContainer = styled.div`
 `;
 
 export const StackItem = styled.div<{
-   background: boolean;
-   rounded: boolean;
-   padding: boolean;
+   background: boolean | string;
+   rounded: boolean | string;
+   padding: boolean | string;
 }>`
    display: flex;
    align-items: center;
    justify-content: center;
    height: auto;
    background-color: ${({ background }) =>
-      background ? 'white' : 'transparent'};
-   border-radius: ${({ rounded }) => (rounded ? '50%' : '0')};
-   padding: ${({ padding }) => (padding ? '0.3rem' : '0')};
+      typeof background === 'boolean'
+         ? background
+            ? 'white'
+            : 'transparent'
+         : background};
+   border-radius: ${({ rounded }) =>
+      typeof rounded === 'boolean' ? (rounded ? '50%' : '0') : rounded};
+   padding: ${({ padding }) =>
+      typeof padding === 'boolean' ? (padding ? '0.3rem' : '0') : padding};
    transition: 0.5s;
    scale: 0.5;
 
@@ -354,6 +360,8 @@ export const Buttons = styled.div`
    .project-button {
       padding: 1rem 1.5rem;
       font-size: 1.5rem;
+      border: 1px solid rgba(var(--primary-blue));
+      background-color: rgba(var(--primary-blue), 0.2);
 
       svg {
          font-size: 2rem;
@@ -362,6 +370,8 @@ export const Buttons = styled.div`
 
       &:hover {
          scale: 1.05;
+         border: 1px solid rgba(var(--primary-pink));
+         background-color: rgba(var(--primary-pink), 0.2);
       }
    }
 

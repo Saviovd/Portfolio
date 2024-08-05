@@ -61,6 +61,7 @@ export const HorizonntalContainer = styled.div`
          font-size: 1rem;
          transition: 0.3s;
          background-color: rgba(var(--primary-blue), 0.5);
+         border: 1px solid rgba(var(--primary-blue));
 
          &:hover {
             background-color: rgba(var(--primary-blue), 0.9);

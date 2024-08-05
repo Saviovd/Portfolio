@@ -19,23 +19,36 @@ export const TitleStyle = styled(motion.div)`
    svg {
       font-size: 5.5rem;
       fill: rgba(var(--primary-blue));
+      stroke: rgba(var(--primary-blue));
    }
    @media screen {
       @media (max-width: 1024px) {
          padding-left: 1rem;
          width: 95vw;
-         .title {font-size: 4rem}
-         svg {font-size: 5rem}
+         .title {
+            font-size: 4rem;
+         }
+         svg {
+            font-size: 5rem;
+         }
       }
       @media (max-width: 720px) {
          padding-left: 0;
-         .title {font-size: 3.5rem}
-         svg {font-size: 4.5rem}
+         .title {
+            font-size: 3.5rem;
+         }
+         svg {
+            font-size: 4.5rem;
+         }
       }
       @media (max-width: 440px) {
          padding-left: 0;
-         .title {font-size: 3rem}
-         svg {font-size: 4rem}
+         .title {
+            font-size: 3rem;
+         }
+         svg {
+            font-size: 4rem;
+         }
       }
    }
 `;

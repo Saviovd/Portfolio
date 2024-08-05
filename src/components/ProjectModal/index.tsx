@@ -71,9 +71,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, project }) => {
                {project.stacks.map((stack, index) => (
                   <StackItem
                      key={index}
-                     background={stack.background}
-                     rounded={stack.rounded}
-                     padding={stack.padding}
+                     background={stack.background ? 'white' : 'transparent'}
+                     rounded={stack.rounded ? true : false}
+                     padding={stack.padding ? '.1rem' : '0'}
                   >
                      <StackImage
                         src={stack.src}

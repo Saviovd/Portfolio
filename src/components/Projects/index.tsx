@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 import Modal from '../ProjectModal';
 import { AnimatePresence } from 'framer-motion';
 import HorizontalCard from '../ProjectHorizontalCard';
+import { IoRocketOutline } from 'react-icons/io5';
 
 interface ProjectsData {
    projects: ProjectProps[];
@@ -73,10 +74,7 @@ const Projects: React.FC = () => {
 
    return (
       <ProjectsStyle id={t('Projects.projects')}>
-         <Title
-            firstColor='rgb(var(--secondary-white))'
-            firstWord={t('Projects.projects')}
-         />
+         <Title text={t('Projects.projects')} icon={<IoRocketOutline />} className='section-title'/>
 
          <ProjectsContainer
             initial={{ y: 400, opacity: 0 }}
