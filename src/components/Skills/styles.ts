@@ -11,7 +11,8 @@ export const HabilitiesStyle = styled.section`
 
    .stacks {
       width: 95%;
-      margin: 5rem auto 0;
+      margin: 3rem auto 0;
+      padding: 1rem 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -31,6 +32,7 @@ export const HabilitiesStyle = styled.section`
          background-color: rgba(250, 250, 250, 0.25);
          color: rgba(var(--primary-blue));
          overflow: hidden;
+         transition: 0.13s;
 
          .logo {
             object-fit: contain;
