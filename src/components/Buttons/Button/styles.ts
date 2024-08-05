@@ -11,6 +11,7 @@ export const ButtonStyle = styled.button`
    display: flex;
    align-items: center;
    background-color: transparent;
+   border: 1px solid transparent;
 
    &:before,
    &:after {
@@ -55,8 +56,6 @@ export const ButtonStyle = styled.button`
          animation: glitch-button 2s forwards linear alternate;
       }
    }
-
-
 
    @keyframes glitch-button {
       0% {

@@ -9,7 +9,6 @@ const Button = ({
    strColor,
    cursor,
    textTransform,
-   border,
    onClick,
 }: IButtonProps) => {
    return (
@@ -19,7 +18,6 @@ const Button = ({
             textTransform:
                (textTransform as React.CSSProperties['textTransform']) ||
                'none',
-            border: border || '1px solid transparent',
             cursor: cursor || '',
          }}
          onClick={onClick}
