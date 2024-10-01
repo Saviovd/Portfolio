@@ -41,4 +41,9 @@ export const NavItemStyle = styled.li`
    @media (max-width: 1150px) {
       font-size: 1.5rem;
    }
+   @keyframes glow {
+      to {
+         width: 100%;
+      }
+   }
 `;

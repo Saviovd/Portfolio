@@ -30,7 +30,7 @@ const NavItem = ({ name, isSelected, setIsSelected, to }: INavItemProps) => {
    }, [to, isSelected, setIsSelected]);
 
    return (
-      <NavItemStyle data-glitch>
+      <NavItemStyle>
          <ScrollLink
             onClick={setIsSelected}
             className={isInView || isSelected ? 'selected-item' : ''}

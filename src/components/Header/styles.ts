@@ -20,7 +20,7 @@ export const HeaderStyle = styled(motion.header)`
       max-width: 150rem;
       width: 96%;
       padding: 0 1rem;
-      height: 8rem;.
+      height: 8rem;
       display: flex;
       align-items: center;
       justify-content: flex-end;
