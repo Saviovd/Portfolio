@@ -3,24 +3,25 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Nav from '../Nav';
 import { HeaderStyle } from './styles';
-import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import useWindowSize from '@/hooks/useWindowSize';
+import useScrollPosition from '@/hooks/useScrollPosition';
+import LanguageBar from '../Languages';
 
 const Header = () => {
    const { t } = useTranslation();
    const [isMenuMobileActive, setIsActive] = useState(false);
    const { width } = useWindowSize();
-   const { scrollYProgress } = useScroll();
-   const scaleX = useSpring(scrollYProgress, {
-      stiffness: 100,
-      damping: 30,
-      restDelta: 0.001,
-   });
+   const position = useScrollPosition();
 
    useEffect(() => {
-      if (width >= 1024) setIsActive(true);
-      if (width < 1024) setIsActive(false);
+      const isDesktop = width >= 1024;
+      setIsActive(isDesktop);
    }, [width]);
+
+   const toggleMenu = () => setIsActive(!isMenuMobileActive);
+
+   const showNavBar = (width && width > 1024) || isMenuMobileActive;
 
    return (
       <>
@@ -30,36 +31,37 @@ const Header = () => {
             exit={{ y: '-120%' }}
             transition={{ duration: 1, delay: 0.2, ease: [0.42, 0, 0.58, 1] }}
          >
-            <div className='header-container'>
+            <div
+               className={`header-container ${position > 50 ? 'scrolled' : ''}`}
+            >
                <Image
                   className='logo'
-                  src={'/assets/logo.png'}
+                  src='/assets/logo.png'
                   alt={t('Header.logoAlt')}
-                  width={60}
-                  height={60}
-                  style={{width: 'auto', height: 'auto'}}
+                  width={40}
+                  height={40}
+                  style={{ width: 'auto', height: 'auto' }}
                   quality={100}
                />
-               {/* Nav Bar */}
+
                <AnimatePresence>
-                  {((width && width > 1024) || isMenuMobileActive) && (
+                  {showNavBar && (
                      <Nav isActive={isMenuMobileActive} key='nav' />
                   )}
                </AnimatePresence>
-               {/* Hamburguer animated icon */}
+
+               <LanguageBar className='translations' />
+
                {width && width < 1024 && (
                   <div
-                     className={isMenuMobileActive ? 'center active' : 'center'}
-                     onClick={() => setIsActive(!isMenuMobileActive)}
+                     className={`center ${isMenuMobileActive ? 'active' : ''}`}
+                     onClick={toggleMenu}
                   >
                      <div></div>
                   </div>
                )}
-               {/* progress bar */}
-               {width > 1024 && (
-                  <motion.div className='progress-bar' style={{ scaleX }} />
-               )}
             </div>
+
             {isMenuMobileActive && width < 1024 && (
                <div
                   className='outside'

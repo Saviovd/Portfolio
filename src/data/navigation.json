@@ -1,0 +1,52 @@
+{
+   "navigation": [
+      {
+         "title": {
+            "pt": "Inicio",
+            "en": "Home",
+            "es": "Inicio"
+         },
+         "to": "home"
+      },
+      {
+         "title": {
+            "pt": "Sobre Mim",
+            "en": "About me",
+            "es": "Sobre mí"
+         },
+         "to": "aboutme"
+      },
+      {
+         "title": {
+            "pt": "Serviços",
+            "en": "Services",
+            "es": ""
+         },
+         "to": "services"
+      },
+      {
+         "title": {
+            "pt": "Projetos",
+            "en": "Projects",
+            "es": ""
+         },
+         "to": "projects"
+      },
+      {
+         "title": {
+            "pt": "Indicações",
+            "en": "Testimonials",
+            "es": ""
+         },
+         "to": "testimonials"
+      },
+      {
+         "title": {
+            "pt": "Contatos",
+            "en": "Contacts",
+            "es": "Contactos"
+         },
+         "to": "contacts"
+      }
+   ]
+}

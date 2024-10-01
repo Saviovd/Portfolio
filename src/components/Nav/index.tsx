@@ -1,17 +1,22 @@
 import React from 'react';
 import NavItem from './NavItem';
 import { NavStyle } from './styles';
-import { useTranslation } from 'react-i18next';
-import LanguageBar from '../Languages';
 import { motion } from 'framer-motion';
 import useWindowSize from '@/hooks/useWindowSize';
+import data from '@/data/navigation.json';
+import i18next from 'i18next';
+import { Locale } from '@/types/types';
+import ButtonLink from '../Buttons/ButtonLink';
+import { MdOutlineFileDownload } from 'react-icons/md';
+
+const { navigation } = data;
 
 interface INavProps {
    isActive: boolean;
 }
 
 const Nav = ({ isActive }: INavProps) => {
-   const { t } = useTranslation();
+   const locale = i18next.language as Locale;
 
    const [selectedNavItem, setSelectedNavItem] = React.useState('');
    const scrollRef = React.useRef<HTMLDivElement>(null);
@@ -40,45 +45,27 @@ const Nav = ({ isActive }: INavProps) => {
                animate='visible'
                exit='exit'
                variants={navVariants}
-               transition={{ duration: width < 1024 ? 0.5 : 0.2 }}
+               transition={{ duration: width < 1024 ? 0.3 : 0.2 }}
             >
-               <NavItem
-                  isSelected={selectedNavItem === t('Header.home')}
-                  setIsSelected={() => handleNavItemSelect(t('Header.home'))}
-                  name={t('Header.home')}
+               {navigation.map((item, i) => (
+                  <NavItem
+                     key={i}
+                     to={item.to}
+                     isSelected={selectedNavItem === item.title[locale]}
+                     setIsSelected={() => handleNavItemSelect(item.to)}
+                     name={item.title[locale]}
+                  />
+               ))}
+               <ButtonLink
+                  fontSize={2}
+                  className='cv-btn'
+                  content='Download CV'
+                  download={true}
+                  _blank={false}
+                  icon={<MdOutlineFileDownload />}
+                  border='1px solid rgba(var(--primary-blue))'
+                  url='/documents/Curriculo - Savio Almeida.pdf'
                />
-               <NavItem
-                  isSelected={selectedNavItem === t('Header.aboutme')}
-                  setIsSelected={() => handleNavItemSelect(t('Header.aboutme'))}
-                  name={t('Header.aboutme')}
-               />
-               <NavItem
-                  isSelected={selectedNavItem === t('Header.habilities')}
-                  setIsSelected={() =>
-                     handleNavItemSelect(t('Header.habilities'))
-                  }
-                  name={t('Header.habilities')}
-               />
-               <NavItem
-                  isSelected={selectedNavItem === t('Header.projects')}
-                  setIsSelected={() =>
-                     handleNavItemSelect(t('Header.projects'))
-                  }
-                  name={t('Header.projects')}
-               />
-               <NavItem
-                  isSelected={selectedNavItem === t('Header.testimonials')}
-                  setIsSelected={() =>
-                     handleNavItemSelect(t('Header.testimonials'))
-                  }
-                  name={t('Header.testimonials')}
-               />
-               <NavItem
-                  isSelected={selectedNavItem === ''}
-                  setIsSelected={() => handleNavItemSelect('')}
-                  name=''
-               />
-               <LanguageBar />
             </motion.ul>
          )}
          <div ref={scrollRef}></div>

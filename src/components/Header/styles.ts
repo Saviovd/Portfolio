@@ -4,20 +4,23 @@ import styled from 'styled-components';
 export const HeaderStyle = styled(motion.header)`
    z-index: 10;
    width: 100%;
-   height: 9rem;
    position: fixed;
    top: 0;
    left: 0;
-   padding: 1rem 0;
-   backdrop-filter: blur(0.8rem);
-   background-color: rgb(var(--primary-pink), 0.1);
+   right: 0;
 
    .header-container {
+      transition: 0.3s;
+      border: 1px solid rgb(var(--light-green), 0.2);
+      background-color: rgba(var(--dark-green), 0.05);
+      border-radius: 1rem;
+      backdrop-filter: blur(0.8rem);
       position: relative;
-      margin: 0 auto;
-      max-width: 180rem;
+      margin: 1rem auto 0;
+      max-width: 150rem;
+      width: 96%;
       padding: 0 1rem;
-      height: 100%;
+      height: 8rem;.
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -27,16 +30,23 @@ export const HeaderStyle = styled(motion.header)`
          left: 2.5rem;
          object-fit: contain;
 
-         @media screen {
-            @media (max-width: 1024px) {
-               height: 100%;
-               top: 2rem;
-            }
-            @media (max-width: 768px) {
-               top: 1rem;
-               left: 1rem;
-               height: 90%;
-            }
+         @media (max-width: 1024px) {
+            left: 1.5rem;
+            height: 3rem;
+            width: 3rem;
+         }
+      }
+
+      .translations {
+         position: absolute;
+         right: 2.5rem;
+
+         @media (max-width: 1024px) {
+            position: static;
+            margin-right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
          }
       }
 
@@ -44,8 +54,8 @@ export const HeaderStyle = styled(motion.header)`
          cursor: pointer;
          top: 1.5rem;
          right: 2rem;
-         position: absolute;
          width: 4rem;
+         z-index: 10;
 
          @media screen {
             @media (max-width: 768px) {
@@ -57,7 +67,7 @@ export const HeaderStyle = styled(motion.header)`
          &::before,
          &::after,
          & div {
-            background: rgb(var(--secondary-white));
+            background: rgb(var(--light));
             content: '';
             display: block;
             height: 5px;
@@ -96,30 +106,27 @@ export const HeaderStyle = styled(motion.header)`
          }
       }
 
-      .rotate {
-         animation: rotation 400ms forwards;
-
-         @keyframes rotation {
-            0% {
-               transform: rotate(0deg);
-            }
-            50% {
-               transform: rotate(-360deg);
-            }
-            100% {
-               transform: rotate(0deg);
-            }
-         }
+      @media (max-width: 1024px) {
+         border: 0 !important;
+         background-color: transparent !important;
+         height: 6rem !important;
+         margin: 0 auto;
+         width: 100%;
       }
+   }
 
-      .progress-bar {
-         position: fixed;
-         bottom: 0;
-         left: 0;
-         right: 0;
-         height: 0.3rem;
-         background: rgb(var(--primary-pink));
-         transform-origin: 0%;
+   .scrolled {
+      margin-top: 0;
+      border-radius: 0 0 1rem 1rem;
+      width: 100%;
+      height: 8rem;
+      border: 1px solid rgb(var(--light-blue), 0.2);
+      background-color: rgba(var(--dark-blue), 0.05);
+
+      @media (max-width: 1024px) {
+         border: 0 !important;
+         background-color: transparent !important;
+         height: 6rem !important;
       }
    }
    .outside {
