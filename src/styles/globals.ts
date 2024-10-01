@@ -1,26 +1,47 @@
 import { createGlobalStyle } from 'styled-components';
 
 const outfit = 'outfit';
-const firstPrimaryColor = '49, 156, 234';
-const secondPrimaryColor = '173, 22, 184';
-const whiteUnification = '255, 255, 255';
-const blackBG = '0, 0, 0';
+const lightBlue = '67, 179, 255';
+const darkBlue = '10, 152, 168';
+const lightGreen = '24, 255, 133';
+const darkGreen = '0, 181, 86';
+const light = '230, 253, 236';
+const dark = '6, 5, 12';
 
 const GlobalStyle = createGlobalStyle`
    :root {
       --outfit: ${outfit};
-      --primary-blue: ${firstPrimaryColor};
-      --primary-pink: ${secondPrimaryColor};
-      --secondary-white: ${whiteUnification};
-      --bg-black: ${blackBG};
+      --light-blue: ${lightBlue};
+      --dark-blue: ${darkBlue};
+      --light-green: ${lightGreen};
+      --dark-green: ${darkGreen};
+      --light: ${light};
+      --dark: ${dark};
    }
 
 
    html {
       font-size: 10px;
       min-height: 100vh;
-      background-color: rgb(var(--bg-black));
+      background-color: rgb(var(--dark));
       overflow-x: hidden;
+
+      * {
+         font-family: var(--outfit);
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      .progress-bar {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: .5rem;
+         background: rgb(var(--light-green));
+         transform-origin: 0%;
+      }
 
       body {
          animation: cursorAnimation 10s infinite ;

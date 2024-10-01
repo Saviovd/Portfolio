@@ -8,8 +8,15 @@ import Projects from '@/components/Projects';
 import Contacts from '@/components/Contacts/Contacts';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 export default function Index() {
+   const { scrollYProgress } = useScroll();
+   const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001,
+   });
    return (
       <>
          <GlobalStyle />
@@ -32,6 +39,7 @@ export default function Index() {
             <Contacts />
          </main>
          <Footer />
+         <motion.div className='progress-bar' style={{ scaleX }} />
       </>
    );
 }
