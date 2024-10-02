@@ -35,7 +35,7 @@ const Home = () => {
    }, [currentLanguage, i18n.language, t]);
    return (
       <>
-         <HomeStyle id={t('Header.home')}>
+         <HomeStyle id='home'>
             <div className='apresentation'>
                <span className='calls_me'>{t('Home.call')}</span>
                <h3 className='my_name'>Sávio Almeida ._.</h3>

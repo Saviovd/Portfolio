@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
    );
 
    return (
-      <ProjectsStyle id={t('Projects.projects')}>
+      <ProjectsStyle id='projects'>
          <Title text={t('Projects.projects')} icon={<IoRocketOutline />} className='section-title'/>
 
          <ProjectsContainer

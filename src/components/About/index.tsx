@@ -40,7 +40,7 @@ const About = () => {
    };
 
    return (
-      <AboutStyle id={t('Header.aboutme')}>
+      <AboutStyle id='aboutme'>
          <Title text={t('AboutMe.aboutme')} icon={<MdPermIdentity />} />
          <motion.div {...motionProps(100, 0)} className='about-container'>
             <AboutContent>

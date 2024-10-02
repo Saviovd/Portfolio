@@ -31,7 +31,7 @@ const Testimonials = () => {
    });
 
    return (
-      <TestimonialsStyle id={t('Header.testimonials')}>
+      <TestimonialsStyle id='testimonials'>
          <Title
             text={t('Testimonials.testimonialTitle')}
             icon={<BiMessageAltCheck />}

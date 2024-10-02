@@ -44,7 +44,7 @@ const Contacts = () => {
 
    return (
       <>
-         <ContactStyle id='contatos'>
+         <ContactStyle id='contacts'>
             <Title className='section-title' text={t('Contacts.contacts')} icon={<RiContactsLine style={{fontSize: '4rem'}} />} />
             <motion.div
                {...motionProps(100, 0)}
