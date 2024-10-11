@@ -1,20 +1,11 @@
 const translations = {
    Header: {
       logoAlt: 'Logo by Sávio Almeida',
-      home: 'home',
-      aboutme: 'about me',
-      habilities: 'skills',
-      projects: 'projects',
-      testimonials: 'testimonials',
    },
    Home: {
-      call: '_hi, my name is',
-      github: 'My GitHub',
-      toAboutMe: 'about me',
-      devfrontend: 'Front-End Developer',
-      devmobile: 'Mobile Developer',
-      designer: 'UX/UI Designer',
-      devfullstack: 'Fullstack Developer',
+      ctaText:
+         'I believe that technology is the bridge that connects you to your clients. I am here to create digital experiences that not only connect but also captivate.',
+      cta: 'Let’s work together to turn your vision into reality!',
    },
    AboutMe: {
       aboutme: 'about me',
@@ -47,7 +38,7 @@ const translations = {
       projectButton: 'project',
       repositoryButton: 'repository',
       devBy: 'Developed with:',
-      more: 'know more'
+      more: 'know more',
    },
    Testimonials: {
       testimonialTitle: 'testimonials',

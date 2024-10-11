@@ -9,6 +9,7 @@ import Contacts from '@/components/Contacts/Contacts';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import ParticlesComponent from '@/components/Particles/indes';
 
 export default function Index() {
    const { scrollYProgress } = useScroll();
@@ -40,6 +41,7 @@ export default function Index() {
          </main>
          <Footer />
          <motion.div className='progress-bar' style={{ scaleX }} />
+         <ParticlesComponent id='particles' />
       </>
    );
 }

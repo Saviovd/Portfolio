@@ -1,80 +1,58 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { HomeStyle, DrippingDown } from './styles';
 import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
-import ButtonLink from '../Buttons/ButtonLink';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import Social from '../Social';
+import { FaChevronDown } from 'react-icons/fa';
 import baffle from 'baffle';
-import { MdSimCardDownload } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-   const { t, i18n } = useTranslation();
-   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
-   const [words, setWords] = useState([t('Home.devfullstack')]);
-
+   const { t } = useTranslation();
    useEffect(() => {
-      const callsMeBaffle = baffle('.calls_me', {
-         characters: '█_$▓░▒/<',
-         speed: 40,
-      });
-      callsMeBaffle.text(() => t('Home.call')).reveal(1200);
-
-      const myNameBaffle = baffle('.my_name', {
+      const myNameBaffle = baffle('.name', {
          characters: '█SAVIO▓ALMEIDA░▒/',
          speed: 40,
       });
-      myNameBaffle.text(() => 'Sávio Almeida < />').reveal(1200);
+      myNameBaffle.text(() => 'Sávio Almeida').reveal(1000);
    });
-   useEffect(() => {
-      setCurrentLanguage(i18n.language);
-      if (i18n.language !== currentLanguage) {
-         setWords([t('Home.devfullstack')]);
-      }
-   }, [currentLanguage, i18n.language, t]);
    return (
       <>
          <HomeStyle id='home'>
             <div className='apresentation'>
-               <span className='calls_me'>{t('Home.call')}</span>
-               <h3 className='my_name'>Sávio Almeida ._.</h3>
-               <Loader words={words} />
-            </div>
-            <motion.div
-               initial={{ y: 0, opacity: 0 }}
-               animate={{ y: 0, opacity: 1 }}
-               exit={{ y: 0, opacity: 0 }}
-               transition={{ duration: 0.6, delay: 0.4 }}
-               className='buttons'
-            >
-               <ButtonLink
-                  fontSize={2}
-                  className='button'
-                  content='Download CV'
-                  download={true}
-                  _blank={false}
-                  icon={<MdSimCardDownload style={{fontSize: '1.5rem'}} />}
-                  border='1px solid rgba(var(--primary-blue))'
-                  url='/documents/Curriculo - Savio Almeida.pdf'
-               />
-            </motion.div>
-            <Social />
-            <DrippingDown>
-               <ScrollLink
-                  to={`${t('Home.toAboutMe')}`}
-                  smooth={true}
-                  spy={true}
-                  duration={700}
-                  delay={100}
-                  offset={0}
-                  className='dripping_down'
+               <h3 className='name'>Sávio Almeida</h3>
+               <Loader />
+               <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5, delay: 1.5 }}
+                  className='text'
                >
-                  <div className='chevron'></div>
-                  <div className='chevron'></div>
-                  <div className='chevron'></div>
-               </ScrollLink>
-            </DrippingDown>
+                  {t('Home.ctaText')}
+                  <br />
+                  <span>{t('Home.cta')}</span>
+               </motion.p>
+            </div>
+
+            <ScrollLink
+               to={`aboutme`}
+               href='aboutme'
+               smooth={true}
+               spy={true}
+               duration={700}
+               delay={100}
+               offset={0}
+            >
+               <DrippingDown
+                  initial={{ y: 200 }}
+                  animate={{ y: 0 }}
+                  exit={{ y: 200 }}
+                  transition={{ duration: 0.5, delay: 1 }}
+               >
+                  <FaChevronDown />
+               </DrippingDown>
+            </ScrollLink>
          </HomeStyle>
       </>
    );

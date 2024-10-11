@@ -1,205 +1,151 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const HomeStyle = styled.section`
-   height: 99vh;
-   min-height: 47.5rem;
-   max-width: 1800px;
+   height: 100vh;
+   max-width: 1550px;
    margin: 0 auto;
+   padding: 9rem 2rem 0;
    position: relative;
 
    display: flex;
-   flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
+   flex-direction: column;
 
    .apresentation {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
 
-      .calls_me {
-         font-size: 3rem;
-         text-transform: uppercase;
-         font-weight: 500;
-         letter-spacing: 2px;
-         align-self: flex-start;
-
-         @media screen {
-            @media (max-width: 520px) {
-               font-size: 2rem;
-            }
-            @media (max-width: 410px) {
-               font-size: 1.7rem;
-               align-self: center;
-            }
-         }
-      }
-      .my_name {
-         font-size: 5rem;
-         color: rgb(var(--primary-blue));
-         text-transform: uppercase;
+      .name {
+         font-size: 10rem;
          letter-spacing: 2px;
          font-weight: 600;
+         background: linear-gradient(
+            100deg,
+            rgba(var(--dark-green)),
+            rgba(var(--light-blue))
+         );
+         background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
 
-         align-self: center;
-         justify-self: center;
-         margin: 0;
-
-         @media screen {
-            @media (max-width: 520px) {
-               font-size: 3.5rem;
-            }
-            @media (max-width: 410px) {
-               font-size: 3rem;
-               align-self: center;
-            }
+         @media (max-width: 1024px) {
+            font-size: 8rem;
+         }
+         @media (max-width: 640px) {
+            font-size: 6rem;
+         }
+         @media (max-width: 475px) {
+            font-size: 4rem;
          }
       }
-      .loader {
-         font-size: 3rem;
-         color: rgb(var(--primary-pink));
-         text-transform: uppercase;
-         font-weight: 600;
-         align-self: center;
-         justify-self: center;
+
+      .text {
+         font-size: 1.5rem;
+         font-weight: 300;
+         color: rgba(var(--light), 0.6);
+         width: 90%;
+         max-width: 90rem;
+         letter-spacing: 2px;
+         line-height: 2rem;
          text-align: center;
-         @media screen {
-            @media (max-width: 520px) {
-               font-size: 2rem;
-            }
-            @media (max-width: 410px) {
-               font-size: 1.7rem;
-               align-self: center;
-            }
-         }
-      }
-      transition: 0.3s;
-      &:hover {
-         scale: 1.01;
-      }
+         margin-top: 5rem;
 
-      @media screen {
+         span {
+            color: rgba(var(--light-green));
+            font-size: 1.7rem;
+            font-weight: 600;
+         }
+
          @media (max-width: 768px) {
-            scale: 0.8;
-            &:hover {
-               scale: 0.81;
+            font-size: 1.3rem;
+
+            span {
+               font-size: 1.5rem;
             }
          }
-         @media (max-width: 520px) {
-            scale: 1;
-            width: 94%;
-            gap: 0.5rem;
-            white-space: nowrap;
 
-            &:hover {
-               scale: 1.01;
+         @media (max-width: 540px) {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+
+            span {
+               font-size: 1.3rem;
+            }
+         }
+         @media (max-width: 475px) {
+            font-size: 1rem;
+            letter-spacing: 0;
+            width: 94%;
+            line-height: 1.5rem;
+
+            span {
+               font-size: 1.2rem;
             }
          }
       }
    }
 
-   .buttons {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 5rem;
-      margin-top: 5rem;
-
-      .button {
-         padding: 1rem 2.5rem;
-         font-size: 1.4rem;
-         border-radius: 1px;
-         transition: 0.5s;
-         border: 1px solid rgb(var(--primary-blue));
-         gap: 1rem;
-
-         &:hover {
-            scale: 1.05;
-            background-color: rgb(var(--primary-pink), 0.2);
-            border: 1px solid rgb(var(--primary-pink));
-         }
-      }
-
-      @media screen {
-         @media (max-width: 768px) {
-            scale: 0.8;
-            &:hover {
-               scale: 0.85;
-            }
-         }
-      }
+   @media (max-width: 1024px) {
+      padding-top: 0;
    }
 `;
 
-export const DrippingDown = styled.div`
+export const DrippingDown = styled(motion.div)`
+   width: 12rem;
+   height: 5rem;
    position: absolute;
-   width: 20rem;
-   height: 8rem;
-   top: calc(100% - 8rem);
-   left: calc(50% - 10rem);
+   right: calc(50% - 6rem);
+   bottom: 3rem;
+   border: 1px solid rgba(var(--dark-blue), 0.2);
+   background-color: rgba(var(--dark-blue), 0.05);
+   border-radius: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.4s;
+   cursor: pointer;
+   animation: pulse 2s infinite;
 
-   .dripping_down {
-      height: 100%;
-      width: 100%;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      align-content: center;
+   svg {
+      transition: 0.4s;
+      font-size: 4rem;
+      fill: rgba(var(--dark-blue));
+      stroke: none;
+   }
 
-      .chevron {
-         position: absolute;
-         width: 6.5rem;
-         height: 0.8rem;
-         opacity: 0;
-         transform: scale3d(1, 1, 1);
-         animation: move 3s ease-out infinite;
-         &:first-child {
-            animation: move 3s ease-out 1s infinite;
-         }
+   &:hover {
+      border: 1px solid rgba(var(--light-green), 0.2);
+      background-color: rgba(var(--light-green), 0.05);
+      transform: scale(1.1);
 
-         &:nth-child(2) {
-            animation: move 3s ease-out 2s infinite;
-         }
-         &:before,
-         &:after {
-            content: ' ';
-            position: absolute;
-            top: 0;
-            height: 100%;
-            width: 51%;
-            background: rgb(var(--primary-pink));
-         }
-
-         &:before {
-            left: 0;
-            transform: skew(0deg, 30deg);
-         }
-
-         &:after {
-            right: 0;
-            width: 50%;
-            transform: skew(0deg, -30deg);
-         }
+      svg {
+         fill: rgba(var(--light-green));
       }
    }
-   @keyframes move {
-      25% {
-         opacity: 1;
+
+   @media (max-width: 768px) {
+      width: 8rem;
+      height: 3rem;
+      right: calc(50% - 4rem);
+      svg {
+         font-size: 2rem;
       }
-      33% {
-         opacity: 1;
-         transform: translateY(30px);
+   }
+
+   @keyframes pulse {
+      0% {
+         transform: scale(1);
       }
-      67% {
-         opacity: 1;
-         transform: translateY(40px);
+      50% {
+         transform: scale(1.05);
       }
       100% {
-         opacity: 0;
-         transform: translateY(55px) scale3d(1, 1, 1);
+         transform: scale(1);
       }
    }
 `;

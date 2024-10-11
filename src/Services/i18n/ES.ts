@@ -1,20 +1,11 @@
 const translations = {
    Header: {
       logoAlt: 'El logotipo de Sávio Almeida',
-      home: 'inicio',
-      aboutme: 'sobre mí',
-      habilities: 'habilidades',
-      projects: 'proyectos',
-      testimonials: 'testimonios',
    },
    Home: {
-      call: '_hola, mi nombre es',
-      github: 'Mi GitHub',
-      toAboutMe: 'sobre mí',
-      devfrontend: 'Desarrollador front-end',
-      devmobile: 'Desarrollador móvil',
-      designer: 'Diseñador UX/UI',
-      devfullstack: 'Desarrollador Fullstack',
+      ctaText:
+         'Creo que la tecnología es el puente que te conecta con tus clientes. Estoy aquí para crear experiencias digitales que no solo conectan, sino que también cautivan.',
+      cta: '¡Trabajemos juntos para convertir tu visión en realidad!',
    },
    AboutMe: {
       aboutme: 'sobre mí',
