@@ -20,7 +20,7 @@
          "title": {
             "pt": "Serviços",
             "en": "Services",
-            "es": ""
+            "es": "Servicios"
          },
          "to": "services"
       },
@@ -28,7 +28,7 @@
          "title": {
             "pt": "Projetos",
             "en": "Projects",
-            "es": ""
+            "es": "Proyectos"
          },
          "to": "projects"
       },
@@ -36,7 +36,7 @@
          "title": {
             "pt": "Indicações",
             "en": "Testimonials",
-            "es": ""
+            "es": "Testimonios"
          },
          "to": "testimonials"
       },
