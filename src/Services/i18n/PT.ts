@@ -68,29 +68,6 @@ const translations = {
    },
    Testimonials: {
       testimonialTitle: 'depoimentos',
-      1: {
-         id: '1',
-         office: 'Quality Assurance | Banco BMG',
-         testimony: '',
-      },
-      2: {
-         id: '2',
-         office: 'Coordenadora | Votorantim',
-         testimony:
-            'Sávio é um excelente profissional que tive o privilégio de trabalhar. Interessado, inconformado, estudioso, arrojado, esses são alguns dos adjetivos que posso descreve-lo. Ávido por tecnologia, apoiou e desenvolveu automatizações na área em que atuou no COE Votorantim, auxiliando a equipe na busca da excelência, consciente de que processos bem estabelecidos unidos de automatização/digitalização, são imprescindíveis para o presente e o futuro muito próximo.',
-      },
-      3: {
-         id: '3',
-         office: 'Administradora | BigBang Digital',
-         testimony:
-            'Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.',
-      },
-      4: {
-         id: '4',
-         office: 'Co-Founder Studio Mozak | Front-end Developer',
-         testimony:
-            'Ótimo profissional, atento ao código, trabalhei com ele como frontend Vue.js, experiencia legal.',
-      },
    },
    Contacts: {
       my: 'meus',

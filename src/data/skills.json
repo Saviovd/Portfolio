@@ -1,7 +1,6 @@
 {
    "skills": [
       {
-         "id": 1,
          "type": "Front-End",
          "language_name": "HTML5",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/html5.svg",
@@ -12,7 +11,6 @@
          }
       },
       {
-         "id": 2,
          "type": "Front-End",
          "language_name": "CSS3",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/css3.svg",
@@ -23,7 +21,6 @@
          }
       },
       {
-         "id": 3,
          "type": "Front-End",
          "language_name": "JavaScript",
          "logo": "https://abrudz.github.io/logos/JS.svg",
@@ -34,18 +31,16 @@
          }
       },
       {
-         "id": 4,
          "type": "Front-End",
          "language_name": "TypeScript",
          "logo": "https://abrudz.github.io/logos/TypeScript.svg",
          "description": {
             "en": "A strict syntactical superset of JavaScript and adds optional static typing to the language.",
-            "pt": "Um superset sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+            "pt": "Um superset sintático estrito de JavaScript que adiciona tipagem estática opcional à linguagem.",
             "es": "Un superconjunto sintáctico estricto de JavaScript que agrega tipado estático opcional al lenguaje."
          }
       },
       {
-         "id": 5,
          "type": "Front-End",
          "language_name": "ReactJs",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
@@ -56,7 +51,6 @@
          }
       },
       {
-         "id": 6,
          "type": "Front-End",
          "language_name": "VueJs",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/vuejs.svg",
@@ -67,30 +61,27 @@
          }
       },
       {
-         "id": 7,
          "type": "Front-End",
          "language_name": "NextJs",
          "logo": "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
          "bgWhite": true,
          "description": {
             "en": "A React framework that enables several extra features, including server-side rendering and generating static websites.",
-            "pt": "Um framework React que habilita várias funcionalidades extras, incluindo renderização do lado do servidor e geração de sites estáticos.",
-            "es": "Un marco de React que habilita varias características adicionales, incluyendo renderización del lado del servidor y generación de sitios web estáticos."
+            "pt": "Um framework React que habilita vários recursos extras, como a renderização do lado do servidor e a geração de sites estáticos.",
+            "es": "Un marco de React que habilita varias características adicionales, como la renderización del lado del servidor y la generación de sitios estáticos."
          }
       },
       {
-         "id": 8,
          "type": "Front-End",
          "language_name": "Sass",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/sass.svg",
          "description": {
             "en": "A preprocessor scripting language that is interpreted or compiled into CSS.",
-            "pt": "Uma linguagem de script pré-processador que é interpretada ou compilada em CSS.",
-            "es": "Un lenguaje de scripting preprocesador que se interpreta o compila en CSS."
+            "pt": "Uma linguagem de script de pré-processamento que é interpretada ou compilada em CSS.",
+            "es": "Un lenguaje de script de preprocesador que se interpreta o compila en CSS."
          }
       },
       {
-         "id": 9,
          "type": "Front-End",
          "language_name": "CSS-in-JS",
          "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
@@ -101,7 +92,6 @@
          }
       },
       {
-         "id": 10,
          "type": "Front-End",
          "language_name": "Angular",
          "logo": "https://www.svgrepo.com/show/452156/angular.svg",
@@ -112,7 +102,6 @@
          }
       },
       {
-         "id": 11,
          "type": "Back-End",
          "language_name": "NodeJs",
          "logo": "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
@@ -123,7 +112,6 @@
          }
       },
       {
-         "id": 12,
          "type": "Back-End",
          "language_name": "Express",
          "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
@@ -135,7 +123,6 @@
          }
       },
       {
-         "id": 13,
          "type": "Back-End",
          "language_name": "Python",
          "logo": "https://abrudz.github.io/logos/Python.svg",
@@ -146,7 +133,6 @@
          }
       },
       {
-         "id": 14,
          "type": "Back-End",
          "language_name": "Ruby",
          "logo": "https://abrudz.github.io/logos/Ruby.svg",
@@ -157,7 +143,6 @@
          }
       },
       {
-         "id": 15,
          "type": "Mobile",
          "language_name": "Flutter",
          "logo": "https://www.svgrepo.com/show/353751/flutter.svg",
@@ -168,7 +153,6 @@
          }
       },
       {
-         "id": 16,
          "type": "Mobile",
          "language_name": "React Native",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
@@ -179,7 +163,6 @@
          }
       },
       {
-         "id": 17,
          "type": "Mobile",
          "language_name": "Kotlin",
          "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/kotlin.svg",
@@ -190,7 +173,6 @@
          }
       },
       {
-         "id": 18,
          "type": "Quality Assurance",
          "language_name": "Cypress",
          "logo": "https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png",
@@ -201,7 +183,6 @@
          }
       },
       {
-         "id": 19,
          "type": "Quality Assurance",
          "language_name": "Postman",
          "logo": "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
@@ -212,7 +193,6 @@
          }
       },
       {
-         "id": 20,
          "type": "Database & Cloud",
          "language_name": "AWS",
          "logo": "https://www.svgrepo.com/show/376356/aws.svg",
@@ -224,7 +204,6 @@
          }
       },
       {
-         "id": 21,
          "type": "Database & Cloud",
          "language_name": "Docker",
          "logo": "https://www.svgrepo.com/show/448221/docker.svg",
@@ -235,7 +214,6 @@
          }
       },
       {
-         "id": 22,
          "type": "Database & Cloud",
          "language_name": "MongoDB",
          "logo": "https://www.svgrepo.com/show/331488/mongodb.svg",
@@ -246,7 +224,6 @@
          }
       },
       {
-         "id": 23,
          "type": "Database & Cloud",
          "language_name": "MySQL",
          "logo": "https://www.svgrepo.com/show/355133/mysql.svg",
@@ -257,7 +234,6 @@
          }
       },
       {
-         "id": 24,
          "type": "Design",
          "language_name": "Figma",
          "logo": "https://www.svgrepo.com/show/354987/figma.svg",
@@ -268,7 +244,6 @@
          }
       },
       {
-         "id": 25,
          "type": "Front-End",
          "language_name": "TailwindCss",
          "logo": "https://www.svgrepo.com/show/374118/tailwind.svg",
@@ -279,7 +254,6 @@
          }
       },
       {
-         "id": 26,
          "type": "Front-End",
          "language_name": "GraphQL",
          "logo": "https://www.svgrepo.com/show/353834/graphql.svg",
