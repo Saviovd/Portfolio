@@ -4,12 +4,22 @@
       "mid-name": "Pinheiro",
       "last-name": "Almeida",
       "age": 22,
+      "experience-years": 4,
+      "trajectory": {
+         "en": "My journey into coding began naturally. As a child, I attempted to develop games, fueled by the desire to create enjoyable experiences. These early experiments sparked my interest in programming and provided a solid foundation in logic and creativity.<br /><br />Over the past four years, I've explored various technologies and worked on challenging projects, focusing on both front-end and back-end development. My experience ranges from building robust platforms to automating complex processes in companies. Each experience has deepened my passion for technology and my commitment to delivering innovative and efficient solutions.",
+         "pt": "Minha jornada na programação começou de forma natural. Quando criança, tentava desenvolver games, movido pelo desejo de criar experiências divertidas. Esses primeiros experimentos despertaram meu interesse pela programação e me deram uma base sólida em lógica e criatividade.<br /><br />Nos últimos quatro anos, explorei diversas tecnologias e trabalhei em projetos desafiadores, focando tanto no front-end quanto no back-end. Minha experiência varia desde o desenvolvimento de plataformas robustas até a automação de processos complexos em empresas. Cada experiência aprofundou minha paixão pela tecnologia e meu compromisso em entregar soluções inovadoras e eficientes.",
+         "es": "Mi viaje en la programación comenzó de manera natural. De niño, intentaba desarrollar juegos, impulsado por el deseo de crear experiencias divertidas. Estos primeros experimentos despertaron mi interés por la programación y me proporcionaron una base sólida en lógica y creatividad.<br /><br />En los últimos cuatro años, he explorado diversas tecnologías y trabajado en proyectos desafiantes, enfocándome en el desarrollo tanto del front-end como del back-end. Mi experiencia abarca desde el desarrollo de plataformas robustas hasta la automatización de procesos complejos en empresas. Cada experiencia ha profundizado mi pasión por la tecnología y mi compromiso con la entrega de soluciones innovadoras y eficientes."
+      },
+      "about": {
+         "en": "My name is Sávio, I am [age] years old, and I am from Manaus. I have a lifelong passion for innovation and technology, which drives me to explore how things work and create solutions that positively impact the world. I believe technology can turn ideas into reality.<br /><br />I enjoy personal projects, experimenting with programming languages, and discussing ideas with fellow enthusiasts. My goal is to become the best professional I can be, continually improving my skills and contributing to innovative and efficient solutions.",
+         "pt": "Meu nome é Sávio, tenho [age] anos e sou de Manaus. Sou apaixonado por inovação e tecnologia, o que me leva a explorar como as coisas funcionam e a criar soluções que impactam positivamente o mundo. Acredito que a tecnologia pode transformar ideias em realidade.<br /><br />Gosto de trabalhar em projetos pessoais, experimentar linguagens de programação e discutir ideias com outros entusiastas. Meu objetivo é me tornar o melhor profissional possível, aprimorando continuamente minhas habilidades e contribuindo para soluções inovadoras e eficientes.",
+         "es": "Mi nombre es Sávio, tengo [age] años y soy de Manaus. Tengo una pasión de toda la vida por la innovación y la tecnología, que me impulsa a explorar cómo funcionan las cosas y a crear soluciones que impacten positivamente en el mundo. Creo que la tecnología puede convertir ideas en realidad.<br /><br />Disfruto trabajar en proyectos personales, experimentar con lenguajes de programación y discutir ideas con otros entusiastas. Mi objetivo es convertirme en el mejor profesional posible, mejorando continuamente mis habilidades y contribuyendo a soluciones innovadoras y eficientes."
+      },
       "office": {
          "en": "FullStack Developer",
          "pt": "Desenvolvedor FullStack",
          "es": "Desarrollador FullStack"
       },
-      "experience-years": 4,
       "experiences": [
          {
             "company": "BigBang Digital",

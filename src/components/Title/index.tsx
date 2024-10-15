@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { IconType } from 'react-icons/lib';
 import { TitleStyle } from './styles';
 import { motion } from 'framer-motion';
@@ -20,11 +21,7 @@ const Title = ({ text, icon, className }: ITitleProps) => {
             transition={{ duration: 0.5, delay: 0.5 }}
          >
             {icon ? icon : ''}
-            <motion.h2
-               className='title'
-            >
-               {text}
-            </motion.h2>
+            <motion.h2 className='title'>{text}</motion.h2>
          </TitleStyle>
       </>
    );

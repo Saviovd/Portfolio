@@ -7,50 +7,11 @@ const translations = {
       cta: 'Vamos juntos transformar sua visão em realidade!',
    },
    AboutMe: {
-      aboutme: 'sobre mim',
-      experienceTitle: 'Experiências',
-      graduationTitle: 'graduação',
-      coursesTitle: 'cursos',
-      courses: [
-         {
-            id: 0,
-            course: 'JavaScript com foco no back-end',
-         },
-         {
-            id: 1,
-            course: 'Como criar CRUDs com Qualidade',
-         },
-         {
-            id: 6,
-            course: 'APIs com Node.js e Express',
-         },
-         {
-            id: 3,
-            course: 'WebMaster Front-End Completo',
-         },
-         {
-            id: 4,
-            course: 'JavaScript: tipos, variáveis e funções',
-         },
-         {
-            id: 5,
-            course: 'Python com Orientação a Objetos',
-         },
-         {
-            id: 6,
-            course: 'CURSO FRONT-END COMPLETO 2.0',
-         },
-         {
-            id: 7,
-            course: 'Gerencie aplicações React com Typescript',
-         },
-         {
-            id: 8,
-            course: 'Lógica de Programação Essencial',
-         },
-      ],
+      title: 'sobre mim',
       moreCourses: 'mais cursos',
       since: 'Desde',
+      whoAmI: 'Quem sou eu?',
+      myTrajectory: 'Minha trajetória'
    },
    Habilities: {
       my: 'Minhas',

@@ -3,11 +3,8 @@ import { motion } from 'framer-motion';
 
 export const TitleStyle = styled(motion.div)`
    display: flex;
-   align-items: flex-end;
+   align-items: flex-start;
    justify-content: flex-start;
-   padding-left: 6rem;
-   border-bottom: 1px solid rgba(var(--primary-blue));
-   width: 90vw;
    margin: 0 auto;
 
    .title {
@@ -15,40 +12,25 @@ export const TitleStyle = styled(motion.div)`
       font-weight: 400;
       margin: 0;
       text-transform: capitalize;
+
+      @media (max-width: 1024px) {
+         font-size: 4rem;
+      }
+      @media (max-width: 768px) {
+         font-size: 3rem;
+      }
    }
    svg {
-      font-size: 5.5rem;
-      fill: rgba(var(--primary-blue));
-      stroke: rgba(var(--primary-blue));
-   }
-   @media screen {
+      font-size: 3rem;
+      fill: rgba(var(--light-green), 0.1);
+      stroke: rgba(var(--light-green));
+      stroke-width: 1px;
+
       @media (max-width: 1024px) {
-         padding-left: 1rem;
-         width: 95vw;
-         .title {
-            font-size: 4rem;
-         }
-         svg {
-            font-size: 5rem;
-         }
+         font-size: 2.5rem;
       }
-      @media (max-width: 720px) {
-         padding-left: 0;
-         .title {
-            font-size: 3.5rem;
-         }
-         svg {
-            font-size: 4.5rem;
-         }
-      }
-      @media (max-width: 440px) {
-         padding-left: 0;
-         .title {
-            font-size: 3rem;
-         }
-         svg {
-            font-size: 4rem;
-         }
+      @media (max-width: 768px) {
+         font-size: 2rem;
       }
    }
 `;

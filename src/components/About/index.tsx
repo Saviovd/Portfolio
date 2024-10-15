@@ -1,84 +1,49 @@
-import Image from 'next/image';
+import React from 'react';
 import { AboutContent, AboutStyle } from './styles';
 import Title from '../Title';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import React, { useState } from 'react';
-import { MdPermIdentity } from 'react-icons/md';
-import Experiences from '../Experiences';
-import data from '@/data/about.json';
-import i18next from 'i18next';
+import { HiInformationCircle } from 'react-icons/hi';
+import data from '@/data/personal-data.json';
 import { Locale } from '@/types/types';
-import useWindowSize from '@/hooks/useWindowSize';
+import i18next from 'i18next';
 
-const { about } = data;
+const about = data['personal-data'];
 
 const About = () => {
    const { t } = useTranslation();
    const locale = i18next.language as Locale;
-   const { width } = useWindowSize();
-
-   const motionProps = (initialY: number, finalY: number) => ({
-      initial: { opacity: 0, y: initialY },
-      whileInView: { opacity: 1, y: finalY },
-      viewport: { once: true },
-      transition: {
-         type: 'spring',
-         bounce: 0.4,
-         duration: 0.8,
-         delay: 0.2,
-      },
-   });
-
-   const [isHovering, setIsHovering] = useState(false);
-
-   const handleMouseEnter = () => {
-      setIsHovering(true);
-      setTimeout(() => {
-         setIsHovering(false);
-      }, 1000);
-   };
 
    return (
       <AboutStyle id='aboutme'>
-         <Title text={t('AboutMe.aboutme')} icon={<MdPermIdentity />} />
-         <motion.div {...motionProps(100, 0)} className='about-container'>
-            <AboutContent>
-               <p className='description'>{about.description[locale]}</p>
-               <ul className='qualities'>
-                  {about.quality[locale].map((item) => (
-                     <li className='quality-box' key={item.title}>
-                        <span className='quality-title'>
-                           {item.title}
-                           {width > 900 ? ':' : ''}
-                        </span>
-                        {item.text}
-                     </li>
-                  ))}
-               </ul>
-            </AboutContent>
-            {isHovering ? (
-               <Image
-                  src={'/assets/Photo/savio.gif'}
-                  alt='Savio´s Photograph'
-                  width={350}
-                  height={350}
-                  onMouseLeave={() => setIsHovering(false)}
-                  className='photograph'
-               />
-            ) : (
-               <Image
-                  src={'/assets/Photo/savio.png'}
-                  alt='Savio´s Photograph'
-                  width={350}
-                  height={350}
-                  onMouseEnter={handleMouseEnter}
-                  className='photograph'
-                  quality={100}
-               />
-            )}
-         </motion.div>
-         <Experiences />
+         <AboutContent>
+            <Title
+               text={t('AboutMe.title')}
+               icon={<HiInformationCircle />}
+               className='section-title'
+            />
+            <div className='about-box who-am-i'>
+               <h2 className='title'>{t('AboutMe.whoAmI')}</h2>
+               <p
+                  className='text'
+                  dangerouslySetInnerHTML={{
+                     __html: about['about'][locale].replace(
+                        '[age]',
+                        String(about.age)
+                     ),
+                  }}
+               ></p>
+            </div>
+            <div className='about-box'>
+               <h2 className='title'>{t('AboutMe.myTrajectory')}</h2>
+               <p
+                  className='text'
+                  dangerouslySetInnerHTML={{
+                     __html: about['trajectory'][locale],
+                  }}
+               ></p>
+            </div>
+         </AboutContent>
+         {/* <Experiences /> */}
       </AboutStyle>
    );
 };
