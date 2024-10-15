@@ -15,7 +15,7 @@ const Header = () => {
    const position = useScrollPosition();
 
    useEffect(() => {
-      const isDesktop = width >= 1024;
+      const isDesktop = width > 1024;
       setIsActive(isDesktop);
    }, [width]);
 
@@ -52,7 +52,7 @@ const Header = () => {
 
                <LanguageBar className='translations' />
 
-               {width && width < 1024 && (
+               {width && width <= 1024 && (
                   <div
                      className={`center ${isMenuMobileActive ? 'active' : ''}`}
                      onClick={toggleMenu}
@@ -62,7 +62,7 @@ const Header = () => {
                )}
             </div>
 
-            {isMenuMobileActive && width < 1024 && (
+            {isMenuMobileActive && width <= 1024 && (
                <div
                   className='outside'
                   onClick={() => setIsActive(false)}
