@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const HomeStyle = styled.section`
@@ -92,6 +93,62 @@ export const HomeStyle = styled.section`
 
    @media (max-width: 1024px) {
       padding-top: 0;
+   }
+`;
+
+export const Background = styled(Image)`
+   object-fit: contain;
+   border-radius: 2rem;
+   position: absolute;
+   left: -20rem;
+   bottom: 0;
+   height: calc(100vh - 10rem);
+   width: auto;
+   z-index: -1;
+   border-radius: 0;
+   opacity: 0;
+   animation: show 0.5s forwards;
+   animation-delay: 1s;
+
+   @media (max-width: 1440px) {
+      left: 0;
+   }
+
+   @media (max-width: 1024px) {
+      animation: show-small 0.5s forwards;
+      animation-delay: 1s;
+   }
+
+   @media (max-width: 640px) {
+      animation: show-mobile 0.5s forwards;
+      animation-delay: 1s;
+   }
+
+   @keyframes show {
+      from {
+         opacity: 0;
+      }
+      to {
+         opacity: 0.9;
+      }
+   }
+
+   @keyframes show-small {
+      from {
+         opacity: 0;
+      }
+      to {
+         opacity: 0.7;
+      }
+   }
+
+   @keyframes show-mobile {
+      from {
+         opacity: 0;
+      }
+      to {
+         opacity: 0.6;
+      }
    }
 `;
 

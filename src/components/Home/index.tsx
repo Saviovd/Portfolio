@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
-import { HomeStyle, DrippingDown } from './styles';
+import { HomeStyle, DrippingDown, Background } from './styles';
 import Loader from './loader';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa';
 import baffle from 'baffle';
 import { useTranslation } from 'react-i18next';
+import useWindowSize from '@/hooks/useWindowSize';
 
 const Home = () => {
    const { t } = useTranslation();
+   const { width } = useWindowSize();
    useEffect(() => {
       const myNameBaffle = baffle('.name', {
          characters: '█SAVIO▓ALMEIDA░▒/',
@@ -19,6 +21,25 @@ const Home = () => {
    return (
       <>
          <HomeStyle id='home'>
+            {width <= 1440 ? (
+               <Background
+                  src={'/assets/Photo/me-half.png'}
+                  alt='Savio´s Photograph'
+                  width={500}
+                  height={500}
+                  className='photograph'
+                  quality={100}
+               />
+            ) : (
+               <Background
+                  src={'/assets/Photo/me.png'}
+                  alt='Savio´s Photograph'
+                  width={500}
+                  height={500}
+                  className='photograph'
+                  quality={100}
+               />
+            )}
             <div className='apresentation'>
                <h3 className='name'>Sávio Almeida</h3>
                <Loader />
