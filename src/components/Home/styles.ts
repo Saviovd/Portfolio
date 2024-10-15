@@ -20,6 +20,7 @@ export const HomeStyle = styled.section`
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      transform: translateX(25rem);
 
       .name {
          font-size: 10rem;
@@ -89,6 +90,10 @@ export const HomeStyle = styled.section`
             }
          }
       }
+
+      @media (max-width: 1440px) {
+         transform: translateX(0);
+      }
    }
 
    @media (max-width: 1024px) {
@@ -100,7 +105,7 @@ export const Background = styled(Image)`
    object-fit: contain;
    border-radius: 2rem;
    position: absolute;
-   left: -20rem;
+   left: -1rem;
    bottom: 0;
    height: calc(100vh - 10rem);
    width: auto;
@@ -129,7 +134,7 @@ export const Background = styled(Image)`
          opacity: 0;
       }
       to {
-         opacity: 0.9;
+         opacity: 0.8;
       }
    }
 
