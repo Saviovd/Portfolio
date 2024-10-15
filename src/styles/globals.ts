@@ -105,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       #particles canvas {
-      z-index: -1;
+      z-index: -2;
       opacity: 0.2;
    }
 }
