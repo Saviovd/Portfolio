@@ -67,10 +67,6 @@ export const LanguageStyles = styled.div<{ currentLang: string }>`
       }
    }
 
-   .dropdown:hover .dropdown-content {
-      display: block;
-   }
-
    .currentLang {
       font-weight: bold;
       background-color: rgba(var(--light-blue), 0.5);

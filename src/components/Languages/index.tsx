@@ -35,7 +35,13 @@ const LanguageBar = ({ className }: ILanguagesProps) => {
    };
 
    return (
-      <LanguageStyles className={className} currentLang={currentLang}>
+      <LanguageStyles
+         className={className}
+         currentLang={currentLang}
+         onMouseLeave={() => {
+            setDropdownOpen(false);
+         }}
+      >
          <div className='dropdown'>
             <button
                className='dropdown-btn'
