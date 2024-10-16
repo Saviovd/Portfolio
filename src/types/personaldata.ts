@@ -1,32 +1,30 @@
 export interface PersonalData {
-   'personal-data': {
-      name: string;
-      'mid-name': string;
-      'last-name': string;
-      age: number | string;
-      about: {
-         en: string;
-         pt: string;
-         es: string;
-      };
-      trajectory: {
-         en: string;
-         pt: string;
-         es: string;
-      };
-      office: {
-         en: string;
-         pt: string;
-         es: string;
-      };
-      'experience-years': number;
-      experiences: Experience[];
-      graduation: Graduation[];
-      courses: Course[];
+   name: string;
+   'mid-name': string;
+   'last-name': string;
+   age: number | string;
+   about: {
+      en: string;
+      pt: string;
+      es: string;
    };
-}
+   trajectory: {
+      en: string;
+      pt: string;
+      es: string;
+   };
+   office: {
+      en: string;
+      pt: string;
+      es: string;
+   };
+   'experience-years': number;
+   experiences: Experience[];
+   graduation: Graduation[];
+   courses: Course[];
+};
 
-interface Experience {
+export interface Experience {
    company: string;
    'company-logo': string;
    'company-linkedin': string;
