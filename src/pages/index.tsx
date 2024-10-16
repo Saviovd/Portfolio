@@ -34,10 +34,10 @@ export default function Index() {
          <main>
             <Home />
             <About />
-            <Skills />
+            {/* <Skills />
             <Projects />
             <Testimonials />
-            <Contacts />
+            <Contacts /> */}
          </main>
          <Footer />
          <motion.div className='progress-bar' style={{ scaleX }} />

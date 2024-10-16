@@ -13,6 +13,10 @@ const translations = {
       since: 'Desde',
       whoAmI: '¿Quién soy?',
       myTrajectory: 'Mi trayectoria',
+      experienceYears: 'Años de experiencia',
+      positiveFeedbacks: 'Comentarios positivos',
+      certifications: 'Certificaciones',
+      finishedProjects: 'Proyectos finalizados',
    },
    Habilities: {
       my: 'mis',

@@ -3,7 +3,8 @@ const translations = {
       logoAlt: 'Logo de Sávio Almeida',
    },
    Home: {
-      ctaText: 'Acredito que a tecnologia é a ponte que liga você aos seus clientes. Estou aqui para criar experiências digitais que não apenas conectam, mas também cativam.',
+      ctaText:
+         'Acredito que a tecnologia é a ponte que liga você aos seus clientes. Estou aqui para criar experiências digitais que não apenas conectam, mas também cativam.',
       cta: 'Vamos juntos transformar sua visão em realidade!',
    },
    AboutMe: {
@@ -11,7 +12,11 @@ const translations = {
       moreCourses: 'mais cursos',
       since: 'Desde',
       whoAmI: 'Quem sou eu?',
-      myTrajectory: 'Minha trajetória'
+      myTrajectory: 'Minha trajetória',
+      experienceYears: 'anos de experiência',
+      positiveFeedbacks: 'feedback positivos',
+      certifications: 'Certificações',
+      finishedProjects: 'projetos concluídos'
    },
    Habilities: {
       my: 'Minhas',
