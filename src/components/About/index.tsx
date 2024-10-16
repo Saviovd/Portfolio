@@ -6,6 +6,7 @@ import { HiInformationCircle } from 'react-icons/hi';
 import data from '@/data/personal-data.json';
 import { Locale } from '@/types/types';
 import i18next from 'i18next';
+import AnimatedCounters from '../AnimatedCounters';
 
 const about = data['personal-data'];
 
@@ -43,6 +44,10 @@ const About = () => {
                ></p>
             </div>
          </AboutContent>
+         <AnimatedCounters
+            experience={about['experience-years']}
+            certifications={about.courses.length}
+         />
          {/* <Experiences /> */}
       </AboutStyle>
    );
