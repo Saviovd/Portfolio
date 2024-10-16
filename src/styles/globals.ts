@@ -30,7 +30,6 @@ const GlobalStyle = createGlobalStyle`
          padding: 0;
          margin: 0;
          box-sizing: border-box;
-         transition: 0.5s;
 
          &::selection {
             background-color: rgba(var(--light-blue));

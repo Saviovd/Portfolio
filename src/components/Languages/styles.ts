@@ -23,9 +23,19 @@ export const LanguageStyles = styled.div<{ currentLang: string }>`
          font-size: 1.5rem;
          bottom: 0;
       }
+      &::after {
+         content: '';
+         width: 100%;
+         height: 2rem;
+         background-color: transparent;
+         position: absolute;
+         bottom: -1rem;
+         z-index: -1;
+      }
    }
 
    .dropdown-content {
+      overflow: hidden;
       border-radius: 1rem;
       display: none;
       position: absolute;
@@ -35,15 +45,6 @@ export const LanguageStyles = styled.div<{ currentLang: string }>`
       top: calc(100% + 1rem);
       min-width: 100px;
       z-index: 1;
-
-      &::before {
-         content: '';
-         width: 100%;
-         height: 2rem;
-         background-color: transparent;
-         position: absolute;
-         top: -2rem;
-      }
    }
 
    .dropdown-content li {

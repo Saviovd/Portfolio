@@ -29,28 +29,16 @@ const LanguageBar = ({ className }: ILanguagesProps) => {
       setDropdownOpen(false);
    };
 
-   const dropdownVariants = {
-      hidden: { opacity: 0, y: -20 },
-      visible: { opacity: 1, y: 0 },
-      exit: { opacity: 0, y: -20 },
-   };
-
    const arrowVariants = {
       closed: { rotate: 0 },
       open: { rotate: 180 },
    };
 
    return (
-      <LanguageStyles
-         className={className}
-         currentLang={currentLang}
-         onMouseEnter={() => setDropdownOpen(true)}
-         onMouseLeave={() => setDropdownOpen(false)}
-      >
+      <LanguageStyles className={className} currentLang={currentLang}>
          <div className='dropdown'>
             <button
                className='dropdown-btn'
-               aria-expanded={isDropdownOpen}
                onClick={() => setDropdownOpen(!isDropdownOpen)}
             >
                <MdLanguage className='globe' />
@@ -67,10 +55,9 @@ const LanguageBar = ({ className }: ILanguagesProps) => {
                {isDropdownOpen && (
                   <motion.ul
                      className='dropdown-content'
-                     initial='hidden'
-                     animate='visible'
-                     exit='exit'
-                     variants={dropdownVariants}
+                     initial={{ opacity: 0, height: 0 }}
+                     animate={{ opacity: 1, height: 'auto' }}
+                     exit={{ opacity: 0, height: 0 }}
                      transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
                      <li
