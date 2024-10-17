@@ -6,6 +6,7 @@ export const TitleStyle = styled(motion.div)`
    align-items: flex-start;
    justify-content: flex-start;
    margin: 0 auto;
+   width: 100%;
 
    .title {
       font-size: 4.5rem;

@@ -26,12 +26,12 @@
             "company-logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHTVN1NxnQ4Mw/company-logo_200_200/company-logo_200_200/0/1630580474378/big_bang_shop_logo?e=1736985600&v=beta&t=B1KEUCA3JaLLlq6QcI4d6JuZ3TNGChvah5JlqbZy-c0",
             "company-linkedin": "https://www.linkedin.com/company/bigbangdigital/",
             "location": "Belo Horizonte/MG - Brasil",
-            "office": {
+            "position": {
                "en": "Front-End Developer",
                "pt": "Desenvolvedor Front-End",
                "es": "Desarrollador Front-End"
             },
-            "locality": {
+            "regime": {
                "en": "Remote",
                "pt": "Remoto",
                "es": "Remoto"
@@ -76,12 +76,12 @@
             "company-logo": "https://media.licdn.com/dms/image/v2/D560BAQH3GEpoxmH9Jg/company-logo_200_200/company-logo_200_200/0/1686581069603/coe_centro_de_excelencia_votorantim_logo?e=1736985600&v=beta&t=LsMg8vKrXYQNzcjFIFPKihYRqBtN8JMOt4qB4y6hiac",
             "company-linkedin": "https://www.linkedin.com/company/coe-centro-de-excelencia-votorantim/",
             "location": "Curitiba/PR - Brasil",
-            "office": {
+            "position": {
                "en": "Business Intelligence - intern",
                "pt": "Business Intelligence - estágio",
                "es": "Business Intelligence - pasantía"
             },
-            "locality": {
+            "regime": {
                "en": "Hybrid",
                "pt": "Híbrido",
                "es": "Híbrido"
@@ -124,17 +124,17 @@
             "company-logo": "/assets/logo.png",
             "company-linkedin": "https://www.linkedin.com/in/saviovd/",
             "location": "Brasil",
-            "office": {
+            "position": {
                "en": "FullStack Developer",
                "pt": "Desenvolvedor FullStack",
                "es": "Desarrollador FullStack"
             },
-            "locality": {
+            "regime": {
                "en": "Remote",
                "pt": "Remoto",
                "es": "Remoto"
             },
-            "methodology": "",
+            "methodology": "scrum",
             "description": {
                "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
                "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",

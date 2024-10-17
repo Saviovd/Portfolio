@@ -29,12 +29,12 @@ export interface Experience {
    'company-logo': string;
    'company-linkedin': string;
    location: string;
-   office: {
+   position: {
       en: string;
       pt: string;
       es: string;
    };
-   locality: {
+   regime: {
       en: string;
       pt: string;
       es: string;
