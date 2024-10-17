@@ -22,7 +22,7 @@ export interface PersonalData {
    experiences: Experience[];
    graduation: Graduation[];
    courses: Course[];
-};
+}
 
 export interface Experience {
    company: string;
@@ -56,7 +56,7 @@ export interface Experience {
    'still-works': boolean;
 }
 
-interface Graduation {
+export interface Graduation {
    concluded: boolean;
    course: {
       en: string;
@@ -79,7 +79,7 @@ interface Graduation {
    certificate: string;
 }
 
-interface Course {
+export interface Course {
    course: {
       en: string;
       pt: string;
@@ -91,4 +91,10 @@ interface Course {
    hours: string;
    stacks: string[];
    certificate: string;
+}
+export interface Workshop {
+   name: string;
+}
+export interface TechnicalCertification {
+   name: string;
 }

@@ -9,6 +9,7 @@ import CompanyCard from '../CompanyCard';
 import { DiScrum } from 'react-icons/di';
 import { BsFillKanbanFill } from 'react-icons/bs';
 import { ToolsList } from '../ToolsList';
+import { formatMonthDate } from '@/utils/formatMonthDate';
 
 const JobCard = (job: Experience) => {
    const locale = i18next.language as Locale;
@@ -25,12 +26,7 @@ const JobCard = (job: Experience) => {
 
       return null;
    };
-   const formatJobDate = (dateString: string) => {
-      return new Date(dateString).toLocaleDateString('pt-BR', {
-         month: '2-digit',
-         year: 'numeric',
-      });
-   };
+
    return (
       <>
          <Job
@@ -46,7 +42,9 @@ const JobCard = (job: Experience) => {
             <div className='job-details'>
                <BsPlusLg className={`plus ${expanded && 'close'}`} />
                <div className='job'>
-                  <p className={`position ${expanded && 'emphasys'}`}>{job.position[locale]}</p>
+                  <p className={`position ${expanded && 'emphasys'}`}>
+                     {job.position[locale]}
+                  </p>
                   <CompanyCard
                      company={job.company}
                      location={job.location}
@@ -55,8 +53,10 @@ const JobCard = (job: Experience) => {
                   />
                </div>
                <div className='date'>
-                  <span>{formatJobDate(job.start)}</span>-
-                  <span>{job.end ? formatJobDate(job.end) : 'Atualmente'}</span>
+                  <span>{formatMonthDate(job.start)}</span>-
+                  <span>
+                     {job.end ? formatMonthDate(job.end) : 'Atualmente'}
+                  </span>
                </div>
             </div>
             <AnimatePresence>
