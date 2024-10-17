@@ -1,56 +1,43 @@
 import { ExperiencesStyles } from './styles';
-import ButtonLink from '../Buttons/ButtonLink';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
-import data from '@/data/about.json';
-import JobItem from '../JobItem';
-import GraduationItem from '../GraduationItem';
-import CourseItem from '../CourseItem';
-import { FaPlus } from 'react-icons/fa';
+// import i18next from 'i18next';
+import JobCard from '../JobCard';
+import { Experience } from '@/types/personaldata';
+import Title from '../../components/Title';
+import { BsStars } from 'react-icons/bs';
 
-const { experiences } = data;
+interface IExperiencesData {
+   experiences: Experience[];
+}
 
-const Experiences: React.FC = () => {
+const Experiences = ({ experiences }: IExperiencesData) => {
    const { t } = useTranslation();
 
    return (
       <>
          <ExperiencesStyles>
-            <div className='jobs'>
-               <p className='title'>{t(`AboutMe.experienceTitle`)}</p>
-               {experiences.jobs.map((job, i) => (
-                  <JobItem key={job.company} job={job} index={i} />
+            <Title text={t(`Experiences.title`)} icon={<BsStars />} className='title'/>
+            <ul className='experiences'>
+               {experiences.map((job, i) => (
+                  <li className='item' key={i}>
+                     <JobCard
+                        company={job.company}
+                        position={job.position}
+                        assignments={job.assignments}
+                        company-linkedin={job['company-linkedin']}
+                        company-logo={job['company-logo']}
+                        description={job.description}
+                        regime={job.regime}
+                        location={job.location}
+                        methodology={job.methodology}
+                        still-works
+                        tools={job.tools}
+                        start={job.start}
+                        end={job.end}
+                     />
+                  </li>
                ))}
-            </div>
-            <div className='education'>
-               <div className='university'>
-                  <p className='title'>{t(`AboutMe.graduationTitle`)}</p>
-                  {experiences.formation.map((education, i) => (
-                     <GraduationItem key={i} education={education} index={i} />
-                  ))}
-               </div>
-               <div className='courses'>
-                  <p className='title'>{t(`AboutMe.coursesTitle`)}</p>
-                  {experiences.courses.map(
-                     (course, i) =>
-                        i < 4 && (
-                           <CourseItem
-                              key={course.course}
-                              course={course}
-                              index={i}
-                           />
-                        )
-                  )}
-               </div>
-               <ButtonLink
-                  _blank={false}
-                  content={t('AboutMe.moreCourses')}
-                  className='button'
-                  url={`/${i18next.language}/courses/`}
-                  textTransform='capitalize'
-                  icon={<FaPlus />}
-               />
-            </div>
+            </ul>
          </ExperiencesStyles>
       </>
    );
