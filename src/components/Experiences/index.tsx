@@ -15,7 +15,7 @@ const Experiences = ({ experiences }: IExperiencesData) => {
    const { t } = useTranslation();
    const containerRef = useRef(null);
 
-   const isInView = useInView(containerRef, { once: false });
+   const isInView = useInView(containerRef, { once: true });
 
    return (
       <>
