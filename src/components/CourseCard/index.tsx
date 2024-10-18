@@ -17,8 +17,8 @@ const CourseCard = ({ course }: ICourseCardProps) => {
          <Image
             src={course.logo}
             alt={`${course.institution} logo`}
-            width={50}
-            height={50}
+            width={70}
+            height={70}
             className='logo'
             quality={100}
          />
@@ -28,7 +28,7 @@ const CourseCard = ({ course }: ICourseCardProps) => {
          </div>
          <p className='hours'>{course.hours}</p>
          <span className='category'>{course.category}</span>
-         <ButtonLink content='ver certificado' className='button' url={course.certificate} _blank/>
+         <ButtonLink content='Ver certificado' className='button' url={course.certificate} _blank/>
       </CourseStyles>
    );
 };
