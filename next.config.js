@@ -15,7 +15,11 @@ const nextConfig = {
          'raw.githubusercontent.com',
          'w7.pngwing.com',
          'seeklogo.com',
-         'landing.anhembi.br'
+         'landing.anhembi.br',
+         'yt3.googleusercontent.com',
+         'crudcomqualidade.io',
+         'hotmart.s3.amazonaws.com',
+         'cdn6.aptoide.com',
       ],
    },
    i18n: {

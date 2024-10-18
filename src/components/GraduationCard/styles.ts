@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const GraduationStyles = styled.div`
    padding: 1rem;
    position: relative;
-   margin: 0 auto;
    border-radius: 1rem;
 
    display: flex;
