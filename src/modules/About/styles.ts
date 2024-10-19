@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const AboutStyle = styled.section`
@@ -14,7 +15,7 @@ export const AboutStyle = styled.section`
    position: relative;
 `;
 
-export const AboutContent = styled.div`
+export const AboutContent = styled(motion.div)`
    padding: 10rem 3rem 1rem;
    background-image: linear-gradient(
       to bottom,
@@ -36,7 +37,6 @@ export const AboutContent = styled.div`
 
    .about-box {
       width: calc(50% - 1.5rem);
-      padding: 1rem;
       border-radius: 1rem;
 
       .title {
@@ -65,11 +65,10 @@ export const AboutContent = styled.div`
          margin: 0 auto;
       }
    }
-   .who-am-i {
-      background-color: rgba(var(--dark-green), 0.9);
-      padding: 3rem 1rem;
-   }
 
+   @media (max-width: 1540px) {
+      border-radius: 0;
+   }
    @media (max-width: 1024px) {
       padding: 9rem 3rem 1rem;
       gap: 2rem;

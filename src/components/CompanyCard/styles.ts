@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Company = styled(Link)`
    width: fit-content;
    background-color: rgba(var(--light), 0.05);
-   padding: 1px 1rem;
+   padding: 1px 1rem 1px 1px;
    height: auto;
    display: flex;
    align-items: center;
@@ -14,7 +14,7 @@ export const Company = styled(Link)`
    margin-bottom: 5px;
    transition: 0.5s;
    .logo {
-      border-radius: 1rem;
+      border-radius: inherit;
       object-fit: contain;
 
       @media (max-width: 600px) {

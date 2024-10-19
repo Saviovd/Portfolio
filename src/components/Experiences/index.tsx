@@ -28,7 +28,7 @@ const Experiences = ({ experiences }: IExperiencesData) => {
                      key={i}
                      initial={{ opacity: 0, y: 50 }}
                      animate={isInView ? { opacity: 1, y: 0 } : {}}
-                     transition={{ duration: 0.5, delay: i * 0.2 }}
+                     transition={{ duration: 0.5, delay: i * 0.4 }}
                   >
                      <JobCard
                         company={job.company}
