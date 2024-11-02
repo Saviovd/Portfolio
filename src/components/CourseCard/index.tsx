@@ -5,12 +5,14 @@ import { Course } from '@/types/personaldata';
 import i18next from 'i18next';
 import { Locale } from '@/types/types';
 import ButtonLink from '../Buttons/ButtonLink';
+import { useTranslation } from 'react-i18next';
 
 interface ICourseCardProps {
    course: Course;
 }
 const CourseCard = ({ course }: ICourseCardProps) => {
    const locale = i18next.language as Locale;
+   const { t } = useTranslation();
 
    return (
       <CourseStyles>
@@ -28,7 +30,7 @@ const CourseCard = ({ course }: ICourseCardProps) => {
          </div>
          <p className='hours'>{course.hours}</p>
          <span className='category'>{course.category}</span>
-         <ButtonLink content='Ver certificado' className='button' url={course.certificate} _blank/>
+         <ButtonLink content={t('Courses.viewCertificate')} className='button' url={course.certificate} _blank/>
       </CourseStyles>
    );
 };

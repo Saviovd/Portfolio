@@ -46,10 +46,15 @@ const translations = {
       copy: 'Copy',
    },
    Courses: {
+      title: 'Certifications',
       back: 'Return',
       certificate: 'certificate',
       courses: 'Courses',
       inProgress: 'In Progress',
+      concluded: 'completed',
+      prev: 'Previous',
+      next: 'Next',
+      viewCertificate: 'View certificate',
    },
    ProjectModal: {
       features: 'Features',

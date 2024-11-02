@@ -7,6 +7,9 @@ import CourseCard from '../CourseCard';
 import { CertificationsStyle, Menu } from './styles';
 import { SlGraduation } from 'react-icons/sl';
 import { Course, Graduation } from '@/types/personaldata';
+import i18next from 'i18next';
+import { Locale } from '@/types/types';
+import { useTranslation } from 'react-i18next';
 
 type ListType = 'graduation' | 'courses';
 
@@ -16,6 +19,8 @@ interface ICertificationsProps {
 }
 
 const Certifications = ({ graduations, courses }: ICertificationsProps) => {
+   const { t } = useTranslation();
+   const locale = i18next.language as Locale;
    const [activatedList, setActivatedList] = useState<ListType>('graduation');
    const [currentPage, setCurrentPage] = useState(1);
    const itemsPerPage = 6;
@@ -42,14 +47,20 @@ const Certifications = ({ graduations, courses }: ICertificationsProps) => {
       setCurrentPage((prev) => Math.max(prev - 1, 1));
 
    const categories = [
-      { label: 'Graduação', value: 'graduation' },
-      { label: 'Cursos', value: 'courses' },
+      {
+         label: { pt: 'Graduação', en: 'Graduation', es: 'Graduación' },
+         value: 'graduation',
+      },
+      {
+         label: { pt: 'Cursos', en: 'Courses', es: 'Cursos' },
+         value: 'courses',
+      },
    ];
 
    return (
       <CertificationsStyle>
          <Title
-            text={'Certificações'}
+            text={t('Courses.title')}
             icon={<SlGraduation className='icon' />}
             className='title'
          />
@@ -63,7 +74,7 @@ const Certifications = ({ graduations, courses }: ICertificationsProps) => {
                   }`}
                   onClick={() => handleListChange(category.value as ListType)}
                >
-                  {category.label}
+                  {category.label[locale]}
                </li>
             ))}
          </Menu>

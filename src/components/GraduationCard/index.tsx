@@ -5,6 +5,7 @@ import { GraduationStyles } from './styles';
 import i18next from 'i18next';
 import { Graduation } from '@/types/personaldata';
 import { formatMonthDate } from '@/utils/formatMonthDate';
+import { useTranslation } from 'react-i18next';
 
 interface IGraduationCardProps {
    graduation: Graduation;
@@ -12,6 +13,8 @@ interface IGraduationCardProps {
 
 const GraduationCard = ({ graduation }: IGraduationCardProps) => {
    const locale = i18next.language as Locale;
+   const { t } = useTranslation();
+
    return (
       <GraduationStyles>
          <Image
@@ -31,7 +34,7 @@ const GraduationCard = ({ graduation }: IGraduationCardProps) => {
          </div>
          <p className='category'>{graduation.category[locale]}</p>
          <p className='concluded'>
-            {graduation.concluded ? 'concluído' + '!' : null}
+            {graduation.concluded ? t('Courses.concluded') + '!' : null}
          </p>
       </GraduationStyles>
    );

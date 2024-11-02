@@ -2,7 +2,7 @@ import Head from 'next/head';
 import GlobalStyle from '@/styles/globals';
 import Header from '@/components/Header';
 import Home from '@/components/Home';
-import About from '@/components/About';
+import About from '@/modules/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contacts from '@/components/Contacts/Contacts';

@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { PaginationControlsStyles } from './styles';
+import { useTranslation } from 'react-i18next';
 
 interface IPaginationControlsProps {
    currentPage: number;
@@ -14,6 +15,8 @@ const PaginationControls = ({
    onNextPage,
    onPreviousPage,
 }: IPaginationControlsProps) => {
+   const { t } = useTranslation();
+
    return (
       <AnimatePresence>
          {totalPages > 1 && (
@@ -28,7 +31,7 @@ const PaginationControls = ({
                   disabled={currentPage === 1}
                   className='previous'
                >
-                  Anterior
+                  {t('Courses.prev')}
                </button>
                <div className='pages'>
                   <span className='current'>{currentPage}</span>/
@@ -39,7 +42,7 @@ const PaginationControls = ({
                   onClick={onNextPage}
                   disabled={currentPage === totalPages}
                >
-                  Próximo
+                  {t('Courses.next')}
                </button>
             </PaginationControlsStyles>
          )}

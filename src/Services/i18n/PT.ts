@@ -16,7 +16,7 @@ const translations = {
       experienceYears: 'anos de experiência',
       positiveFeedbacks: 'feedback positivos',
       certifications: 'Certificações',
-      finishedProjects: 'projetos concluídos'
+      finishedProjects: 'projetos concluídos',
    },
    Experiences: {
       title: 'Experiêcias',
@@ -46,10 +46,15 @@ const translations = {
       copy: 'Copiar',
    },
    Courses: {
+      title: 'Certificações',
       back: 'Voltar',
       certificate: 'Certificado',
       courses: 'Cursos',
       inProgress: 'Em Andamento',
+      concluded: 'concluído',
+      prev: 'Anterior',
+      next: 'Próximo',
+      viewCertificate: 'Ver certificado',
    },
    ProjectModal: {
       features: 'Características',
