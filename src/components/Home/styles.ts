@@ -22,7 +22,7 @@ export const HomeStyle = styled.section`
       justify-content: center;
       transform: translateX(25rem);
 
-      .name {
+      .my-name {
          font-size: 10rem;
          letter-spacing: 2px;
          font-weight: 600;

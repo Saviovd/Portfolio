@@ -12,7 +12,7 @@ const Home = () => {
    const { t } = useTranslation();
    const { width } = useWindowSize();
    useEffect(() => {
-      const myNameBaffle = baffle('.name', {
+      const myNameBaffle = baffle('.my-name', {
          characters: '█SAVIO▓ALMEIDA░▒/',
          speed: 40,
       });
@@ -41,7 +41,7 @@ const Home = () => {
                />
             )}
             <div className='apresentation'>
-               <h3 className='name'>Sávio Almeida</h3>
+               <h3 className='my-name'>Sávio Almeida</h3>
                <Loader />
                <motion.p
                   initial={{ opacity: 0 }}
