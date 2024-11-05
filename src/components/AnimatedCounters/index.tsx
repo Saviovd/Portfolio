@@ -1,8 +1,9 @@
-import { testimonials } from '@/data/testimonials.json';
+import data from '@/data/testimonials.json';
 import AnimatedCounter from '../AnimatedCounter';
 import { AnimatedCountersStyles } from './styles';
 import { useTranslation } from 'react-i18next';
 
+const { testimonials } = data;
 interface INumberProps {
    experience: number;
    projects?: number;
