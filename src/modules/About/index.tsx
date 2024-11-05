@@ -12,6 +12,7 @@ import Certifications from '@/components/Certifications';
 import { useInView } from 'framer-motion';
 import WhoAmI from '@/components/WhoAmI';
 import MyTrajectory from '@/components/MyTrajectory';
+import Skills from '@/components/Skills';
 
 const allMyInfo = data['personal-data'];
 
@@ -61,6 +62,7 @@ const About = () => {
             graduations={allMyInfo.graduation}
             courses={allMyInfo.courses}
          />
+         <Skills />
       </AboutStyle>
    );
 };
