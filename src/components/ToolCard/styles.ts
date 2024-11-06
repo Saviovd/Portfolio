@@ -9,37 +9,33 @@ export const Card = styled.div`
    align-items: center;
    gap: 1rem;
    cursor: pointer;
-   border: 1px solid rgb(var(--light-blue), 0.2);
-   background-color: rgba(var(--dark-blue), 0.05);
-   padding: 1rem 5px;
-   height: 10rem;
-   border-radius: 5px;
    .icon {
+      border: 1px solid rgb(var(--light-blue), 0.2);
+      background-color: rgba(var(--dark-blue), 0.05);
       fill: rgba(var(--light-blue));
       stroke: rgba(var(--dark));
+      border-radius: 5px;
       object-fit: contain;
+      padding: 5px;
       transition: 0.5s;
    }
    .name {
       text-align: center;
       font-size: 1.6rem;
-      letter-spacing: 2px;
       font-weight: 200;
       transition: 0.5s;
       white-space: nowrap;
    }
 
    &:hover {
-      border: 1px solid rgba(var(--light-green), 0.5);
-      scale: 1.05;
-      border-radius: 1rem;
-      background-color: rgba(var(--light-green), 0.1);
-      backdrop-filter: blur(10px);
-      z-index: 200;
       .name {
          color: rgba(var(--light-green));
       }
       .icon {
+         border: 1px solid rgba(var(--light-green), 0.5);
+         border-radius: 1rem;
+         background-color: rgba(var(--light-green), 0.1);
+         backdrop-filter: blur(10px);
          fill: rgba(var(--light-green));
       }
    }

@@ -17,6 +17,7 @@ export const CertificationsStyle = styled.div`
       transition: 0.5s;
       padding: 2rem 0;
       transition: 0.5s;
+      position: relative;
 
       .list {
          display: flex;

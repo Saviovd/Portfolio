@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const HabilitiesStyle = styled.section`
-   padding: 10rem 1rem 0;
+   width: 100%;
+   padding: 10rem 3rem 0;
    display: flex;
    flex-direction: column;
    gap: 2rem;
@@ -14,29 +15,25 @@ export const HabilitiesStyle = styled.section`
       }
    }
    .stacks {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      height: auto;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, 6rem);
+      align-items: center;
+      justify-content: center;
+      justify-items: stretch;
+      align-content: flex-start;
       transition: 0.5s;
 
-      .stack {
-         min-width: 13rem;
-         margin-right: 1rem;
-         margin-bottom: 1rem;
-      }
-
       @media (max-width: 1024px) {
-         padding-bottom: 5rem;
-         min-height: 30rem;
-      }
-      @media (max-width: 390px) {
-         justify-content: space-evenly;
+         padding-bottom: 4rem;
+         min-height: 20rem;
       }
    }
 
-   @media (max-width: 768px) {
+   @media (max-width: 1024px) {
+      padding: 8rem 1rem 0;
+   }
+   @media (max-width: 1024px) {
       padding: 5rem 1rem 0;
    }
 `;

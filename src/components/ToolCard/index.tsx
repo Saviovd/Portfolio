@@ -18,9 +18,8 @@ const ToolCard = ({ name, icon, description }: IToolprops) => {
          <Card onClick={toggleModal}>
             <Icon
                nameIcon={icon || 'CgUnavailable'}
-               propsIcon={{ size: 40, className: 'icon' }}
+               propsIcon={{ size: 60, className: 'icon' }}
             />
-            <p className='name'>{name}</p>
          </Card>
          <AnimatePresence>
             {openModal && (
