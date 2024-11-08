@@ -1,5 +1,3 @@
-import Title from '../Title';
-import { MdMiscellaneousServices } from 'react-icons/md';
 import { ServicesList, ServicesPresentation, ServicesStyle } from './styles';
 import data from '@/data/services.json';
 import ServiceCard from '../ServiceCard';
@@ -9,26 +7,21 @@ const Services = () => {
    return (
       <>
          <ServicesStyle id='services'>
-            <Title
-               text={'Serviços'}
-               icon={<MdMiscellaneousServices />}
-               className='section-title'
-            />
             <div className='services-container'>
                <ServicesPresentation>
                   <h3 className='title'>
-                     Como Transformo <br />
-                     <span className='code'>Código</span> em{' '}
-                     <span className='xp'>Experiências Incríveis</span>?
+                     Transformo Código em <br />
+                     <span className='xp'>Experiências Incríveis</span>
                   </h3>
                   <p className='text'>
-                     Eu transformo código em experiências que encantam os
-                     usuários. Com foco em design intuitivo e performance, crio
-                     soluções que não só funcionam, mas surpreendem, elevando a
-                     interação e o engajamento com seu produto.
+                     Com foco em design intuitivo e performance, crio soluções
+                     que não só funcionam, mas surpreendem, elevando a interação
+                     e o engajamento com seu produto. Explore abaixo como meus
+                     serviços podem transformar sua ideia em uma experiência
+                     única para o seu cliente.
+                     <br />
                   </p>
                </ServicesPresentation>
-
                <ServicesList>
                   {services.map((service, i) => (
                      <li className='item' key={i}>
