@@ -6,14 +6,10 @@ const Button = ({
    content,
    icon,
    className,
-   strColor,
    onClick,
 }: IButtonProps) => {
    return (
       <ButtonStyle
-         style={{
-            color: strColor || 'white',
-         }}
          onClick={onClick}
          className={className}
       >
