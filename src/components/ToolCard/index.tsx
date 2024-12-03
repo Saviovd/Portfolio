@@ -18,7 +18,12 @@ const ToolCard = ({ name, icon, description }: IToolprops) => {
          <Card onClick={toggleModal}>
             <Icon
                nameIcon={icon || 'CgUnavailable'}
-               propsIcon={{ size: 60, className: 'icon' }}
+               propsIcon={{
+                  size: 60,
+                  className: `icon ${
+                     icon?.toLowerCase().includes('next') && 'next'
+                  }`,
+               }}
             />
          </Card>
          <AnimatePresence>
@@ -33,7 +38,12 @@ const ToolCard = ({ name, icon, description }: IToolprops) => {
                   <div className='tool-details'>
                      <Icon
                         nameIcon={icon || 'CgUnavailable'}
-                        propsIcon={{ size: 120, className: 'icon' }}
+                        propsIcon={{
+                           size: 120,
+                           className: `icon ${
+                              icon?.toLowerCase().includes('next') && 'next'
+                           }`,
+                        }}
                      />
                      <h3 className='name'>{name}</h3>
                      <p className='description'>

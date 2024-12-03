@@ -19,6 +19,11 @@ export const Card = styled.div`
       padding: 5px;
       transition: 0.5s;
    }
+   .next {
+      fill: transparent;
+      stroke: rgba(var(--light-blue));
+      stroke-width: 1px;
+   }
    .name {
       text-align: center;
       font-size: 1.6rem;
@@ -37,6 +42,11 @@ export const Card = styled.div`
          background-color: rgba(var(--light-green), 0.1);
          backdrop-filter: blur(10px);
          fill: rgba(var(--light-green));
+      }
+      .next {
+         fill: transparent;
+         stroke: rgba(var(--light-green));
+         stroke-width: 1px;
       }
    }
 `;
@@ -82,6 +92,11 @@ export const ToolModal = styled(motion.div)`
             align-self: auto;
             justify-self: auto;
          }
+      }
+      .next {
+         fill: transparent;
+         stroke: rgba(var(--light-green));
+         stroke-width: 1px;
       }
 
       .name {
