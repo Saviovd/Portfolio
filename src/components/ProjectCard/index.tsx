@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import { ProjectProps } from '@/types/project';
 import { FaPlus } from 'react-icons/fa';
@@ -23,7 +23,6 @@ const ProjectCard = ({
 }: ProjectProps) => {
    const [openModal, setOpenModal] = useState(false);
    const locale = i18next.language as Locale;
-
 
    const handleModalVisible = () => {
       setOpenModal(!openModal);
@@ -64,12 +63,14 @@ const ProjectCard = ({
                />
             </motion.div>
          </HorizonntalContainer>
-         {openModal && (
-            <ProjectModal
-               handleModalVisible={handleModalVisible}
-               project={project}
-            />
-         )}
+         <AnimatePresence>
+            {openModal && (
+               <ProjectModal
+                  handleModalVisible={handleModalVisible}
+                  project={project}
+               />
+            )}
+         </AnimatePresence>
       </>
    );
 };

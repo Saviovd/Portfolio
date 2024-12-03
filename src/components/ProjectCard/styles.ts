@@ -21,7 +21,7 @@ export const HorizonntalContainer = styled.div`
    .infos {
       border-radius: 0 0 1px 1px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: flex-start;
       align-content: flex-start;
       flex-wrap: wrap;

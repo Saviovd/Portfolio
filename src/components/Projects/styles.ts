@@ -5,135 +5,51 @@ export const ProjectsStyle = styled.section`
    width: 100%;
    max-width: 170rem;
    margin: 0 auto;
-   padding-top: 13rem;
+   padding: 10rem 3rem 0;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    align-content: center;
+   overflow: hidden;
 
    .section-title {
       gap: 1rem;
    }
-   .swiper {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding-bottom: 5rem;
-      position: relative;
-      .swiper-slide {
-         width: 100%;
-      }
-      .swiper-button-prev,
-      .swiper-button-next {
-         color: white;
-         background-color: rgba(var(--primary-pink));
-         top: calc(100% - 1.5rem);
-         z-index: 11;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding: 1rem;
-         width: 2rem;
-         height: 1.8rem;
-
-         &::after {
-            font-size: medium;
-            font-weight: bold;
-         }
-
-         @media screen {
-            @media (max-width: 560px) {
-               padding: 0.5rem;
-               top: calc(100% - 0.5rem);
-
-               &::after {
-                  font-size: small;
-               }
-            }
-         }
-      }
-      .swiper-button-prev {
-         left: calc(50% - 16.2rem);
-         @media screen {
-            @media (max-width: 560px) {
-               left: calc(50% - 15.2rem);
-            }
-         }
-      }
-      .swiper-button-next {
-         right: calc(50% - 16.2rem);
-         @media screen {
-            @media (max-width: 560px) {
-               right: calc(50% - 15.2rem);
-            }
-         }
-      }
-
-      .swiper-pagination {
-         width: 24rem;
-         height: 3.7rem;
-         left: calc(50% - 12rem);
-         margin: 0 auto;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         bottom: 0;
-         .swiper-pagination-bullet {
-            margin: 0;
-            transition: 0.5s;
-            background-color: rgba(var(--primary-blue));
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0;
-            font-weight: 500;
-            padding: 0 1rem;
-            font-size: 1.3rem;
-            height: 100%;
-         }
-         @media screen {
-            @media (max-width: 560px) {
-               width: 20rem;
-               left: calc(50% - 10rem);
-               height: 2.7rem;
-            }
-         }
-      }
-      @media screen {
-         @media (max-width: 768px) {
-            padding: 4rem 0 5rem;
-         }
-      }
+   .more {
+      margin-top: 3rem;
+      font-size: 2rem;
+   }
+   @media (max-width: 768px) {
+      padding: 5rem 1rem 0;
    }
 `;
 
-export const ProjectsContainer = styled(motion.div)`
-   width: 90%;
-   margin: 5rem auto 0;
+export const ProjectsContainer = styled(motion.ul)`
+   width: 100%;
+   height: auto;
+   margin: 3rem auto 0;
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: flex-start;
    align-content: flex-start;
-   gap: 5rem 0;
    flex-wrap: wrap;
+   gap: 2rem 1rem;
 
-   @media (max-width: 1250px) {
-      width: 95%;
-      gap: 3rem 0;
-   }
-   @media (max-width: 1024px) {
-      width: 90%;
-      gap: 2.5rem 0;
+   .item {
+      height: 100%;
+      flex: 1 1 300px;
+      min-width: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+         flex: 1 1 250px;
+         min-width: 250px;
+      }
    }
    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem 0;
-   }
-   @media (max-width: 450px) {
-      width: 100%;
+      gap: 2rem;
    }
 `;

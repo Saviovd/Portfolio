@@ -274,6 +274,39 @@
             "es": "Un cliente HTTP basado en promesas para realizar solicitudes a APIs, que soporta una amplia gama de características, incluyendo la intercepción de solicitudes y respuestas, transformación de datos de solicitud/respuesta y manejo automático de datos JSON."
          },
          "icon": "SiAxios"
+      },
+      {
+         "type": "Front-End",
+         "name": "Vite",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiVite"
+      },
+      {
+         "type": "Front-End",
+         "name": "React router",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiReactrouter"
+      },
+      {
+         "type": "Front-End",
+         "name": "Framer Motion",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiFramer"
       }
    ]
 }

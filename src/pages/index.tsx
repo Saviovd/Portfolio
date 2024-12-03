@@ -3,13 +3,13 @@ import GlobalStyle from '@/styles/globals';
 import Header from '@/components/Header';
 import Home from '@/components/Home';
 import About from '@/modules/About';
-import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contacts from '@/components/Contacts/Contacts';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import ParticlesComponent from '@/components/Particles/indes';
+import Services from '@/components/Services';
 
 export default function Index() {
    const { scrollYProgress } = useScroll();
@@ -34,9 +34,9 @@ export default function Index() {
          <main>
             <Home />
             <About />
-            {/* <Skills />
+            <Services />
             <Projects />
-            <Testimonials />
+            {/*  <Testimonials />
             <Contacts /> */}
          </main>
          <Footer />
