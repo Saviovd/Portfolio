@@ -73,7 +73,6 @@ const GlobalStyle = createGlobalStyle`
          margin: 0 auto;
          padding: 0;
          max-width: 155rem;
-         overflow-x: hidden;
          font-family: var(--outfit);
          color: #f1f1f1;
 
