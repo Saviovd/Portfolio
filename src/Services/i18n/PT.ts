@@ -39,10 +39,41 @@ const translations = {
       testimonialTitle: 'depoimentos',
    },
    Contacts: {
-      title: 'contato',
-      copied: 'E-mail copiado',
+      title: 'Contato',
+      copied: 'E-mail copiado para a área de transferência',
       visit: 'Visitar',
       copy: 'Copiar',
+      form: {
+         name: {
+            label: 'Como devo te chamar?',
+            placeholder: 'Digite seu nome...',
+         },
+         email: {
+            label: 'Seu e-mail',
+            placeholder: 'Digite seu e-mail...',
+         },
+         phone: {
+            label: 'Telefone (opcional)',
+            placeholder: 'Digite seu número de telefone',
+         },
+         preferredContact: {
+            label: 'Qual o seu meio de contato preferido?',
+            placeholder: 'Selecione uma opção',
+         },
+         message: {
+            label: 'Sua mensagem:',
+            placeholder: 'Descreva sua necessidade ou projeto',
+         },
+      },
+      button: 'Enviar',
+      formErrors: {
+         requiredName: 'O nome é obrigatório.',
+         requiredEmail: 'O e-mail é obrigatório.',
+         invalidEmail: 'O e-mail fornecido não é válido.',
+         requiredMessage: 'A mensagem é obrigatória.',
+      },
+      sendSuccess: 'Informações enviadas com sucesso!',
+      sendFailed: 'Erro ao enviar as informações. Tente novamente.',
    },
    Courses: {
       title: 'Certificações',

@@ -3,10 +3,10 @@ import { Form } from './styles';
 import Input from './Input';
 import Button from '../Buttons/Button';
 import { validateForm } from '@/utils/validateForm';
-import { Slide, toast } from 'react-toastify';
 import CustomSelect from '../CustomSelect';
 import { FormData } from '@/types/formData';
 import { sendEmail } from '@/utils/sendEmail';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm: React.FC = () => {
    const form = useRef<HTMLFormElement | null>(null);
@@ -21,6 +21,7 @@ const ContactForm: React.FC = () => {
       preferredContact: '',
    });
    const [errors, setErrors] = useState<Partial<FormData>>({});
+   const { t } = useTranslation();
 
    const handleChange = (
       e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -36,7 +37,7 @@ const ContactForm: React.FC = () => {
    const handleSubmit = (e: FormEvent) => {
       e.preventDefault();
 
-      const { isValid, errors } = validateForm(formData);
+      const { isValid, errors } = validateForm(formData, t);
 
       if (!isValid) {
          setErrors(errors);
@@ -45,7 +46,7 @@ const ContactForm: React.FC = () => {
 
       setErrors({});
       try {
-         sendEmail(e, form);
+         sendEmail(e, form, t);
          setFormData({
             name: '',
             email: '',
@@ -58,17 +59,6 @@ const ContactForm: React.FC = () => {
          });
       } catch (error) {
          console.error('error on Submit form:', error);
-         toast('Erro ao enviar!', {
-            position: 'top-center',
-            autoClose: 4000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-            progress: undefined,
-            theme: 'dark',
-            transition: Slide,
-         });
       } finally {
       }
    };
@@ -76,20 +66,20 @@ const ContactForm: React.FC = () => {
    return (
       <Form ref={form} onSubmit={handleSubmit}>
          <Input
-            label='Como devo te chamar ?'
+            label={t('Contacts.form.name.label')}
             name='name'
             onChange={handleChange}
-            placeholder='Digite seu nome'
+            placeholder={t('Contacts.form.name.placeholder')}
             value={formData.name}
             type='text'
             error={errors.name || ''}
          />
 
          <Input
-            label='Seu E-mail ?'
+            label={t('Contacts.form.email.label')}
             name='email'
             onChange={handleChange}
-            placeholder='Digite seu e-mail'
+            placeholder={t('Contacts.form.email.placeholder')}
             value={formData.email}
             required
             type='text'
@@ -97,25 +87,25 @@ const ContactForm: React.FC = () => {
          />
 
          <Input
-            label='Telefone (opcional)'
+            label={t('Contacts.form.phone.label')}
             name='phone'
             onChange={handleChange}
-            placeholder='Digite seu número de telefone'
+            placeholder={t('Contacts.form.phone.placeholder')}
             value={formData.phone || ''}
             type='text'
          />
 
          <label className='select'>
-            Tipo de contato preferido:
+            {t('Contacts.form.preferredContact.label')}
             <CustomSelect
                name='preferredContact'
                value={formData.preferredContact}
                onChange={handleChange}
-               placeholder='Selecione uma opção'
+               placeholder={t('Contacts.form.preferredContact.placeholder')}
                options={[
                   {
                      value: '',
-                     label: 'Selecione uma opção',
+                     label: t('Contacts.form.preferredContact.placeholder'),
                   },
                   {
                      value: 'email',
@@ -130,19 +120,19 @@ const ContactForm: React.FC = () => {
          </label>
 
          <label className={`text-area ${errors.message && 'error'}`}>
-            Sua mensagem:
+         {t('Contacts.form.message.label')}
             <textarea
                name='message'
                value={formData.message}
                onChange={handleChange}
-               placeholder='Descreva sua necessidade ou projeto'
+               placeholder={t('Contacts.form.message.placeholder')}
                required
                className={errors.message && 'textarea-error'}
             ></textarea>
             {errors.message && <span className='error'>{errors.message}</span>}
          </label>
 
-         <Button onClick={handleSubmit} className='button' content='Enviar' />
+         <Button onClick={handleSubmit} className='button' content= {t('Contacts.button')} />
       </Form>
    );
 };

@@ -39,10 +39,41 @@ const translations = {
       testimonialTitle: 'testimonials',
    },
    Contacts: {
-      title: 'contact',
-      copied: 'Email copied',
+      title: 'Contact',
+      copied: 'E-mail copied to the clipboard',
       visit: 'Visit',
       copy: 'Copy',
+      form: {
+         name: {
+            label: 'How should I call you?',
+            placeholder: 'Enter your name...',
+         },
+         email: {
+            label: 'Your email',
+            placeholder: 'Enter your email...',
+         },
+         phone: {
+            label: 'Phone (optional)',
+            placeholder: 'Enter your phone number',
+         },
+         preferredContact: {
+            label: 'Preferred contact method:',
+            placeholder: 'Select an option',
+         },
+         message: {
+            label: 'Your message:',
+            placeholder: 'Describe your needs or project',
+         },
+      },
+      button: 'Send',
+      formErrors: {
+         requiredName: 'Name is required.',
+         requiredEmail: 'Email is required.',
+         invalidEmail: 'The provided email is not valid.',
+         requiredMessage: 'Message is required.',
+      },
+      sendSuccess: 'Information sent successfully!',
+      sendFailed: 'Failed to send information. Please try again.',
    },
    Courses: {
       title: 'Certifications',

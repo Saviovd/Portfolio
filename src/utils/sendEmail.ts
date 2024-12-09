@@ -3,9 +3,11 @@ import emailjs from '@emailjs/browser';
 import { FormEvent } from 'react';
 import { Slide, toast } from 'react-toastify';
 import 'dotenv/config';
+import { TFunction } from 'i18next';
 export const sendEmail = (
    e: FormEvent,
-   form: React.MutableRefObject<HTMLFormElement | null>
+   form: React.MutableRefObject<HTMLFormElement | null>,
+   t: TFunction
 ) => {
    e.preventDefault();
 
@@ -29,7 +31,7 @@ export const sendEmail = (
       .then(
          () => {
             console.log('SUCCESS!');
-            toast('Contato enviado!', {
+            toast(t('Contacts.sendSuccess'), {
                position: 'top-center',
                autoClose: 4000,
                hideProgressBar: false,
@@ -43,7 +45,7 @@ export const sendEmail = (
          },
          (error) => {
             console.log('FAILED...', error.text);
-            toast('Erro ao enviar o contato. Tente novamente.', {
+            toast(t('Contacts.sendFailed'), {
                position: 'top-center',
                autoClose: 4000,
                hideProgressBar: false,

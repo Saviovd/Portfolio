@@ -1,20 +1,21 @@
 import { FormData } from '@/types/formData';
+import { TFunction } from 'i18next';
 
-export const validateForm = (formData: FormData) => {
+export const validateForm = (formData: FormData, t: TFunction) => {
    const newErrors: Partial<FormData> = {};
 
    if (!formData.name.trim()) {
-      newErrors.name = 'O nome é obrigatório.';
+      newErrors.name = t('Contacts.formErrors.requiredName');
    }
 
    if (!formData.email.trim()) {
-      newErrors.email = 'O e-mail é obrigatório.';
+      newErrors.email = t('Contacts.formErrors.requiredEmail');
    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'O e-mail fornecido não é válido.';
+      newErrors.email = t('Contacts.formErrors.invalidEmail');
    }
 
    if (!formData.message.trim()) {
-      newErrors.message = 'A mensagem é obrigatória.';
+      newErrors.message = t('Contacts.formErrors.requiredMessage');
    }
 
    return {
