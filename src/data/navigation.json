@@ -42,11 +42,11 @@
       },
       {
          "title": {
-            "pt": "Contatos",
-            "en": "Contacts",
-            "es": "Contactos"
+            "pt": "Contato",
+            "en": "Contact",
+            "es": "Contacto"
          },
-         "to": "contacts"
+         "to": "contact"
       }
    ]
 }

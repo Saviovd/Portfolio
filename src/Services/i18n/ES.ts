@@ -39,8 +39,7 @@ const translations = {
       testimonialTitle: 'Testimonios',
    },
    Contacts: {
-      my: 'mis',
-      contacts: 'contactos',
+      title: 'contacto',
       copied: 'Correo copiado',
       visit: 'Visitar',
       copy: 'Copiar',

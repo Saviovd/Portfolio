@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const ContactStyle = styled.section.attrs({ content: 'text' })`
-   max-width: 1800px;
-   padding-bottom: 6rem;
-   margin: 0 auto;
-   margin: 5rem auto 0;
+   max-width: 1550px;
+   padding: 10rem 3rem 0;
 
    display: flex;
    justify-content: space-evenly;
@@ -12,32 +10,17 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
    flex-direction: column;
 
    .section-title {
-      align-items: center;
-      gap: 1rem;
+      svg {
+         fill: rgba(var(--light-green));
+         stroke-width: 0;
+         border: 0;
+      }
    }
-   .contact_container {
+   .container {
       display: flex;
-      justify-content: space-around;
       margin-top: 2rem;
       width: 100%;
       gap: 2rem;
-
-      @media screen {
-         @media (max-width: 1090px) {
-            gap: 1rem;
-         }
-         @media (max-width: 950px) {
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 5rem 2rem;
-         }
-         @media (max-width: 600px) {
-            margin-top: 2rem;
-         }
-         @media (max-width: 500px) {
-            gap: 2rem;
-         }
-      }
 
       .contact_card {
          width: 30%;
@@ -157,5 +140,9 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             }
          }
       }
+   }
+
+   @media (max-width: 768px) {
+      padding: 5rem 1rem 0;
    }
 `;

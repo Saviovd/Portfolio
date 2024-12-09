@@ -9,6 +9,7 @@ import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import ParticlesComponent from '@/components/Particles/indes';
+import { ToastContainer } from 'react-toastify';
 import Services from '@/components/Services';
 
 export default function Index() {
@@ -37,11 +38,23 @@ export default function Index() {
             <Services />
             <Projects />
             <Testimonials />
-            {/* <Contacts /> */}
+            <Contacts />
          </main>
          <Footer />
          <motion.div className='progress-bar' style={{ scaleX }} />
          <ParticlesComponent id='particles' />
+         <ToastContainer
+            position='top-center'
+            autoClose={4000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme='dark'
+         />
       </>
    );
 }

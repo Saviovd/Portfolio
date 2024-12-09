@@ -13,7 +13,7 @@ export const ButtonStyle = styled.button`
    background-image: linear-gradient(
       to right,
       rgba(var(--dark-green), 0.8),
-      rgba(var(--dark-blue), 0.5)
+      rgba(var(--dark-blue), 0.8)
    );
    background-size: 200% 100%;
    background-position: left;

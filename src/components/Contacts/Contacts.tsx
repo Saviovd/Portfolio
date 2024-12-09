@@ -4,10 +4,11 @@ import Image from 'next/image';
 import Title from '../Title';
 import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
-import { Slide, ToastContainer, toast } from 'react-toastify';
+import { Slide, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
-import { RiContactsLine } from 'react-icons/ri';
+import { MdOutlineEmail } from 'react-icons/md';
+import ContactForm from '../ContactForm';
 
 const { socials } = data;
 
@@ -44,8 +45,9 @@ const Contacts = () => {
 
    return (
       <>
-         <ContactStyle id='contacts'>
-            <Title className='section-title' text={t('Contacts.contacts')} icon={<RiContactsLine style={{fontSize: '4rem'}} />} />
+         <ContactStyle id='contact'>
+            <Title className='section-title' text={t('Contacts.title')} icon={<MdOutlineEmail />} />
+            <ContactForm />
             <motion.div
                {...motionProps(100, 0)}
                transition={{
@@ -54,7 +56,7 @@ const Contacts = () => {
                   type: 'spring',
                   duration: 0.4,
                }}
-               className='contact_container'
+               className='container'
             >
                {socials.map(({ icon, name, type, url }, i) => (
                   <div className={`contact_card`} key={i}>
@@ -108,18 +110,6 @@ const Contacts = () => {
                ))}
             </motion.div>
          </ContactStyle>
-         <ToastContainer
-            position='top-center'
-            autoClose={4000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick={false}
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme='dark'
-         />
       </>
    );
 };

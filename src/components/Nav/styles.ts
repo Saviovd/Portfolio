@@ -54,7 +54,6 @@ export const NavStyle = styled(motion.nav)`
    @media (max-width: 1150px) {
       .nav_list {
          gap: 1.5rem;
-         backdrop-filter: blur(8px);
       }
    }
 `;

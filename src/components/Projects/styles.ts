@@ -14,7 +14,6 @@ export const ProjectsStyle = styled.section`
    overflow: hidden;
 
    .section-title {
-      gap: 1rem;
    }
    .more {
       margin-top: 3rem;
