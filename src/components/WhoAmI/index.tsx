@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const WhoAmIStyles = styled(motion.div)`
    background-color: rgba(var(--dark-green), 0.9);
@@ -18,6 +19,8 @@ const WhoAmI: React.FC<WhoAmIProps> = ({
    whoAmIInView,
    aboutText,
 }) => {
+   const { t } = useTranslation();
+
    const fadeInUp = {
       hidden: { opacity: 0, y: 50 },
       visible: { opacity: 1, y: 0 },
@@ -32,7 +35,7 @@ const WhoAmI: React.FC<WhoAmIProps> = ({
          transition={{ duration: 0.5, delay: 0.3 }}
          className='about-box who-am-i'
       >
-         <h2 className='title'>Who Am I</h2>
+         <h2 className='title'>{t('AboutMe.whoAmI')}</h2>
          <p
             className='text'
             dangerouslySetInnerHTML={{ __html: aboutText }}
