@@ -1,6 +1,5 @@
 import React from 'react';
 import data from '@/data/social.json';
-import Image from 'next/image';
 import Title from '../Title';
 import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
@@ -9,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
 import { MdOutlineEmail } from 'react-icons/md';
 import ContactForm from '../ContactForm';
+import { Icon } from '../Icon';
 
 const { socials } = data;
 
@@ -46,8 +46,13 @@ const Contacts = () => {
    return (
       <>
          <ContactStyle id='contact'>
-            <Title className='section-title' text={t('Contacts.title')} icon={<MdOutlineEmail />} />
+            <Title
+               className='section-title'
+               text={t('Contacts.title')}
+               icon={<MdOutlineEmail />}
+            />
             <ContactForm />
+            <h4 className='social-media-title'>Minhas redes sociais</h4>
             <motion.div
                {...motionProps(100, 0)}
                transition={{
@@ -68,16 +73,7 @@ const Contacts = () => {
                            className='contact_item'
                            key={i}
                         >
-                           <div className='icon_box'>
-                              <Image
-                                 className='icon'
-                                 src={icon}
-                                 alt='contact icon'
-                                 width={60}
-                                 height={60}
-                              />
-                           </div>
-                           <span className='type'>{type}</span>
+                           <Icon nameIcon={icon} propsIcon={{ size: 60, className: 'icon_box' }} />
                            <span data-name={name} className='name'>
                               {name}
                            </span>
@@ -91,16 +87,7 @@ const Contacts = () => {
                               type === 'e-mail' ? copyToClipboard(name) : ''
                            }
                         >
-                           <div className='icon_box'>
-                              <Image
-                                 className='icon'
-                                 src={icon}
-                                 alt='contact icon'
-                                 width={60}
-                                 height={60}
-                              />
-                           </div>
-                           <span className='type'>{type}</span>
+                           <Icon nameIcon={icon} propsIcon={{ size: 60, className: 'icon_box' }} />
                            <span data-name={name} className='name'>
                               {name}
                            </span>
