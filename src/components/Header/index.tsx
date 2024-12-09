@@ -36,11 +36,10 @@ const Header = () => {
             >
                <Image
                   className='logo'
-                  src='/assets/logo.png'
+                  src='/assets/logo.svg'
                   alt={t('Header.logoAlt')}
                   width={40}
                   height={40}
-                  style={{ width: 'auto', height: 'auto' }}
                   quality={100}
                />
 
