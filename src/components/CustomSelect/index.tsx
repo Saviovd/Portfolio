@@ -72,9 +72,7 @@ const CustomSelect: FC<CustomSelectProps> = ({
                  placeholder
                : placeholder}
             <Arrow isOpen={isOpen} className={`arrow`}>
-               <FaAngleDown
-                  style={{ fill: error ? 'rgba(var(--red), 0.6)' : '' }}
-               />
+               <FaAngleDown />
             </Arrow>
          </Selector>
          <AnimatePresence>

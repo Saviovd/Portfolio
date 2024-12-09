@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
             exit={{ y: 50, opacity: 0 }}
             transition={{ duration: 1 }}
          >
-            {projects.slice(0, 7).map((project) => (
+            {projects.slice(0, 8).map((project) => (
                <li className='item' key={project.code}>
                   <ProjectCard
                      name={project.name}

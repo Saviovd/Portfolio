@@ -1,23 +1,15 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, useRef } from 'react';
 import { Form } from './styles';
 import Input from './Input';
 import Button from '../Buttons/Button';
 import { validateForm } from '@/utils/validateForm';
 import { Slide, toast } from 'react-toastify';
 import CustomSelect from '../CustomSelect';
-
-interface FormData {
-   name: string;
-   email: string;
-   phone?: string;
-   message: string;
-   projectType?: string;
-   budget?: number;
-   deadline?: string;
-   preferredContact: string;
-}
+import { FormData } from '@/types/formData';
+import { sendEmail } from '@/utils/sendEmail';
 
 const ContactForm: React.FC = () => {
+   const form = useRef<HTMLFormElement | null>(null);
    const [formData, setFormData] = useState<FormData>({
       name: '',
       email: '',
@@ -53,21 +45,7 @@ const ContactForm: React.FC = () => {
 
       setErrors({});
       try {
-         console.log('Form Data Submitted:', formData);
-      } catch (error) {
-         console.error('error on Submit form:', error);
-      } finally {
-         toast('Contato enviado!', {
-            position: 'top-center',
-            autoClose: 4000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-            progress: undefined,
-            theme: 'dark',
-            transition: Slide,
-         });
+         sendEmail(e, form);
          setFormData({
             name: '',
             email: '',
@@ -78,11 +56,25 @@ const ContactForm: React.FC = () => {
             deadline: '',
             preferredContact: '',
          });
+      } catch (error) {
+         console.error('error on Submit form:', error);
+         toast('Erro ao enviar!', {
+            position: 'top-center',
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: 'dark',
+            transition: Slide,
+         });
+      } finally {
       }
    };
 
    return (
-      <Form onSubmit={handleSubmit}>
+      <Form ref={form} onSubmit={handleSubmit}>
          <Input
             label='Como devo te chamar ?'
             name='name'
