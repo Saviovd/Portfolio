@@ -1,9 +1,11 @@
 {
    "projects": [
       {
-         "image": "/assets/Projects/desktop/games-by.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-games-by.png",
-         "screens": "/assets/Projects/screens/games-by.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/games-by.png",
+            "mobile": "/assets/Projects/mobile/mobile-games-by.png",
+            "screens": "/assets/Projects/screens/games-by.png"
+         },
          "url": "https://games-by.vercel.app/",
          "repository": "https://github.com/Games-By/games-by",
          "name": "Games By",
@@ -30,65 +32,51 @@
                "Autenticación de usuario"
             ]
          },
-         "stacks": [
+         "stack": [
             {
-               "name": "Next.js",
-               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-               "background": true,
-               "rounded": true,
+               "name": "Nextjs",
                "width": 60,
                "height": 60
             },
             {
                "name": "React",
-               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-               "background": true,
                "width": 70,
                "height": 60
             },
             {
                "name": "Axios",
-               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
                "width": 120,
                "height": 60
             },
             {
                "name": "NodeJs",
-               "src": "https://www.svgrepo.com/show/452075/node-js.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Express",
-               "src": "https://www.svgrepo.com/show/330398/express.svg",
-               "background": true,
                "padding": true,
                "width": 60,
                "height": 60
             },
             {
                "name": "Framer Motion",
-               "src": "https://www.svgrepo.com/show/452207/framer.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "MongoDB",
-               "src": "https://www.svgrepo.com/show/354090/mongodb.svg",
                "padding": true,
-               "background": true,
                "width": 60,
                "height": 60
             },
             {
                "name": "Figma",
-               "src": "https://www.svgrepo.com/show/354987/figma.svg",
                "width": 60,
                "height": 60
             }
@@ -106,9 +94,11 @@
          "year": 2023
       },
       {
-         "image": "/assets/Projects/desktop/dashboard.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-dashboard.png",
-         "screens": "/assets/Projects/screens/dashboard.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/dashboard.png",
+            "mobile": "/assets/Projects/mobile/mobile-dashboard.png",
+            "screens": "/assets/Projects/screens/dashboard.png"
+         },
          "url": "https://teste-tecnico-bobby.vercel.app/",
          "repository": "https://github.com/Saviovd/teste-tecnico-front",
          "name": "Users Dashboard",
@@ -135,44 +125,41 @@
                "Diseño responsivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "VueJs",
-               "src": "https://www.svgrepo.com/show/303494/vue-9-logo.svg",
                "width": 60,
                "height": 60
             },
             {
-               "name": "VueX",
-               "src": "https://seeklogo.com/images/V/vuex-logo-8383C0CED5-seeklogo.com.png",
-               "width": 50,
-               "height": 50
-            },
-            {
-               "name": "TailwindCSS",
-               "src": "https://www.svgrepo.com/show/374118/tailwind.svg",
+               "name": "Tailwind-css",
                "width": 60,
                "height": 60
             },
             {
                "name": "Axios",
-               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
                "width": 120,
                "height": 60
             },
             {
                "name": "NodeJs",
-               "src": "https://www.svgrepo.com/show/452075/node-js.svg",
                "width": 60,
                "height": 60
+            },
+            {
+               "name": "VueX",
+               "width": 50,
+               "height": 50
             }
          ],
          "year": 2023
       },
       {
-         "image": "/assets/Projects/desktop/dsf-bank.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-dsf-bank.png",
-         "screens": "/assets/Projects/screens/bank.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/dsf-bank.png",
+            "mobile": "/assets/Projects/mobile/mobile-dsf-bank.png",
+            "screens": "/assets/Projects/screens/bank.png"
+         },
          "url": "https://dsf-bank-nine.vercel.app/",
          "repository": "https://github.com/Saviovd/DSF-Bank",
          "name": "DSF Bank",
@@ -202,38 +189,29 @@
                "Animaciones con Framer Motion"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "Next.js",
-               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-               "background": true,
-               "rounded": true,
                "width": 60,
                "height": 60
             },
             {
                "name": "TypeScript",
-               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-               "background": true,
                "width": 70,
                "height": 60
             },
             {
                "name": "Framer Motion",
-               "src": "https://www.svgrepo.com/show/452207/framer.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Three.js",
-               "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Three.js_Icon.svg",
-               "background": true,
                "width": 60,
                "height": 60
             }
@@ -241,9 +219,11 @@
          "year": 2023
       },
       {
-         "image": "/assets/Projects/desktop/space.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-space.png",
-         "screens": "/assets/Projects/screens/space.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/space.png",
+            "mobile": "/assets/Projects/mobile/mobile-space.png",
+            "screens": "/assets/Projects/screens/space.png"
+         },
          "url": "https://space-tourism-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/space_tourism",
          "name": "Space Tourism",
@@ -270,28 +250,24 @@
                "Diseño responsivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "React",
-               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "TypeScript",
-               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Sass",
-               "src": "https://www.svgrepo.com/show/374061/sass.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "React Router",
-               "src": "https://www.svgrepo.com/show/354262/react-router.svg",
                "width": 60,
                "height": 60
             }
@@ -299,9 +275,11 @@
          "year": 2022
       },
       {
-         "image": "/assets/Projects/desktop/sneakers.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-sneakers.png",
-         "screens": "/assets/Projects/screens/sneakers.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/sneakers.png",
+            "mobile": "/assets/Projects/mobile/mobile-sneakers.png",
+            "screens": "/assets/Projects/screens/sneakers.png"
+         },
          "url": "https://buypage-ecommerce.vercel.app/",
          "repository": "https://github.com/Saviovd/buypage-ecommerce",
          "name": "Sneakers e-commerce",
@@ -328,22 +306,19 @@
                "Carrito funcional e interactivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "React",
-               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "TypeScript",
-               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Sass",
-               "src": "https://www.svgrepo.com/show/374061/sass.svg",
                "width": 60,
                "height": 60
             }
@@ -351,9 +326,11 @@
          "year": 2021
       },
       {
-         "image": "/assets/Projects/desktop/countries.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-countries.png",
-         "screens": "/assets/Projects/screens/countries.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/countries.png",
+            "mobile": "/assets/Projects/mobile/mobile-countries.png",
+            "screens": "/assets/Projects/screens/countries.png"
+         },
          "url": "https://countries-saviovd.vercel.app/",
          "repository": "https://github.com/Saviovd/countries",
          "name": "API Countries",
@@ -380,35 +357,29 @@
                "Diseño responsivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "React",
-               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Vite",
-               "src": "https://www.svgrepo.com/show/374167/vite.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-               "background": true,
                "width": 70,
                "height": 60
             },
             {
                "name": "TypeScript",
-               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "React Router",
-               "src": "https://www.svgrepo.com/show/354262/react-router.svg",
                "width": 60,
                "height": 60
             }
@@ -416,9 +387,11 @@
          "year": 2022
       },
       {
-         "image": "/assets/Projects/desktop/stranger-things.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-stranger-things.png",
-         "screens": "/assets/Projects/screens/stranger-things.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/stranger-things.png",
+            "mobile": "/assets/Projects/mobile/mobile-stranger-things.png",
+            "screens": "/assets/Projects/screens/stranger-things.png"
+         },
          "url": "https://stranger-things4.vercel.app/",
          "repository": "https://github.com/Saviovd/stranger_things",
          "name": "Stranger Things 4°",
@@ -445,22 +418,19 @@
                "Diseño moderno"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "HTML5",
-               "src": "https://www.svgrepo.com/show/452228/html-5.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "CSS3",
-               "src": "https://www.svgrepo.com/show/452185/css-3.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "JavaScript",
-               "src": "https://www.svgrepo.com/show/353925/javascript.svg",
                "width": 60,
                "height": 60
             }
@@ -468,9 +438,11 @@
          "year": 2021
       },
       {
-         "image": "/assets/Projects/desktop/crud.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-crud.png",
-         "screens": "/assets/Projects/screens/todos.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/crud.png",
+            "mobile": "/assets/Projects/mobile/mobile-crud.png",
+            "screens": "/assets/Projects/screens/todos.png"
+         },
          "url": "https://crudtodo.vercel.app/",
          "repository": "https://github.com/Saviovd/ToDo",
          "name": "ToDo List",
@@ -497,32 +469,24 @@
                "Diseño responsivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "Next.js",
-               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-               "background": true,
-               "rounded": true,
                "width": 60,
                "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-               "background": true,
                "width": 70,
                "height": 60
             },
             {
                "name": "TypeScript",
-               "src": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Cypress",
-               "src": "https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png",
-               "rounded": true,
                "width": 60,
                "height": 60
             }
@@ -530,9 +494,11 @@
          "year": 2023
       },
       {
-         "image": "/assets/Projects/desktop/github-repo-consulter.png",
-         "mobileImage": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
-         "screens": "/assets/Projects/screens/github.png",
+         "images": {
+            "desktop": "/assets/Projects/desktop/github-repo-consulter.png",
+            "mobile": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
+            "screens": "/assets/Projects/screens/github.png"
+         },
          "url": "https://github-consulter-two.vercel.app/",
          "repository": "https://github.com/Saviovd/github-consulter",
          "name": "GitHub Consulter",
@@ -559,49 +525,39 @@
                "Diseño responsivo"
             ]
          },
-         "stacks": [
+         "stack": [
             {
                "name": "Next.js",
-               "src": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-               "background": true,
-               "rounded": true,
                "width": 60,
                "height": 60
             },
             {
                "name": "Axios",
-               "src": "https://cdn.worldvectorlogo.com/logos/axios.svg",
                "width": 120,
                "height": 60
             },
             {
                "name": "CSS-in-JS",
-               "src": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-               "background": true,
                "width": 70,
                "height": 60
             },
             {
                "name": "Framer Motion",
-               "src": "https://www.svgrepo.com/show/452207/framer.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "React",
-               "src": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "GraphQl",
-               "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg",
                "width": 60,
                "height": 60
             },
             {
                "name": "Redux",
-               "src": "https://www.svgrepo.com/show/452093/redux.svg",
                "width": 60,
                "height": 60
             }

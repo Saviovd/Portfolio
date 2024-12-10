@@ -1,33 +1,64 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Typewriter } from 'react-simple-typewriter';
-
-interface iTypeWriterProps {
-   words: string[];
-}
+import { useTranslation } from 'react-i18next';
+import { Locale } from '@/types/types';
 
 const LoaderStyle = styled.div`
    color: rgb(var(--white));
-   min-width: 10rem;
+   font-size: 3rem;
+   color: rgb(var(--primary-pink));
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 2px;
+   align-self: center;
+   justify-self: center;
+   text-align: center;
+   color: rgba(var(--dark-green));
+
+   @media (max-width: 1024px) {
+      font-size: 2rem;
+   }
+   @media (max-width: 475px) {
+      font-size: 1.3rem;
+   }
 `;
-const Loader = ({ words }: iTypeWriterProps) => {
-   const [key, setKey] = useState(0);
+
+const Loader = () => {
+   const { i18n } = useTranslation();
+   const [language, setLanguage] = useState<Locale>('en');
+
+   const words: { en: string[]; pt: string[]; es: string[] } = {
+      en: ['Front-End Developer', 'Back-End Developer', 'Full Stack Developer'],
+      pt: [
+         'Desenvolvedor Front-End',
+         'Desenvolvedor Back-End',
+         'Desenvolvedor Full Stack',
+      ],
+      es: [
+         'Desarrollador Front-End',
+         'Desarrollador Back-End',
+         'Desarrollador Full Stack',
+      ],
+   };
 
    useEffect(() => {
-      setKey((prevKey) => prevKey + 1);
-   }, [words]);
+      const currentLanguage = (
+         ['en', 'pt', 'es'].includes(i18n.language) ? i18n.language : 'en'
+      ) as Locale;
+      setLanguage(currentLanguage);
+   }, [i18n.language]);
 
    return (
       <LoaderStyle className='loader' id='loader'>
          <Typewriter
-            key={key}
-            words={words}
-            loop={1}
+            words={words[language] || words['en']}
+            loop={true}
             cursor
             cursorStyle='_'
-            typeSpeed={70}
+            typeSpeed={50}
             deleteSpeed={50}
-            delaySpeed={1500}
+            delaySpeed={1000}
          />
       </LoaderStyle>
    );

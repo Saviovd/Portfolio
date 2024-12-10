@@ -6,18 +6,19 @@ interface INavItemProps {
    name: string;
    isSelected?: boolean;
    setIsSelected: () => void;
+   to: string
 }
 
-const NavItem = ({ name, isSelected, setIsSelected }: INavItemProps) => {
+const NavItem = ({ name, isSelected, setIsSelected, to }: INavItemProps) => {
    const [isInView, setIsInView] = useState(false);
 
    useEffect(() => {
       const handleScroll = () => {
          setIsSelected();
-         const element = document.getElementById(name);
+         const element = document.getElementById(to);
          if (element) {
             const { top, bottom } = element.getBoundingClientRect();
-            const isVisible = top - 400 <= 0 && bottom - 230 >= 0;
+            const isVisible = top - 400 <= 0 && bottom - 400 >= 0;
             setIsInView(isVisible);
          }
       };
@@ -26,14 +27,14 @@ const NavItem = ({ name, isSelected, setIsSelected }: INavItemProps) => {
       return () => {
          window.removeEventListener('scroll', handleScroll);
       };
-   }, [name, isSelected, setIsSelected]);
+   }, [to, isSelected, setIsSelected]);
 
    return (
-      <NavItemStyle data-glitch>
+      <NavItemStyle>
          <ScrollLink
             onClick={setIsSelected}
             className={isInView || isSelected ? 'selected-item' : ''}
-            to={`${name}`}
+            to={`${to}`}
             smooth={true}
             spy={true}
             duration={500}

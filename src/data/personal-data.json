@@ -1,0 +1,348 @@
+{
+   "personal-data": {
+      "name": "Sávio",
+      "mid-name": "Pinheiro",
+      "last-name": "Almeida",
+      "age": 22,
+      "experience-years": 4,
+      "trajectory": {
+         "en": "My journey into coding began naturally. As a child, I attempted to develop games, fueled by the desire to create enjoyable experiences. These early experiments sparked my interest in programming and provided a solid foundation in logic and creativity.<br /><br />Over the past four years, I've explored various technologies and worked on challenging projects, focusing on both front-end and back-end development. My experience ranges from building robust platforms to automating complex processes in companies. Each experience has deepened my passion for technology and my commitment to delivering innovative and efficient solutions.",
+         "pt": "Minha jornada na programação começou de forma natural. Quando criança, tentava desenvolver games, movido pelo desejo de criar experiências divertidas. Esses primeiros experimentos despertaram meu interesse pela programação e me deram uma base sólida em lógica e criatividade.<br /><br />Nos últimos quatro anos, explorei diversas tecnologias e trabalhei em projetos desafiadores, focando tanto no front-end quanto no back-end. Minha experiência varia desde o desenvolvimento de plataformas robustas até a automação de processos complexos em empresas. Cada experiência aprofundou minha paixão pela tecnologia e meu compromisso em entregar soluções inovadoras e eficientes.",
+         "es": "Mi viaje en la programación comenzó de manera natural. De niño, intentaba desarrollar juegos, impulsado por el deseo de crear experiencias divertidas. Estos primeros experimentos despertaron mi interés por la programación y me proporcionaron una base sólida en lógica y creatividad.<br /><br />En los últimos cuatro años, he explorado diversas tecnologías y trabajado en proyectos desafiantes, enfocándome en el desarrollo tanto del front-end como del back-end. Mi experiencia abarca desde el desarrollo de plataformas robustas hasta la automatización de procesos complejos en empresas. Cada experiencia ha profundizado mi pasión por la tecnología y mi compromiso con la entrega de soluciones innovadoras y eficientes."
+      },
+      "about": {
+         "en": "My name is Sávio, I am [age] years old, and I am from Manaus. I have a lifelong passion for innovation and technology, which drives me to explore how things work and create solutions that positively impact the world. I believe technology can turn ideas into reality.<br /><br />I enjoy personal projects, experimenting with programming languages, and discussing ideas with fellow enthusiasts. My goal is to become the best professional I can be, continually improving my skills and contributing to innovative and efficient solutions.",
+         "pt": "Meu nome é Sávio, tenho [age] anos e sou de Manaus. Sou apaixonado por inovação e tecnologia, o que me leva a explorar como as coisas funcionam e a criar soluções que impactam positivamente o mundo. Acredito que a tecnologia pode transformar ideias em realidade.<br /><br />Gosto de trabalhar em projetos pessoais, experimentar linguagens de programação e discutir ideias com outros entusiastas. Meu objetivo é me tornar o melhor profissional possível, aprimorando continuamente minhas habilidades e contribuindo para soluções inovadoras e eficientes.",
+         "es": "Mi nombre es Sávio, tengo [age] años y soy de Manaus. Tengo una pasión de toda la vida por la innovación y la tecnología, que me impulsa a explorar cómo funcionan las cosas y a crear soluciones que impacten positivamente en el mundo. Creo que la tecnología puede convertir ideas en realidad.<br /><br />Disfruto trabajar en proyectos personales, experimentar con lenguajes de programación y discutir ideas con otros entusiastas. Mi objetivo es convertirme en el mejor profesional posible, mejorando continuamente mis habilidades y contribuyendo a soluciones innovadoras y eficientes."
+      },
+      "office": {
+         "en": "FullStack Developer",
+         "pt": "Desenvolvedor FullStack",
+         "es": "Desarrollador FullStack"
+      },
+      "experiences": [
+         {
+            "company": "BigBang Digital",
+            "company-logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHTVN1NxnQ4Mw/company-logo_200_200/company-logo_200_200/0/1630580474378/big_bang_shop_logo?e=1736985600&v=beta&t=B1KEUCA3JaLLlq6QcI4d6JuZ3TNGChvah5JlqbZy-c0",
+            "company-linkedin": "https://www.linkedin.com/company/bigbangdigital/",
+            "location": "Belo Horizonte/MG - Brasil",
+            "position": {
+               "en": "Front-End Developer",
+               "pt": "Desenvolvedor Front-End",
+               "es": "Desarrollador Front-End"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "Kanban",
+            "description": {
+               "en": "I worked on an integrated system that included an app, a website, and an admin dashboard, serving over 150,000 customers.",
+               "pt": "Trabalhei em um sistema integrado que incluía um aplicativo, um site e um dashboard de administração, atendendo a mais de 150 mil clientes.",
+               "es": "Trabajé en un sistema integrado que incluía una aplicación, un sitio web y un panel de administración, atendiendo a más de 150.000 clientes."
+            },
+            "assignments": {
+               "en": [
+                  "Development of websites, applications, and systems using VueJs and Quasar.",
+                  "Maintenance and refactoring of code to improve performance and scalability.",
+                  "System integration with Node.js and PHP (Laravel)."
+               ],
+               "pt": [
+                  "Desenvolvimento de sites, aplicativos e sistemas utilizando VueJs e Quasar.",
+                  "Manutenção e refatoração de código para melhorar a performance e escalabilidade.",
+                  "Integração de sistemas com Node.js e PHP (Laravel)."
+               ],
+               "es": [
+                  "Desarrollo de sitios web, aplicaciones y sistemas utilizando VueJs y Quasar.",
+                  "Mantenimiento y refactorización del código para mejorar el rendimiento y la escalabilidad.",
+                  "Integración de sistemas con Node.js y PHP (Laravel)."
+               ]
+            },
+            "tools": [
+               "VueJs",
+               "JavaScript",
+               "NodeJs",
+               "PHP",
+               "MySQL",
+               "Docker"
+            ],
+            "start": "2023-08-01",
+            "end": "2024-01-02",
+            "still-works": false
+         },
+         {
+            "company": "CoE | Centro de Excelência Votorantim",
+            "company-logo": "https://media.licdn.com/dms/image/v2/D560BAQH3GEpoxmH9Jg/company-logo_200_200/company-logo_200_200/0/1686581069603/coe_centro_de_excelencia_votorantim_logo?e=1736985600&v=beta&t=LsMg8vKrXYQNzcjFIFPKihYRqBtN8JMOt4qB4y6hiac",
+            "company-linkedin": "https://www.linkedin.com/company/coe-centro-de-excelencia-votorantim/",
+            "location": "Curitiba/PR - Brasil",
+            "position": {
+               "en": "Business Intelligence - intern",
+               "pt": "Business Intelligence - estágio",
+               "es": "Business Intelligence - pasantía"
+            },
+            "regime": {
+               "en": "Hybrid",
+               "pt": "Híbrido",
+               "es": "Híbrido"
+            },
+            "methodology": "Kanban",
+            "description": {
+               "en": "I worked on automations for the legal controlling department, keeping the branch company data always up-to-date and automating repetitive tasks.",
+               "pt": "Trabalhei com automações para o setor de controladoria jurídica, mantendo os dados das filiais sempre atualizados e automatizando tarefas repetitivas.",
+               "es": "Trabajé en automatizaciones para el departamento de control jurídico, manteniendo los datos de las filiales siempre actualizados y automatizando tareas repetitivas."
+            },
+            "assignments": {
+               "en": [
+                  "Automation of tasks using Power Automate.",
+                  "Data analysis and visualization with Power BI.",
+                  "Development of automations using APIs with Node.js and Python."
+               ],
+               "pt": [
+                  "Automação de tarefas usando Power Automate.",
+                  "Análise e visualização de dados com Power BI.",
+                  "Desenvolvimento de automações utilizando APIs com Node.js e Python."
+               ],
+               "es": [
+                  "Automatización de tareas utilizando Power Automate.",
+                  "Análisis y visualización de datos con Power BI.",
+                  "Desarrollo de automatizaciones utilizando APIs con Node.js y Python."
+               ]
+            },
+            "tools": [
+               "Power Automate",
+               "NodeJs",
+               "Python",
+               "JavaScript"
+            ],
+            "start": "2023-01-16",
+            "end": "2023-07-25",
+            "still-works": false
+         },
+         {
+            "company": "Freelance",
+            "company-logo": "/assets/logo.svg",
+            "company-linkedin": "https://www.linkedin.com/in/saviovd/",
+            "location": "Brasil",
+            "position": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "scrum",
+            "description": {
+               "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
+               "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",
+               "es": "Creación y mantenimiento de sitios web, aplicaciones y sistemas completos, trabajando en proyectos de pequeña, mediana y gran escala en diversos escenarios, asegurando escalabilidad, rendimiento y seguridad."
+            },
+            "assignments": {
+               "en": [
+                  "Development of websites and applications using NextJs and VueJs.",
+                  "Creation of custom software with Python, Ruby, and JavaScript.",
+                  "Implementation of front-end and back-end functionalities in various projects."
+               ],
+               "pt": [
+                  "Desenvolvimento de sites e aplicativos utilizando NextJs e VueJs.",
+                  "Criação de softwares personalizados com Python, Ruby e JavaScript.",
+                  "Implementação de funcionalidades front-end e back-end em diversos projetos."
+               ],
+               "es": [
+                  "Desarrollo de sitios web y aplicaciones utilizando NextJs y VueJs.",
+                  "Creación de software personalizado con Python, Ruby y JavaScript.",
+                  "Implementación de funcionalidades front-end y back-end en diversos proyectos."
+               ]
+            },
+            "tools": [
+               "NextJs",
+               "VueJs",
+               "Python",
+               "Ruby",
+               "JavaScript"
+            ],
+            "start": "2022-02-01",
+            "end": "",
+            "still-works": true
+         }
+      ],
+      "graduation": [
+         {
+            "concluded": true,
+            "course": {
+               "en": "Systems Analysis and Development",
+               "pt": "Análise e Desenvolvimento de Sistemas",
+               "es": "Análisis y Desarrollo de Sistemas"
+            },
+            "institution": {
+               "en": "Anhembi Morumbi University",
+               "pt": "Universidade Anhembi Morumbi",
+               "es": "Universidad Anhembi Morumbi"
+            },
+            "category": {
+               "en": "technologist",
+               "pt": "tecnólogo",
+               "es": "tecnólogo"
+            },
+            "logo": "https://landing.anhembi.br/assets/img/og/og-image-uam.png",
+            "start": "2021-08-01",
+            "end": "2024-06-01",
+            "certificate": ""
+         }
+      ],
+      "courses": [
+         {
+            "course": {
+               "en": "JavaScript with focus on back-end",
+               "pt": "JavaScript com foco no back-end",
+               "es": "JavaScript con enfoque en back-end"
+            },
+            "institution": "Alura",
+            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "category": "Back-End",
+            "hours": "74h",
+            "stacks": [
+               "JavaScript",
+               "NodeJs"
+            ],
+            "certificate": "#"
+         },
+         {
+            "course": {
+               "en": "How to create CRUDs with Quality",
+               "pt": "Como criar CRUDs com Qualidade",
+               "es": "Cómo crear CRUDs con Calidad"
+            },
+            "institution": "DevSoutinho",
+            "logo": "https://crudcomqualidade.io/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.cbfd979d.png&w=1080&q=75",
+            "category": "Back-End",
+            "hours": "10h",
+            "stacks": [
+               "TypeScript",
+               "CSS-in-JS",
+               "NextJS",
+               "NodeJs"
+            ],
+            "certificate": "https://crudcomqualidade.club.hotmart.com/public/user-certificate/190c359e-13c6-429b-b27f-ba222a81874b/_"
+         },
+         {
+            "course": {
+               "en": "APIs with Node.js and Express",
+               "pt": "APIs com Node.js e Express",
+               "es": "APIs con Node.js y Express"
+            },
+            "institution": "Alura",
+            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "category": "API REST",
+            "hours": "70h",
+            "stacks": [
+               "NodeJs",
+               "Express",
+               "TypeScript"
+            ],
+            "certificate": ""
+         },
+         {
+            "course": {
+               "en": "Complete Front-End WebMaster",
+               "pt": "WebMaster Front-End Completo",
+               "es": "WebMaster Front-End Completo"
+            },
+            "institution": "Danki.Code",
+            "logo": "https://hotmart.s3.amazonaws.com/product_pictures/7b12b6dd-3016-442e-981f-48b0e1d2d2d9/15390947_593903850803247_5868410053434712665_n.png",
+            "category": "Front-End",
+            "hours": "81h",
+            "stacks": [
+               "HTML",
+               "CSS",
+               "JavaScript",
+               "ReactJs"
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/c4c8b9a3-dc5b-4a4c-b6a9-b29c1881ab57"
+         },
+         {
+            "course": {
+               "en": "JavaScript: types, variables and functions",
+               "pt": "JavaScript: tipos, variáveis e funções",
+               "es": "JavaScript: tipos, variables y funciones"
+            },
+            "institution": "Alura",
+            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "category": "JavaScript",
+            "hours": "12h",
+            "stacks": [
+               "JavaScript"
+            ],
+            "certificate": ""
+         },
+         {
+            "course": {
+               "en": "Python with Object-Oriented Programming",
+               "pt": "Python com Orientação a Objetos",
+               "es": "Python con Programación Orientada a Objetos"
+            },
+            "institution": "Alura",
+            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "category": "Python",
+            "hours": "93h",
+            "stacks": [
+               "Python"
+            ],
+            "certificate": ""
+         },
+         {
+            "course": {
+               "en": "Complete Front-End Course 2.0",
+               "pt": "CURSO FRONT-END COMPLETO 2.0",
+               "es": "CURSO FRONT-END COMPLETO 2.0"
+            },
+            "institution": "Danki.Code",
+            "logo": "https://hotmart.s3.amazonaws.com/product_pictures/7b12b6dd-3016-442e-981f-48b0e1d2d2d9/15390947_593903850803247_5868410053434712665_n.png",
+            "category": "Front-End",
+            "hours": "10h",
+            "stacks": [
+               "HTML",
+               "CSS",
+               "JavaScript",
+               "ReactJs"
+            ],
+            "certificate": "https://cursos.dankicode.com/api/certificados/e8498ebd-733a-464a-8773-3a2d0e7223b3"
+         },
+         {
+            "course": {
+               "en": "Manage React applications with Typescript",
+               "pt": "Gerencie aplicações React com Typescript",
+               "es": "Gestiona aplicaciones React con Typescript"
+            },
+            "institution": "Alura",
+            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "category": "Front-End",
+            "hours": "83h",
+            "stacks": [
+               "TypeScript",
+               "ReactJs"
+            ],
+            "certificate": ""
+         },
+         {
+            "course": {
+               "en": "Essential Programming Logic",
+               "pt": "Lógica de Programação Essencial",
+               "es": "Lógica de Programación Esencial"
+            },
+            "institution": "Digital Innovation One",
+            "logo": "https://cdn6.aptoide.com/imgs/5/6/b/56ba2e922664e4e4ff94e7e91470a985_icon.png",
+            "category": "Back-End",
+            "hours": "4h",
+            "stacks": [
+               "JavaScript",
+               "NodeJs"
+            ],
+            "certificate": "https://www.dio.me/certificate/3A22FCA6/share"
+         }
+      ]
+   }
+}

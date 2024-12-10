@@ -1,80 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Title from '../Title';
 import { ProjectsContainer, ProjectsStyle } from './styles';
 import data from '@/data/projects.json';
 import { useTranslation } from 'react-i18next';
-import { ProjectProps } from '@/types/project';
-import useWindowSize from '@/hooks/useWindowSize';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Modal from '../ProjectModal';
-import { AnimatePresence } from 'framer-motion';
-import HorizontalCard from '../ProjectHorizontalCard';
+import ProjectCard from '../ProjectCard';
 import { IoRocketOutline } from 'react-icons/io5';
-
-interface ProjectsData {
-   projects: ProjectProps[];
-}
+import ButtonLink from '../Buttons/ButtonLink';
+import i18next from 'i18next';
+const { projects } = data;
 
 const Projects: React.FC = () => {
    const { t } = useTranslation();
-   const { width } = useWindowSize();
-   const [isModalOpen, setModalOpen] = useState(false);
-   const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(
-      null
-   );
-
-   const handleCloseModal = () => {
-      setModalOpen(false);
-      setSelectedProject(null);
-   };
-
-   const dataAsProjectsData = data as ProjectsData;
-   const { projects } = dataAsProjectsData;
-
-   const pagination = {
-      clickable: true,
-      renderBullet: (index: number, className: string) =>
-         `<span class="${className}">${index + 1}</span>`,
-   };
-
-   const openModal = (project: ProjectProps) => {
-      setSelectedProject(project);
-      setModalOpen(true);
-   };
-
-   const renderMobileProjects = () => (
-      <Swiper
-         spaceBetween={0}
-         slidesPerView={1}
-         speed={400}
-         loop
-         navigation
-         effect='flip'
-         pagination={pagination}
-         modules={[Pagination, Navigation]}
-         className='swiper'
-      >
-         {projects.length > 0 ? (
-            projects.map((project) => (
-               <SwiperSlide className='swiper-slide' key={project.code}>
-                  <HorizontalCard
-                     project={project}
-                     action={() => openModal(project)}
-                  />
-               </SwiperSlide>
-            ))
-         ) : (
-            <div>No projects available</div>
-         )}
-      </Swiper>
-   );
 
    return (
-      <ProjectsStyle id={t('Projects.projects')}>
-         <Title text={t('Projects.projects')} icon={<IoRocketOutline />} className='section-title'/>
+      <ProjectsStyle id='projects'>
+         <Title
+            text={t('Projects.projects')}
+            icon={<IoRocketOutline />}
+            className='section-title'
+         />
 
          <ProjectsContainer
             initial={{ y: 400, opacity: 0 }}
@@ -82,29 +28,29 @@ const Projects: React.FC = () => {
             exit={{ y: 50, opacity: 0 }}
             transition={{ duration: 1 }}
          >
-            {width && width < 768 ? (
-               <>{renderMobileProjects()}</>
-            ) : projects.length > 0 ? (
-               projects.map((project) => (
-                  <HorizontalCard
-                     key={project.code}
-                     project={project}
-                     action={() => openModal(project)}
+            {projects.slice(0, 8).map((project) => (
+               <li className='item' key={project.code}>
+                  <ProjectCard
+                     name={project.name}
+                     description={project.description}
+                     images={project.images}
+                     url={project.url}
+                     repository={project.repository}
+                     code={project.code}
+                     features={project.features}
+                     stack={project.stack}
+                     year={project.year}
+                     services={project.services}
                   />
-               ))
-            ) : (
-               <div>No projects available</div>
-            )}
+               </li>
+            ))}
          </ProjectsContainer>
-         <AnimatePresence>
-            {isModalOpen && selectedProject && (
-               <Modal
-                  isOpen={isModalOpen}
-                  onClose={handleCloseModal}
-                  project={selectedProject}
-               />
-            )}
-         </AnimatePresence>
+         <ButtonLink
+            content={t('Projects.more')}
+            url={`${i18next.language}/projects`}
+            className='more'
+            icon={<IoRocketOutline />}
+         />
       </ProjectsStyle>
    );
 };

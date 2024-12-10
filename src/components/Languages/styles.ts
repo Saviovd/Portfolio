@@ -1,36 +1,74 @@
 import styled from 'styled-components';
 
-interface LanguageStylesProps {
-   currentLang?: string;
-}
+export const LanguageStyles = styled.div<{ currentLang: string }>`
+   .dropdown {
+      position: relative;
+      display: inline-block;
+   }
 
-export const LanguageStyles = styled.div<LanguageStylesProps>`
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: auto;
-   height: 2rem;
-   font-size: 1.5rem;
-   color: black;
-   background-color: rgba(var(--primary-blue), 0.13);
-   backdrop-filter: blur(5px);
-   padding: 0.5rem;
-   color: rgba(var(--primary-blue), 0.5);
-
-   .language {
+   .dropdown-btn {
+      background-color: transparent;
+      border: none;
       cursor: pointer;
-      padding: 0 0.5rem;
-      font-weight: 900;
-      color: rgba(var(--primary-pink), 0.4);
+      display: flex;
+      svg {
+         font-size: 2.5rem;
+         fill: rgba(var(--light-blue));
+         font-weight: 100;
+      }
+      .globe {
+         transform: translateX(3px);
+      }
+      .arrow {
+         font-size: 1.5rem;
+         bottom: 0;
+      }
+      &::after {
+         content: '';
+         width: 100%;
+         height: 2rem;
+         background-color: transparent;
+         position: absolute;
+         bottom: -1rem;
+         z-index: -1;
+      }
+   }
+
+   .dropdown-content {
+      overflow: hidden;
+      border-radius: 1rem;
+      display: none;
+      position: absolute;
+      background-color: rgba(var(--light-green), 0.06);
+      border: 1px solid rgba(var(--light-blue));
+      right: 0;
+      top: calc(100% + 1rem);
+      min-width: 100px;
+      z-index: 1;
+   }
+
+   .dropdown-content li {
+      color: black;
+      padding: 8px 12px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: center;
+      color: rgba(var(--light));
+
+      &:nth-child(1) {
+         border-radius: 1rem 1rem 0 0;
+      }
+      &:nth-last-child(1) {
+         border-radius: 0 0 1rem 1rem;
+      }
+      &:hover {
+         background-color: rgba(var(--light-blue));
+      }
    }
 
    .currentLang {
-      color: rgba(var(--primary-blue));
-   }
-
-   @media screen {
-      @media (max-width: 1024px) {
-         margin: 0 auto;
-      }
+      font-weight: bold;
+      background-color: rgba(var(--light-blue), 0.5);
    }
 `;

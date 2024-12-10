@@ -1,32 +1,60 @@
 {
    "testimonials": [
       {
-         "id": "1",
          "name": "Daniel Arruda",
-         "office": "Quality Assurance | BMG",
-         "testimony": "ainda não adicionou seu depoimento.",
-         "photo": "https://media.licdn.com/dms/image/D4D03AQGasWWu45UYbw/profile-displayphoto-shrink_800_800/0/1670429056482?e=1728518400&v=beta&t=3Ph0JycvUj1a2e1AIvRj_5UkS7R5GenTHNNGbrm_quQ"
+         "office": {
+            "en": "Quality Assurance | BMG",
+            "pt": "Quality Assurance | BMG",
+            "es": "Quality Assurance | BMG"
+         },
+         "testimonial": {
+            "en": "has not added his testimonial yet.",
+            "pt": "ainda não adicionou seu depoimento.",
+            "es": "aún no ha agregado su testimonio."
+         },
+         "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGasWWu45UYbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1670429056482?e=1738800000&v=beta&t=phwOEsdpejuG7gXupoRZZ-FdEOUO1ap6nehB8-Mi5YI"
       },
       {
-         "id": "2",
          "name": "Verônica Vegas",
-         "office": "Coordenadora | Votorantim",
-         "testimony": "ainda não adicionou seu depoimento.",
-         "photo": "https://media.licdn.com/dms/image/C4D03AQEd2Ju8Xz3tog/profile-displayphoto-shrink_800_800/0/1516402346914?e=1728518400&v=beta&t=pXg6s1xBRVcqdoadlJDcRVxi9MykD4MPl5DCoQR7T8Q"
+         "office": {
+            "en": "Coordinator | Votorantim",
+            "pt": "Coordenadora | Votorantim",
+            "es": "Coordinadora | Votorantim"
+         },
+         "testimonial": {
+            "en": "Sávio is an outstanding professional with whom I had the privilege of working. Interested, nonconformist, and studious, these are just a few of the adjectives that can describe him. Passionate about technology, he supported and developed automations in the area where he worked at the Votorantim COE, assisting the team in the pursuit of excellence, aware that well-established processes combined with automation/digitization are essential for the present and the very near future.",
+            "pt": "Sávio é um excelente profissional que tive o privilégio de trabalhar. Interessado, inconformado, estudioso, arrojado, esses são alguns dos adjetivos que posso descreve-lo. Ávido por tecnologia, apoiou e desenvolveu automatizações na área em que atuou no COE Votorantim, auxiliando a equipe na busca da excelência, consciente de que processos bem estabelecidos unidos de automatização/digitalização, são imprescindíveis para o presente e o futuro muito próximo.",
+            "es": "Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo."
+         },
+         "photo": "https://media.licdn.com/dms/image/v2/C4D03AQEd2Ju8Xz3tog/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516402346914?e=1738800000&v=beta&t=8mZViDeh4aSQVtMTn1NcFSzseRPTLNw1TKQW78CD11U"
       },
       {
-         "id": "3",
          "name": "Clisliane Melo",
-         "office": "Administradora | BigBang Digital",
-         "testimony": "ainda não adicionou seu depoimento.",
-         "photo": "https://media.licdn.com/dms/image/C4D03AQG_TcMdCkiZIw/profile-displayphoto-shrink_800_800/0/1658153960095?e=1728518400&v=beta&t=uQ5y55vkt73U5KpTrQ8S9EL8Ga2YFaM9cYtFoIoX2eM"
+         "office": {
+            "en": "Administrator | BigBang Digital",
+            "pt": "Administradora | BigBang Digital",
+            "es": "Administradora | BigBang Digital"
+         },
+         "testimonial": {
+            "en": "I had the pleasure of working with Sávio during his time at Big Bang Digital. Even in a relatively short period, he demonstrated dedication, a willingness to learn, and notable technical skills. Sávio has a strong sense of teamwork and a collaborative attitude, always ready to help and share knowledge. Although he was not an experienced developer at the time, he showed considerable potential. I recommend Sávio for future opportunities, confident that he will be a valuable asset to any team.",
+            "pt": "Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.",
+            "es": "Tuve el placer de trabajar con Sávio durante su tiempo en Big Bang Digital. Incluso en un período relativamente corto, demostró dedicación, ganas de aprender y habilidades técnicas notables. Sávio tiene un fuerte sentido del trabajo en equipo y una actitud colaborativa, siempre dispuesto a ayudar y compartir conocimientos. Aunque no era un desarrollador experimentado en ese momento, mostró un potencial considerable. Recomiendo a Sávio para futuras oportunidades, seguro de que será un activo valioso para cualquier equipo."
+         },
+         "photo": "https://media.licdn.com/dms/image/v2/C4D03AQG_TcMdCkiZIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658153960095?e=1738800000&v=beta&t=AajH1O6pzOOemGVg3zU5vK4izf232Ro2FxBT5sHGRqM"
       },
       {
-         "id": "4",
          "name": "José Raimundo Diniz",
-         "office": "Co-Founder Studio Mozak | Front-end Developer",
-         "testimony": "ainda não adicionou seu depoimento.",
-         "photo": "https://media.licdn.com/dms/image/D4D03AQHL2iHF5xZeZw/profile-displayphoto-shrink_800_800/0/1711021256924?e=1722470400&v=beta&t=8VJt_IfkIx56o9I5pd6xTbXX_xPbhtNfY26Dv9tfqFo"
+         "office": {
+            "en": "Co-Founder Studio Mozak | Front-end Developer",
+            "pt": "Co-Fundador Studio Mozak | Desenvolvedor Front-End",
+            "es": "Co-Fundador Studio Mozak | Desarrollador Front-End"
+         },
+         "testimonial": {
+            "en": "Great professional, attentive to the code, I worked with him as a front-end Vue.js developer, great experience.",
+            "pt": "Ótimo profissional, atento ao código, trabalhei com ele como frontend Vue.js, experiencia legal.",
+            "es": "Excelente profesional, atento al código, trabajé con él como desarrollador front-end de Vue.js, gran experiencia."
+         },
+         "photo": "https://media.licdn.com/dms/image/v2/D4D03AQHL2iHF5xZeZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711021256924?e=1734566400&v=beta&t=NCY1RUvJiGleg1ordGabgJjZvnCKT82QTycr4vVaYQc"
       }
    ]
 }

@@ -1,0 +1,312 @@
+{
+   "tools": [
+      {
+         "type": "Front-End",
+         "name": "HTML5",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/html5.svg",
+         "description": {
+            "en": "A markup language that structures and defines the organization of text, images, and multimedia on web pages, forming the foundation of website content.",
+            "pt": "Uma linguagem de marcação que estrutura e define a organização de textos, imagens e multimídia em páginas web, formando a base do conteúdo dos sites.",
+            "es": "Un lenguaje de marcado que estructura y define la organización de textos, imágenes y multimedia en páginas web, formando la base del contenido de los sitios web."
+         },
+         "icon": "FaHtml5"
+      },
+      {
+         "type": "Front-End",
+         "name": "CSS3",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/css3.svg",
+         "description": {
+            "en": "A style sheet language used to define the layout, colors, fonts, and overall visual design of a web document, often paired with HTML or XML.",
+            "pt": "Uma linguagem de folhas de estilo usada para definir o layout, as cores, fontes e o design visual de um documento web, geralmente em conjunto com HTML ou XML.",
+            "es": "Un lenguaje de hojas de estilo utilizado para definir el diseño, colores, fuentes y diseño visual general de un documento web, a menudo junto con HTML o XML."
+         },
+         "icon": "FaCss3Alt"
+      },
+      {
+         "type": "Front-End",
+         "name": "JavaScript",
+         "logo": "https://abrudz.github.io/logos/JS.svg",
+         "description": {
+            "en": "A versatile programming language essential to web development, enabling interactive elements, dynamic content, and real-time updates on websites.",
+            "pt": "Uma linguagem de programação versátil e essencial para o desenvolvimento web, que permite elementos interativos, conteúdo dinâmico e atualizações em tempo real nos sites.",
+            "es": "Un lenguaje de programación versátil y esencial para el desarrollo web, que permite elementos interactivos, contenido dinámico y actualizaciones en tiempo real en los sitios web."
+         },
+         "icon": "SiJavascript"
+      },
+      {
+         "type": "Front-End",
+         "name": "TypeScript",
+         "logo": "https://abrudz.github.io/logos/TypeScript.svg",
+         "description": {
+            "en": "A strict syntactical superset of JavaScript that introduces optional static typing, enhancing code reliability, scalability, and developer productivity in larger applications.",
+            "pt": "Um superset sintático estrito de JavaScript que introduz tipagem estática opcional, aumentando a confiabilidade do código, a escalabilidade e a produtividade dos desenvolvedores em aplicações maiores.",
+            "es": "Un superconjunto sintáctico estricto de JavaScript que introduce tipado estático opcional, mejorando la confiabilidad del código, la escalabilidad y la productividad de los desarrolladores en aplicaciones grandes."
+         },
+         "icon": "SiTypescript"
+      },
+      {
+         "type": "Front-End",
+         "name": "React",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
+         "description": {
+            "en": "A powerful JavaScript library focused on building fast and interactive user interfaces, primarily for single-page applications by managing UI components efficiently.",
+            "pt": "Uma biblioteca JavaScript poderosa, focada em construir interfaces de usuário rápidas e interativas, principalmente para aplicações de página única, gerenciando componentes de UI de forma eficiente.",
+            "es": "Una biblioteca de JavaScript poderosa, enfocada en construir interfaces de usuario rápidas e interactivas, principalmente para aplicaciones de una sola página, gestionando componentes de UI de manera eficiente."
+         },
+         "icon": "FaReact"
+      },
+      {
+         "type": "Front-End",
+         "name": "VueJs",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/vuejs.svg",
+         "description": {
+            "en": "An open-source front-end JavaScript framework based on the Model-View-ViewModel (MVVM) architecture, designed for building dynamic user interfaces and single-page applications with reactive data binding and component-based development.",
+            "pt": "Um framework JavaScript de front-end de código aberto baseado na arquitetura Model-View-ViewModel (MVVM), projetado para construir interfaces de usuário dinâmicas e aplicações de página única, com ligação de dados reativa e desenvolvimento baseado em componentes.",
+            "es": "Un marco de JavaScript de front-end de código abierto basado en la arquitectura Modelo-Vista-ViewModel (MVVM), diseñado para construir interfaces de usuario dinámicas y aplicaciones de una sola página, con enlace de datos reactivo y desarrollo basado en componentes."
+         },
+         "icon": "FaVuejs"
+      },
+      {
+         "type": "Front-End",
+         "name": "NextJs",
+         "logo": "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
+         "description": {
+            "en": "A powerful React framework that extends functionality with features like server-side rendering, static site generation, and optimized performance for building highly scalable and SEO-friendly applications.",
+            "pt": "Um framework React poderoso que expande funcionalidades com recursos como renderização do lado do servidor, geração de sites estáticos e desempenho otimizado, ideal para construir aplicações escaláveis e otimizadas para SEO.",
+            "es": "Un marco de React poderoso que amplía funcionalidades con características como renderización del lado del servidor, generación de sitios estáticos y rendimiento optimizado, ideal para construir aplicaciones escalables y optimizadas para SEO."
+         },
+         "icon": "TbBrandNextjs"
+      },
+      {
+         "type": "Front-End",
+         "name": "Sass",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/social%20icons/sass.svg",
+         "description": {
+            "en": "A preprocessor scripting language that extends CSS with variables, nested rules, and mixins, making it easier to write maintainable and reusable styles that are then compiled into standard CSS.",
+            "pt": "Uma linguagem de script de pré-processamento que expande o CSS com variáveis, regras aninhadas e mixins, facilitando a criação de estilos reutilizáveis e fáceis de manter, que são então compilados em CSS padrão.",
+            "es": "Un lenguaje de script de preprocesador que amplía CSS con variables, reglas anidadas y mixins, facilitando la creación de estilos reutilizables y fáciles de mantener, que luego se compilan en CSS estándar."
+         },
+         "icon": "FaSass"
+      },
+      {
+         "type": "Front-End",
+         "name": "Tailwind-css",
+         "logo": "https://www.svgrepo.com/show/374118/tailwind.svg",
+         "description": {
+            "en": "A utility-first CSS framework that provides low-level utility classes for building custom designs directly within HTML, promoting rapid prototyping and minimizing the need for custom CSS.",
+            "pt": "Um framework CSS utilitário-primeiro que fornece classes utilitárias de baixo nível para construir designs personalizados diretamente no HTML, promovendo prototipagem rápida e minimizando a necessidade de CSS personalizado.",
+            "es": "Un framework CSS de primera utilidad que ofrece clases utilitarias de bajo nivel para construir diseños personalizados directamente en HTML, promoviendo la creación rápida de prototipos y minimizando la necesidad de CSS personalizado."
+         },
+         "icon": "SiTailwindcss"
+      },
+      {
+         "type": "Front-End",
+         "name": "CSS-in-JS",
+         "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
+         "description": {
+            "en": "A styling approach where JavaScript is used to dynamically apply styles to components, enabling more flexible and interactive designs through real-time changes in style properties.",
+            "pt": "Uma abordagem de estilização onde o JavaScript é usado para aplicar dinamicamente estilos aos componentes, permitindo designs mais flexíveis e interativos por meio de mudanças em tempo real nas propriedades de estilo.",
+            "es": "Un enfoque de estilización donde se utiliza JavaScript para aplicar estilos dinámicamente a los componentes, permitiendo diseños más flexibles e interactivos mediante cambios en tiempo real en las propiedades de estilo."
+         },
+         "icon": "SiStyledcomponents"
+      },
+      {
+         "type": "Back-End",
+         "name": "NodeJs",
+         "logo": "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
+         "description": {
+            "en": "A JavaScript runtime environment built on Chrome's V8 engine, enabling developers to run JavaScript on the server side and build scalable network applications.",
+            "pt": "Um ambiente de execução JavaScript construído no motor V8 do Chrome, permitindo que desenvolvedores executem JavaScript no lado do servidor e construam aplicações de rede escaláveis.",
+            "es": "Un entorno de ejecución de JavaScript construido sobre el motor V8 de Chrome, permitiendo a los desarrolladores ejecutar JavaScript en el lado del servidor y crear aplicaciones de red escalables."
+         },
+         "icon": "FaNodeJs"
+      },
+      {
+         "type": "Back-End",
+         "name": "Express",
+         "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+         "description": {
+            "en": "A minimal and flexible Node.js web application framework that offers a comprehensive set of features, such as routing, middleware support, and template engines, for building efficient web and mobile applications.",
+            "pt": "Um framework de aplicação web minimalista e flexível para Node.js que oferece um conjunto abrangente de recursos, como roteamento, suporte a middleware e motores de template, para construir aplicações web e móveis eficientes.",
+            "es": "Un marco de aplicación web minimalista y flexible para Node.js que ofrece un conjunto completo de características, como enrutamiento, soporte para middleware y motores de plantillas, para crear aplicaciones web y móviles eficientes."
+         },
+         "icon": "SiExpress"
+      },
+      {
+         "type": "Mobile",
+         "name": "React Native",
+         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg",
+         "description": {
+            "en": "A framework that allows developers to build native mobile applications using React, leveraging native components and APIs for iOS and Android to create high-performance, cross-platform apps.",
+            "pt": "Um framework que permite aos desenvolvedores criar aplicações móveis nativas usando React, aproveitando componentes e APIs nativas para iOS e Android para criar aplicativos de alto desempenho e multiplataforma.",
+            "es": "Un marco que permite a los desarrolladores crear aplicaciones móviles nativas utilizando React, aprovechando componentes y APIs nativas para iOS y Android para crear aplicaciones de alto rendimiento y multiplataforma."
+         },
+         "icon": "FaReact"
+      },
+      {
+         "type": "Back-End",
+         "name": "Python",
+         "logo": "https://abrudz.github.io/logos/Python.svg",
+         "description": {
+            "en": "A high-level, interpreted, general-purpose programming language known for its simplicity and readability, widely used for web development, automation, data analysis, and software development.",
+            "pt": "Uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida por sua simplicidade e legibilidade, amplamente utilizada para desenvolvimento web, automação, análise de dados e desenvolvimento de software.",
+            "es": "Un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su simplicidad y legibilidad, ampliamente utilizado para desarrollo web, automatización, análisis de datos y desarrollo de software."
+         },
+         "icon": "FaPython"
+      },
+      {
+         "type": "Back-End",
+         "name": "Ruby",
+         "logo": "https://abrudz.github.io/logos/Ruby.svg",
+         "description": {
+            "en": "A dynamic, open-source programming language designed for ease of use and rapid development, enabling developers to build scalable applications with clean, readable code.",
+            "pt": "Uma linguagem de programação dinâmica e de código aberto projetada para facilidade de uso e desenvolvimento rápido, permitindo que os desenvolvedores construam aplicações escaláveis com código limpo e legível.",
+            "es": "Un lenguaje de programación dinámico y de código abierto diseñado para facilidad de uso y desarrollo rápido, permitiendo a los desarrolladores crear aplicaciones escalables con código limpio y legible."
+         },
+         "icon": "DiRuby"
+      },
+      {
+         "type": "Quality Assurance",
+         "name": "Cypress",
+         "logo": "https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png",
+         "description": {
+            "en": "A JavaScript end-to-end testing framework designed for testing web applications by simulating user interactions, ensuring that all components work together as expected in a browser environment.",
+            "pt": "Um framework de testes end-to-end em JavaScript projetado para testar aplicações web simulando interações de usuário, garantindo que todos os componentes funcionem corretamente em um ambiente de navegador.",
+            "es": "Un marco de pruebas end-to-end en JavaScript diseñado para probar aplicaciones web simulando interacciones de usuario, asegurando que todos los componentes funcionen correctamente en un entorno de navegador."
+         },
+         "icon": "SiCypress"
+      },
+      {
+         "type": "Quality Assurance",
+         "name": "Jest",
+         "logo": "https://www.svgrepo.com/show/373701/jest-snapshot.svg",
+         "description": {
+            "en": "A JavaScript testing framework that provides a complete and easy-to-use solution for writing, running, and debugging tests, with built-in test runners, assertion libraries, and support for mocking and snapshot testing.",
+            "pt": "Um framework de testes JavaScript que oferece uma solução completa e fácil de usar para escrever, executar e depurar testes, com runners de testes integrados, bibliotecas de asserção e suporte a mocking e testes de snapshot.",
+            "es": "Un marco de pruebas JavaScript que ofrece una solución completa y fácil de usar para escribir, ejecutar y depurar pruebas, con ejecutores de pruebas integrados, bibliotecas de afirmaciones y soporte para mocking y pruebas de instantáneas."
+         },
+         "icon": "SiJest"
+      },
+      {
+         "type": "Quality Assurance",
+         "name": "Postman",
+         "logo": "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+         "description": {
+            "en": "A powerful tool for testing APIs by sending HTTP requests, inspecting responses, and verifying the correctness of API endpoints, headers, status codes, and data returned.",
+            "pt": "Uma ferramenta poderosa para testar APIs enviando requisições HTTP, inspecionando respostas e verificando a correção de endpoints, cabeçalhos, códigos de status e dados retornados.",
+            "es": "Una herramienta potente para probar APIs enviando solicitudes HTTP, inspeccionando respuestas y verificando la corrección de los endpoints, encabezados, códigos de estado y datos devueltos."
+         },
+         "icon": "SiPostman"
+      },
+      {
+         "type": "Database & Cloud",
+         "name": "AWS",
+         "logo": "https://www.svgrepo.com/show/376356/aws.svg",
+         "description": {
+            "en": "A comprehensive cloud computing platform offered by Amazon, providing a wide range of services including computing power, storage, databases, machine learning, analytics, and networking, designed to help businesses scale and grow.",
+            "pt": "Uma plataforma abrangente de computação em nuvem oferecida pela Amazon, que fornece uma ampla gama de serviços, incluindo poder de computação, armazenamento, bancos de dados, aprendizado de máquina, análises e redes, projetada para ajudar empresas a escalar e crescer.",
+            "es": "Una plataforma integral de computación en la nube proporcionada por Amazon, que ofrece una amplia gama de servicios, incluidos poder de cómputo, almacenamiento, bases de datos, aprendizaje automático, análisis y redes, diseñada para ayudar a las empresas a escalar y crecer."
+         },
+         "icon": "FaAws"
+      },
+      {
+         "type": "Database & Cloud",
+         "name": "Docker",
+         "logo": "https://www.svgrepo.com/show/448221/docker.svg",
+         "description": {
+            "en": "An open-source platform for automating the deployment, scaling, and management of applications inside lightweight, portable containers, using container orchestration to ensure efficient and reliable operations.",
+            "pt": "Uma plataforma de código aberto para automatizar o deployment, escalabilidade e gerenciamento de aplicações dentro de containers leves e portáteis, utilizando orquestração de containers para garantir operações eficientes e confiáveis.",
+            "es": "Una plataforma de código abierto para automatizar el despliegue, escalabilidad y gestión de aplicaciones dentro de contenedores ligeros y portátiles, utilizando orquestación de contenedores para garantizar operaciones eficientes y confiables."
+         },
+         "icon": "FaDocker"
+      },
+      {
+         "type": "Database & Cloud",
+         "name": "MongoDB",
+         "logo": "https://www.svgrepo.com/show/331488/mongodb.svg",
+         "description": {
+            "en": "A NoSQL database that stores and manages data in a document-oriented format, allowing for flexible and scalable storage of semi-structured data, often used for handling large volumes of diverse data types.",
+            "pt": "Um banco de dados NoSQL que armazena e gerencia dados em formato orientado a documentos, permitindo um armazenamento flexível e escalável de dados semi-estruturados, frequentemente utilizado para lidar com grandes volumes de dados diversos.",
+            "es": "Una base de datos NoSQL que almacena y gestiona datos en formato orientado a documentos, permitiendo un almacenamiento flexible y escalable de datos semi-estructurados, a menudo utilizado para manejar grandes volúmenes de datos diversos."
+         },
+         "icon": "SiMongodb"
+      },
+      {
+         "type": "Database & Cloud",
+         "name": "MySQL",
+         "logo": "https://www.svgrepo.com/show/355133/mysql.svg",
+         "description": {
+            "en": "An open-source relational database management system (RDBMS) that uses structured query language (SQL) for managing and manipulating data, providing support for transactions, indexing, and relational data models.",
+            "pt": "Um sistema de gerenciamento de banco de dados relacional de código aberto (RDBMS) que utiliza linguagem de consulta estruturada (SQL) para gerenciar e manipular dados, oferecendo suporte a transações, indexação e modelos de dados relacionais.",
+            "es": "Un sistema de gestión de bases de datos relacional de código abierto (RDBMS) que utiliza el lenguaje de consulta estructurado (SQL) para gestionar y manipular datos, proporcionando soporte para transacciones, indexación y modelos de datos relacionales."
+         },
+         "icon": "GrMysql"
+      },
+      {
+         "type": "Design",
+         "name": "Figma",
+         "logo": "https://www.svgrepo.com/show/354987/figma.svg",
+         "description": {
+            "en": "A web-based application offering a comprehensive suite of tools for UI/UX design, interactive prototyping, user testing, and real-time collaboration among design teams to streamline the design process.",
+            "pt": "Um aplicativo baseado na web que oferece um conjunto completo de ferramentas para design de UI/UX, prototipagem interativa, testes com usuários e colaboração em tempo real entre equipes de design, otimizando o processo de criação.",
+            "es": "Una aplicación basada en la web que ofrece un conjunto integral de herramientas para diseño de UI/UX, prototipado interactivo, pruebas de usuario y colaboración en tiempo real entre equipos de diseño, optimizando el proceso de creación."
+         },
+         "icon": "FaFigma"
+      },
+      {
+         "type": "Front-End",
+         "name": "GraphQL",
+         "logo": "https://www.svgrepo.com/show/353834/graphql.svg",
+         "description": {
+            "en": "A query language for APIs and a runtime environment for executing those queries, allowing developers to define a flexible type system and request only the data needed, optimizing performance and reducing over-fetching.",
+            "pt": "Uma linguagem de consulta para APIs e um ambiente de execução para executar essas consultas, permitindo que os desenvolvedores definam um sistema de tipos flexível e solicitem apenas os dados necessários, otimizando o desempenho e reduzindo o over-fetching.",
+            "es": "Un lenguaje de consulta para APIs y un entorno de ejecución para ejecutar esas consultas, permitiendo a los desarrolladores definir un sistema de tipos flexible y solicitar solo los datos necesarios, optimizando el rendimiento y reduciendo el over-fetching."
+         },
+         "icon": "GrGraphQl"
+      },
+      {
+         "type": "Front-End",
+         "name": "Axios",
+         "logo": "https://user-images.githubusercontent.com/43313420/105883661-64604380-6007-11eb-8cfa-45ff66b37fdb.png",
+         "description": {
+            "en": "A promise-based HTTP client for making requests to APIs, supporting a wide range of features including request and response interception, transformation of request/response data, and automatic handling of JSON data.",
+            "pt": "Um cliente HTTP baseado em promessas para fazer requisições a APIs, com suporte a uma ampla gama de recursos, incluindo interceptação de requisições e respostas, transformação de dados de requisição/resposta e manipulação automática de dados JSON.",
+            "es": "Un cliente HTTP basado en promesas para realizar solicitudes a APIs, que soporta una amplia gama de características, incluyendo la intercepción de solicitudes y respuestas, transformación de datos de solicitud/respuesta y manejo automático de datos JSON."
+         },
+         "icon": "SiAxios"
+      },
+      {
+         "type": "Front-End",
+         "name": "Vite",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiVite"
+      },
+      {
+         "type": "Front-End",
+         "name": "React router",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiReactrouter"
+      },
+      {
+         "type": "Front-End",
+         "name": "Framer Motion",
+         "logo": "",
+         "description": {
+            "en": "",
+            "pt": "",
+            "es": ""
+         },
+         "icon": "SiFramer"
+      }
+   ]
+}

@@ -1,39 +1,25 @@
 const translations = {
    Header: {
       logoAlt: 'El logotipo de Sávio Almeida',
-      home: 'inicio',
-      aboutme: 'sobre mí',
-      habilities: 'habilidades',
-      projects: 'proyectos',
-      testimonials: 'testimonios',
    },
    Home: {
-      call: '_hola, mi nombre es',
-      github: 'Mi GitHub',
-      toAboutMe: 'sobre mí',
-      devfrontend: 'Desarrollador front-end',
-      devmobile: 'Desarrollador móvil',
-      designer: 'Diseñador UX/UI',
-      devfullstack: 'Desarrollador Fullstack',
+      ctaText:
+         'Creo que la tecnología es el puente que te conecta con tus clientes. Estoy aquí para crear experiencias digitales que no solo conectan, sino que también cautivan.',
+      cta: '¡Trabajemos juntos para convertir tu visión en realidad!',
    },
    AboutMe: {
-      aboutme: 'sobre mí',
-      experienceTitle: 'Experiencias',
-      graduationTitle: 'graduación',
-      coursesTitle: 'cursos',
-      courses: [
-         { id: 0, course: 'JavaScript con enfoque en el back-end' },
-         { id: 1, course: 'Cómo crear CRUDs con Calidad' },
-         { id: 6, course: 'APIs con Node.js y Express' },
-         { id: 3, course: 'WebMaster Front-End Completo' },
-         { id: 4, course: 'JavaScript: tipos, variables y funciones' },
-         { id: 5, course: 'Python con Orientación a Objetos' },
-         { id: 6, course: 'CURSO FRONT-END COMPLETO 2.0' },
-         { id: 7, course: 'Gestione aplicaciones React con Typescript' },
-         { id: 8, course: 'Lógica de Programación Esencial' },
-      ],
+      title: 'sobre mí',
       moreCourses: 'más cursos',
       since: 'Desde',
+      whoAmI: '¿Quién soy?',
+      myTrajectory: 'Mi trayectoria',
+      experienceYears: 'Años de experiencia',
+      positiveFeedbacks: 'Comentarios positivos',
+      certifications: 'Certificaciones',
+      finishedProjects: 'Proyectos finalizados',
+   },
+   Experiences: {
+      title: 'Experiencias',
    },
    Habilities: {
       my: 'mis',
@@ -47,50 +33,65 @@ const translations = {
       projectButton: 'proyecto',
       repositoryButton: 'repositorio',
       devBy: 'Desarrollado con:',
-      more: 'saber mas',
+      more: 'Ver más proyectos',
    },
    Testimonials: {
       testimonialTitle: 'Testimonios',
-      1: {
-         id: '1',
-         office: 'Quality Assurance | Banco BMG',
-         testimony: '',
-      },
-      2: {
-         id: '2',
-         office: 'Coordinadora | Votorantim',
-         testimony:
-            'Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo.',
-      },
-      3: {
-         id: '3',
-         office: 'Administradora | BigBang Digital',
-         testimony:
-            'Tuve el placer de trabajar con Sávio durante su tiempo en Big Bang Digital. Incluso en un período relativamente corto, demostró dedicación, ganas de aprender y habilidades técnicas notables. Sávio tiene un fuerte sentido del trabajo en equipo y una actitud colaborativa, siempre dispuesto a ayudar y compartir conocimientos. Aunque no era un desarrollador experimentado en ese momento, mostró un potencial considerable. Recomiendo a Sávio para futuras oportunidades, seguro de que será un activo valioso para cualquier equipo.',
-      },
-      4: {
-         id: '4',
-         office: 'Co-Founder Studio Mozak | Front-end Developer',
-         testimony:
-            'Excelente profesional, atento al código, trabajé con él como desarrollador front-end de Vue.js, gran experiencia.',
-      },
    },
    Contacts: {
-      my: 'mis',
-      contacts: 'contactos',
-      copied: 'Correo copiado',
+      title: 'Contacto',
+      copied: 'Correo copiado al portapapeles',
       visit: 'Visitar',
       copy: 'Copiar',
+      form: {
+         name: {
+            label: '¿Cómo debería llamarte?',
+            placeholder: 'Escribe tu nombre...',
+         },
+         email: {
+            label: 'Tu correo electrónico',
+            placeholder: 'Escribe tu correo...',
+         },
+         phone: {
+            label: 'Teléfono (opcional)',
+            placeholder: 'Escribe tu número de teléfono',
+         },
+         preferredContact: {
+            label: 'Método de contacto preferido:',
+            placeholder: 'Selecciona una opción',
+         },
+         message: {
+            label: 'Tu mensaje:',
+            placeholder: 'Describe tus necesidades o proyecto',
+         },
+      },
+      button: 'Enviar',
+      formErrors: {
+         requiredName: 'El nombre es obligatorio.',
+         requiredEmail: 'El correo es obligatorio.',
+         invalidEmail: 'El correo proporcionado no es válido.',
+         requiredMessage: 'El mensaje es obligatorio.',
+      },
+      sendSuccess: '¡Información enviada con éxito!',
+      sendFailed: 'Error al enviar la información. Inténtalo de nuevo.',
    },
    Courses: {
+      title: 'Certificaciones',
       back: 'volver',
       certificate: 'certificado',
       courses: 'Cursos',
       inProgress: 'En Proceso',
+      concluded: 'concluido',
+      prev: 'Anterior',
+      next: 'Siguiente',
+      viewCertificate: 'Ver certificado',
    },
    ProjectModal: {
       features: 'Características',
       services: 'Servicios',
+   },
+   ProjectsPage: {
+      coming: 'Próximamente',
    },
 };
 export default translations;

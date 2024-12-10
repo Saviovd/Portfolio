@@ -1,7 +1,9 @@
 export interface ProjectProps {
-   image: string;
-   mobileImage: string;
-   screens: string;
+   images: {
+      desktop: string;
+      mobile: string;
+      screens: string;
+   };
    url: string;
    repository: string;
    name: string;
@@ -16,23 +18,19 @@ export interface ProjectProps {
       pt: string[];
       es: string[];
    };
-   stacks: Stack[];
+   stack: Stack[];
    year: number;
-   services: ProjectServices[];
+   services: ProjectServices[] | undefined;
 }
 
 interface Stack {
    name: string;
-   src: string;
    width: number;
    height: number;
-   background?: boolean;
-   rounded?: boolean;
-   padding?: boolean;
 }
 
 export interface ProjectServices {
    name: string;
    repository: string;
-   description: string;
+   description?: string;
 }
