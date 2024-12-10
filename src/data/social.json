@@ -36,6 +36,20 @@
          "name": "/saviovd",
          "url": "https://github.com/Saviovd",
          "text": "Visitar"
+      },
+      {
+         "icon": "FaInstagramSquare",
+         "type": "instagram",
+         "name": "/saviovd",
+         "url": "https://instagram.com/Saviovd",
+         "text": "Visitar"
+      },
+      {
+         "icon": "FaDiscord",
+         "type": "discord",
+         "name": "saviovd",
+         "url": "https://discordapp.com/users/346829418657873920",
+         "text": "Visitar"
       }
    ]
 }
