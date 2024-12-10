@@ -33,7 +33,7 @@ const translations = {
       projectButton: 'project',
       repositoryButton: 'repository',
       devBy: 'Developed with:',
-      more: 'know more',
+      more: 'View more projects',
    },
    Testimonials: {
       testimonialTitle: 'testimonials',
@@ -90,5 +90,8 @@ const translations = {
       features: 'Features',
       services: 'Services',
    },
+   ProjectsPage: {
+      coming: 'Coming soon'
+   }
 };
 export default translations;

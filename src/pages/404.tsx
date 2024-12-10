@@ -1,5 +1,6 @@
 import ButtonLink from '@/components/Buttons/ButtonLink';
 import i18next from 'i18next';
+import { IoHomeOutline } from 'react-icons/io5';
 import styled from 'styled-components';
 
 const ErrorPageStyle = styled.main`
@@ -229,6 +230,7 @@ const NotFound = () => {
                content='Back to Home'
                className='errorpage_button'
                url={`/${i18next.language}`}
+               icon={<IoHomeOutline size={15} />}
             />
          </ErrorPageStyle>
       </>

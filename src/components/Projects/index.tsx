@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import ProjectCard from '../ProjectCard';
 import { IoRocketOutline } from 'react-icons/io5';
 import ButtonLink from '../Buttons/ButtonLink';
+import i18next from 'i18next';
 const { projects } = data;
 
 const Projects: React.FC = () => {
@@ -45,8 +46,8 @@ const Projects: React.FC = () => {
             ))}
          </ProjectsContainer>
          <ButtonLink
-            content='Ver mais projetos'
-            url='/projects'
+            content={t('Projects.more')}
+            url={`${i18next.language}/projects`}
             className='more'
             icon={<IoRocketOutline />}
          />
