@@ -1,0 +1,69 @@
+{
+   "services": [
+      {
+         "icon": "RiCodeSSlashFill",
+         "service": {
+            "en": "Front-End Development",
+            "pt": "Desenvolvimento Front-End",
+            "es": "Desarrollo Front-End"
+         },
+         "description": {
+            "en": "I create modern, responsive, and high-performance websites and applications. I will turn your ideas into captivating user experiences using cutting-edge technologies like React.js, Vue.js, and more.",
+            "pt": "Eu crio sites e aplicações modernas, responsivas e de alto desempenho. Vou transformar suas ideias em experiências de usuário cativantes com tecnologias de ponta como React.js, Vue.js e mais.",
+            "es": "Yo creo sitios web y aplicaciones modernos, responsivos y de alto rendimiento. Convertiré tus ideas en experiencias de usuario cautivadoras utilizando tecnologías de vanguardia como React.js, Vue.js y más."
+         }
+      },
+      {
+         "icon": "AiFillCode",
+         "service": {
+            "en": "Back-End Development",
+            "pt": "Desenvolvimento Back-End",
+            "es": "Desarrollo Back-End"
+         },
+         "description": {
+            "en": "I build scalable and robust server-side applications that guarantee the performance, security, and efficiency of your digital platform. I specialize in Node.js, PHP, and Python.",
+            "pt": "Eu desenvolvo aplicações de servidor escaláveis e robustas, que garantem o desempenho, a segurança e a eficiência da sua plataforma digital. Sou especializado em Node.js, Ruby e Python.",
+            "es": "Yo desarrollo aplicaciones del lado del servidor escalables y robustas que garantizan el rendimiento, la seguridad y la eficiencia de tu plataforma digital. Estoy especializado en Node.js, PHP y Python."
+         }
+      },
+      {
+         "icon": "MdDesignServices",
+         "service": {
+            "en": "UX/UI Design",
+            "pt": "UX/UI Design",
+            "es": "Diseño UX/UI"
+         },
+         "description": {
+            "en": "I design intuitive and aesthetically pleasing interfaces that captivate users and enhance the overall experience, ensuring satisfaction and engagement.",
+            "pt": "Eu desenho interfaces intuitivas e esteticamente agradáveis que cativam os usuários e aprimoram a experiência geral, garantindo satisfação e engajamento.",
+            "es": "Yo diseño interfaces intuitivas y visualmente atractivas que cautivan a los usuarios y mejoran la experiencia general, asegurando satisfacción y compromiso."
+         }
+      },
+      {
+         "icon": "GiBrickWall",
+         "service": {
+            "en": "Software Architecture Consulting",
+            "pt": "Consultoria em Arquitetura de Software",
+            "es": "Consultoría en Arquitectura de Software"
+         },
+         "description": {
+            "en": "I offer strategic guidance in designing scalable, efficient, and maintainable software systems. I help you make informed decisions about technologies and architectures that ensure the long-term success of your applications.",
+            "pt": "Ofereço orientação estratégica no design de sistemas de software escaláveis, eficientes e fáceis de manter. Ajudarei você a tomar decisões informadas sobre tecnologias e arquiteturas que garantam o sucesso a longo prazo de suas aplicações.",
+            "es": "Ofrezco orientación estratégica en el diseño de sistemas de software escalables, eficientes y fáciles de mantener. Te ayudaré a tomar decisiones informadas sobre tecnologías y arquitecturas que garanticen el éxito a largo plazo de tus aplicaciones."
+         }
+      },
+      {
+         "icon": "RiTestTubeFill",
+         "service": {
+            "en": "Quality Assurance and Testing",
+            "pt": "Garantia de Qualidade e Testes",
+            "es": "Garantía de Calidad y Pruebas"
+         },
+         "description": {
+            "en": "I provide comprehensive testing services to ensure that your software runs smoothly, identifying and fixing issues before they impact users. With a focus on both manual and automated testing, I help you deliver a high-quality, bug-free product.",
+            "pt": "Ofereço serviços completos de testes para garantir que seu software funcione perfeitamente, identificando e corrigindo problemas antes que afetem os usuários. Com foco em testes manuais e automatizados, ajudo você a entregar um produto de alta qualidade e livre de bugs.",
+            "es": "Ofrezco servicios completos de pruebas para garantizar que tu software funcione sin problemas, identificando y corrigiendo problemas antes de que afecten a los usuarios. Con un enfoque en pruebas manuales y automatizadas, te ayudo a entregar un producto de alta calidad y sin errores."
+         }
+      }
+   ]
+}

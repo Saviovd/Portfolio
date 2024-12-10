@@ -1,22 +1,24 @@
 import React from 'react';
-import Image from 'next/image';
 import Title from '../Title';
 import data from '@/data/testimonials.json';
 import { TestimonialsStyle } from './testimonialStyles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
-import { GoPerson } from 'react-icons/go';
-import { BiMessageAltCheck } from 'react-icons/bi';
+import { LuMessageSquare } from 'react-icons/lu';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+import { Locale } from '@/types/types';
+import Testimonial from '../Testimonial';
 
 const { testimonials } = data;
 
 const Testimonials = () => {
    const { t } = useTranslation();
+   const locale = i18next.language as Locale;
 
    const motionProps = (initialY: number, finalY: number) => ({
       initial: { opacity: 0, y: initialY },
@@ -29,18 +31,14 @@ const Testimonials = () => {
          delay: 0.2,
       },
    });
-
    return (
-      <TestimonialsStyle id={t('Header.testimonials')}>
+      <TestimonialsStyle id='testimonials'>
          <Title
             text={t('Testimonials.testimonialTitle')}
-            icon={<BiMessageAltCheck />}
+            icon={<LuMessageSquare />}
          />
 
-         <motion.div
-            {...motionProps(100, 0)}
-            className='testimonials_container'
-         >
+         <motion.div {...motionProps(100, 0)} className='container'>
             <Swiper
                className='swiper'
                spaceBetween={0}
@@ -55,36 +53,18 @@ const Testimonials = () => {
                pagination={{ clickable: true }}
                modules={[Pagination, Autoplay]}
             >
-               {testimonials.map(({ name, testimony, id, photo }) => (
-                  <SwiperSlide key={id}>
-                     <div className='testimony_box'>
-                        <p className='testimony'>
-                           {t(`Testimonials.${id}.testimony`)
-                              ? t(`Testimonials.${id}.testimony`)
-                              : name + ' ' + testimony}
-                        </p>
-                        <div className='person'>
-                           {photo ? (
-                              <Image
-                                 className='photograph'
-                                 src={photo}
-                                 alt={`${name} photo`}
-                                 width={120}
-                                 height={120}
-                                 quality={100}
-                                 layout='intrinsic'
-                              />
-                           ) : (
-                              <GoPerson className='noPhoto' />
-                           )}
-                           <h4 className='name'>{name}</h4>
-                           <h5 className='office'>
-                              {t(`Testimonials.${id}.office`)}
-                           </h5>
-                        </div>
-                     </div>
-                  </SwiperSlide>
-               ))}
+               {testimonials.map(
+                  ({ name, testimonial, photo, office }, index) => (
+                     <SwiperSlide key={index}>
+                        <Testimonial
+                           name={name}
+                           office={office[locale]}
+                           testimonial={testimonial[locale]}
+                           photo={photo}
+                        />
+                     </SwiperSlide>
+                  )
+               )}
             </Swiper>
          </motion.div>
       </TestimonialsStyle>

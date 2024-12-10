@@ -7,139 +7,117 @@ import { RxCode, RxExternalLink } from 'react-icons/rx';
 import ButtonLink from '../Buttons/ButtonLink';
 import { useTranslation } from 'react-i18next';
 import {
-   BackEndContainer,
    Buttons,
    CloseButton,
-   Description,
    FeatureItem,
    FeatureList,
    ModalContainer,
    ModalContent,
    ProjectImage,
-   ServiceCard,
    StackContainer,
-   StackImage,
    StackItem,
 } from './ProjectModalStyles';
+import { Icon } from '../Icon';
+import data from '@/data/tools.json';
+import BackEndList from '../BackEndList';
 
-interface ModalProps {
-   isOpen: boolean;
-   onClose: () => void;
+const { tools } = data;
+
+interface ProjectModalProps {
+   handleModalVisible: () => void;
    project: ProjectProps;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, project }) => {
+const ProjectModal: React.FC<ProjectModalProps> = ({
+   handleModalVisible,
+   project,
+}) => {
    const locale = i18next.language as Locale;
    const { t } = useTranslation();
-
-   if (!isOpen) return null;
 
    return (
       <ModalContainer
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          exit={{ opacity: 0 }}
-         transition={{ duration: 0.3 }}
+         transition={{ duration: 0.3, delay: 0.2 }}
+         onClick={handleModalVisible}
       >
          <ModalContent
-            initial={{ y: 800 }}
+            initial={{ y: -800 }}
             animate={{ y: 0 }}
             exit={{ y: 800 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
-            services={project.services}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            onClick={(e) => e.stopPropagation()}
          >
-            <CloseButton onClick={onClose}>
+            <CloseButton onClick={handleModalVisible}>
                <RiCloseFill />
             </CloseButton>
-            <h2 className='title'>{project.name}</h2>
-            <Description>{project.description[locale]}</Description>
+
             <ProjectImage
-               src={project.screens}
+               src={project.images.screens}
                alt={project.name}
-               width={1000}
-               height={800}
+               width={800}
+               height={500}
                quality={100}
-               priority
             />
-            <FeatureList>
-               <h3 className='features-title'>{t('ProjectModal.features')}</h3>
-               {project.features[locale].map((feature, index) => (
-                  <FeatureItem key={index}>{feature}</FeatureItem>
-               ))}
-            </FeatureList>
-            <StackContainer>
-               {project.stacks.map((stack, index) => (
-                  <StackItem
-                     key={index}
-                     background={stack.background ? 'white' : 'transparent'}
-                     rounded={stack.rounded ? true : false}
-                     padding={stack.padding ? '.1rem' : '0'}
-                  >
-                     <StackImage
-                        src={stack.src}
-                        alt={stack.name}
-                        width={stack.width}
-                        height={stack.height}
-                        className='stack-logo'
-                     />
-                  </StackItem>
-               ))}
-            </StackContainer>
-            {project.services && (
-               <BackEndContainer>
-                  <h3 className='services-title'>
-                     {t('ProjectModal.services')}
-                  </h3>
-                  {project.services.map((service, index) => (
-                     <ServiceCard
-                        key={index}
-                        href={service.repository}
-                        target='_blank'
-                     >
-                        <h5 className='service-name'>{service.name}</h5>
-                        <p className='service-description'>
-                           -{' '}
-                           {service.description
-                              ? service.description
-                              : 'No description avaiable'}
-                        </p>
-                     </ServiceCard>
+
+            <div className='infos'>
+               <StackContainer>
+                  {project.stack.map((stack, index) => (
+                     <StackItem key={index}>
+                        {tools
+                           .filter(
+                              (tool) =>
+                                 tool.name.toLowerCase() ===
+                                 stack.name.toLowerCase()
+                           )
+                           .map((tool) => (
+                              <Icon
+                                 nameIcon={tool.icon || 'CgUnavailable'}
+                                 propsIcon={{
+                                    size: 40,
+                                    className: `icon ${
+                                       tool.icon
+                                          .toLowerCase()
+                                          .includes('next') && 'next'
+                                    }`,
+                                 }}
+                                 key={tool.name}
+                              />
+                           ))}
+                     </StackItem>
                   ))}
-               </BackEndContainer>
-            )}
-            <Buttons>
-               <ButtonLink
-                  className='project-button'
-                  content={'repository'}
-                  url={project.repository}
-                  _blank={true}
-                  fontSize={1.5}
-                  icon={<RxCode />}
-                  bgColor='rgba(var(--bg-black),0.5)'
-                  textTransform='uppercase'
-                  strColor='rgba(var(--secondary-white))'
-                  border='1px solid rgba(var(--primary-blue))'
-               />
-               <ButtonLink
-                  className='project-button'
-                  content={t('Projects.projectButton')}
-                  fontSize={1.5}
-                  url={project.url}
-                  _blank={true}
-                  bgColor='rgba(var(--primary-pink),0.5)'
-                  textTransform='uppercase'
-                  strColor='rgba(var(--secondary-white))'
-                  icon={
-                     <RxExternalLink
-                        style={{ fill: 'rgba(var(--secondary-white), 0.7)' }}
-                     />
-                  }
-                  border='1px solid rgba(var(--primary-pink))'
-               />
-            </Buttons>
+               </StackContainer>
+               <h2 className='title'>{project.name}</h2>
+               <div className='description'>{project.description[locale]}</div>
+               <FeatureList>
+                  <h4 className='features-title'>some features</h4>
+                  {project.features[locale].map((feature, index) => (
+                     <FeatureItem key={index}>{feature}</FeatureItem>
+                  ))}
+               </FeatureList>
+               {project.services && <BackEndList project={project} />}
+               <Buttons>
+                  <ButtonLink
+                     className='project-button'
+                     content={'repository'}
+                     url={project.repository}
+                     _blank={true}
+                     icon={<RxCode />}
+                  />
+                  <ButtonLink
+                     className='project-button'
+                     content={t('Projects.projectButton')}
+                     url={project.url}
+                     _blank={true}
+                     icon={<RxExternalLink />}
+                  />
+               </Buttons>
+            </div>
          </ModalContent>
       </ModalContainer>
    );
 };
 
-export default Modal;
+export default ProjectModal;

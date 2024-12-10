@@ -1,5 +1,6 @@
 import ButtonLink from '@/components/Buttons/ButtonLink';
 import i18next from 'i18next';
+import { IoHomeOutline } from 'react-icons/io5';
 import styled from 'styled-components';
 
 const ErrorPageStyle = styled.main`
@@ -74,13 +75,13 @@ const ErrorPageStyle = styled.main`
          &.shallow {
             left: 1px;
             z-index: 2;
-            text-shadow: 1px 0 0 red;
+            text-shadow: 1px 0 0 rgb(var(--light-green));
             animation-duration: 0.95s;
          }
          &.deep {
             left: 0;
             z-index: 3;
-            text-shadow: 1px 0 0 cyan;
+            text-shadow: 1px 0 0 rgb(var(--light-blue));
             mix-blend-mode: darken;
             animation-duration: 1.1s;
             animation-delay: 0.2s;
@@ -93,7 +94,7 @@ const ErrorPageStyle = styled.main`
          transform: translate(-50%, -50%);
          width: 100vw;
          height: 3px;
-         background-color: black;
+         background-color: rgba(var(--light-green));
          animation: line-move 10s ease-out infinite;
       }
 
@@ -111,12 +112,12 @@ const ErrorPageStyle = styled.main`
 
       .glitch.darken {
          .symbol {
-            color: black;
-            background-color: rgb(var(--secondary-white));
+            color: rgba(var(--light));
+            background-color: rgb(var(--light-green));
          }
 
          .line {
-            background-color: white;
+            background-color: rgb(var(--dark));
          }
       }
 
@@ -229,6 +230,7 @@ const NotFound = () => {
                content='Back to Home'
                className='errorpage_button'
                url={`/${i18next.language}`}
+               icon={<IoHomeOutline size={15} />}
             />
          </ErrorPageStyle>
       </>
