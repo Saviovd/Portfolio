@@ -3,14 +3,14 @@ import data from '@/data/social.json';
 import Title from '../Title';
 import { ContactStyle } from './contactsStyles';
 import { motion } from 'framer-motion';
-import { Slide, toast } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
 import { MdOutlineEmail } from 'react-icons/md';
 import ContactForm from '../ContactForm';
 import { Icon } from '../Icon';
 
-const { socials } = data;
+const { contact } = data;
 
 const Contacts = () => {
    const { t } = useTranslation();
@@ -27,16 +27,16 @@ const Contacts = () => {
    const copyToClipboard = async (text: string) => {
       try {
          await navigator.clipboard.writeText(text);
-         toast(t('Contacts.copied'), {
-            position: 'top-center',
-            autoClose: 4000,
-            hideProgressBar: false,
+         toast.success(t('Contacts.copied'), {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: true,
             closeOnClick: true,
-            pauseOnHover: false,
+            pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: 'dark',
-            transition: Slide,
+            theme: 'colored',
+            transition: Bounce,
          });
       } catch (err) {
          console.error('Falha ao copiar o texto', err);
@@ -52,7 +52,6 @@ const Contacts = () => {
                icon={<MdOutlineEmail />}
             />
             <ContactForm />
-            <h4 className='social-media-title'>Minhas redes sociais</h4>
             <motion.div
                {...motionProps(100, 0)}
                transition={{
@@ -63,7 +62,7 @@ const Contacts = () => {
                }}
                className='container'
             >
-               {socials.map(({ icon, name, type, url }, i) => (
+               {contact.map(({ icon, name, type, url }, i) => (
                   <div className={`contact_card`} key={i}>
                      {url !== '' ? (
                         <a
@@ -73,7 +72,10 @@ const Contacts = () => {
                            className='contact_item'
                            key={i}
                         >
-                           <Icon nameIcon={icon} propsIcon={{ size: 60, className: 'icon_box' }} />
+                           <Icon
+                              nameIcon={icon}
+                              propsIcon={{ size: 50, className: 'icon_box' }}
+                           />
                            <span data-name={name} className='name'>
                               {name}
                            </span>
@@ -87,7 +89,10 @@ const Contacts = () => {
                               type === 'e-mail' ? copyToClipboard(name) : ''
                            }
                         >
-                           <Icon nameIcon={icon} propsIcon={{ size: 60, className: 'icon_box' }} />
+                           <Icon
+                              nameIcon={icon}
+                              propsIcon={{ size: 50, className: 'icon_box' }}
+                           />
                            <span data-name={name} className='name'>
                               {name}
                            </span>

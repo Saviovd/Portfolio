@@ -16,20 +16,16 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
          border: 0;
       }
    }
-   .social-media-title {
-      font-size: 2.5rem;
-      font-weight: 400;
-      letter-spacing: 2px;
-      margin: 8rem 0 2rem;
-      color: rgba(var(--light-blue));
-   }
    .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 2rem 0;
+      align-items: flex-start;
+      margin: 4rem 0 0;
+      padding-top: 4rem;
       width: 100%;
-      gap: 2rem;
+      gap: 1rem 2rem;
+      position: relative;
 
       .contact_card {
          height: auto;
@@ -39,22 +35,22 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
          display: flex;
          justify-content: center;
          border-radius: 1rem;
-         width: 24rem;
-         border: 1px solid rgba(var(--light-green), 0.5);
+         border: 1px solid rgba(var(--light-green), 0.3);
+         background-color: rgba(var(--light-green), 0.05);
 
          .contact_item {
-            flex-direction: column;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             padding: 1rem;
+            gap: 2rem;
 
             .icon_box {
                fill: rgba(var(--light-green));
                @media (max-width: 768px) {
-                  width: 4rem;
+                  width: 3rem;
                }
             }
 
@@ -62,7 +58,6 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
                grid-area: name;
                font-size: 1.7rem;
                margin: 0;
-               padding: 0.5rem;
 
                @media (max-width: 768px) {
                   font-size: 1.2rem;
@@ -71,14 +66,14 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
 
             &::after {
                content: attr(content);
-               font-size: 2rem;
+               font-size: 1.8rem;
+               font-weight: 400;
                color: rgba(var(--light-green));
-               font-weight: 700;
                letter-spacing: 3px;
                background-color: rgba(var(--dark), 0.7);
                backdrop-filter: blur(6px);
-               width: 100%;
-               height: 100%;
+               width: calc(100% - 2px);
+               height: calc(100% - 2px);
                display: flex;
                align-items: center;
                justify-content: center;
@@ -107,7 +102,8 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             }
 
             @media (max-width: 768px) {
-               padding: 0;
+               padding: 0 1rem;
+               gap: 5px;
             }
          }
 
@@ -115,8 +111,17 @@ export const ContactStyle = styled.section.attrs({ content: 'text' })`
             border: 1px solid rgba(var(--light-green));
          }
          @media (max-width: 768px) {
-            width: 16rem;
+            padding: 0;
          }
+      }
+
+      &::before {
+         content: '';
+         height: 1px;
+         width: 80%;
+         background-color: rgba(var(--light-green), .3);
+         position: absolute;
+         top: 0;
       }
    }
 

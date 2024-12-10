@@ -44,11 +44,11 @@ export default function Index() {
          <motion.div className='progress-bar' style={{ scaleX }} />
          <ParticlesComponent id='particles' />
          <ToastContainer
-            position='top-center'
-            autoClose={4000}
-            hideProgressBar={false}
+            position='top-right'
+            autoClose={3000}
+            hideProgressBar
             newestOnTop={false}
-            closeOnClick={false}
+            closeOnClick
             rtl={false}
             pauseOnFocusLoss
             draggable
