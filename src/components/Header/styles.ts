@@ -9,17 +9,12 @@ export const HeaderStyle = styled(motion.header)`
    left: 0;
    right: 0;
 
-   h1 {
-      display: flex;
-      align-items: center;
-   }
-
    .header-container {
       transition: 0.3s;
       border: 1px solid rgb(var(--light-green), 0.2);
       background-color: rgba(var(--dark-green), 0.05);
       border-radius: 1rem;
-      backdrop-filter: blur(0.8rem);
+      backdrop-filter: blur(0.4rem);
       position: relative;
       margin: 1rem auto 0;
       max-width: 150rem;
@@ -35,8 +30,12 @@ export const HeaderStyle = styled(motion.header)`
          left: 2.5rem;
          object-fit: contain;
          transition: 0.3s;
+         display: flex;
+         align-items: center;
+         width: 100%;
 
          @media (max-width: 1024px) {
+            justify-content: center;
             position: static;
             margin: 0 auto;
             height: 3rem;
@@ -99,8 +98,8 @@ export const HeaderStyle = styled(motion.header)`
       }
 
       @media (max-width: 1024px) {
-         border: 0 !important;
-         background-color: transparent !important;
+         border-top: 0 !important;
+         border-radius: 0 0 1rem 1rem;
          height: 6rem !important;
          margin: 0 auto;
          width: 100%;
@@ -109,16 +108,19 @@ export const HeaderStyle = styled(motion.header)`
 
    .scrolled {
       margin-top: 0;
-      border-radius: 0 0 1rem 1rem;
+      border-radius: 0 0 0.5rem 0.5rem;
       width: 100%;
       height: 8rem;
       border: 1px solid rgb(var(--light-blue), 0.2);
-      background-color: rgba(var(--dark-blue), 0.05);
+      background-color: rgba(var(--dark), 0.05);
 
       @media (max-width: 1024px) {
-         border: 0 !important;
-         background-color: transparent !important;
          height: 6rem !important;
+      }
+
+      &:hover {
+         border: 1px solid rgb(var(--light-green), 0.2);
+         background-color: rgba(var(--dark-green), 0.05);
       }
    }
    .outside {
@@ -135,7 +137,6 @@ export const HeaderStyle = styled(motion.header)`
          padding: 0;
          height: 7rem;
          background-color: transparent;
-         backdrop-filter: blur(0);
       }
       @media (max-width: 768px) {
          height: 5rem;

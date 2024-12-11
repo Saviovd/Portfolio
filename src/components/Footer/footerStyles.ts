@@ -21,7 +21,7 @@ export const FooterStyle = styled.section`
 
    .name {
       width: 100%;
-      text-align: end;
+      text-align: center;
       font-size: 1.9rem;
       color: rgb(var(--light-green));
 
