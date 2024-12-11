@@ -26,10 +26,10 @@ const Header = () => {
    return (
       <>
          <HeaderStyle
-            initial={{ y: '-120%' }}
+            initial={{ y: '-100%' }}
             animate={{ y: 0 }}
             exit={{ y: '-120%' }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.42, 0, 0.58, 1] }}
+            transition={{ duration: 0.75, delay: 1, ease: [0.42, 0, 0.58, 1] }}
          >
             <div
                className={`header-container ${position > 50 ? 'scrolled' : ''}`}

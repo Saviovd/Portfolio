@@ -29,11 +29,13 @@ export const HeaderStyle = styled(motion.header)`
          position: absolute;
          left: 2.5rem;
          object-fit: contain;
+         transition: 0.3s;
 
          @media (max-width: 1024px) {
-            left: 1.5rem;
+            position: static;
+            margin: 0 auto;
             height: 3rem;
-            width: 3rem;
+            width: 100%;
          }
       }
 
@@ -42,9 +44,8 @@ export const HeaderStyle = styled(motion.header)`
          right: 2.5rem;
 
          @media (max-width: 1024px) {
-            position: static;
-            margin-right: 1rem;
             display: flex;
+            right: 1rem;
             justify-content: center;
             align-items: center;
          }
@@ -52,17 +53,11 @@ export const HeaderStyle = styled(motion.header)`
 
       .center {
          cursor: pointer;
-         top: 1.5rem;
+         position: absolute;
+         left: 1rem;
          right: 2rem;
          width: 4rem;
          z-index: 10;
-
-         @media screen {
-            @media (max-width: 768px) {
-               right: 1.5rem;
-               width: 3rem;
-            }
-         }
 
          &::before,
          &::after,
@@ -72,33 +67,25 @@ export const HeaderStyle = styled(motion.header)`
             display: block;
             height: 5px;
             border-radius: 3px;
-            margin: 7px 0;
+            margin: 5px 0;
             transition: 0.5s;
+            transition-delay: 0.2s;
+         }
 
-            @media screen {
-               @media (max-width: 768px) {
-                  margin: 4px 0;
-                  height: 4px;
-               }
-            }
+         &::before {
+            margin-top: 0;
+         }
+
+         &::after {
+            margin-bottom: 0;
          }
 
          &.active::before {
-            transform: translateY(12px) rotate(135deg);
-            @media screen {
-               @media (max-width: 768px) {
-                  transform: translateY(7px) rotate(135deg);
-               }
-            }
+            transform: translateY(8px) rotate(135deg);
          }
 
          &.active::after {
             transform: translateY(-12px) rotate(-135deg);
-            @media screen {
-               @media (max-width: 768px) {
-                  transform: translateY(-8px) rotate(-135deg);
-               }
-            }
          }
 
          &.active div {
