@@ -20,7 +20,8 @@ export const Job = styled.div`
    .plus {
       font-size: 4.5rem;
       margin-right: 2rem;
-      transition: 0.5s;
+      transition: 0.6s;
+      transition-delay: 0.1s;
       cursor: pointer;
 
       @media (max-width: 768px) {

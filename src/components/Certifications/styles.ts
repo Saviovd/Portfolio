@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const CertificationsStyle = styled.div`
@@ -12,8 +11,27 @@ export const CertificationsStyle = styled.div`
          fill: rgba(var(--light-green));
       }
    }
+   .sub-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .title {
+         font-size: 3rem;
+         margin: 0;
+         border-bottom: 1px solid rgba(var(--light-green));
+      }
+      @media (max-width: 768px) {
+         .title {
+            font-size: 2rem;
+         }
+
+         svg {
+            width: 2rem;
+         }
+      }
+   }
    .list-box {
-      min-height: 31rem;
+      min-height: 20rem;
       transition: 0.5s;
       padding: 2rem 0;
       transition: 0.5s;
@@ -33,6 +51,7 @@ export const CertificationsStyle = styled.div`
             width: calc(50% - 1rem);
 
             @media (max-width: 1024px) {
+               max-width: 50rem;
                width: calc(100% - 1rem);
             }
          }
@@ -47,73 +66,25 @@ export const CertificationsStyle = styled.div`
                width: calc(98% + 0.45rem);
             }
          }
-         @media (max-width: 1024px) {
-            padding: 1rem 0;
-         }
       }
 
+      @media (max-width: 768px) {
+         min-height: 15rem;
+      }
+   }
+   .courses {
+      min-height: 27rem;
+      padding-bottom: 2rem;
+
       @media (max-width: 1024px) {
-         min-height: 45rem;
+         min-height: 40rem;
       }
       @media (max-width: 640px) {
-         min-height: 60rem;
+         min-height: 55rem;
       }
    }
 
    @media (max-width: 768px) {
       padding: 5rem 1rem 0;
-   }
-`;
-
-export const Menu = styled(motion.div)`
-   display: flex;
-   padding: 1rem;
-   gap: 2rem;
-   border-bottom: 1px solid rgba(var(--dark-green), 0.1);
-
-   .menu-item {
-      font-size: 2rem;
-      color: rgba(var(--dark-green));
-      letter-spacing: 1px;
-      position: relative;
-      cursor: pointer;
-      transition: 0.5s;
-
-      &::after {
-         content: '';
-         width: 0;
-         height: 2px;
-         background-color: rgba(var(--light));
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         transition: 0.5s;
-      }
-
-      &:hover {
-         color: rgba(var(--light-blue));
-         &::after {
-            width: 25%;
-         }
-      }
-
-      @media (max-width: 768px) {
-         font-size: 1.5rem;
-      }
-   }
-   .active {
-      color: rgba(var(--light-green));
-      &::after {
-         width: 100%;
-      }
-      &:hover {
-         color: rgba(var(--light-green));
-         &::after {
-            width: 100%;
-         }
-      }
-   }
-   @media (max-width: 768px) {
-      gap: 1.5rem;
    }
 `;
