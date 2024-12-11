@@ -34,14 +34,16 @@ const Header = () => {
             <div
                className={`header-container ${position > 50 ? 'scrolled' : ''}`}
             >
-               <Image
-                  className='logo'
-                  src='/assets/logo.svg'
-                  alt={t('Header.logoAlt')}
-                  width={40}
-                  height={40}
-                  quality={100}
-               />
+               <h1>
+                  <Image
+                     className='logo'
+                     src='/assets/logo.svg'
+                     alt={t('Header.logoAlt')}
+                     width={40}
+                     height={40}
+                     quality={100}
+                  />
+               </h1>
 
                <AnimatePresence>
                   {showNavBar && (

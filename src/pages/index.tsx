@@ -26,8 +26,9 @@ export default function Index() {
             <title>Sávio Almeida | Portfólio</title>
             <meta
                name='description'
-               content='Portfólio de Sávio, desenvolvedor full-stack especializado em tecnologias modernas como React, Next.js, e Tailwind. Explore projetos, habilidades e serviços em desenvolvimento web, design responsivo e performance otimizada.'
+               content='Portfólio de Sávio Almeida, desenvolvedor full-stack com expertise em front-end, back-end e tecnologias como React, Vue.js e Next.js. Soluções inovadoras e eficientes em desenvolvimento web.'
             />
+
             <meta
                name='viewport'
                content='width=device-width, initial-scale=1'
