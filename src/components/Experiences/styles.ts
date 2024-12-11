@@ -7,8 +7,24 @@ export const ExperiencesStyles = styled.div`
    justify-content: center;
    padding: 0 3rem;
 
-   .title {
-      margin-bottom: 2rem;
+   .sub-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .title {
+         font-size: 3rem;
+         margin: 0;
+         border-bottom: 1px solid rgba(var(--light-green));
+      }
+      @media (max-width: 768px) {
+         .title {
+            font-size: 2rem;
+         }
+
+         svg {
+            width: 2rem;
+         }
+      }
    }
 
    .experiences {
@@ -16,6 +32,7 @@ export const ExperiencesStyles = styled.div`
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      margin-top: 1rem;
       .item {
          position: relative;
          padding-bottom: 1rem;

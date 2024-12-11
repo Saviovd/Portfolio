@@ -20,7 +20,7 @@ const Experiences = ({ experiences }: IExperiencesData) => {
    return (
       <>
          <ExperiencesStyles>
-            <Title text={t(`Experiences.title`)} icon={<BsStars />} className='title'/>
+            <Title text={t(`Experiences.title`)} icon={<BsStars />} className='sub-title'/>
             <ul className='experiences' ref={containerRef}>
                {experiences.map((job, i) => (
                   <motion.li
