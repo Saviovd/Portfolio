@@ -75,6 +75,7 @@ const GlobalStyle = createGlobalStyle`
          max-width: 155rem;
          font-family: var(--outfit);
          color: #f1f1f1;
+         overflow-x: hidden;
 
          li {
             list-style-type: none;
