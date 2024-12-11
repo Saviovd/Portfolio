@@ -9,6 +9,11 @@ export const HeaderStyle = styled(motion.header)`
    left: 0;
    right: 0;
 
+   h1 {
+      display: flex;
+      align-items: center;
+   }
+
    .header-container {
       transition: 0.3s;
       border: 1px solid rgb(var(--light-green), 0.2);
