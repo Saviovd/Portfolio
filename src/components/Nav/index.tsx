@@ -30,9 +30,9 @@ const Nav = ({ isActive }: INavProps) => {
    };
 
    const navVariants = {
-      hidden: { opacity: 0, x: width < 1024 ? '120%' : 0 },
+      hidden: { opacity: 0, x: width < 1024 ? '-120%' : 0 },
       visible: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: '120%' },
+      exit: { opacity: 0, x: '-120%' },
    };
 
    return (
@@ -45,7 +45,7 @@ const Nav = ({ isActive }: INavProps) => {
                animate='visible'
                exit='exit'
                variants={navVariants}
-               transition={{ duration: width < 1024 ? 0.3 : 0.2 }}
+               transition={{ duration: 0.5, delay: 0.2, ease: [0.42, 0, 0.58, 1] }}
             >
                {navigation.map((item, i) => (
                   <NavItem

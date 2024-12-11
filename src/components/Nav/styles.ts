@@ -30,18 +30,18 @@ export const NavStyle = styled(motion.nav)`
          justify-content: center;
          height: 100vh;
          width: 55vw;
-         background-color: rgba(var(--dark), 0.9);
-         backdrop-filter: blur(8px);
-         border-left: 2px solid rgba(var(--light-green), 0.8);
+         background-color: rgba(var(--dark), 0.95);
+         backdrop-filter: blur(15px);
+         border-right: 1px solid rgba(var(--light-green), 0.5);
          position: fixed;
          top: 0;
-         right: 0;
+         left: 0;
          padding: 0;
          margin: 0;
       }
 
       @media (max-width: 768px) {
-         width: 75%;
+         width: 85%;
       }
    }
 
