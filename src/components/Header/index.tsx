@@ -34,9 +34,8 @@ const Header = () => {
             <div
                className={`header-container ${position > 50 ? 'scrolled' : ''}`}
             >
-               <h1>
+               <h1 className='logo'>
                   <Image
-                     className='logo'
                      src='/assets/logo.svg'
                      alt={t('Header.logoAlt')}
                      width={40}
