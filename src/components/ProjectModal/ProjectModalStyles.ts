@@ -35,22 +35,26 @@ export const ModalContent = styled(motion.div)`
       flex-direction: column;
       gap: 1rem;
       .title {
-         font-size: 7rem;
+         font-size: 4.5rem;
          font-weight: 700;
          margin: 0;
          letter-spacing: 1px;
          color: rgba(var(--light-green));
 
          @media (max-width: 1280px) {
-            font-size: 5rem;
+            font-size: 4rem;
          }
          @media (max-width: 1024px) {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 600;
          }
          @media (max-width: 600px) {
             font-size: 3rem;
             font-weight: 500;
+         }
+         @media (max-width: 390px) {
+            font-size: 2.5rem;
+            font-weight: 400;
          }
       }
       .description {
@@ -65,7 +69,7 @@ export const ModalContent = styled(motion.div)`
             line-height: 2rem;
          }
          @media (max-width: 600px) {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: normal;
             letter-spacing: 1px;
          }

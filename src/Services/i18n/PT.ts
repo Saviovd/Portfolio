@@ -19,7 +19,7 @@ const translations = {
       finishedProjects: 'projetos concluídos',
    },
    Experiences: {
-      title: 'Experiêcias',
+      title: 'Experiências',
    },
    Habilities: {
       my: 'Minhas',

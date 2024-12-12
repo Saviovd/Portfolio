@@ -2,40 +2,80 @@ import ButtonLink from '@/components/Buttons/ButtonLink';
 import Title from '@/components/Title';
 import i18next from 'i18next';
 import styled from 'styled-components';
-import { LuToyBrick } from 'react-icons/lu';
 import { useTranslation } from 'react-i18next';
-import { IoHomeOutline } from 'react-icons/io5';
+import { IoHomeOutline, IoRocketOutline } from 'react-icons/io5';
+import { ProjectsContainer, ProjectsStyle } from '@/components/Projects/styles';
+import data from '@/data/projects.json';
+import ProjectCard from '@/components/ProjectCard';
+import Footer from '@/components/Footer/Footer';
+
+const { projects } = data;
 
 const Container = styled.main`
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: flex-start;
    flex-direction: column;
-   gap: 3rem;
-   height: 100vh;
+   padding-top: 3rem;
+
+   #projects {
+      padding-top: 4rem;
+   }
    .title {
       width: min-content;
       white-space: nowrap;
    }
    .button {
       width: min-content;
-      margin: 0 auto;
    }
 `;
 
 const ProjectsPage = () => {
    const { t } = useTranslation();
    return (
-      <Container>
-         <Title text={t('ProjectsPage.coming')} icon={<LuToyBrick />} className='title' />
-         <ButtonLink
-            _blank={false}
-            content='Back to Home'
-            className='button'
-            url={`/${i18next.language}`}
-            icon={<IoHomeOutline size={15} />}
-         />
-      </Container>
+      <>
+         <Container>
+            <ButtonLink
+               _blank={false}
+               content='Back to Home'
+               className='button'
+               url={`/${i18next.language}`}
+               icon={<IoHomeOutline size={15} />}
+            />
+            <ProjectsStyle id='projects'>
+               <Title
+                  text={t('Projects.projects')}
+                  icon={<IoRocketOutline />}
+                  className='section-title'
+               />
+
+               <ProjectsContainer
+                  initial={{ y: 400, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: 50, opacity: 0 }}
+                  transition={{ duration: 1 }}
+               >
+                  {projects.map((project) => (
+                     <li className='item' key={project.code}>
+                        <ProjectCard
+                           name={project.name}
+                           description={project.description}
+                           images={project.images}
+                           url={project.url}
+                           repository={project.repository}
+                           code={project.code}
+                           features={project.features}
+                           stack={project.stack}
+                           year={project.year}
+                           services={project.services}
+                        />
+                     </li>
+                  ))}
+               </ProjectsContainer>
+            </ProjectsStyle>
+         </Container>
+         <Footer />
+      </>
    );
 };
 

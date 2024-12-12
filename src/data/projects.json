@@ -156,6 +156,196 @@
       },
       {
          "images": {
+            "desktop": "/assets/Projects/desktop/machine-tracking.png",
+            "mobile": "/assets/Projects/mobile/mobile-machine-tracking.png",
+            "screens": "/assets/Projects/screens/machine-tracking.png"
+         },
+         "url": "https://machine-tracking.vercel.app/",
+         "repository": "https://github.com/Saviovd/machine-tracking",
+         "name": "Machine Tracking",
+         "code": "machineTracking",
+         "description": {
+            "en": "A challenge proposed by the company Aiko for a mid/senior-level vacancy. It is an interface that manages and tracks different machines in a work area, showing their current status and other information like geolocation.",
+            "pt": "Desafio proposto pela empresa Aiko para uma vaga de nível pleno/sênior. É uma interface que gerencia e rastreia diferentes máquinas em uma área de trabalho, mostrando seu status atual e outras informações como geolocalização.",
+            "es": "Un desafío propuesto por la empresa Aiko para una vacante de nivel medio/senior. Es una interfaz que gestiona y rastrea diferentes máquinas en un área de trabajo, mostrando su estado actual y otra información como geolocalización."
+         },
+         "features": {
+            "en": [
+               "Filtering: Allows filtering table data by status, name, and model",
+               "Pagination: Supports pagination to navigate through different pages of the equipment's past states",
+               "Dynamic navigation: Dynamically updates the displayed equipment"
+            ],
+            "pt": [
+               "Filtragem: Permite filtrar os dados da tabela por status, nome e modelo",
+               "Paginação: Suporta paginação para navegação entre diferentes páginas de estados passados dos equipamentos",
+               "Navegação dinâmica: Atualiza dinamicamente o equipamento apresentado"
+            ],
+            "es": [
+               "Filtrado: Permite filtrar los datos de la tabla por estado, nombre y modelo",
+               "Paginación: Soporta paginación para navegar entre diferentes páginas de estados anteriores de los equipos",
+               "Navegación dinámica: Actualiza dinámicamente el equipo presentado"
+            ]
+         },
+         "stack": [
+            {
+               "name": "VueJs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Vite",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2024
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/github-repo-consulter.png",
+            "mobile": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
+            "screens": "/assets/Projects/screens/github.png"
+         },
+         "url": "https://github-consulter-two.vercel.app/",
+         "repository": "https://github.com/Saviovd/github-consulter",
+         "name": "GitHub Consulter",
+         "code": "GitHubConsulter",
+         "description": {
+            "en": "An application that allows you to search and view public repositories of a GitHub user. Simply enter the username to list the repositories, including details such as name, description, and some charts with project metrics.",
+            "pt": "Uma aplicação que permite buscar e visualizar repositórios públicos de um usuário no GitHub. Basta inserir o nome de usuário para listar os repositórios, com detalhes como nome, descrição e alguns gráficos com métricas do projeto.",
+            "es": "Una aplicación que permite buscar y visualizar repositorios públicos de un usuario en GitHub. Solo debes ingresar el nombre de usuario para listar los repositorios, con detalles como nombre, descripción y algunos gráficos con métricas del proyecto."
+         },
+         "features": {
+            "en": [
+               "Functional repository list",
+               "Chart generation for metrics",
+               "Responsive design"
+            ],
+            "pt": [
+               "Lista de repositórios funcional",
+               "Geração de gráficos com métricas",
+               "Design responsivo"
+            ],
+            "es": [
+               "Lista de repositorios funcional",
+               "Generación de gráficos com métricas",
+               "Diseño responsivo"
+            ]
+         },
+         "stack": [
+            {
+               "name": "Nextjs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Axios",
+               "width": 120,
+               "height": 60
+            },
+            {
+               "name": "CSS-in-JS",
+               "width": 70,
+               "height": 60
+            },
+            {
+               "name": "Framer Motion",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "GraphQl",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Redux",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2023
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/soller.png",
+            "mobile": "/assets/Projects/mobile/mobile-soller.png",
+            "screens": "/assets/Projects/screens/soller.png"
+         },
+         "url": "https://tech-test-soller-spa.vercel.app/",
+         "repository": "https://github.com/Saviovd/tech-test-soller-spa",
+         "name": "Soller-spa",
+         "code": "SollerSpa",
+         "description": {
+            "en": "This is a Single Page Application (SPA) project developed for Buzzvel. The application aims to offer products related to solar energy. The website features a light theme and includes animations to enhance the user experience.",
+            "pt": "Este é um projeto de Aplicação de Página Única (SPA) desenvolvido para a Buzzvel. O aplicativo tem como objetivo oferecer produtos relacionados à energia solar. O site apresenta um tema claro e inclui animações para melhorar a experiência do usuário.",
+            "es": "Este es un proyecto de Aplicación de Página Única (SPA) desarrollado para Buzzvel. La aplicación tiene como objetivo ofrecer productos relacionados con la energía solar. El sitio web presenta un tema claro e incluye animaciones para mejorar la experiencia del usuario."
+         },
+         "features": {
+            "en": [
+               "Dynamic responsiveness",
+               "Swiper with testimonials"
+            ],
+            "pt": [
+               "Responsividade dinâmica",
+               "Swiper com comentários"
+            ],
+            "es": [
+               "Responsividad dinámica",
+               "Swiper con testimonios"
+            ]
+         },
+         "stack": [
+            {
+               "name": "Nextjs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "React",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Framer Motion",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "CSS-in-JS",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2024
+      },
+      {
+         "images": {
             "desktop": "/assets/Projects/desktop/dsf-bank.png",
             "mobile": "/assets/Projects/mobile/mobile-dsf-bank.png",
             "screens": "/assets/Projects/screens/bank.png"
@@ -495,50 +685,68 @@
       },
       {
          "images": {
-            "desktop": "/assets/Projects/desktop/github-repo-consulter.png",
-            "mobile": "/assets/Projects/mobile/mobile-github-repo-consulter.png",
-            "screens": "/assets/Projects/screens/github.png"
+            "desktop": "/assets/Projects/desktop/whatsapp.png",
+            "mobile": "/assets/Projects/mobile/mobile-whatsapp.png",
+            "screens": "/assets/Projects/screens/whatsapp.png"
          },
-         "url": "https://github-consulter-two.vercel.app/",
-         "repository": "https://github.com/Saviovd/github-consulter",
-         "name": "GitHub Consulter",
-         "code": "GitHubConsulter",
+         "url": "https://whatsapp-api-dashboard-gray.vercel.app/  ",
+         "repository": "https://github.com/Saviovd/whatsapp-api-dashboard",
+         "name": "whatsapp-api-dashboard",
+         "code": "whatsappApiDashboard",
          "description": {
-            "en": "An application that allows you to search and view public repositories of a GitHub user. Simply enter the username to list the repositories, including details such as name, description, and some charts with project metrics.",
-            "pt": "Uma aplicação que permite buscar e visualizar repositórios públicos de um usuário no GitHub. Basta inserir o nome de usuário para listar os repositórios, com detalhes como nome, descrição e alguns gráficos com métricas do projeto.",
-            "es": "Una aplicación que permite buscar y visualizar repositorios públicos de un usuario en GitHub. Solo debes ingresar el nombre de usuario para listar los repositorios, con detalles como nombre, descripción y algunos gráficos con métricas del proyecto."
+            "en": "Application that automates bulk registration forms through WhatsApp. (Incomplete project due to more advanced functionalities being protected by an NDA.)",
+            "pt": "Aplicação que automatiza formulário de cadastro em massa pelo WhatsApp. (Projeto incompleto devido a funcionalidades mais avançadas estarem protegidas por NDA.)",
+            "es": "Aplicación que automatiza formularios de registro masivo a través de WhatsApp. (Proyecto incompleto debido a que funciones más avanzadas están protegidas por un NDA.)"
          },
          "features": {
             "en": [
-               "Functional repository list",
-               "Chart generation for metrics",
-               "Responsive design"
+               "WhatsApp automation",
+               "Database connection",
+               "Logged-in profile authentication",
+               "Data export in Excel format"
             ],
             "pt": [
-               "Lista de repositórios funcional",
-               "Geração de gráficos com métricas",
-               "Design responsivo"
+               "Automação de WhatsApp",
+               "Conexão com banco de dados",
+               "Autenticação de perfil logado",
+               "Exportação de dados em formato Excel"
             ],
             "es": [
-               "Lista de repositorios funcional",
-               "Generación de gráficos com métricas",
-               "Diseño responsivo"
+               "Automatización de WhatsApp",
+               "Conexión con base de datos",
+               "Autenticación de perfil iniciado",
+               "Exportación de datos en formato Excel"
             ]
          },
          "stack": [
             {
-               "name": "Next.js",
+               "name": "Nextjs",
                "width": 60,
                "height": 60
             },
             {
-               "name": "Axios",
-               "width": 120,
+               "name": "CSS-in-JS",
+               "width": 60,
                "height": 60
             },
             {
-               "name": "CSS-in-JS",
-               "width": 70,
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "NodeJs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Express",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "MongoDB",
+               "width": 60,
                "height": 60
             },
             {
@@ -547,17 +755,69 @@
                "height": 60
             },
             {
+               "name": "Axios",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "services": [
+            {
+               "name": "whatsapp-bot",
+               "repository": "https://github.com/Saviovd/whatsapp-bot"
+            }
+         ],
+         "year": 2024
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/null-dashboard.png",
+            "mobile": "/assets/Projects/mobile/mobile-null-dashboard.png",
+            "screens": "/assets/Projects/screens/null-dashboard.png"
+         },
+         "url": "https://test-big-bang.vercel.app/",
+         "repository": "https://github.com/Saviovd/test-BigBang",
+         "name": "Null Dashboard",
+         "code": "nullDashboard",
+         "description": {
+            "en": "A simple dashboard with all functional components, developed using React and fully styled with styled-components.",
+            "pt": "Um dashboard simples, com todos os componentes funcionais, desenvolvido com React e toda a estilização feita com styled-components.",
+            "es": "Un dashboard simple con todos los componentes funcionales, desarrollado con React y totalmente estilizado con styled-components."
+         },
+         "features": {
+            "en": [
+               "A dashboard with all functional components, ready to receive data",
+               "Navigation between administrative pages",
+               "Responsiveness down to tablet size"
+            ],
+            "pt": [
+               "Um dashboard com todos os componentes funcionais apenas esperando dados",
+               "Navegação entre páginas administrativas",
+               "Responsividade até o tamanho de tablet"
+            ],
+            "es": [
+               "Un dashboard con todos los componentes funcionales, listo para recibir datos",
+               "Navegación entre páginas administrativas",
+               "Responsividad hasta el tamaño de una tablet"
+            ]
+         },
+         "stack": [
+            {
                "name": "React",
                "width": 60,
                "height": 60
             },
             {
-               "name": "GraphQl",
+               "name": "CSS-in-JS",
                "width": 60,
                "height": 60
             },
             {
-               "name": "Redux",
+               "name": "JavaScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Vite",
                "width": 60,
                "height": 60
             }
