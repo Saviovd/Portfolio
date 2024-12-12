@@ -27,6 +27,12 @@ const translations = {
       viewmore: 'View more',
       viewless: 'View less',
    },
+   Services: {
+      transform: 'I Transform Code into',
+      experiences: 'Amazing Experiences',
+      description:
+         'With a focus on intuitive design and performance, I create solutions that not only work but also amaze, elevating interaction and engagement with your product. Explore below how my services can transform your idea into a unique experience for your customer.',
+   },
    Projects: {
       projects: 'projects',
       recent: 'recent',

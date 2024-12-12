@@ -27,6 +27,12 @@ const translations = {
       viewmore: 'Ver mais',
       viewless: 'Ver menos',
    },
+   Services: {
+      transform: 'Transformo Código em',
+      experiences: 'Experiências Incríveis',
+      description:
+         'Com foco em design intuitivo e performance, crio soluções que não só funcionam, mas surpreendem, elevando a interação e o engajamento com seu produto. Explore abaixo como meus serviços podem transformar sua ideia em uma experiência única para o seu cliente.',
+   },
    Projects: {
       projects: 'projetos',
       recent: 'recentes',
@@ -91,7 +97,7 @@ const translations = {
       services: 'Serviços',
    },
    ProjectsPage: {
-      coming: 'Em breve'
-   }
+      coming: 'Em breve',
+   },
 };
 export default translations;
