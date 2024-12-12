@@ -27,6 +27,12 @@ const translations = {
       viewmore: 'Ver más',
       viewless: 'Ver menos',
    },
+   Services: {
+      transform: 'Transformo Código en',
+      experiences: 'Experiencias Asombrosas',
+      description:
+         'Con un enfoque en diseño intuitivo y rendimiento, creo soluciones que no solo funcionan, sino que también sorprenden, elevando la interacción y el compromiso con tu producto. Explora a continuación cómo mis servicios pueden transformar tu idea en una experiencia única para tu cliente.',
+   },
    Projects: {
       projects: 'proyectos',
       recent: 'recientes',

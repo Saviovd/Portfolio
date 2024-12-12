@@ -23,15 +23,6 @@ export const LanguageStyles = styled.div<{ currentLang: string }>`
          font-size: 1.5rem;
          bottom: 0;
       }
-      &::after {
-         content: '';
-         width: 100%;
-         height: 2rem;
-         background-color: transparent;
-         position: absolute;
-         bottom: -1rem;
-         z-index: -1;
-      }
    }
 
    .dropdown-content {
@@ -42,7 +33,7 @@ export const LanguageStyles = styled.div<{ currentLang: string }>`
       background-color: rgba(var(--light-green), 0.06);
       border: 1px solid rgba(var(--light-blue));
       right: 0;
-      top: calc(100% + 1rem);
+      top: calc(100%);
       min-width: 100px;
       z-index: 1;
    }
