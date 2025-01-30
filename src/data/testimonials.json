@@ -12,7 +12,7 @@
             "pt": "Sávio é um excelente profissional que tive o privilégio de trabalhar. Interessado, inconformado, estudioso, arrojado, esses são alguns dos adjetivos que posso descreve-lo. Ávido por tecnologia, apoiou e desenvolveu automatizações na área em que atuou no COE Votorantim, auxiliando a equipe na busca da excelência, consciente de que processos bem estabelecidos unidos de automatização/digitalização, são imprescindíveis para o presente e o futuro muito próximo.",
             "es": "Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo."
          },
-         "photo": "/assets/photo/testimonials/ve.webp"
+         "photo": "/assets/photo/testimonials/ve.jpeg"
       },
       {
          "name": "Clisliane Melo",
@@ -26,7 +26,7 @@
             "pt": "Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.",
             "es": "Tuve el placer de trabajar con Sávio durante su tiempo en Big Bang Digital. Incluso en un período relativamente corto, demostró dedicación, ganas de aprender y habilidades técnicas notables. Sávio tiene un fuerte sentido del trabajo en equipo y una actitud colaborativa, siempre dispuesto a ayudar y compartir conocimientos. Aunque no era un desarrollador experimentado en ese momento, mostró un potencial considerable. Recomiendo a Sávio para futuras oportunidades, seguro de que será un activo valioso para cualquier equipo."
          },
-         "photo": "/assets/photo/testimonials/clis.webp"
+         "photo": "/assets/photo/testimonials/clis.jpeg"
       },
       {
          "name": "José Raimundo Diniz",
@@ -40,7 +40,7 @@
             "pt": "Ótimo profissional, atento ao código, trabalhei com ele como frontend Vue.js, experiencia legal.",
             "es": "Excelente profesional, atento al código, trabajé con él como desarrollador front-end de Vue.js, gran experiencia."
          },
-         "photo": "/assets/photo/testimonials/jose.webp"
+         "photo": "/assets/photo/testimonials/jose.jpeg"
       }
    ]
 }
