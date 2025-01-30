@@ -27,6 +27,8 @@ const CompanyCard = ({ company, logo, social }: ICompanyProps) => {
             height={30}
             src={logo}
             className='logo'
+            quality={100}
+            loading='lazy'
          />
          <p className='company-name'>{company}</p>
       </Company>

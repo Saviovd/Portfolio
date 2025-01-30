@@ -8,6 +8,7 @@ import { ProjectsContainer, ProjectsStyle } from '@/components/Projects/styles';
 import data from '@/data/projects.json';
 import ProjectCard from '@/components/ProjectCard';
 import Footer from '@/components/Footer/Footer';
+import Head from 'next/head';
 
 const { projects } = data;
 
@@ -34,6 +35,9 @@ const ProjectsPage = () => {
    const { t } = useTranslation();
    return (
       <>
+         <Head>
+            <title>Sávio Almeida | Projects</title>
+         </Head>
          <Container>
             <ButtonLink
                _blank={false}
