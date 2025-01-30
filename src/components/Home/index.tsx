@@ -23,8 +23,8 @@ const Home = () => {
          <HomeStyle id='home'>
             {width <= 1440 ? (
                <Background
-                  src={'/assets/Photo/me-half.png'}
-                  alt='Savio´s Photograph'
+                  src={'/assets/photos/me-half.png'}
+                  alt='Savio´s pgraph'
                   width={500}
                   height={500}
                   className='photograph'
@@ -32,7 +32,7 @@ const Home = () => {
                />
             ) : (
                <Background
-                  src={'/assets/Photo/me.png'}
+                  src={'/assets/photos/me.png'}
                   alt='Savio´s Photograph'
                   width={500}
                   height={500}
