@@ -43,12 +43,9 @@ const GlobalStyle = createGlobalStyle`
 
          &::-webkit-scrollbar {
             position: absolute;
-            width: 4px;
+            width: 2px;
             background-color: transparent;
             transition: 0.5s;
-            &:hover {
-               width: 6px;
-            }
          }
 
          &::-webkit-scrollbar-track {
@@ -59,11 +56,10 @@ const GlobalStyle = createGlobalStyle`
             background: linear-gradient(rgba(var(--light-blue), 0.4), rgba(var(--light-green), 0.4));
             opacity: 0.2;
             animation: gradient 5s ease alternate infinite;
-            border-radius: 5px;
+            border-radius: 3px;
             outline: none;
             transition: 4s;
             &:hover {
-               width: 6px;
                background: linear-gradient(rgba(var(--light-blue)), rgba(var(--light-green)));
             }
          }

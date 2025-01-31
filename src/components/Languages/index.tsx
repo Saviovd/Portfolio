@@ -5,6 +5,7 @@ import { LanguageStyles } from './styles';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MdLanguage } from 'react-icons/md';
 import { TiArrowSortedDown } from 'react-icons/ti';
+import Image from 'next/image';
 
 interface ILanguagesProps {
    className?: string;
@@ -34,14 +35,26 @@ const LanguageBar = ({ className }: ILanguagesProps) => {
       open: { rotate: 180 },
    };
 
+   const languages = [
+      {
+         label: 'English',
+         code: 'en',
+         flag: 'https://www.svgrepo.com/show/508668/flag-us.svg',
+      },
+      {
+         label: 'Português',
+         code: 'pt',
+         flag: 'https://www.svgrepo.com/show/405433/flag-for-flag-brazil.svg',
+      },
+      {
+         label: 'Español',
+         code: 'es',
+         flag: 'https://www.svgrepo.com/show/248935/spain.svg',
+      },
+   ];
+
    return (
-      <LanguageStyles
-         className={className}
-         currentLang={currentLang}
-         onMouseLeave={() => {
-            setDropdownOpen(false);
-         }}
-      >
+      <LanguageStyles className={className} currentLang={currentLang}>
          <div className='dropdown'>
             <button
                className='dropdown-btn'
@@ -66,24 +79,18 @@ const LanguageBar = ({ className }: ILanguagesProps) => {
                      exit={{ opacity: 0, height: 0 }}
                      transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
-                     <li
-                        onClick={() => handleLanguageChange('pt')}
-                        className={currentLang === 'pt' ? 'currentLang' : ''}
-                     >
-                        PT
-                     </li>
-                     <li
-                        onClick={() => handleLanguageChange('en')}
-                        className={currentLang === 'en' ? 'currentLang' : ''}
-                     >
-                        EN
-                     </li>
-                     <li
-                        onClick={() => handleLanguageChange('es')}
-                        className={currentLang === 'es' ? 'currentLang' : ''}
-                     >
-                        ES
-                     </li>
+                     {languages.map((lang) => (
+                        <li
+                           key={lang.code}
+                           onClick={() => handleLanguageChange(lang.code)}
+                           className={
+                              currentLang === lang.code ? 'currentLang' : ''
+                           }
+                        >
+                           <Image src={lang.flag} alt={`${lang.code} flag`} width={20} height={20} />
+                           {lang.label}
+                        </li>
+                     ))}
                   </motion.ul>
                )}
             </AnimatePresence>
