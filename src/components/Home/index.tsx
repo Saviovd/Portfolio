@@ -29,6 +29,7 @@ const Home = () => {
                   height={500}
                   className='photograph'
                   quality={100}
+                  loading='lazy'
                />
             ) : (
                <Background
@@ -38,6 +39,7 @@ const Home = () => {
                   height={500}
                   className='photograph'
                   quality={100}
+                  loading='lazy'
                />
             )}
             <div className='apresentation'>
