@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Nav from '../Nav';
 import { HeaderStyle } from './styles';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import useWindowSize from '@/hooks/useWindowSize';
 import useScrollPosition from '@/hooks/useScrollPosition';
 import LanguageBar from '../Languages';
@@ -68,6 +68,20 @@ const Header = () => {
                   onClick={() => setIsActive(false)}
                ></div>
             )}
+            <AnimatePresence>
+               {width && width <= 1024 && position > 50 && (
+                  <motion.div
+                     className='bottom'
+                     initial={{ width: 0 }}
+                     animate={{ width: position > 50 ? '100%' : 0 }}
+                     exit={{ width: 0 }}
+                     transition={{
+                        duration: 0.75,
+                        ease: [0.42, 0, 0.58, 1],
+                     }}
+                  ></motion.div>
+               )}
+            </AnimatePresence>
          </HeaderStyle>
       </>
    );
