@@ -49,10 +49,9 @@ const Certifications = ({ graduations, courses }: ICertificationsProps) => {
    return (
       <CertificationsStyle>
          {categories.map((category) => (
-            <>
+            <div key={category.value}>
                <Title
                   text={category.label[locale]}
-                  key={category.value}
                   className='sub-title'
                   icon={<Icon nameIcon={category.icon} propsIcon={{size: 30}} />}
                />
@@ -125,7 +124,7 @@ const Certifications = ({ graduations, courses }: ICertificationsProps) => {
                      )}
                   </AnimatePresence>
                </div>
-            </>
+            </div>
          ))}
       </CertificationsStyle>
    );
