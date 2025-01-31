@@ -15,7 +15,7 @@ const translations = {
       myTrajectory: 'My trajectory',
       experienceYears: 'Years of experience',
       positiveFeedbacks: 'Positive feedback',
-      certifications: 'Certifications',
+      certifications: 'Formations',
       finishedProjects: 'Completed projects',
    },
    Experiences: {
@@ -82,7 +82,7 @@ const translations = {
       sendFailed: 'Failed to send information. Please try again.',
    },
    Courses: {
-      title: 'Certifications',
+      title: 'Formations',
       back: 'Return',
       certificate: 'certificate',
       courses: 'Courses',
