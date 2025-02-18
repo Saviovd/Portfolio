@@ -280,20 +280,20 @@
          "name": "Vite",
          "logo": "",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A fast and modern front-end build tool that provides an optimized development experience.",
+            "pt": "Uma ferramenta de build moderna e rápida para front-end, oferecendo uma experiência otimizada de desenvolvimento.",
+            "es": "Una herramienta de compilación moderna y rápida para front-end, que proporciona una experiencia de desarrollo optimizada."
          },
          "icon": "SiVite"
       },
       {
          "type": "Front-End",
-         "name": "React router",
+         "name": "React Router",
          "logo": "",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A library for handling navigation and routing in React applications.",
+            "pt": "Uma biblioteca para gerenciar navegação e roteamento em aplicações React.",
+            "es": "Una biblioteca para gestionar la navegación y el enrutamiento en aplicaciones React."
          },
          "icon": "SiReactrouter"
       },
@@ -302,11 +302,33 @@
          "name": "Framer Motion",
          "logo": "",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A popular animation library for React that allows smooth and customizable animations.",
+            "pt": "Uma biblioteca popular de animação para React que permite animações suaves e personalizáveis.",
+            "es": "Una biblioteca popular de animación para React que permite animaciones fluidas y personalizables."
          },
          "icon": "SiFramer"
+      },
+      {
+         "type": "Back-End",
+         "name": "NestJS",
+         "logo": "",
+         "description": {
+            "en": "A progressive Node.js framework for building efficient and scalable server-side applications.",
+            "pt": "Um framework progressivo para Node.js, projetado para criar aplicações server-side eficientes e escaláveis.",
+            "es": "Un framework progresivo para Node.js, diseñado para crear aplicaciones del lado del servidor eficientes y escalables."
+         },
+         "icon": "SiNestjs"
+      },
+      {
+         "type": "Front-End",
+         "name": "Angular",
+         "logo": "",
+         "description": {
+            "en": "A platform and framework for building single-page client applications using TypeScript and HTML.",
+            "pt": "Uma plataforma e framework para construir aplicações de página única usando TypeScript e HTML.",
+            "es": "Una plataforma y framework para construir aplicaciones de una sola página utilizando TypeScript y HTML."
+         },
+         "icon": "FaAngular"
       }
    ]
 }
