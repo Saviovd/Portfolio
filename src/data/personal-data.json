@@ -22,6 +22,102 @@
       },
       "experiences": [
          {
+            "company": "CMN - Marketing e Publicidade",
+            "company-logo": "/assets/logos/cmn.jpg",
+            "company-linkedin": "https://www.linkedin.com",
+            "location": "Brasil",
+            "position": {
+               "en": "Software Developer",
+               "pt": "Desenvolvedor de software",
+               "es": "Desarrollador de software"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "",
+            "description": {
+               "en": "Creation of websites, applications, and landing pages, working on small and medium-sized projects, ensuring scalability, performance, and security.",
+               "pt": "Criação de sites, aplicativos e landingpages, atuando em projetos de pequeno e médio porte, garantindo escalabilidade, performance e segurança.",
+               "es": "Creación de sitios web, aplicaciones y landing pages, trabajando en proyectos de pequeño y mediano tamaño, asegurando escalabilidad, rendimiento y seguridad."
+            },
+            "assignments": {
+               "en": [
+                  "Creation of landing pages",
+                  "UX/UI with Figma",
+                  "Task automation using Artificial Intelligence"
+               ],
+               "pt": [
+                  "Criação de landingpages",
+                  "UX/UI com Figma",
+                  "Automação de tarefas utilizando Inteligência artificial"
+               ],
+               "es": [
+                  "Creación de landing pages",
+                  "UX/UI con Figma",
+                  "Automatización de tareas utilizando Inteligencia Artificial"
+               ]
+            },
+            "tools": [
+               "NextJs",
+               "JavaScript",
+               "TypeScript"
+            ],
+            "start": "2024-10-02",
+            "end": "",
+            "still-works": true
+         },
+         {
+            "company": "Freelance",
+            "company-logo": "/assets/logos/savio-logo.jpg",
+            "company-linkedin": "https://www.linkedin.com/in/saviovd/",
+            "location": "Brasil",
+            "position": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "scrum",
+            "description": {
+               "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
+               "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",
+               "es": "Creación y mantenimiento de sitios web, aplicaciones y sistemas completos, trabajando en proyectos de pequeña, mediana y gran escala en diversos escenarios, asegurando escalabilidad, rendimiento y seguridad."
+            },
+            "assignments": {
+               "en": [
+                  "Development of websites and applications using NextJs and VueJs.",
+                  "Creation of custom software with Python, Ruby, and JavaScript.",
+                  "Implementation of front-end and back-end functionalities in various projects."
+               ],
+               "pt": [
+                  "Desenvolvimento de sites e aplicativos utilizando NextJs e VueJs.",
+                  "Criação de softwares personalizados com Python, Ruby e JavaScript.",
+                  "Implementação de funcionalidades front-end e back-end em diversos projetos."
+               ],
+               "es": [
+                  "Desarrollo de sitios web y aplicaciones utilizando NextJs y VueJs.",
+                  "Creación de software personalizado con Python, Ruby y JavaScript.",
+                  "Implementación de funcionalidades front-end y back-end en diversos proyectos."
+               ]
+            },
+            "tools": [
+               "NextJs",
+               "VueJs",
+               "Python",
+               "Ruby",
+               "JavaScript"
+            ],
+            "start": "2021-02-02",
+            "end": "",
+            "still-works": true
+         },
+         {
             "company": "BigBang Digital",
             "company-logo": "/assets/logos/big-bang-logo.jpeg",
             "company-linkedin": "https://www.linkedin.com/company/bigbangdigital/",
@@ -118,55 +214,6 @@
             "start": "2023-01-16",
             "end": "2023-07-25",
             "still-works": false
-         },
-         {
-            "company": "Freelance",
-            "company-logo": "/assets/logos/savio-logo.jpg",
-            "company-linkedin": "https://www.linkedin.com/in/saviovd/",
-            "location": "Brasil",
-            "position": {
-               "en": "FullStack Developer",
-               "pt": "Desenvolvedor FullStack",
-               "es": "Desarrollador FullStack"
-            },
-            "regime": {
-               "en": "Remote",
-               "pt": "Remoto",
-               "es": "Remoto"
-            },
-            "methodology": "scrum",
-            "description": {
-               "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
-               "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",
-               "es": "Creación y mantenimiento de sitios web, aplicaciones y sistemas completos, trabajando en proyectos de pequeña, mediana y gran escala en diversos escenarios, asegurando escalabilidad, rendimiento y seguridad."
-            },
-            "assignments": {
-               "en": [
-                  "Development of websites and applications using NextJs and VueJs.",
-                  "Creation of custom software with Python, Ruby, and JavaScript.",
-                  "Implementation of front-end and back-end functionalities in various projects."
-               ],
-               "pt": [
-                  "Desenvolvimento de sites e aplicativos utilizando NextJs e VueJs.",
-                  "Criação de softwares personalizados com Python, Ruby e JavaScript.",
-                  "Implementação de funcionalidades front-end e back-end em diversos projetos."
-               ],
-               "es": [
-                  "Desarrollo de sitios web y aplicaciones utilizando NextJs y VueJs.",
-                  "Creación de software personalizado con Python, Ruby y JavaScript.",
-                  "Implementación de funcionalidades front-end y back-end en diversos proyectos."
-               ]
-            },
-            "tools": [
-               "NextJs",
-               "VueJs",
-               "Python",
-               "Ruby",
-               "JavaScript"
-            ],
-            "start": "2021-02-02",
-            "end": "",
-            "still-works": true
          }
       ],
       "graduation": [
