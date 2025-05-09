@@ -29,16 +29,16 @@ const Loader = () => {
    const [language, setLanguage] = useState<Locale>('en');
 
    const words: { en: string[]; pt: string[]; es: string[] } = {
-      en: ['Front-End Developer', 'Back-End Developer', 'Full Stack Developer'],
+      en: ['Front-End Developer', 'Back-End Developer', 'FullStack Developer'],
       pt: [
          'Desenvolvedor Front-End',
          'Desenvolvedor Back-End',
-         'Desenvolvedor Full Stack',
+         'Desenvolvedor FullStack',
       ],
       es: [
          'Desarrollador Front-End',
          'Desarrollador Back-End',
-         'Desarrollador Full Stack',
+         'Desarrollador FullStack',
       ],
    };
 

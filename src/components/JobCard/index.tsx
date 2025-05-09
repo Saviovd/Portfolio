@@ -53,9 +53,9 @@ const JobCard = (job: Experience) => {
                   />
                </div>
                <div className='date'>
-                  <span>{formatMonthDate(job.start)}</span>-
+                  <span>{formatMonthDate(job.start, locale)}</span>-
                   <span>
-                     {job.end ? formatMonthDate(job.end) : 'Atualmente'}
+                     {job.end ? formatMonthDate(job.end, locale) : locale !=='en' ? 'Atualmente' : 'Currently'}
                   </span>
                </div>
             </div>
