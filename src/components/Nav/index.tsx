@@ -64,7 +64,7 @@ const Nav = ({ isActive }: INavProps) => {
                   _blank={false}
                   icon={<MdOutlineFileDownload />}
                   border='1px solid rgba(var(--primary-blue))'
-                  url='/documents/Curriculo - Savio Almeida.pdf'
+                  url={`/documents/Sávio Almeida - ${locale !== 'es' ? locale : 'en'}.pdf`}
                />
             </motion.ul>
          )}

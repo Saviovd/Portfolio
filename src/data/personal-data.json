@@ -22,6 +22,62 @@
       },
       "experiences": [
          {
+            "company": "Salte Tecnologia",
+            "company-logo": "/assets/logos/salte-tecnologia.jpeg",
+            "company-linkedin": "https://www.linkedin.com/company/salte-tecnologia",
+            "location": "Brasil",
+            "position": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "Kanban",
+            "description": {
+               "en": "Design, development and maintenance of user interfaces and services in a large-scale enterprise system.",
+               "pt": "Criação, desenvolvimento e manutenção de interfaces e serviços em um sistema empresarial de grande porte.",
+               "es": "Diseño, desarrollo y mantenimiento de interfaces y servicios en un sistema empresarial de gran escala."
+            },
+            "assignments": {
+               "en": [
+                  "Design and maintenance of user interfaces",
+                  "API development",
+                  "System and database integration",
+                  "Bug fixing and continuous system improvements"
+               ],
+               "pt": [
+                  "Criação e manutenção de interfaces",
+                  "Desenvolvimento de APIs",
+                  "Integração entre sistemas e bancos de dados",
+                  "Correção de bugs e melhorias contínuas no sistema"
+               ],
+               "es": [
+                  "Diseño y mantenimiento de interfaces de usuario",
+                  "Desarrollo de APIs",
+                  "Integración entre sistemas y bases de datos",
+                  "Corrección de errores y mejoras continuas en el sistema"
+               ]
+            },
+            "tools": [
+               "JavaScript",
+               "Angular",
+               "TypeScript",
+               "NodeJs",
+               "GraphQl",
+               "Docker",
+               "Postman",
+               "Linux",
+               "TypeORM"
+            ],
+            "start": "2025-03-06",
+            "end": "",
+            "still-works": true
+         },
+         {
             "company": "CMN - Marketing e Publicidade",
             "company-logo": "/assets/logos/cmn.jpg",
             "company-linkedin": "https://www.linkedin.com",
