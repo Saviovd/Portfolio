@@ -26,7 +26,7 @@ export default function Index() {
             <title>Sávio Almeida | Portfólio</title>
             <meta
                name='description'
-               content='Savio Almeida - Desenvolvedor Web Full Stack especializado em criação de sites responsivos, aplicações web modernas e soluções digitais personalizadas. Expertise em JavaScript, React, Node.js, HTML/CSS e UX/UI Design. Confira meu portfólio e descubra como posso ajudar a transformar suas ideias em projetos incríveis. Desenvolvimento ágil, focado em performance, SEO e experiência do usuário.'
+               content='Savio Almeida - Desenvolvedor Web FullStack especializado em criação de sites responsivos, aplicações web modernas e soluções digitais personalizadas. Expertise em JavaScript, React, Node.js, HTML/CSS e UX/UI Design. Confira meu portfólio e descubra como posso ajudar a transformar suas ideias em projetos incríveis. Desenvolvimento ágil, focado em performance, SEO e experiência do usuário.'
             />
 
             <meta
