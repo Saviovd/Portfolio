@@ -8,14 +8,13 @@ export const NavItemStyle = styled.li`
    white-space: nowrap;
    letter-spacing: 1px;
    cursor: pointer;
-   transition: 0.3s;
    &:hover {
       color: rgb(var(--dark-green));
    }
+
    .selected-item {
-      font-weight: 800;
+      transition: 0.4s;
       position: relative;
-      transition: 0.3s;
       height: 100%;
       &::after {
          content: '';
@@ -36,6 +35,11 @@ export const NavItemStyle = styled.li`
          align-items: center;
          text-align: center;
       }
+      @media (max-width: 1024px) {
+         &::after {
+            transform: translateY(0.1rem);
+         }
+      }
    }
 
    @media (max-width: 1150px) {
@@ -44,6 +48,8 @@ export const NavItemStyle = styled.li`
    @media (max-width: 1024px) {
       font-size: 2rem;
       letter-spacing: 2px;
+      &::after {
+      }
    }
    @keyframes glow {
       to {

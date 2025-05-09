@@ -3,11 +3,11 @@
       "name": "Sávio",
       "mid-name": "Pinheiro",
       "last-name": "Almeida",
-      "age": 22,
+      "age": 23,
       "experience-years": 4,
       "trajectory": {
-         "en": "My journey into coding began naturally. As a child, I attempted to develop games, fueled by the desire to create enjoyable experiences. These early experiments sparked my interest in programming and provided a solid foundation in logic and creativity.<br /><br />Over the past four years, I've explored various technologies and worked on challenging projects, focusing on both front-end and back-end development. My experience ranges from building robust platforms to automating complex processes in companies. Each experience has deepened my passion for technology and my commitment to delivering innovative and efficient solutions.",
-         "pt": "Minha jornada na programação começou de forma natural. Quando criança, tentava desenvolver games, movido pelo desejo de criar experiências divertidas. Esses primeiros experimentos despertaram meu interesse pela programação e me deram uma base sólida em lógica e criatividade.<br /><br />Nos últimos quatro anos, explorei diversas tecnologias e trabalhei em projetos desafiadores, focando tanto no front-end quanto no back-end. Minha experiência varia desde o desenvolvimento de plataformas robustas até a automação de processos complexos em empresas. Cada experiência aprofundou minha paixão pela tecnologia e meu compromisso em entregar soluções inovadoras e eficientes.",
+         "en": "My journey into coding began naturally. As a young, I attempted to develop games, fueled by the desire to create enjoyable experiences. These early experiments sparked my interest in programming and provided a solid foundation in logic and creativity.<br /><br />Over the past four years, I've explored various technologies and worked on challenging projects, focusing on both front-end and back-end development. My experience ranges from building robust platforms to automating complex processes in companies. Each experience has deepened my passion for technology and my commitment to delivering innovative and efficient solutions.",
+         "pt": "Minha jornada na programação começou de forma natural. Quando mais jovem, tentava desenvolver games, movido pelo desejo de criar experiências divertidas. Esses primeiros experimentos despertaram meu interesse pela programação e me deram uma base sólida em lógica e criatividade.<br /><br />Nos últimos quatro anos, explorei diversas tecnologias e trabalhei em projetos desafiadores, focando tanto no front-end quanto no back-end. Minha experiência varia desde o desenvolvimento de plataformas robustas até a automação de processos complexos em empresas. Cada experiência aprofundou minha paixão pela tecnologia e meu compromisso em entregar soluções inovadoras e eficientes.",
          "es": "Mi viaje en la programación comenzó de manera natural. De niño, intentaba desarrollar juegos, impulsado por el deseo de crear experiencias divertidas. Estos primeros experimentos despertaron mi interés por la programación y me proporcionaron una base sólida en lógica y creatividad.<br /><br />En los últimos cuatro años, he explorado diversas tecnologías y trabajado en proyectos desafiantes, enfocándome en el desarrollo tanto del front-end como del back-end. Mi experiencia abarca desde el desarrollo de plataformas robustas hasta la automatización de procesos complejos en empresas. Cada experiencia ha profundizado mi pasión por la tecnología y mi compromiso con la entrega de soluciones innovadoras y eficientes."
       },
       "about": {
@@ -22,8 +22,160 @@
       },
       "experiences": [
          {
+            "company": "Salte Tecnologia",
+            "company-logo": "/assets/logos/salte-tecnologia.jpeg",
+            "company-linkedin": "https://www.linkedin.com/company/salte-tecnologia",
+            "location": "Brasil",
+            "position": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "Kanban",
+            "description": {
+               "en": "Design, development and maintenance of user interfaces and services in a large-scale enterprise system.",
+               "pt": "Criação, desenvolvimento e manutenção de interfaces e serviços em um sistema empresarial de grande porte.",
+               "es": "Diseño, desarrollo y mantenimiento de interfaces y servicios en un sistema empresarial de gran escala."
+            },
+            "assignments": {
+               "en": [
+                  "Design and maintenance of user interfaces",
+                  "API development",
+                  "System and database integration",
+                  "Bug fixing and continuous system improvements"
+               ],
+               "pt": [
+                  "Criação e manutenção de interfaces",
+                  "Desenvolvimento de APIs",
+                  "Integração entre sistemas e bancos de dados",
+                  "Correção de bugs e melhorias contínuas no sistema"
+               ],
+               "es": [
+                  "Diseño y mantenimiento de interfaces de usuario",
+                  "Desarrollo de APIs",
+                  "Integración entre sistemas y bases de datos",
+                  "Corrección de errores y mejoras continuas en el sistema"
+               ]
+            },
+            "tools": [
+               "JavaScript",
+               "Angular",
+               "TypeScript",
+               "NodeJs",
+               "GraphQl",
+               "Docker",
+               "Postman",
+               "Linux",
+               "TypeORM"
+            ],
+            "start": "2025-03-06",
+            "end": "",
+            "still-works": true
+         },
+         {
+            "company": "CMN - Marketing e Publicidade",
+            "company-logo": "/assets/logos/cmn.jpg",
+            "company-linkedin": "https://www.linkedin.com",
+            "location": "Brasil",
+            "position": {
+               "en": "Software Developer",
+               "pt": "Desenvolvedor de software",
+               "es": "Desarrollador de software"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "",
+            "description": {
+               "en": "Creation of websites, applications, and landing pages, working on small and medium-sized projects, ensuring scalability, performance, and security.",
+               "pt": "Criação de sites, aplicativos e landingpages, atuando em projetos de pequeno e médio porte, garantindo escalabilidade, performance e segurança.",
+               "es": "Creación de sitios web, aplicaciones y landing pages, trabajando en proyectos de pequeño y mediano tamaño, asegurando escalabilidad, rendimiento y seguridad."
+            },
+            "assignments": {
+               "en": [
+                  "Creation of landing pages",
+                  "UX/UI with Figma",
+                  "Task automation using Artificial Intelligence"
+               ],
+               "pt": [
+                  "Criação de landingpages",
+                  "UX/UI com Figma",
+                  "Automação de tarefas utilizando Inteligência artificial"
+               ],
+               "es": [
+                  "Creación de landing pages",
+                  "UX/UI con Figma",
+                  "Automatización de tareas utilizando Inteligencia Artificial"
+               ]
+            },
+            "tools": [
+               "NextJs",
+               "JavaScript",
+               "TypeScript"
+            ],
+            "start": "2024-10-02",
+            "end": "",
+            "still-works": true
+         },
+         {
+            "company": "Freelance",
+            "company-logo": "/assets/logos/savio-logo.jpg",
+            "company-linkedin": "https://www.linkedin.com/in/saviovd/",
+            "location": "Brasil",
+            "position": {
+               "en": "FullStack Developer",
+               "pt": "Desenvolvedor FullStack",
+               "es": "Desarrollador FullStack"
+            },
+            "regime": {
+               "en": "Remote",
+               "pt": "Remoto",
+               "es": "Remoto"
+            },
+            "methodology": "scrum",
+            "description": {
+               "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
+               "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",
+               "es": "Creación y mantenimiento de sitios web, aplicaciones y sistemas completos, trabajando en proyectos de pequeña, mediana y gran escala en diversos escenarios, asegurando escalabilidad, rendimiento y seguridad."
+            },
+            "assignments": {
+               "en": [
+                  "Development of websites and applications using NextJs and VueJs.",
+                  "Creation of custom software with Python, Ruby, and JavaScript.",
+                  "Implementation of front-end and back-end functionalities in various projects."
+               ],
+               "pt": [
+                  "Desenvolvimento de sites e aplicativos utilizando NextJs e VueJs.",
+                  "Criação de softwares personalizados com Python, Ruby e JavaScript.",
+                  "Implementação de funcionalidades front-end e back-end em diversos projetos."
+               ],
+               "es": [
+                  "Desarrollo de sitios web y aplicaciones utilizando NextJs y VueJs.",
+                  "Creación de software personalizado con Python, Ruby y JavaScript.",
+                  "Implementación de funcionalidades front-end y back-end en diversos proyectos."
+               ]
+            },
+            "tools": [
+               "NextJs",
+               "VueJs",
+               "Python",
+               "Ruby",
+               "JavaScript"
+            ],
+            "start": "2021-02-02",
+            "end": "",
+            "still-works": true
+         },
+         {
             "company": "BigBang Digital",
-            "company-logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHTVN1NxnQ4Mw/company-logo_200_200/company-logo_200_200/0/1630580474378/big_bang_shop_logo?e=1736985600&v=beta&t=B1KEUCA3JaLLlq6QcI4d6JuZ3TNGChvah5JlqbZy-c0",
+            "company-logo": "/assets/logos/big-bang-logo.jpeg",
             "company-linkedin": "https://www.linkedin.com/company/bigbangdigital/",
             "location": "Belo Horizonte/MG - Brasil",
             "position": {
@@ -73,7 +225,7 @@
          },
          {
             "company": "CoE | Centro de Excelência Votorantim",
-            "company-logo": "https://media.licdn.com/dms/image/v2/D560BAQH3GEpoxmH9Jg/company-logo_200_200/company-logo_200_200/0/1686581069603/coe_centro_de_excelencia_votorantim_logo?e=1736985600&v=beta&t=LsMg8vKrXYQNzcjFIFPKihYRqBtN8JMOt4qB4y6hiac",
+            "company-logo": "/assets/logos/votorantim-logo.jpeg",
             "company-linkedin": "https://www.linkedin.com/company/coe-centro-de-excelencia-votorantim/",
             "location": "Curitiba/PR - Brasil",
             "position": {
@@ -118,55 +270,6 @@
             "start": "2023-01-16",
             "end": "2023-07-25",
             "still-works": false
-         },
-         {
-            "company": "Freelance",
-            "company-logo": "/assets/logo.svg",
-            "company-linkedin": "https://www.linkedin.com/in/saviovd/",
-            "location": "Brasil",
-            "position": {
-               "en": "FullStack Developer",
-               "pt": "Desenvolvedor FullStack",
-               "es": "Desarrollador FullStack"
-            },
-            "regime": {
-               "en": "Remote",
-               "pt": "Remoto",
-               "es": "Remoto"
-            },
-            "methodology": "scrum",
-            "description": {
-               "en": "Creation and maintenance of websites, applications, and complete systems, working on projects of small, medium, and large scale in various scenarios, ensuring scalability, performance, and security.",
-               "pt": "Criação e manutenção de sites, aplicativos e sistemas completos, atuando em projetos de pequeno, médio e grande porte em diversos cenários, garantindo escalabilidade, performance e segurança.",
-               "es": "Creación y mantenimiento de sitios web, aplicaciones y sistemas completos, trabajando en proyectos de pequeña, mediana y gran escala en diversos escenarios, asegurando escalabilidad, rendimiento y seguridad."
-            },
-            "assignments": {
-               "en": [
-                  "Development of websites and applications using NextJs and VueJs.",
-                  "Creation of custom software with Python, Ruby, and JavaScript.",
-                  "Implementation of front-end and back-end functionalities in various projects."
-               ],
-               "pt": [
-                  "Desenvolvimento de sites e aplicativos utilizando NextJs e VueJs.",
-                  "Criação de softwares personalizados com Python, Ruby e JavaScript.",
-                  "Implementação de funcionalidades front-end e back-end em diversos projetos."
-               ],
-               "es": [
-                  "Desarrollo de sitios web y aplicaciones utilizando NextJs y VueJs.",
-                  "Creación de software personalizado con Python, Ruby y JavaScript.",
-                  "Implementación de funcionalidades front-end y back-end en diversos proyectos."
-               ]
-            },
-            "tools": [
-               "NextJs",
-               "VueJs",
-               "Python",
-               "Ruby",
-               "JavaScript"
-            ],
-            "start": "2021-02-02",
-            "end": "",
-            "still-works": true
          }
       ],
       "graduation": [
@@ -201,7 +304,7 @@
                "es": "JavaScript con enfoque en back-end"
             },
             "institution": "Alura",
-            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "logo": "/assets/logos/alura.jpeg",
             "category": "Back-End",
             "hours": "74h",
             "stacks": [
@@ -235,7 +338,7 @@
                "es": "APIs con Node.js y Express"
             },
             "institution": "Alura",
-            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "logo": "/assets/logos/alura.jpeg",
             "category": "API REST",
             "hours": "70h",
             "stacks": [
@@ -270,7 +373,7 @@
                "es": "JavaScript: tipos, variables y funciones"
             },
             "institution": "Alura",
-            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "logo": "/assets/logos/alura.jpeg",
             "category": "JavaScript",
             "hours": "12h",
             "stacks": [
@@ -285,7 +388,7 @@
                "es": "Python con Programación Orientada a Objetos"
             },
             "institution": "Alura",
-            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "logo": "/assets/logos/alura.jpeg",
             "category": "Python",
             "hours": "93h",
             "stacks": [
@@ -318,7 +421,7 @@
                "es": "Gestiona aplicaciones React con Typescript"
             },
             "institution": "Alura",
-            "logo": "https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj",
+            "logo": "/assets/logos/alura.jpeg",
             "category": "Front-End",
             "hours": "83h",
             "stacks": [

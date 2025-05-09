@@ -1,20 +1,6 @@
 {
    "testimonials": [
       {
-         "name": "Daniel Arruda",
-         "office": {
-            "en": "Quality Assurance | BMG",
-            "pt": "Quality Assurance | BMG",
-            "es": "Quality Assurance | BMG"
-         },
-         "testimonial": {
-            "en": "has not added his testimonial yet.",
-            "pt": "ainda não adicionou seu depoimento.",
-            "es": "aún no ha agregado su testimonio."
-         },
-         "photo": "https://media.licdn.com/dms/image/v2/D4D03AQGasWWu45UYbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1670429056482?e=1738800000&v=beta&t=phwOEsdpejuG7gXupoRZZ-FdEOUO1ap6nehB8-Mi5YI"
-      },
-      {
          "name": "Verônica Vegas",
          "office": {
             "en": "Coordinator | Votorantim",
@@ -26,7 +12,7 @@
             "pt": "Sávio é um excelente profissional que tive o privilégio de trabalhar. Interessado, inconformado, estudioso, arrojado, esses são alguns dos adjetivos que posso descreve-lo. Ávido por tecnologia, apoiou e desenvolveu automatizações na área em que atuou no COE Votorantim, auxiliando a equipe na busca da excelência, consciente de que processos bem estabelecidos unidos de automatização/digitalização, são imprescindíveis para o presente e o futuro muito próximo.",
             "es": "Sávio es un profesional excepcional con el que tuve el privilegio de trabajar. Interesado, inconformista y estudioso, son algunos de los adjetivos que puedo describirlo. Apasionado por la tecnología, apoyó y desarrolló automatizaciones en el área en la que trabajó en el COE de Votorantim, asistiendo al equipo en la búsqueda de la excelencia, consciente de que los procesos bien establecidos unidos a la automatización/digitalización son imprescindibles para el presente y el futuro muy próximo."
          },
-         "photo": "https://media.licdn.com/dms/image/v2/C4D03AQEd2Ju8Xz3tog/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516402346914?e=1738800000&v=beta&t=8mZViDeh4aSQVtMTn1NcFSzseRPTLNw1TKQW78CD11U"
+         "photo": "/assets/photos/testimonials/ve.jpeg"
       },
       {
          "name": "Clisliane Melo",
@@ -40,7 +26,7 @@
             "pt": "Tive o prazer de acompanhar o Sávio durante seu tempo na Big Bang Digital. Mesmo em um período relativamente curto, ele demonstrou dedicação, vontade de aprender e habilidades técnicas notáveis. Sávio possui um forte senso de trabalho em equipe e uma atitude colaborativa, sempre disposto a ajudar e compartilhar conhecimentos. Embora não fosse um desenvolvedor experiente na época, mostrou considerável potencial. Recomendo Sávio para futuras oportunidades, certo de que será um ativo valioso para qualquer equipe.",
             "es": "Tuve el placer de trabajar con Sávio durante su tiempo en Big Bang Digital. Incluso en un período relativamente corto, demostró dedicación, ganas de aprender y habilidades técnicas notables. Sávio tiene un fuerte sentido del trabajo en equipo y una actitud colaborativa, siempre dispuesto a ayudar y compartir conocimientos. Aunque no era un desarrollador experimentado en ese momento, mostró un potencial considerable. Recomiendo a Sávio para futuras oportunidades, seguro de que será un activo valioso para cualquier equipo."
          },
-         "photo": "https://media.licdn.com/dms/image/v2/C4D03AQG_TcMdCkiZIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658153960095?e=1738800000&v=beta&t=AajH1O6pzOOemGVg3zU5vK4izf232Ro2FxBT5sHGRqM"
+         "photo": "/assets/photos/testimonials/clis.jpeg"
       },
       {
          "name": "José Raimundo Diniz",
@@ -54,7 +40,7 @@
             "pt": "Ótimo profissional, atento ao código, trabalhei com ele como frontend Vue.js, experiencia legal.",
             "es": "Excelente profesional, atento al código, trabajé con él como desarrollador front-end de Vue.js, gran experiencia."
          },
-         "photo": "https://media.licdn.com/dms/image/v2/D4D03AQHL2iHF5xZeZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711021256924?e=1734566400&v=beta&t=NCY1RUvJiGleg1ordGabgJjZvnCKT82QTycr4vVaYQc"
+         "photo": "/assets/photos/testimonials/jose.jpeg"
       }
    ]
 }

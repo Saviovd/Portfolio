@@ -91,7 +91,7 @@
                "repository": "https://github.com/Games-By/games-service"
             }
          ],
-         "year": 2023
+         "year": 2024
       },
       {
          "images": {
@@ -823,6 +823,213 @@
             }
          ],
          "year": 2023
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/medifarma.png",
+            "mobile": "/assets/Projects/mobile/mobile-medifarma.png",
+            "screens": "/assets/Projects/screens/medifarma.png"
+         },
+         "url": "https://medifarma.vercel.app/",
+         "repository": "https://github.com/Saviovd/medifarma",
+         "name": "medifarma",
+         "code": "medifarma",
+         "description": {
+            "en": "A simple landing page presenting a pharmacy, its services, and how to get there.",
+            "pt": "Uma landing page simples, apresentando uma farmácia, seus serviços e como chegar até ela.",
+            "es": "Una página de aterrizaje simple que presenta una farmacia, sus servicios y cómo llegar a ella."
+         },
+         "features": {
+            "en": [
+               "Simple navigation through the application",
+               "Intuitive map",
+               "Responsiveness across the entire application"
+            ],
+            "pt": [
+               "Navegação simples pela aplicação",
+               "Mapa intuitivo",
+               "Responsividade em toda a aplicação"
+            ],
+            "es": [
+               "Navegación sencilla por la aplicación",
+               "Mapa intuitivo",
+               "Responsividad en toda la aplicación"
+            ]
+         },
+         "stack": [
+            {
+               "name": "React",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Nextjs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "JavaScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Framer Motion",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2025
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/movies-store.png",
+            "mobile": "/assets/Projects/mobile/mobile-movies-store.png",
+            "screens": "/assets/Projects/screens/movies-store.png"
+         },
+         "url": "https://movies-store-teste-dot-ten.vercel.app/",
+         "repository": "https://github.com/Saviovd/movies-store",
+         "name": "movies-store",
+         "code": "moviesStore",
+         "description": {
+            "pt": "Uma aplicação que consome dados da API TMDB e mostra para o usuário os principais filmes da semana.",
+            "en": "An application that consumes data from the TMDB API and displays the week's top movies to the user.",
+            "es": "Una aplicación que consume datos de la API TMDB y muestra al usuario las principales películas de la semana."
+         },
+         "features": {
+            "pt": [
+               "Integração com API TMDB",
+               "Busca por nome",
+               "Carrinho de compras funcional",
+               "Sessão de favoritos funcional"
+            ],
+            "en": [
+               "Integration with TMDB API",
+               "Search by name",
+               "Functional shopping cart",
+               "Functional favorites section"
+            ],
+            "es": [
+               "Integración con la API TMDB",
+               "Búsqueda por nombre",
+               "Carrito de compras funcional",
+               "Sección de favoritos funcional"
+            ]
+         },
+         "stack": [
+            {
+               "name": "VueJs",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "VueX",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Vite",
+               "width": 70,
+               "height": 60
+            },
+            {
+               "name": "Axios",
+               "width": 120,
+               "height": 60
+            },
+            {
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "year": 2025
+      },
+      {
+         "images": {
+            "desktop": "/assets/Projects/desktop/products.png",
+            "mobile": "/assets/Projects/mobile/mobile-products.png",
+            "screens": "/assets/Projects/screens/products.png"
+         },
+         "url": "https://product-administrator.vercel.app/",
+         "repository": "https://github.com/Saviovd/product-administrator",
+         "name": "product-administrator",
+         "code": "productAdministrator",
+         "description": {
+            "pt": "Uma aplicação desenvolvida com Angular para um teste técnico, baseada em uma aplicação completa com frontend, backend e banco de dados de produtos à venda.",
+            "en": "An application developed with Angular for a technical test, based on a complete application with frontend, backend, and a product sales database.",
+            "es": "Una aplicación desarrollada con Angular para una prueba técnica, basada en una aplicación completa con frontend, backend y una base de datos de productos en venta."
+         },
+         "features": {
+            "pt": [
+               "Integração com API própria",
+               "Busca por produtos por nome ou descrição",
+               "Cadastro de produto",
+               "Carrinho funcional"
+            ],
+            "en": [
+               "Integration with own API",
+               "Search for products by name or description",
+               "Product registration",
+               "Functional shopping cart"
+            ],
+            "es": [
+               "Integración con API propia",
+               "Búsqueda de productos por nombre o descripción",
+               "Registro de productos",
+               "Carrito de compras funcional"
+            ]
+         },
+         "stack": [
+            {
+               "name": "Angular",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Tailwind-css",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "Express",
+               "width": 70,
+               "height": 60
+            },
+            {
+               "name": "Nestjs",
+               "width": 120,
+               "height": 60
+            },
+            {
+               "name": "TypeScript",
+               "width": 60,
+               "height": 60
+            },
+            {
+               "name": "MongoDB",
+               "padding": true,
+               "width": 60,
+               "height": 60
+            }
+         ],
+         "services": [
+            {
+               "name": "Products API",
+               "repository": "https://github.com/Saviovd/nest-products",
+               "description": ""
+            }
+         ],
+         "year": 2025
       }
    ]
 }

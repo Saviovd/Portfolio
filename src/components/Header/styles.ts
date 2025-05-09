@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const HeaderStyle = styled(motion.header)`
-   z-index: 10;
+   z-index: 70;
    width: 100%;
    position: fixed;
    top: 0;
@@ -11,7 +11,7 @@ export const HeaderStyle = styled(motion.header)`
 
    .header-container {
       transition: 0.3s;
-      border: 1px solid rgb(var(--light-green), 0.2);
+      border: 1px solid rgba(var(--light-green), 0.2);
       background-color: rgba(var(--dark-green), 0.05);
       border-radius: 1rem;
       backdrop-filter: blur(0.4rem);
@@ -60,7 +60,7 @@ export const HeaderStyle = styled(motion.header)`
          position: absolute;
          left: 1rem;
          right: 2rem;
-         width: 4rem;
+         width: 3.5rem;
          z-index: 10;
 
          &::before,
@@ -69,7 +69,7 @@ export const HeaderStyle = styled(motion.header)`
             background: rgb(var(--light));
             content: '';
             display: block;
-            height: 5px;
+            height: 4px;
             border-radius: 3px;
             margin: 5px 0;
             transition: 0.5s;
@@ -85,7 +85,7 @@ export const HeaderStyle = styled(motion.header)`
          }
 
          &.active::before {
-            transform: translateY(8px) rotate(135deg);
+            transform: translateY(6px) rotate(135deg);
          }
 
          &.active::after {
@@ -99,10 +99,13 @@ export const HeaderStyle = styled(motion.header)`
 
       @media (max-width: 1024px) {
          border-top: 0 !important;
-         border-radius: 0 0 1rem 1rem;
+         border-radius: 0;
          height: 6rem !important;
          margin: 0 auto;
          width: 100%;
+         border: 0;
+         backdrop-filter: blur(0);
+         background-color: transparent;
       }
    }
 
@@ -111,17 +114,29 @@ export const HeaderStyle = styled(motion.header)`
       border-radius: 0 0 0.5rem 0.5rem;
       width: 100%;
       height: 8rem;
-      border: 1px solid rgb(var(--light-blue), 0.2);
       background-color: rgba(var(--dark), 0.05);
 
       @media (max-width: 1024px) {
+         position: relative;
+         backdrop-filter: blur(0.4rem);
          height: 6rem !important;
+         &::after {
+            content: '';
+            height: 2px;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(var(--light-green), 0.2);
+         }
       }
+   }
 
-      &:hover {
-         border: 1px solid rgb(var(--light-green), 0.2);
-         background-color: rgba(var(--dark-green), 0.05);
-      }
+   .bottom {
+      position: absolute;
+      height: 2px;
+      background-color: rgba(var(--light-green), 1);
+      z-index: -1;
    }
    .outside {
       width: 100vw;
@@ -132,14 +147,13 @@ export const HeaderStyle = styled(motion.header)`
       z-index: -1;
    }
 
-   @media screen {
-      @media (max-width: 1024px) {
-         padding: 0;
-         height: 7rem;
-         background-color: transparent;
-      }
-      @media (max-width: 768px) {
-         height: 5rem;
-      }
+   @media (max-width: 1024px) {
+      padding: 0;
+      height: 7rem;
+      background-color: transparent;
+   }
+
+   @media (max-width: 768px) {
+      height: 5rem;
    }
 `;

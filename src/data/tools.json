@@ -58,7 +58,7 @@
       {
          "type": "Front-End",
          "name": "VueJs",
-         "logo": "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/vuejs.svg",
+         "logo": "https://www.svgrepo.com/show/452130/vue.svg",
          "description": {
             "en": "An open-source front-end JavaScript framework based on the Model-View-ViewModel (MVVM) architecture, designed for building dynamic user interfaces and single-page applications with reactive data binding and component-based development.",
             "pt": "Um framework JavaScript de front-end de código aberto baseado na arquitetura Model-View-ViewModel (MVVM), projetado para construir interfaces de usuário dinâmicas e aplicações de página única, com ligação de dados reativa e desenvolvimento baseado em componentes.",
@@ -278,22 +278,22 @@
       {
          "type": "Front-End",
          "name": "Vite",
-         "logo": "",
+         "logo": "https://www.svgrepo.com/show/374167/vite.svg",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A fast and modern front-end build tool that provides an optimized development experience.",
+            "pt": "Uma ferramenta de build moderna e rápida para front-end, oferecendo uma experiência otimizada de desenvolvimento.",
+            "es": "Una herramienta de compilación moderna y rápida para front-end, que proporciona una experiencia de desarrollo optimizada."
          },
          "icon": "SiVite"
       },
       {
          "type": "Front-End",
-         "name": "React router",
-         "logo": "",
+         "name": "React Router",
+         "logo": "https://www.svgrepo.com/show/354262/react-router.svg",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A library for handling navigation and routing in React applications.",
+            "pt": "Uma biblioteca para gerenciar navegação e roteamento em aplicações React.",
+            "es": "Una biblioteca para gestionar la navegación y el enrutamiento en aplicaciones React."
          },
          "icon": "SiReactrouter"
       },
@@ -302,11 +302,33 @@
          "name": "Framer Motion",
          "logo": "",
          "description": {
-            "en": "",
-            "pt": "",
-            "es": ""
+            "en": "A popular animation library for React that allows smooth and customizable animations.",
+            "pt": "Uma biblioteca popular de animação para React que permite animações suaves e personalizáveis.",
+            "es": "Una biblioteca popular de animación para React que permite animaciones fluidas y personalizables."
          },
          "icon": "SiFramer"
+      },
+      {
+         "type": "Back-End",
+         "name": "NestJS",
+         "logo": "https://www.svgrepo.com/show/373863/nest-middleware-js.svg",
+         "description": {
+            "en": "A progressive Node.js framework for building efficient and scalable server-side applications.",
+            "pt": "Um framework progressivo para Node.js, projetado para criar aplicações server-side eficientes e escaláveis.",
+            "es": "Un framework progresivo para Node.js, diseñado para crear aplicaciones del lado del servidor eficientes y escalables."
+         },
+         "icon": "SiNestjs"
+      },
+      {
+         "type": "Front-End",
+         "name": "Angular",
+         "logo": "https://www.svgrepo.com/show/373427/angular.svg",
+         "description": {
+            "en": "A platform and framework for building single-page client applications using TypeScript and HTML.",
+            "pt": "Uma plataforma e framework para construir aplicações de página única usando TypeScript e HTML.",
+            "es": "Una plataforma y framework para construir aplicaciones de una sola página utilizando TypeScript y HTML."
+         },
+         "icon": "FaAngular"
       }
    ]
 }
